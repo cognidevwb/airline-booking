@@ -1,0 +1,107 @@
+{
+  "digest": "3ba6735b005ef7b2",
+  "domain": "Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat",
+  "entity": "BookingReadModel",
+  "personal": {
+    "PassengerInfo": "name"
+  },
+  "records": [
+    {
+      "BookId": "3f8a1c52-9d4e-4b7a-8c21-6e5d0a9b7f13",
+      "IsDeleted": false,
+      "PassengerInfo": "Maria Fernandez Ortiz | BA117 | 2026-11-14T08:35:00 | Seat 12A | Fare 412.00 | Window seat, vegetarian meal requested",
+      "Trip": "a41e7c90-2b6d-4f38-9e15-c7d8b3a02f64"
+    },
+    {
+      "BookId": "b72d4e18-5a3c-4c9f-b1a7-0d8e6f2c9a45",
+      "IsDeleted": false,
+      "PassengerInfo": "Thomas Johann Weber | LH402 | 2026-11-02T14:10:00 | Seat 24C | Fare 238.50 | Aisle seat, extra legroom if available",
+      "Trip": "07c5d2b9-e1a4-4a6c-8f3d-52b9e7a1c0d8"
+    },
+    {
+      "BookId": "e195a6c3-7f2b-4d80-a4e9-3b1c8d5f7e26",
+      "IsDeleted": false,
+      "PassengerInfo": "Aisha Rahman Al-Farsi | EK0203 | 2026-12-05T02:50:00 | Seat 3F | Fare 1685.00 | Business class, halal meal requested",
+      "Trip": "5d9b0e47-c3a8-4125-b6f2-9a7e4c1d8b30"
+    },
+    {
+      "BookId": "4c60f8d1-a2e5-47b3-9d6c-1f7a3e0b5c82",
+      "IsDeleted": false,
+      "PassengerInfo": "Kenji Watanabe Sato | JL0044 | 2026-11-21T11:25:00 | Seat 31K | Fare 689.00 | Traveling with wheelchair, assistance at gate",
+      "Trip": "c83f2a15-6b9d-4e07-a1c4-d5e8f0b7396a"
+    },
+    {
+      "BookId": "9a2e7b34-c1d6-4f58-8b03-e6d4a9c7f151",
+      "IsDeleted": false,
+      "PassengerInfo": "Olivia Grace Bennett | AA1180 | 2026-10-29T17:45:00 | Seat 18D | Fare 154.00 | Carry-on only, no checked bag",
+      "Trip": "1e7a9d63-f4b0-4c2e-9835-a6c1b8d2e7f9"
+    },
+    {
+      "BookId": "d08c5f29-3b7a-4e16-a9d2-7c4e1b6a8f30",
+      "IsDeleted": false,
+      "PassengerInfo": "Luca Marco Bianchi | AZ0610 | 2026-11-08T06:20:00 | Seat 9B | Fare 97.00 | Early morning flight, requests quiet seat",
+      "Trip": "f2b6c481-0d9e-4a73-b5e8-3c7a1d9f0e52"
+    },
+    {
+      "BookId": "6b3d9e07-f4a1-4c85-b2e6-8a0d5c7f1e94",
+      "IsDeleted": false,
+      "PassengerInfo": "Priya Nair Venkataraman | AI0302 | 2026-12-18T23:15:00 | Seat 27A | Fare 524.75 | Window seat, South Asian vegetarian meal",
+      "Trip": "8a4d1f72-e5c3-4b96-8d0a-b2f7e6c93a15"
+    },
+    {
+      "BookId": "21f7a4c8-9e0b-4d63-a5b1-c3e8d7f20a69",
+      "IsDeleted": false,
+      "PassengerInfo": "Henrik Lars Andersen | SK0903 | 2026-11-27T09:05:00 | Seat 15F | Fare 189.00 | Gluten-free meal requested",
+      "Trip": "b95e3c06-a7d1-4f28-9c4b-0e6a8d1f7b23"
+    },
+    {
+      "BookId": "f5c9b2e6-1a8d-4073-9e4f-6d2b7a0c8e31",
+      "IsDeleted": false,
+      "PassengerInfo": "Sofia Alejandra Ruiz Navarro | IB6251 | 2026-11-11T13:40:00 | Seat 2A | Fare 1420.00 | Business class, priority boarding",
+      "Trip": "2c8f6a09-d3b5-4e71-a8c2-f9d0b4e7a156"
+    },
+    {
+      "BookId": "87e1d3a5-6c4f-4b92-8a07-d0f5c2b9e748",
+      "IsDeleted": false,
+      "PassengerInfo": "Daniel Okonkwo Eze | BA0078 | 2026-12-02T20:30:00 | Seat 36C | Fare 361.00 | Aisle seat, traveling with infant on lap",
+      "Trip": "e60a7b34-8f2c-4d19-b3a5-1c9e5d8f0a72"
+    },
+    {
+      "BookId": "c4a8f067-b3e1-49d5-a2c7-5e9d1f6b0a83",
+      "IsDeleted": true,
+      "PassengerInfo": "Yuki Tanaka Moriyama | NH0211 | 2026-11-17T10:55:00 | Seat 22J | Fare 742.50 | Window seat, no meal service needed",
+      "Trip": "4f1d8c25-a9e7-4b30-8d6c-7b0a3e5f9c14"
+    },
+    {
+      "BookId": "0d7b3e91-4a5c-4f28-b6d9-e2c8a1f7503b",
+      "IsDeleted": false,
+      "PassengerInfo": "Fatima Zahra El Idrissi | AT0803 | 2026-11-05T15:20:00 | Seat 11E | Fare 128.00 | Halal meal requested, seated with family",
+      "Trip": "96b2e0a8-c5d4-4713-a9f1-8e3c7d0b2a65"
+    },
+    {
+      "BookId": "a93f6c20-e8b1-4d47-8c5a-3b7d0e9f1a62",
+      "IsDeleted": true,
+      "PassengerInfo": "Connor James Murphy | EI0154 | 2026-12-09T07:00:00 | Seat 6D | Fare 69.00 | Cancelled by passenger, refund pending",
+      "Trip": "d3e7a519-0f6b-4c82-b4a9-6a1c8e2d5f07"
+    },
+    {
+      "BookId": "5e0b8d74-2c9a-4a36-9f1e-b7d4c6a3e085",
+      "IsDeleted": false,
+      "PassengerInfo": "Ingrid Maria Svensson | QR0017 | 2026-12-22T01:35:00 | Seat 4K | Fare 1850.00 | Business class, special occasion, celebrating anniversary",
+      "Trip": "7b4c9f10-d2a6-4e58-a3b7-0f8e1c5d9a42"
+    },
+    {
+      "BookId": "b1d4e8f3-7a60-4c92-b5e8-9a3f2c0d7e16",
+      "IsDeleted": true,
+      "PassengerInfo": "Carlos Eduardo Mendes Lima | LA8084 | 2026-11-30T22:10:00 | Seat 41K | Fare 49.00 | Duplicate booking removed, kept earlier reservation",
+      "Trip": "0a9e5d37-b8c2-4f61-8d4a-e5b3c7f1a908"
+    },
+    {
+      "BookId": "7c2a9f56-d1e3-4b08-a7c4-4e6b0d8a3f91",
+      "IsDeleted": false,
+      "PassengerInfo": "Amelia Rose Thompson | QF0010 | 2026-12-14T19:45:00 | Seat 33B | Fare 1015.00 | Extra baggage added, aisle seat preferred",
+      "Trip": "c5f8b2d4-3e07-4a19-96b1-d2a7e0c4f835"
+    }
+  ],
+  "source": "model, from the column names and constraints only"
+}

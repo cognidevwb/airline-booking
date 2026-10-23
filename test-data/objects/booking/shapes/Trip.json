@@ -1,0 +1,659 @@
+{
+  "shape": "Trip",
+  "role": "shape",
+  "source": "src/Booking/Booking/ValueObjects/Trip.cs:5",
+  "columns": [
+    "FlightNumber",
+    "AircraftId",
+    "DepartureAirportId",
+    "ArriveAirportId",
+    "FlightDate",
+    "Price",
+    "Description",
+    "SeatNumber"
+  ],
+  "records": [
+    {
+      "ref": "booking-ba117-2",
+      "kind": "record",
+      "data": {
+        "AircraftId": "0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14",
+        "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+        "DepartureAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+        "Description": "Window seat, vegetarian meal requested",
+        "FlightDate": "2026-11-14T08:35:00",
+        "FlightNumber": "BA117",
+        "Price": 642.5,
+        "SeatNumber": "12A"
+      }
+    },
+    {
+      "ref": "booking-lh402-2",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f1b36c84-d05a-47e9-a3c8-12e7b9054d6a",
+        "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+        "DepartureAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+        "Description": "Aisle seat, extra legroom if available",
+        "FlightDate": "2026-11-02T10:15:00",
+        "FlightNumber": "LH402",
+        "Price": 578.0,
+        "SeatNumber": "24C"
+      }
+    },
+    {
+      "ref": "booking-ek0203-2",
+      "kind": "record",
+      "data": {
+        "AircraftId": "5d29e7b0-8a46-4c13-b7f1-a4c60d92e358",
+        "ArriveAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+        "DepartureAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+        "Description": "Business class, lie-flat bed, chauffeur transfer",
+        "FlightDate": "2026-12-05T02:45:00",
+        "FlightNumber": "EK0203",
+        "Price": 1385.0,
+        "SeatNumber": "3F"
+      }
+    },
+    {
+      "ref": "booking-ib3166",
+      "kind": "record",
+      "data": {
+        "AircraftId": "c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77",
+        "ArriveAirportId": "48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24",
+        "DepartureAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+        "Description": "Carry-on only, no checked bag",
+        "FlightDate": "2026-11-20T13:50:00",
+        "FlightNumber": "IB3166",
+        "Price": 131.4,
+        "SeatNumber": "18D"
+      }
+    },
+    {
+      "ref": "booking-sq0322",
+      "kind": "record",
+      "data": {
+        "AircraftId": "83e5a0d7-6c29-4b71-8f04-b5d1c7e29a96",
+        "ArriveAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+        "DepartureAirportId": "e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10",
+        "Description": "Traveling with infant, bassinet requested",
+        "FlightDate": "2026-12-18T23:10:00",
+        "FlightNumber": "SQ0322",
+        "Price": 912.75,
+        "SeatNumber": "41K"
+      }
+    },
+    {
+      "ref": "booking-kl1002",
+      "kind": "record",
+      "data": {
+        "AircraftId": "2c70b9f4-e8a3-45d6-9b1e-70a4c3d8f512",
+        "ArriveAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+        "DepartureAirportId": "92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2",
+        "Description": "Basic fare, seat assigned at check-in",
+        "FlightDate": "2026-11-09T06:25:00",
+        "FlightNumber": "KL1002",
+        "Price": 49.0,
+        "SeatNumber": "7B"
+      }
+    },
+    {
+      "ref": "booking-ba0287",
+      "kind": "record",
+      "data": {
+        "AircraftId": "c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77",
+        "ArriveAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+        "DepartureAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+        "Description": "Gluten-free meal requested",
+        "FlightDate": "2026-11-27T16:40:00",
+        "FlightNumber": "BA0287",
+        "Price": 187.3,
+        "SeatNumber": "22F"
+      }
+    },
+    {
+      "ref": "booking-ek0201",
+      "kind": "record",
+      "data": {
+        "AircraftId": "5d29e7b0-8a46-4c13-b7f1-a4c60d92e358",
+        "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+        "DepartureAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+        "Description": "First-row business seat, priority boarding",
+        "FlightDate": "2027-01-08T09:30:00",
+        "FlightNumber": "EK0201",
+        "Price": 1850.0,
+        "SeatNumber": "1A"
+      }
+    },
+    {
+      "ref": "booking-lh1130",
+      "kind": "record",
+      "data": {
+        "AircraftId": "c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77",
+        "ArriveAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+        "DepartureAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+        "Description": "Wheelchair assistance at boarding",
+        "FlightDate": "2026-12-01T07:05:00",
+        "FlightNumber": "LH1130",
+        "Price": 164.9,
+        "SeatNumber": "15C"
+      }
+    },
+    {
+      "ref": "booking-af0017",
+      "kind": "record",
+      "data": {
+        "AircraftId": "0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14",
+        "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+        "DepartureAirportId": "48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24",
+        "Description": "Seated with spouse, adjacent seats booked",
+        "FlightDate": "2026-11-17T11:20:00",
+        "FlightNumber": "AF0017",
+        "Price": 489.0,
+        "SeatNumber": "31G"
+      }
+    },
+    {
+      "ref": "booking-ek0007",
+      "kind": "record",
+      "data": {
+        "AircraftId": "5d29e7b0-8a46-4c13-b7f1-a4c60d92e358",
+        "ArriveAirportId": "48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24",
+        "DepartureAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+        "Description": "Child meal requested, traveling with minor",
+        "FlightDate": "2027-02-12T14:55:00",
+        "FlightNumber": "EK0007",
+        "Price": 724.2,
+        "SeatNumber": "9K"
+      }
+    },
+    {
+      "ref": "booking-kl0641",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f1b36c84-d05a-47e9-a3c8-12e7b9054d6a",
+        "ArriveAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+        "DepartureAirportId": "92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2",
+        "Description": "Kosher meal requested",
+        "FlightDate": "2026-12-22T21:35:00",
+        "FlightNumber": "KL0641",
+        "Price": 436.6,
+        "SeatNumber": "28E"
+      }
+    },
+    {
+      "ref": "booking-ib6250",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f1b36c84-d05a-47e9-a3c8-12e7b9054d6a",
+        "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+        "DepartureAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+        "Description": "Window seat, extra baggage prepaid",
+        "FlightDate": "2026-11-30T12:10:00",
+        "FlightNumber": "IB6250",
+        "Price": 533.85,
+        "SeatNumber": "35A"
+      }
+    },
+    {
+      "ref": "booking-ba0015",
+      "kind": "record",
+      "data": {
+        "AircraftId": "0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14",
+        "ArriveAirportId": "e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10",
+        "DepartureAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+        "Description": "Business class, airport lounge access",
+        "FlightDate": "2027-01-25T20:00:00",
+        "FlightNumber": "BA0015",
+        "Price": 1625.0,
+        "SeatNumber": "2C"
+      }
+    },
+    {
+      "ref": "booking-sq0025",
+      "kind": "record",
+      "data": {
+        "AircraftId": "83e5a0d7-6c29-4b71-8f04-b5d1c7e29a96",
+        "ArriveAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+        "DepartureAirportId": "e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10",
+        "Description": "Diabetic meal requested, aisle seat preferred",
+        "FlightDate": "2026-12-09T00:25:00",
+        "FlightNumber": "SQ0025",
+        "Price": 845.1,
+        "SeatNumber": "17J"
+      }
+    },
+    {
+      "ref": "booking-lh7420",
+      "kind": "record",
+      "data": {
+        "AircraftId": "2c70b9f4-e8a3-45d6-9b1e-70a4c3d8f512",
+        "ArriveAirportId": "92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2",
+        "DepartureAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+        "Description": "Business trip, no meal needed",
+        "FlightDate": "2026-11-05T18:45:00",
+        "FlightNumber": "LH7420",
+        "Price": 96.75,
+        "SeatNumber": "11F"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "trip-case-1",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "trip-case-2",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "text",
+        "FlightDate": "2026-03-01T06:45:00Z",
+        "FlightNumber": "text",
+        "Price": 12.5,
+        "SeatNumber": "text"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "trip-case-3",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "Generated test record 1 — no production data.",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 12.5,
+        "SeatNumber": "23A"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "trip-case-4",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "Generated test record 1 — no production data.",
+        "FlightDate": "2026-03-01T06:45:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": "text"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "trip-case-5",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "text",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "text",
+        "Price": 100.0,
+        "SeatNumber": "23A"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "trip-case-6",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:45:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "trip-case-7",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:45:00Z",
+        "FlightNumber": "",
+        "Price": 12.5,
+        "SeatNumber": "23A"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "trip-case-8",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "text",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 12.5,
+        "SeatNumber": ""
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "trip-case-9",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "text",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "trip-case-10",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "Generated test record 1 — no production data.",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "text",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "trip-case-11",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "text",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 100.0,
+        "SeatNumber": "text"
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "trip-case-12",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": "text"
+      },
+      "case": "covering-0012"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "trip-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": null,
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "FlightNumber",
+        "rule": "`FlightNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": null,
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "`AircraftId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "not-a-uuid",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "violates a declared constraint on `AircraftId`"
+      }
+    },
+    {
+      "ref": "trip-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": null,
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "DepartureAirportId",
+        "rule": "`DepartureAirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "not-a-uuid",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "DepartureAirportId",
+        "rule": "violates a declared constraint on `DepartureAirportId`"
+      }
+    },
+    {
+      "ref": "trip-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": null,
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "ArriveAirportId",
+        "rule": "`ArriveAirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "not-a-uuid",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "ArriveAirportId",
+        "rule": "violates a declared constraint on `ArriveAirportId`"
+      }
+    },
+    {
+      "ref": "trip-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": null,
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "`FlightDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "not-a-date",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "trip-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": null,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "`Price` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-11",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": -0.01,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "outside the range `decimal` accepts"
+      }
+    },
+    {
+      "ref": "trip-rejection-12",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": null,
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "Description",
+        "rule": "`Description` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "trip-rejection-13",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "Description": "",
+        "FlightDate": "2026-03-01T06:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "SeatNumber": null
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "`SeatNumber` is declared NOT NULL"
+      }
+    }
+  ]
+}

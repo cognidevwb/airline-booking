@@ -1,0 +1,57 @@
+{
+  "id": "same-seat-clash",
+  "title": "Seat double-booked",
+  "source": "staged scenario",
+  "why": "Shows whether the system prevents two passengers from reserving seat 14A on the same flight and date.",
+  "setup": [
+    {
+      "ref": "trip-2",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000001",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000003",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000001",
+        "Description": "Afternoon flight",
+        "FlightDate": "2026-12-01T14:00:00Z",
+        "FlightNumber": "AB200",
+        "Price": 310.0,
+        "SeatNumber": "14A"
+      }
+    },
+    {
+      "ref": "booking-2",
+      "table": "Booking",
+      "values": {
+        "PassengerInfo": "Liam Chen, passport P7654321",
+        "Trip": "trip-2"
+      }
+    },
+    {
+      "ref": "req-1",
+      "table": "CreateBookingRequestDto",
+      "values": {
+        "Description": "Seat 14A, first request",
+        "FlightId": "e5555555-0000-4000-8000-000000000001",
+        "PassengerId": "d4444444-0000-4000-8000-000000000001"
+      }
+    },
+    {
+      "ref": "req-2",
+      "table": "CreateBookingRequestDto",
+      "values": {
+        "Description": "Seat 14A, second request",
+        "FlightId": "e5555555-0000-4000-8000-000000000001",
+        "PassengerId": "d4444444-0000-4000-8000-000000000002"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Submit req-1 for seat 14A on AB200 on 2026-12-01, then submit req-2 for the same seat, flight and date from a different passenger."
+    }
+  ],
+  "expect": [
+    "The first booking succeeds. The second is rejected with a conflict error, and only one booking exists for seat 14A."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "object": "Booking",
+  "events": [
+    {
+      "event": "BookingCreatedDomainEvent",
+      "payload": [
+        {
+          "ref": "booking-1-2",
+          "kind": "record",
+          "data": {
+            "Id": null,
+            "PassengerInfo": "Maria Fernandez Ortiz | BA117 | 2026-11-14T08:35:00 | Seat 12A | Fare 412.50 | Window seat, vegetarian meal requested",
+            "Trip": "3f8a1c52-7d4e-4b19-9a26-5c0e8d71b3a4"
+          }
+        },
+        {
+          "ref": "booking-2-2",
+          "kind": "record",
+          "data": {
+            "Id": null,
+            "PassengerInfo": "Lukas Hartmann | LH402 | 2026-11-02T06:50:00 | Seat 24C | Fare 238.00 | Aisle seat, no special requests",
+            "Trip": "a91d27e6-0b3c-4f58-8e14-d62f95ac7b10"
+          }
+        },
+        {
+          "ref": "booking-3-2",
+          "kind": "record",
+          "data": {
+            "Id": null,
+            "PassengerInfo": "Aisha Rahman Al-Mansouri | EK0203 | 2026-12-05T02:15:00 | Seat 3F | Fare 1850.00 | Business class, halal meal requested",
+            "Trip": "c4e60b97-81a2-4d3f-b5c8-0a7e19f2d463"
+          }
+        },
+        {
+          "ref": "booking-4-2",
+          "kind": "record",
+          "data": {
+            "Id": null,
+            "PassengerInfo": "Thomas Gallagher | AA1186 | 2026-11-20T13:10:00 | Seat 31B | Fare 189.99 | Traveling with infant, bassinet requested",
+            "Trip": "7b25f0d3-6c91-4ae8-93d7-e48a2c150f96"
+          }
+        }
+      ],
+      "consumedBy": []
+    }
+  ]
+}

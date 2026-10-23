@@ -1,0 +1,145 @@
+{
+  "object": "Booking",
+  "calls": [
+    {
+      "operation": "POST api/v1/booking",
+      "kind": "http",
+      "file": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:40",
+      "request": "CreateBookingRequestDto",
+      "response": "CreateBookingResponseDto",
+      "valid": [
+        {
+          "ref": "createbookingrequestdto-1",
+          "body": {
+            "description": "Window seat, vegetarian meal requested",
+            "flightId": "b72e4d90-1a35-4c68-9e0f-3d5a8c71f246",
+            "passengerId": "3f8a1c52-7d4e-4b9a-a1f3-62c8e5d09b17"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-2",
+          "body": {
+            "description": "Aisle seat near the front, travelling for business",
+            "flightId": "54a0f3b7-e8c2-4d19-b6a5-97c1d02e8f3a",
+            "passengerId": "c91d6e08-2b47-4f35-8a6c-0e9d73b1a584"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-3",
+          "body": {
+            "description": "Wheelchair assistance needed at boarding",
+            "flightId": "e1c39d64-5f80-4a7b-83e2-a6b4071d9c58",
+            "passengerId": "08e5b7a3-96fd-4c21-b3d8-5a14c9e60f72"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-4",
+          "body": {
+            "description": "Extra legroom requested, tall passenger",
+            "flightId": "29b8e5f0-c4a1-47d3-8e6b-1f70a3d5c92e",
+            "passengerId": "7a2f94c1-0d6b-4e83-95a7-c3e8168b2d04"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-5",
+          "body": {
+            "description": "Honeymoon trip, seats together please",
+            "flightId": "a6d17c43-9e02-4b8f-b5a1-d83f42e67c09",
+            "passengerId": "d4b60e97-31a8-4f52-a9c4-8e2f5710b3d6"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-6",
+          "body": {
+            "description": "Gluten-free meal requested",
+            "flightId": "813f0a5e-6b9d-42c7-9d18-4e5c7a2b06f3",
+            "passengerId": "5e19a8d2-c7f3-4096-8b4e-f2a60d3c71b5"
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "ref": "createbookingrequestdto-rejection-1",
+          "body": {
+            "description": "",
+            "flightId": "00000000-0000-4000-8000-000000000000",
+            "passengerId": null
+          },
+          "violates": {
+            "field": "PassengerId",
+            "rule": "`PassengerId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on PassengerId"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-rejection-2",
+          "body": {
+            "description": "",
+            "flightId": "00000000-0000-4000-8000-000000000000",
+            "passengerId": "not-a-uuid"
+          },
+          "violates": {
+            "field": "PassengerId",
+            "rule": "violates a declared constraint on `PassengerId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on PassengerId"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-rejection-3",
+          "body": {
+            "description": "",
+            "flightId": null,
+            "passengerId": "00000000-0000-4000-8000-000000000000"
+          },
+          "violates": {
+            "field": "FlightId",
+            "rule": "`FlightId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightId"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-rejection-4",
+          "body": {
+            "description": "",
+            "flightId": "not-a-uuid",
+            "passengerId": "00000000-0000-4000-8000-000000000000"
+          },
+          "violates": {
+            "field": "FlightId",
+            "rule": "violates a declared constraint on `FlightId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightId"
+          }
+        },
+        {
+          "ref": "createbookingrequestdto-rejection-5",
+          "body": {
+            "description": null,
+            "flightId": "00000000-0000-4000-8000-000000000000",
+            "passengerId": "00000000-0000-4000-8000-000000000000"
+          },
+          "violates": {
+            "field": "Description",
+            "rule": "`Description` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "rejected by model binding"
+          }
+        }
+      ],
+      "object": "Booking"
+    }
+  ]
+}

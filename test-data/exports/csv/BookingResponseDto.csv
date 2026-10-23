@@ -1,0 +1,17 @@
+Id,Name,FlightNumber,AircraftId,Price,FlightDate,SeatNumber,DepartureAirportId,ArriveAirportId,Description
+,Maria Fernandez Ortiz,BA117,a1c5e7f3-4b20-4c98-8e1d-6f3a9b2c7d01,412.5,2026-11-14T08:35:00Z,12A,3f2b8c1e-5a47-4d9e-9b1a-7c2e4f6a8d10,8d1e6a47-2c93-4b5f-a0e8-1f3b7d9c5e22,"Window seat, vegetarian meal requested"
+,Jonas Weber,LH402,b2d6f8a4-5c31-4da9-9f2e-7a4b0c3d8e12,289.0,2026-11-02T06:50:00Z,24C,c4a95e30-7b18-4f62-8d3a-9e0b2c6f1a33,3f2b8c1e-5a47-4d9e-9b1a-7c2e4f6a8d10,"Aisle seat, travelling with carry-on only"
+,Aisha Rahman Khan,EK0203,c3e7a9b5-6d42-4eba-a03f-8b5c1d4e9f23,1850.0,2026-12-05T22:15:00Z,3F,1b7f0d92-e6c4-4a85-b3f1-5d8a2e7c9b44,6e3c8a15-9f20-4d7b-a4c6-0b1e5f8d3a55,"Business class, chauffeur pickup arranged"
+,Liam O'Connor,AF1481,a1c5e7f3-4b20-4c98-8e1d-6f3a9b2c7d01,134.99,2026-11-21T13:20:00Z,31D,8d1e6a47-2c93-4b5f-a0e8-1f3b7d9c5e22,d90a4b7e-3c61-48f2-9e5d-2a7c1b6f8e66,Extra legroom requested
+,Yuki Tanaka,JL044,d4f8b0c6-7e53-4fcb-b140-9c6d2e5fa034,962.75,2026-12-18T11:05:00Z,8K,6e3c8a15-9f20-4d7b-a4c6-0b1e5f8d3a55,c4a95e30-7b18-4f62-8d3a-9e0b2c6f1a33,"Premium economy, gluten-free meal"
+,Carlos Alberto Mendes,TP1352,e5a9c1d7-8f64-40dc-8251-ad7e3f60b145,87.4,2026-11-09T05:45:00Z,19B,d90a4b7e-3c61-48f2-9e5d-2a7c1b6f8e66,1b7f0d92-e6c4-4a85-b3f1-5d8a2e7c9b44,"Middle seat accepted, checked bag added"
+,Priya Nair,AI0131,c3e7a9b5-6d42-4eba-a03f-8b5c1d4e9f23,623.0,2027-01-12T02:40:00Z,27A,3f2b8c1e-5a47-4d9e-9b1a-7c2e4f6a8d10,6e3c8a15-9f20-4d7b-a4c6-0b1e5f8d3a55,"Window seat, wheelchair assistance at gate"
+,Henrik Johansson,SK1426,b2d6f8a4-5c31-4da9-9f2e-7a4b0c3d8e12,49.0,2026-11-27T16:30:00Z,41K,c4a95e30-7b18-4f62-8d3a-9e0b2c6f1a33,8d1e6a47-2c93-4b5f-a0e8-1f3b7d9c5e22,"Budget fare, no checked baggage"
+,Fatima Zahra El Idrissi,AT0802,e5a9c1d7-8f64-40dc-8251-ad7e3f60b145,198.25,2026-12-03T09:10:00Z,15F,1b7f0d92-e6c4-4a85-b3f1-5d8a2e7c9b44,d90a4b7e-3c61-48f2-9e5d-2a7c1b6f8e66,Halal meal requested
+,Thomas Whitfield,VS0025,d4f8b0c6-7e53-4fcb-b140-9c6d2e5fa034,1475.0,2026-12-22T17:55:00Z,2A,8d1e6a47-2c93-4b5f-a0e8-1f3b7d9c5e22,3f2b8c1e-5a47-4d9e-9b1a-7c2e4f6a8d10,"Upper class, lounge access included"
+,Sofia Bianchi,AZ0610,a1c5e7f3-4b20-4c98-8e1d-6f3a9b2c7d01,156.8,2026-11-17T07:25:00Z,22E,d90a4b7e-3c61-48f2-9e5d-2a7c1b6f8e66,c4a95e30-7b18-4f62-8d3a-9e0b2c6f1a33,"Travelling with infant, bassinet seat"
+,Daniel Kimani Mwangi,KQ0100,c3e7a9b5-6d42-4eba-a03f-8b5c1d4e9f23,745.6,2027-01-28T21:00:00Z,34H,6e3c8a15-9f20-4d7b-a4c6-0b1e5f8d3a55,1b7f0d92-e6c4-4a85-b3f1-5d8a2e7c9b44,"Connecting onward trip, bags checked through"
+,Ingrid Solberg,DY1672,e5a9c1d7-8f64-40dc-8251-ad7e3f60b145,72.3,2026-11-05T12:40:00Z,9C,3f2b8c1e-5a47-4d9e-9b1a-7c2e4f6a8d10,d90a4b7e-3c61-48f2-9e5d-2a7c1b6f8e66,Aisle seat near front for quick exit
+,Mateo Gonzalez Rivera,IB6251,b2d6f8a4-5c31-4da9-9f2e-7a4b0c3d8e12,318.9,2026-12-11T10:15:00Z,17D,c4a95e30-7b18-4f62-8d3a-9e0b2c6f1a33,6e3c8a15-9f20-4d7b-a4c6-0b1e5f8d3a55,"Seated with spouse, seats 17D and 17E"
+,Chen Wei Lin,CX0254,d4f8b0c6-7e53-4fcb-b140-9c6d2e5fa034,1120.0,2027-02-06T00:35:00Z,6J,1b7f0d92-e6c4-4a85-b3f1-5d8a2e7c9b44,8d1e6a47-2c93-4b5f-a0e8-1f3b7d9c5e22,"Business class, lie-flat seat, no dinner service"
+,Olivia Thompson,QF0009,a1c5e7f3-4b20-4c98-8e1d-6f3a9b2c7d01,534.45,2026-12-29T14:50:00Z,28G,8d1e6a47-2c93-4b5f-a0e8-1f3b7d9c5e22,1b7f0d92-e6c4-4a85-b3f1-5d8a2e7c9b44,"Holiday trip, nut allergy noted"

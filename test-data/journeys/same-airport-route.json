@@ -1,0 +1,40 @@
+{
+  "id": "same-airport-route",
+  "title": "Same-airport route",
+  "source": "staged scenario",
+  "why": "Checks that a trip departing from and arriving at the same airport is rejected as invalid.",
+  "setup": [
+    {
+      "ref": "trip-3",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000002",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000004",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000004",
+        "Description": "Loop route",
+        "FlightDate": "2026-11-20T06:00:00Z",
+        "FlightNumber": "AB300",
+        "Price": 120.0,
+        "SeatNumber": "3B"
+      }
+    },
+    {
+      "ref": "req-3",
+      "table": "CreateBookingRequestDto",
+      "values": {
+        "Description": "Booking on same-airport flight",
+        "FlightId": "e5555555-0000-4000-8000-000000000003",
+        "PassengerId": "d4444444-0000-4000-8000-000000000003"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Submit req-3 to create a booking for the flight whose departure and arrival airport are both b2222222-0000-4000-8000-000000000004."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a validation error stating that departure and arrival airports must differ, and no booking is created."
+  ]
+}

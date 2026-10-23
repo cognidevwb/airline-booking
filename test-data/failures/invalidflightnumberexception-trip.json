@@ -1,0 +1,15 @@
+{
+  "id": "invalidflightnumberexception-trip",
+  "title": "Trip that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidFlightNumberException",
+  "base": "DomainException",
+  "thrownAt": "src/Booking/Booking/ValueObjects/Trip.cs:34",
+  "condition": "if (string.IsNullOrWhiteSpace(flightNumber))",
+  "field": "Trip",
+  "expect": {
+    "status": 500,
+    "error": "InvalidFlightNumberException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test data — generation report</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; background:#fff; color:#1b1b1b;
+         font:16px/1.6 "Inter","Helvetica Neue",Arial,sans-serif; }
+  main { max-width:60rem; margin:0 auto; padding:3rem 1.5rem 5rem; }
+  h1 { font-size:1.9rem; font-weight:600; margin:0 0 .35rem; letter-spacing:-.01em; }
+  h2 { font-size:1.15rem; font-weight:600; margin:2.75rem 0 .75rem;
+        padding-bottom:.4rem; border-bottom:2px solid #1a5fb4; }
+  h3 { font-size:1rem; font-weight:600; margin:1.75rem 0 .5rem; color:#1a5fb4; }
+  p  { margin:.6rem 0; }
+  .lede { color:#4a4a4a; margin:0 0 1.5rem; }
+  table { border-collapse:collapse; width:100%; margin:.75rem 0 1.25rem; font-size:.92rem; }
+  th { text-align:left; font-weight:600; border-bottom:1px solid #1a5fb4;
+        padding:.45rem .6rem; white-space:nowrap; }
+  td { border-bottom:1px solid #e6e6e6; padding:.45rem .6rem; vertical-align:top; }
+  td.n, th.n { text-align:right; font-variant-numeric:tabular-nums; }
+  code { font:.88em ui-monospace,SFMono-Regular,Menlo,monospace; background:#f4f6f9;
+          padding:.08rem .3rem; border-radius:2px; }
+  .rail { border-left:3px solid #1a5fb4; padding:.15rem 0 .15rem .9rem; margin:1rem 0; }
+  .warn { border-left-color:#a04b00; }
+  .ok  { color:#1a5fb4; font-weight:600; }
+  .no  { color:#a04b00; font-weight:600; }
+  .scroll { overflow-x:auto; }
+  ul { margin:.5rem 0 1rem; padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  .meta { font-size:.85rem; color:#606060; }
+</style></head><body><main><h1>Test data — generation report</h1>
+<p class="lede">225 rows across 11 entities, written to <code>test-data</code> as sql_insert, json, csv. The coverage guarantee is <strong>pairwise</strong>.</p>
+<h2>What was generated</h2>
+<div class="scroll"><table>
+<tr><th>Measure</th><th class="n">Count</th><th>From</th></tr>
+<tr><td>Entities</td><td class="n">11</td><td class="meta">one dataset each</td></tr>
+<tr><td>Columns</td><td class="n">39</td><td class="meta">every column of every entity</td></tr>
+<tr><td>Value classes</td><td class="n">71</td><td class="meta">the domains actually combined</td></tr>
+<tr><td>Rows written</td><td class="n">225</td><td class="meta">counted off the emitted rows</td></tr>
+<tr><td>— covering</td><td class="n">53</td><td class="meta">carry the coverage guarantee</td></tr>
+<tr><td>— negative</td><td class="n">60</td><td class="meta">one declared violation each</td></tr>
+<tr><td>— filler</td><td class="n">0</td><td class="meta">bulk to reach the row target</td></tr>
+<tr><td>Dataset files written</td><td class="n">33</td><td class="meta">counted on disk after writing — every format, plus the SQL reset script</td></tr>
+<tr><td>Referential edges satisfied</td><td class="n">0</td><td class="meta">parents generated first</td></tr>
+</table></div>
+<div class="rail"><p>no row target — the covering set and its negative records only</p></div>
+<h2>Layers</h2>
+<p>Every entity is in exactly one of four layers — UI &amp; API surface, domain objects, cache, database — decided from facts the structural pass recorded and never from a name, and written under its own directory. The rule that placed each entity is printed on it below, so a placement is disputed against evidence rather than against the tool.</p>
+<div class="scroll"><table>
+<tr><th>Layer</th><th>Directory</th><th class="n">Entities</th><th class="n">Rows</th><th class="n">Files</th><th class="n">In the whole model</th><th>Written for</th></tr>
+<tr><td>UI &amp; API surface</td><td><code>test-data/ui/</code></td><td class="n">6</td><td class="n">80</td><td class="n">13</td><td class="n">10</td><td class="meta">component tests, form validation tests, and integration tests that post to the service</td></tr>
+<tr><td>Domain objects</td><td><code>test-data/domain/</code></td><td class="n">3</td><td class="n">98</td><td class="n">7</td><td class="n">12</td><td class="meta">unit tests of the business logic, and the builders a test suite constructs its objects with</td></tr>
+<tr><td>Cache</td><td><code>test-data/cache/</code></td><td class="n">not selected</td><td class="n">0</td><td class="n">1</td><td class="n">0</td><td class="meta">tests of cache-aware code — a hit, a miss and a stale read, arranged rather than hoped for</td></tr>
+<tr><td>Database</td><td><code>test-data/db/</code></td><td class="n">2</td><td class="n">47</td><td class="n">5</td><td class="n">5</td><td class="meta">loading a database before an integration test, and testing the constraints themselves</td></tr>
+</table></div>
+<p>3 of 4 layers selected; 11 entities assigned across them against 11 generated. Every layer directory carries a <code>README.md</code> stating what it holds or why it is empty. Entity files written outside their own layer's directory: <strong>0</strong>.</p>
+<p>HTTP routes: the model carries <strong>1</strong>, this run generated <strong>1</strong>, dropped <strong>0</strong>.</p>
+<p class="meta">What the rules read: layers.json — 88 file(s) classified into architectural layers by the structural pass · roles.json — 28 file(s) carry a role; 0 marked `cache` · externals.json — 0 cache access(es) recorded, each with its file, method, mode and key</p>
+<div class="rail"><p><strong>15</strong> entities declared in files roles.json marks <code>test</code> were left out of every layer. Test code is not a layer of the application; a parameter list on a test method is not an input anyone sends. They are listed in <code>generation.json</code> under <code>layers.test_code_skipped_entities</code>.</p></div>
+<h2>The coverage guarantee</h2>
+<p>every pair of values from every pair of columns appears in at least one row. Summed across the entities, the full cross-product over the same domains is <strong>459</strong> rows; the covering set is <strong>53</strong>, a reduction of 9×.</p>
+<p>The guarantee was re-checked for every entity against the covering array that was built: each required combination was searched for and found. The check is made against the array, not against the emitted rows.</p>
+<p class="meta">Byte digest of everything written: <code>e8ca87de8a85c807</code>. Regenerating from the same model and answers inside this run produced the same digest.</p>
+<h2>Referential integrity</h2>
+<p>The schema <strong>declares 0</strong> foreign key column(s), across 0 table-to-table relation(s) — one relation covers every column that points the same way. A further <strong>0</strong> edge(s) were <strong>derived</strong> from the model where no <code>REFERENCES</code> clause exists — a column whose name is another table's primary key, or a primary key shared with another table. A derived edge is an inference; a declared one is what the schema states.</p>
+<p>Load order (parents first): .</p>
+<h2>Each object that was covered</h2>
+<h3>Booking</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Models/Booking.cs:8</code> · 2 column(s), 2 of them combined · layer <strong>Database</strong> — declared in `src/Booking/Booking/Models/Booking.cs`, which layers.json classifies `database`</p>
+<p>3 covering + 2 negative + 0 filler = <strong>21</strong> rows. The full cross-product over the same domains is 3 rows (the structural pass counted 6 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Trip</code> <span class="meta">NOT NULL</span></td><td>Trip</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">nested object [model]</td></tr>
+<tr><td><code>PassengerInfo</code> <span class="meta">NOT NULL</span></td><td>PassengerInfo</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical STR_0001 [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — Booking has fewer than two date columns to order; totals_consistent — Booking has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — Booking has no currency column.</p>
+<p class="meta">Written: <code>test-data/db/Booking.csv</code>, <code>test-data/db/Booking.json</code></p>
+<h3>BookingCreatedDomainEvent</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:30</code> · 3 column(s), 3 of them combined · layer <strong>UI &amp; API surface</strong> — declared in `src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs`, which roles.json marks `http` — it handles a route</p>
+<p>3 covering + 4 negative + 0 filler = <strong>23</strong> rows. The full cross-product over the same domains is 3 rows (the structural pass counted 18 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>PassengerInfo</code> <span class="meta">NOT NULL</span></td><td>PassengerInfo</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical STR_0001 [generated]</td></tr>
+<tr><td><code>Trip</code> <span class="meta">NOT NULL</span></td><td>Trip</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">nested object [model]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — BookingCreatedDomainEvent has fewer than two date columns to order; totals_consistent — BookingCreatedDomainEvent has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — BookingCreatedDomainEvent has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/BookingCreatedDomainEvent.csv</code>, <code>test-data/ui/BookingCreatedDomainEvent.json</code></p>
+<h3>BookingReadModel</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Models/BookingReadModel.cs:5</code> · 5 column(s), 5 of them combined · layer <strong>Database</strong> — declared in `src/Booking/Booking/Models/BookingReadModel.cs`, which layers.json classifies `database`</p>
+<p>3 covering + 7 negative + 0 filler = <strong>26</strong> rows. The full cross-product over the same domains is 3 rows (the structural pass counted 162 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>BookId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Trip</code> <span class="meta">NOT NULL</span></td><td>Trip</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">nested object [model]</td></tr>
+<tr><td><code>PassengerInfo</code> <span class="meta">NOT NULL</span></td><td>PassengerInfo</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical STR_0001 [generated]</td></tr>
+<tr><td><code>IsDeleted</code> <span class="meta">NOT NULL</span></td><td>bool</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">typical true [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — BookingReadModel has fewer than two date columns to order; totals_consistent — BookingReadModel has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — BookingReadModel has no currency column.</p>
+<p class="meta">Written: <code>test-data/db/BookingReadModel.csv</code>, <code>test-data/db/BookingReadModel.json</code></p>
+<h3>BookingResponseDto</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Dtos/CreateReservation.cs:3</code> · 10 column(s), 10 of them combined · layer <strong>Domain objects</strong> — declared in `src/Booking/Booking/Dtos/CreateReservation.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>14 covering + 16 negative + 0 filler = <strong>46</strong> rows. The full cross-product over the same domains is 324 rows (the structural pass counted 78732 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>FlightNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical STR_0001 [generated]</td></tr>
+<tr><td><code>AircraftId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Price</code> <span class="meta">NOT NULL</span></td><td>decimal</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">typical amount [model] · typical 12.50 [generated]</td></tr>
+<tr><td><code>FlightDate</code> <span class="meta">NOT NULL</span></td><td>DateTime</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">valid date [model] · typical 2026-01-01T00:00:00Z [generated]</td></tr>
+<tr><td><code>SeatNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical 23A [generated]</td></tr>
+<tr><td><code>DepartureAirportId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>ArriveAirportId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Description</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Generated test record 1 — no production data. [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — BookingResponseDto has fewer than two date columns to order; totals_consistent — BookingResponseDto has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — BookingResponseDto has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/BookingResponseDto.csv</code>, <code>test-data/domain/BookingResponseDto.json</code></p>
+<h3>CreateBooking</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:23</code> · 4 column(s), 4 of them combined · layer <strong>UI &amp; API surface</strong> — declared in `src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs`, which roles.json marks `http` — it handles a route</p>
+<p>3 covering + 7 negative + 0 filler = <strong>26</strong> rows. The full cross-product over the same domains is 3 rows (the structural pass counted 81 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>PassengerId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>FlightId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Description</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Generated test record 1 — no production data. [generated]</td></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CreateBooking has fewer than two date columns to order; totals_consistent — CreateBooking has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CreateBooking has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/CreateBooking.csv</code>, <code>test-data/ui/CreateBooking.json</code></p>
+<h3>CreateBookingRequestDto</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:32</code> · 3 column(s), 3 of them combined · layer <strong>UI &amp; API surface</strong> — declared in `src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs`, which roles.json marks `http` — it handles a route</p>
+<p>3 covering + 5 negative + 0 filler = <strong>24</strong> rows. The full cross-product over the same domains is 3 rows (the structural pass counted 27 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>PassengerId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>FlightId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Description</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Generated test record 1 — no production data. [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CreateBookingRequestDto has fewer than two date columns to order; totals_consistent — CreateBookingRequestDto has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CreateBookingRequestDto has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/CreateBookingRequestDto.csv</code>, <code>test-data/ui/CreateBookingRequestDto.json</code></p>
+<h3>CreateBookingResponseDto</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:34</code> · 1 column(s), 1 of them combined · layer <strong>UI &amp; API surface</strong> — declared in `src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs`, which roles.json marks `http` — it handles a route</p>
+<p>1 covering + 2 negative + 0 filler = <strong>3</strong> rows. The full cross-product over the same domains is 1 rows (the structural pass counted 3 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>ulong</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid id — generated, no parent to substitute [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CreateBookingResponseDto has fewer than two date columns to order; totals_consistent — CreateBookingResponseDto has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CreateBookingResponseDto has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/CreateBookingResponseDto.csv</code>, <code>test-data/ui/CreateBookingResponseDto.json</code></p>
+<h3>CreateBookingResult</h3>
+<p class="meta">application type · <code>src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:28</code> · 1 column(s), 1 of them combined · layer <strong>UI &amp; API surface</strong> — declared in `src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs`, which roles.json marks `http` — it handles a route</p>
+<p>1 covering + 2 negative + 0 filler = <strong>3</strong> rows. The full cross-product over the same domains is 1 rows (the structural pass counted 3 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>ulong</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid id — generated, no parent to substitute [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CreateBookingResult has fewer than two date columns to order; totals_consistent — CreateBookingResult has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CreateBookingResult has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/CreateBookingResult.csv</code>, <code>test-data/ui/CreateBookingResult.json</code></p>
+<h3>GrpcOptions</h3>
+<p class="meta">application type · <code>src/Booking/Configuration/GrpcOptions.cs:3</code> · 2 column(s), 2 of them combined · layer <strong>Domain objects</strong> — declared in `src/Booking/Configuration/GrpcOptions.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>9 covering + 2 negative + 0 filler = <strong>11</strong> rows. The full cross-product over the same domains is 9 rows (the structural pass counted 9 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>FlightAddress</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical 1 Manchester Street [generated]</td></tr>
+<tr><td><code>PassengerAddress</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical 1 Manchester Street [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — GrpcOptions has fewer than two date columns to order; totals_consistent — GrpcOptions has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — GrpcOptions has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/GrpcOptions.csv</code>, <code>test-data/domain/GrpcOptions.json</code></p>
+<h3>Trip</h3>
+<p class="meta">application type · <code>src/Booking/Booking/ValueObjects/Trip.cs:5</code> · 8 column(s), 8 of them combined · layer <strong>Domain objects</strong> — declared in `src/Booking/Booking/ValueObjects/Trip.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>12 covering + 13 negative + 0 filler = <strong>41</strong> rows. The full cross-product over the same domains is 108 rows (the structural pass counted 8748 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>FlightNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical STR_0001 [generated]</td></tr>
+<tr><td><code>AircraftId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>DepartureAirportId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>ArriveAirportId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>FlightDate</code> <span class="meta">NOT NULL</span></td><td>DateTime</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">valid date [model] · typical 2026-01-01T00:00:00Z [generated]</td></tr>
+<tr><td><code>Price</code> <span class="meta">NOT NULL</span></td><td>decimal</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">typical amount [model] · typical 12.50 [generated]</td></tr>
+<tr><td><code>Description</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Generated test record 1 — no production data. [generated]</td></tr>
+<tr><td><code>SeatNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical 23A [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — Trip has fewer than two date columns to order; totals_consistent — Trip has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — Trip has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/Trip.csv</code>, <code>test-data/domain/Trip.json</code></p>
+<h3>GET /</h3>
+<p class="meta">HTTP route · <code>src/Booking/Extensions/Infrastructure/InfrastructureExtensions.cs:83</code> · 0 column(s), 0 of them combined · layer <strong>UI &amp; API surface</strong> — an HTTP route — the request the client sends, as contracts.json declares it</p>
+<p>1 covering + 0 negative + 0 filler = <strong>1</strong> rows. The full cross-product over the same domains is 1 rows (the structural pass counted 1 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — GET / has fewer than two date columns to order; totals_consistent — GET / has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — GET / has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/GET--.csv</code>, <code>test-data/ui/GET--.json</code></p>
+<h2>Type conformance</h2>
+<p>Every emitted value was checked back against the declared type of the column it went into. Values in the loadable set that the declared type cannot hold: <strong>0</strong>. In negative rows, outside the one column each is tagged against: <strong>0</strong>.</p>
+<p>The structural pass marks some columns as identifiers and gives them a placeholder value to be replaced by a real key. Where a parent table was resolved, the parent's keys were used. For 2 class(es) below no parent could be resolved, so a type-correct value was <strong>generated</strong> instead — it is not derived from anything the schema states.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Placeholder class</th><th>Value used instead</th></tr>
+<tr><td><code>CreateBookingResponseDto.Id</code></td><td>valid id</td><td><code>1000</code></td></tr>
+<tr><td><code>CreateBookingResult.Id</code></td><td>valid id</td><td><code>1000</code></td></tr>
+</table></div>
+<h2>Cache</h2>
+<p>The cache layer was not selected. <code>externals.json</code> records <strong>0</strong> cache access(es) and roles.json marks <strong>0</strong> file(s) <code>cache</code>; nothing was generated for them.</p>
+<h2>Fit to read</h2>
+<p>This page is a report ABOUT the generation. To LOOK at the data — page through the rows of any entity, tell a boundary probe from bulk, and read the rule each negative record breaks — open <code>test-data/TEST-DATA-BROWSER.html</code>, written beside the datasets. It embeds 225 of the 225 generated rows, up to 50 of each kind per entity, and states the cut on every entity it applies to.</p>
+<p>Type conformance says a value can be LOADED. These say it can be READ, counted over the same emitted rows. Text values in the loadable set that are a run of one repeated character: <strong>0</strong>. Columns holding one value in every loadable row: <strong>0</strong>, of which <strong>0</strong> had more than one value available and did not use it. Covering rows carrying two datetime columns the schema declares as a pair the wrong way round: <strong>0</strong>, across 0 entities.</p>
+<h2>Answers this run could not act on</h2>
+<div class="scroll"><table>
+<tr><th>Question</th><th>Answer</th><th>Why not</th><th>What happened instead</th></tr>
+<tr><td><code>business_domain</code></td><td><code>Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat</code></td><td>this run is deterministic; no reference values exist for the named domain yet</td><td>values from the repository's own tests first, then from the column name and the declared type</td></tr>
+</table></div>
+<ul>
+<li>`tables` was selected, but the model carries no table — nothing was generated for it</li>
+<li>16 method signature(s) in the code were not generated — a method's inputs are the objects and commands generated above; only methods that use a cache and database routines are datasets of their own</li>
+</ul>
+<h2>Scope and limitations</h2>
+<ul>
+<li>Targets asked for: . Read from: permutations.json — value classes per column; datamodel.json — declared constraints, including the unique key; schema.json — the declared relation count.</li>
+<li>Values are labelled and the locale is <code>en-GB</code>. Generated by the CogniDev generate-test-data playbook. No value here is derived from production data.</li>
+<li>CSV writes SQL NULL as an empty unquoted field and the empty string as <code>""</code>. That is the only distinction CSV can carry.</li>
+<li>A <code>BIT</code> column takes one spelling per format, and only one: <code>1</code> / <code>0</code> in SQL and CSV, which is what a bit column loads from; JSON's own <code>true</code> / <code>false</code>. Whatever a value class or a declared <code>DEFAULT</code> was written as, the output is uniform.</li>
+<li>A <code>DATE</code> column carries a date and no time. Every other date type keeps its time — the distinction is read from the declared type name, not from the base type.</li>
+<li>A length boundary binds EXACTLY the declared width, and is shaped to the column's own kind at that width: an address for an email column, whole name parts for a person, whole words for free text, a value from the declared vocabulary where one is that long. Where nothing states what the column holds it takes a generated CODE rather than a phrase cut mid-word — an obviously synthetic token beats a value that pretends to be content. Negative records keep the structural value verbatim: their job is to be rejected, and reshaping them would change the rule each one breaks.</li>
+<li>Negative rows are written to their own SQL script. By construction they do not load into a schema with its constraints enabled.</li>
+<li>A generated value marked <code>[generated]</code> is a readable representative this tool invented. It is not evidence of anything the schema declares.</li>
+</ul>
+</main></body></html>

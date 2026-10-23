@@ -1,0 +1,50 @@
+{
+  "id": "soft-deleted-booking",
+  "title": "Cancelled booking",
+  "source": "staged scenario",
+  "why": "Tests whether a read model row flagged IsDeleted is hidden from queries while the underlying Booking still exists, so cancellation is not confused with removal.",
+  "setup": [
+    {
+      "ref": "trip-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000001",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000002",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000001",
+        "Description": "Morning departure",
+        "FlightDate": "2026-11-15T09:30:00Z",
+        "FlightNumber": "AB123",
+        "Price": 249.5,
+        "SeatNumber": "12C"
+      }
+    },
+    {
+      "ref": "booking-1",
+      "table": "Booking",
+      "values": {
+        "PassengerInfo": "Ana Torres, passport P1234567",
+        "Trip": "trip-1"
+      }
+    },
+    {
+      "ref": "readmodel-1",
+      "table": "BookingReadModel",
+      "values": {
+        "BookId": "c3333333-0000-4000-8000-000000000001",
+        "Id": "c3333333-0000-4000-8000-000000000001",
+        "IsDeleted": true,
+        "PassengerInfo": "Ana Torres, passport P1234567",
+        "Trip": "trip-1"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Query the bookings list and fetch the booking by Id c3333333-0000-4000-8000-000000000001 through the read side."
+    }
+  ],
+  "expect": [
+    "The cancelled booking is excluded from the list and a direct fetch returns not found, while the Booking record is still present in the write store."
+  ]
+}

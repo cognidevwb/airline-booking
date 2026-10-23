@@ -1,0 +1,77 @@
+{
+  "id": "free-fare",
+  "title": "Zero or extreme fare",
+  "source": "staged scenario",
+  "why": "Exercises price boundaries: a 0.00 award ticket and a 9999.99 premium fare on one flight, to see whether validation or formatting breaks at either end.",
+  "setup": [
+    {
+      "ref": "trip-4a",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000003",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000005",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000001",
+        "Description": "Award ticket",
+        "FlightDate": "2026-12-10T22:15:00Z",
+        "FlightNumber": "AB400",
+        "Price": 0.0,
+        "SeatNumber": "1A"
+      }
+    },
+    {
+      "ref": "trip-4b",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000003",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000005",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000001",
+        "Description": "Premium fare",
+        "FlightDate": "2026-12-10T22:15:00Z",
+        "FlightNumber": "AB400",
+        "Price": 9999.99,
+        "SeatNumber": "1B"
+      }
+    },
+    {
+      "ref": "resp-4a",
+      "table": "BookingResponseDto",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000003",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000005",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000001",
+        "Description": "Award ticket",
+        "FlightDate": "2026-12-10T22:15:00Z",
+        "FlightNumber": "AB400",
+        "Id": "f6666666-0000-4000-8000-000000000001",
+        "Name": "Award passenger",
+        "Price": 0.0,
+        "SeatNumber": "1A"
+      }
+    },
+    {
+      "ref": "resp-4b",
+      "table": "BookingResponseDto",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000003",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000005",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000001",
+        "Description": "Premium fare",
+        "FlightDate": "2026-12-10T22:15:00Z",
+        "FlightNumber": "AB400",
+        "Id": "f6666666-0000-4000-8000-000000000002",
+        "Name": "Premium passenger",
+        "Price": 9999.99,
+        "SeatNumber": "1B"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Create bookings for seat 1A at 0.00 and seat 1B at 9999.99 on flight AB400, then read both back."
+    }
+  ],
+  "expect": [
+    "Both bookings are accepted and returned with exact prices 0.00 and 9999.99, with no rounding, overflow, or rejection of the zero fare."
+  ]
+}

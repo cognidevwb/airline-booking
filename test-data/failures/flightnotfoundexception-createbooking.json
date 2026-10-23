@@ -1,0 +1,22 @@
+{
+  "id": "flightnotfoundexception-createbooking",
+  "title": "CreateBooking: the record does not exist",
+  "kind": "not found",
+  "exception": "FlightNotFoundException",
+  "base": "AppException",
+  "thrownAt": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:105",
+  "condition": "if (flight is null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "FlightNotFoundException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/booking",
+    "params": {
+      "id": "11111111-1111-4111-8111-111111111111"
+    },
+    "why": "an id no record holds"
+  }
+}

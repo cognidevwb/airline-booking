@@ -1,0 +1,194 @@
+{
+  "shape": "Booking",
+  "role": "shape",
+  "source": "src/Booking/Booking/Models/Booking.cs:8",
+  "columns": [
+    "Trip",
+    "PassengerInfo"
+  ],
+  "records": [
+    {
+      "ref": "booking-1",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Maria Fernandez Ortiz | seat 12A | fare 642.00 | passenger 4b7e1d92-3a5c-4f08-b6d1-9e2a7c0f5831 | flight c5a90e17-d2b4-4863-9f7a-1e0b3d6c8a42 | aircraft f4a1c8d2-3e6b-4975-8c0a-1d2e5f7b9a30 | from 3f2a9c1e-5b7d-4e08-9a14-c6d1e2f30a11 | to 8d4e7b02-1c3a-4f56-b9e8-2a7c5d90f1b2 | Window seat, vegetarian meal requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-2",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Jonas Weber | seat 24C | fare 389.50 | passenger 8f2c6a05-e1d7-4b39-a094-5c3e7b1d2f60 | flight 1d7b3e58-a9c0-4f26-8b45-e6a2d0c9f713 | aircraft 07d9e3b5-a2c4-4f18-b6d7-9c1a0e8f3524 | from 1b9c6e44-7a20-4d3f-8e15-f0a3b6c2d7e9 | to 8d4e7b02-1c3a-4f56-b9e8-2a7c5d90f1b2 | Aisle seat, extra legroom requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-3",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Aaliyah Rahman Khan | seat 3F | fare 1850.00 | passenger e03a5d71-6c8b-4294-b1f0-a7d9c2e34b85 | flight 7a4c9f20-5e1d-4b83-a6c7-0d8f2b3e1a59 | aircraft 6b8f2a40-d1e7-4c93-a5b8-3f0c7e1d9264 | from c7a05d38-92e1-4b6a-a3f4-5e1d8b0c9a27 | to 3f2a9c1e-5b7d-4e08-9a14-c6d1e2f30a11 | Business class, chauffeur transfer requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-4",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Camille Dubois Laurent | seat 17D | fare 118.00 | passenger 29d8b6f4-0a7e-4c15-93b2-f1c5e8a0d746 | flight b60e2d93-8f4a-4175-a2c8-3d9b7e1f5c04 | aircraft c19e5d73-0b8a-4e26-9f4d-a7b3c2e81f05 | from e2f81a6b-4d09-4c73-b5a2-9d3e7f1c6084 | to 5a6d3f90-e8b2-4172-96c0-b1f4a8d2e35c | Checked bag added at booking",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-5",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Carlos Alberto Mendez Ruiz | seat 31A | fare 476.00 | passenger a7c1f358-b2e9-4d60-8a34-6f0d9e5b1c27 | flight 3c8f5a16-e7b0-4d92-b4a1-9a2e6d0c8f35 | aircraft 3e7a0c94-f5d1-48b2-b6a3-e0d9c4f27a18 | from 5a6d3f90-e8b2-4172-96c0-b1f4a8d2e35c | to 8d4e7b02-1c3a-4f56-b9e8-2a7c5d90f1b2 | Gluten-free meal requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-6",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Elif Yilmaz Demir | seat 22B | fare 164.25 | passenger 5e9b0d2a-c4f7-4813-b6e5-2a8c1f3d7094 | flight f2a6c4e8-1b9d-4057-8c3e-d5a0b7f91264 | aircraft a85d2f16-9c3e-4b07-8e51-d4f0a6b3c792 | from 9e1b4c27-d5a8-4f30-8b61-3c7e0a2f9d46 | to 1b9c6e44-7a20-4d3f-8e15-f0a3b6c2d7e9 | Seated next to colleague on same booking",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-7",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Sophie Anne Keller | seat 6A | fare 1420.00 | passenger d41a8e63-7f2c-4b09-a5d8-0c3e9b6f1a72 | flight 68b3d0f5-a1e4-4c72-9d86-4f7a2c0e5b19 | aircraft d2b4f6a8-1c3e-4057-9a2b-8e6d0f4c1b73 | from 72e9a0d5-c1b4-4863-af27-e5c8d3b60f19 | to 8d4e7b02-1c3a-4f56-b9e8-2a7c5d90f1b2 | Business class, quiet seat preferred",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-8",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Pieter van der Berg | seat 41K | fare 733.00 | passenger 0c6f9a37-d8b1-4e54-b2a0-e7d3c5f18a96 | flight e9d4a1c0-3b7f-4a68-85e2-b0c6f9d27e43 | aircraft 51f0a9c3-7e2d-4b84-a6c1-0b9e3d5f7a28 | from d6f3b8e7-0a52-4c1d-b94e-8f2a7c1d5e30 | to 40c8e5a1-6f93-4b2d-a7e0-d1b59c3f8a62 | Wheelchair assistance to gate requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-9",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Wei Ling Tan | seat 15F | fare 1180.00 | passenger b8e2f704-5a1c-4d36-9f89-3c0a6d7e2b51 | flight 24f7c0b9-e6a3-4d15-a8b4-7e1d9c3f0a68 | aircraft e8c3d1b6-4a70-4f95-b2e8-6a1c9d0f3b54 | from 40c8e5a1-6f93-4b2d-a7e0-d1b59c3f8a62 | to 3f2a9c1e-5b7d-4e08-9a14-c6d1e2f30a11 | Premium economy, child meal requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-10",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Omar Haddad Nasser | seat 28E | fare 559.00 | passenger 73a0c5e1-9d4f-4b27-86a3-f2e8b1d0c459 | flight a1b5e8d3-c0f2-4796-b3d9-5e4a7c2f0816 | aircraft 94a7e2f0-b5c8-4d13-8e69-2f0a7c4b1d86 | from b3d7f102-8a4e-4c95-9e6b-7a0d2c5f1e83 | to 3f2a9c1e-5b7d-4e08-9a14-c6d1e2f30a11 | Connecting passenger, late check-in expected",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-11",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Emily Rose Hartley | seat 9A | fare 905.00 | passenger f6d3a92b-1e8c-4a50-b7f4-8c5d0e2a9b13 | flight 5d0e7b4a-f3c9-4182-a6e5-1b8f2d9c3a70 | aircraft f4a1c8d2-3e6b-4975-8c0a-1d2e5f7b9a30 | from 3f2a9c1e-5b7d-4e08-9a14-c6d1e2f30a11 | to 2c5a1e9f-b7d3-4a68-8f40-6e9b0d3c7a15 | Anniversary trip, please notify cabin crew",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-12",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Rajesh Kumar Nair | seat 33A | fare 498.75 | passenger 1a8c4e07-b6f5-4d93-a2c1-d9e0f3b7a528 | flight c3f9a6d2-0e1b-4584-9a7d-6b2c8e5f1d04 | aircraft 6b8f2a40-d1e7-4c93-a5b8-3f0c7e1d9264 | from c7a05d38-92e1-4b6a-a3f4-5e1d8b0c9a27 | to d6f3b8e7-0a52-4c1d-b94e-8f2a7c1d5e30 | Halal meal requested",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-13",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Anna Katharina Schmidt | seat 2C | fare 1675.00 | passenger 9c2e5b80-a7d4-4f16-8e3b-4a1d6c0f9e75 | flight 86e1d3c7-5b0a-4f29-b8c4-a9f2e7d03b61 | aircraft 07d9e3b5-a2c4-4f18-b6d7-9c1a0e8f3524 | from 1b9c6e44-7a20-4d3f-8e15-f0a3b6c2d7e9 | to 8d4e7b02-1c3a-4f56-b9e8-2a7c5d90f1b2 | Business class, lounge access confirmed",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-14",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Lucas Martin Girard | seat 19C | fare 524.00 | passenger 3d7f1a64-e9c2-4b85-a0d6-b5e8c2f4a937 | flight d8a4f0b1-2c6e-4973-95a7-e3b1d9c7f025 | aircraft c19e5d73-0b8a-4e26-9f4d-a7b3c2e81f05 | from e2f81a6b-4d09-4c73-b5a2-9d3e7f1c6084 | to 8d4e7b02-1c3a-4f56-b9e8-2a7c5d90f1b2 | Seat away from restrooms preferred",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-15",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Lucia Torres Navarro | seat 8F | fare 215.00 | passenger e5b2c9d8-4f0a-4a71-b3e6-7c1d8a5f2094 | flight 40c7e2a5-d9b8-4f13-a6c0-8e5b3f1d7a92 | aircraft 3e7a0c94-f5d1-48b2-b6a3-e0d9c4f27a18 | from 5a6d3f90-e8b2-4172-96c0-b1f4a8d2e35c | to 3f2a9c1e-5b7d-4e08-9a14-c6d1e2f30a11 | Carry-on only, no checked luggage",
+        "Trip": null
+      }
+    },
+    {
+      "ref": "booking-16",
+      "kind": "record",
+      "data": {
+        "PassengerInfo": "Hans Peter Gruber | seat 14D | fare 49.00 | passenger 62a9d4f1-c7e3-4b58-9d0a-1f6e8b3c5a47 | flight b7f0c3e6-8a2d-4e91-a5b4-d0c9e7f12a38 | aircraft d2b4f6a8-1c3e-4057-9a2b-8e6d0f4c1b73 | from 72e9a0d5-c1b4-4863-af27-e5c8d3b60f19 | to e2f81a6b-4d09-4c73-b5a2-9d3e7f1c6084 | Lowest fare, no changes planned",
+        "Trip": null
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "booking-case-1",
+      "kind": "case",
+      "data": {
+        "PassengerInfo": "",
+        "Trip": "{…}"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "booking-case-2",
+      "kind": "case",
+      "data": {
+        "PassengerInfo": "text",
+        "Trip": "{…}"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "booking-case-3",
+      "kind": "case",
+      "data": {
+        "PassengerInfo": "STR_0001",
+        "Trip": "{…}"
+      },
+      "case": "covering-0003"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "booking-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "PassengerInfo": "",
+        "Trip": null
+      },
+      "violates": {
+        "field": "Trip",
+        "rule": "`Trip` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "booking-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "PassengerInfo": null,
+        "Trip": "{…}"
+      },
+      "violates": {
+        "field": "PassengerInfo",
+        "rule": "`PassengerInfo` is declared NOT NULL"
+      }
+    }
+  ]
+}

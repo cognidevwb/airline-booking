@@ -1,0 +1,89 @@
+{
+  "digest": "582b098b3d2d58cc",
+  "domain": "Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat",
+  "entity": "CreateBookingRequestDto",
+  "personal": {},
+  "records": [
+    {
+      "Description": "Window seat, vegetarian meal requested",
+      "FlightId": "b72e4d90-1a35-4c68-9e0f-3d5a8c71f246",
+      "PassengerId": "3f8a1c52-7d4e-4b9a-a1f3-62c8e5d09b17"
+    },
+    {
+      "Description": "Aisle seat near the front, travelling for business",
+      "FlightId": "54a0f3b7-e8c2-4d19-b6a5-97c1d02e8f3a",
+      "PassengerId": "c91d6e08-2b47-4f35-8a6c-0e9d73b1a584"
+    },
+    {
+      "Description": "Wheelchair assistance needed at boarding",
+      "FlightId": "e1c39d64-5f80-4a7b-83e2-a6b4071d9c58",
+      "PassengerId": "08e5b7a3-96fd-4c21-b3d8-5a14c9e60f72"
+    },
+    {
+      "Description": "Extra legroom requested, tall passenger",
+      "FlightId": "29b8e5f0-c4a1-47d3-8e6b-1f70a3d5c92e",
+      "PassengerId": "7a2f94c1-0d6b-4e83-95a7-c3e8168b2d04"
+    },
+    {
+      "Description": "Honeymoon trip, seats together please",
+      "FlightId": "a6d17c43-9e02-4b8f-b5a1-d83f42e67c09",
+      "PassengerId": "d4b60e97-31a8-4f52-a9c4-8e2f5710b3d6"
+    },
+    {
+      "Description": "Gluten-free meal requested",
+      "FlightId": "813f0a5e-6b9d-42c7-9d18-4e5c7a2b06f3",
+      "PassengerId": "5e19a8d2-c7f3-4096-8b4e-f2a60d3c71b5"
+    },
+    {
+      "Description": "Travelling with infant, bassinet seat if available",
+      "FlightId": "6c4e92b1-d385-4f0a-a7e6-05b8d3c19a74",
+      "PassengerId": "f06c3b84-a2e9-4d17-b850-6c9d41e7a3f2"
+    },
+    {
+      "Description": "Conference attendance, late check-out of bag needed",
+      "FlightId": "d9f2a68c-37b4-4e51-8c03-7a1e5b94d260",
+      "PassengerId": "2b7d5f19-84e0-4a63-9c2d-a1f830e6b497"
+    },
+    {
+      "Description": "Halal meal requested, window seat preferred",
+      "FlightId": "37b5c0e8-a1d9-4264-b9f7-e82c64a03d51",
+      "PassengerId": "91c8e4a6-5d03-4b7f-a628-3e0f9d15c7b8"
+    },
+    {
+      "Description": "Visiting family, one checked bag with musical instrument",
+      "FlightId": "f40a7d23-8c6e-4b15-a39d-2b6e90c58a17",
+      "PassengerId": "a83f2d70-e156-4c94-8b0a-d7c5319f4e62"
+    },
+    {
+      "Description": "Frequent flyer number added, upgrade if possible",
+      "FlightId": "1e8c5a97-d2f4-4306-8b7a-c49f03e61d85",
+      "PassengerId": "46d9b1e3-7a0c-4f28-b5e6-90a2c8d34f71"
+    },
+    {
+      "Description": "Student fare, return trip in December",
+      "FlightId": "c3d6f81a-4e97-4025-9a1b-6f08e2b7d4c3",
+      "PassengerId": "e5a07c38-b9d2-4163-a4f8-1c6e83d0925b"
+    },
+    {
+      "Description": "Seat near exit, comfortable with exit row duties",
+      "FlightId": "7f2b09d5-61c8-4ae3-b4d0-85a3c9e1f627",
+      "PassengerId": "1d4f8e62-a35b-4790-86c1-f9b2d70e3a45"
+    },
+    {
+      "Description": "Low-sodium meal requested",
+      "FlightId": "0a95e4c7-b3d6-4812-a8f9-d1e72c6054b3",
+      "PassengerId": "b6c2a059-f81d-4e34-9d7b-4a05e3c8f192"
+    },
+    {
+      "Description": "Group travel with colleagues, seats in same row",
+      "FlightId": "92d4b6e1-f07a-4c58-8e3d-b05a1c7f9246",
+      "PassengerId": "68e3d7f4-0c92-4ba5-b1a8-72f5c4096e3d"
+    },
+    {
+      "Description": "Pet carrier in cabin, small cat",
+      "FlightId": "4b1c7e83-5a29-4df6-b062-9e8f3a5d0c14",
+      "PassengerId": "d2a94b15-c68e-4073-a5f1-e84b0d9c3a76"
+    }
+  ],
+  "source": "model, from the column names and constraints only"
+}

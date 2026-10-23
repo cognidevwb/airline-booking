@@ -1,0 +1,308 @@
+{
+  "shape": "CreateBooking",
+  "role": "command",
+  "source": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:23",
+  "columns": [
+    "PassengerId",
+    "FlightId",
+    "Description",
+    "Id"
+  ],
+  "records": [
+    {
+      "ref": "booking-window-seat-vegetarian-meal-requested",
+      "kind": "record",
+      "data": {
+        "Description": "Window seat, vegetarian meal requested",
+        "FlightId": "a7c2e904-1b3d-4f58-8e6a-92d1f0c3b7a4",
+        "Id": null,
+        "PassengerId": "3f9a1c52-7d4e-4b86-9a21-5c8e0d7b4f13"
+      }
+    },
+    {
+      "ref": "booking-aisle-seat-travelling-with-infant",
+      "kind": "record",
+      "data": {
+        "Description": "Aisle seat, travelling with infant",
+        "FlightId": "5e0b93d1-c6a2-47f8-9d14-7a3e8b2c0f65",
+        "Id": null,
+        "PassengerId": "b81d6e07-45a9-4c32-b7f0-1e9a3d5c8264"
+      }
+    },
+    {
+      "ref": "booking-business-trip-needs-invoice-for-fare",
+      "kind": "record",
+      "data": {
+        "Description": "Business trip, needs invoice for fare",
+        "FlightId": "09d4b7e2-8f1a-4c63-a5e9-3b6d2c1f7048",
+        "Id": null,
+        "PassengerId": "c4720fa8-93be-4d15-8a6c-d0e1b57f2938"
+      }
+    },
+    {
+      "ref": "booking-wheelchair-assistance-at-boarding",
+      "kind": "record",
+      "data": {
+        "Description": "Wheelchair assistance at boarding",
+        "FlightId": "f2a86c15-3e9d-4b07-8c4a-5d1e7b9036fa",
+        "Id": null,
+        "PassengerId": "1d5e8b36-a0c7-4f92-b348-6e7f9a0d2c51"
+      }
+    },
+    {
+      "ref": "booking-gluten-free-meal-requested",
+      "kind": "record",
+      "data": {
+        "Description": "Gluten-free meal requested",
+        "FlightId": "6b3f1d90-e5c8-4a24-b719-0a8d4e2c5f37",
+        "Id": null,
+        "PassengerId": "e693c0b4-2a7f-4d81-9b5e-8c3a1f6d7e02"
+      }
+    },
+    {
+      "ref": "booking-honeymoon-trip-seats-together-if-possibl",
+      "kind": "record",
+      "data": {
+        "Description": "Honeymoon trip, seats together if possible",
+        "FlightId": "d81e4a73-9b06-4c5f-8a32-e7c1f0b6d594",
+        "Id": null,
+        "PassengerId": "7a08d5f1-6c3e-4b29-a1d7-f4e9b2c80365"
+      }
+    },
+    {
+      "ref": "booking-extra-legroom-seat-one-checked-bag",
+      "kind": "record",
+      "data": {
+        "Description": "Extra legroom seat, one checked bag",
+        "FlightId": "3c97a2e6-f018-4d4b-b6a5-9e2d7c4f1a80",
+        "Id": null,
+        "PassengerId": "92b4e7c8-d1a5-4306-8f9b-2a6c0e3d1b78"
+      }
+    },
+    {
+      "ref": "booking-connecting-to-onward-flight-tight-layove",
+      "kind": "record",
+      "data": {
+        "Description": "Connecting to onward flight, tight layover",
+        "FlightId": "b05d8f31-7a2e-4e96-a4c8-1f3b6d9e0c72",
+        "Id": null,
+        "PassengerId": "4e16f9a2-b8d0-4c73-9e5a-a3d7c1082f64"
+      }
+    },
+    {
+      "ref": "booking-travelling-with-sports-equipment",
+      "kind": "record",
+      "data": {
+        "Description": "Travelling with sports equipment",
+        "FlightId": "28e7c4b9-d63a-4f01-9b8d-c5a0e2f71d36",
+        "Id": null,
+        "PassengerId": "f0c3a587-1e94-4b6d-a82f-7d5b9e3c4106"
+      }
+    },
+    {
+      "ref": "booking-halal-meal-requested",
+      "kind": "record",
+      "data": {
+        "Description": "Halal meal requested",
+        "FlightId": "e49a1f06-85b3-4d7c-a2e1-6c9d0b3f8a57",
+        "Id": null,
+        "PassengerId": "a56d2b90-c7f3-4e18-b4a9-0e8c1d6f3a25"
+      }
+    },
+    {
+      "ref": "booking-conference-attendee-early-boarding-reque",
+      "kind": "record",
+      "data": {
+        "Description": "Conference attendee, early boarding requested",
+        "FlightId": "7d2c6a58-e1f4-4b93-8a06-4b9e3d1c7f82",
+        "Id": null,
+        "PassengerId": "68f1e3d4-0a9b-4c52-8d7e-b2c5a4f90e13"
+      }
+    },
+    {
+      "ref": "booking-unaccompanied-minor-service-required",
+      "kind": "record",
+      "data": {
+        "Description": "Unaccompanied minor service required",
+        "FlightId": "1a8f5e3b-6c07-4d92-b5a4-8e0d2c9f6713",
+        "Id": null,
+        "PassengerId": "d27b9c05-f4e8-4a31-b6d2-5a1e8c7093bf"
+      }
+    },
+    {
+      "ref": "booking-family-trip-three-seats-in-a-row",
+      "kind": "record",
+      "data": {
+        "Description": "Family trip, three seats in a row",
+        "FlightId": "c63e0b97-2d5a-4a18-9f4e-7b1c8a3d5e06",
+        "Id": null,
+        "PassengerId": "0b4a7e68-93d1-4f25-a8c6-e1f3d9520b4c"
+      }
+    },
+    {
+      "ref": "booking-lactose-free-meal-bulkhead-seat-preferre",
+      "kind": "record",
+      "data": {
+        "Description": "Lactose-free meal, bulkhead seat preferred",
+        "FlightId": "94b1d7a0-c3e8-4f65-a07b-d2e5f9c18a43",
+        "Id": null,
+        "PassengerId": "85c9d1f3-a2e6-4780-9b3d-4f7a0c6e1d92"
+      }
+    },
+    {
+      "ref": "booking-visiting-family-carrying-a-musical-instr",
+      "kind": "record",
+      "data": {
+        "Description": "Visiting family, carrying a musical instrument",
+        "FlightId": "4f7e2c81-a9d6-4b30-8c5f-0a3e9b6d1c27",
+        "Id": null,
+        "PassengerId": "29e0f6b7-5d83-4c14-8a9e-c7b2d1a4f650"
+      }
+    },
+    {
+      "ref": "booking-late-check-in-expected-no-meal-needed",
+      "kind": "record",
+      "data": {
+        "Description": "Late check-in expected, no meal needed",
+        "FlightId": "8a05d3f9-1b7c-4e62-b9d0-6f4a2e8c3b15",
+        "Id": null,
+        "PassengerId": "bc3d84a1-7f60-4e29-a5b8-3e9c0f1d7a46"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "createbooking-case-1",
+      "kind": "case",
+      "data": {
+        "Description": "",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "createbooking-case-2",
+      "kind": "case",
+      "data": {
+        "Description": "text",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "createbooking-case-3",
+      "kind": "case",
+      "data": {
+        "Description": "Generated test record 1 — no production data.",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "case": "covering-0003"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "createbooking-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Description": "",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": null
+      },
+      "violates": {
+        "field": "PassengerId",
+        "rule": "`PassengerId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createbooking-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Description": "",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "not-a-uuid"
+      },
+      "violates": {
+        "field": "PassengerId",
+        "rule": "violates a declared constraint on `PassengerId`"
+      }
+    },
+    {
+      "ref": "createbooking-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Description": "",
+        "FlightId": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "`FlightId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createbooking-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Description": "",
+        "FlightId": "not-a-uuid",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "violates a declared constraint on `FlightId`"
+      }
+    },
+    {
+      "ref": "createbooking-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Description": null,
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "Description",
+        "rule": "`Description` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createbooking-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Description": "",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": null,
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createbooking-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Description": "",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "not-a-uuid",
+        "PassengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    }
+  ]
+}

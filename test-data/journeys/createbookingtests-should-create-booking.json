@@ -1,0 +1,16 @@
+{
+  "id": "createbookingtests-should-create-booking",
+  "title": "should create booking to event store currectly",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Booking/Features/CreateBookingTests.cs:31",
+  "steps": [
+    {
+      "n": 1,
+      "does": "var response = await Fixture.SendAsync(command)"
+    }
+  ],
+  "expect": [
+    "response?.Id.Should().BeGreaterThanOrEqualTo(0)",
+    "(await Fixture.WaitForPublishing<BookingCreated>()).Should().Be(true)"
+  ]
+}

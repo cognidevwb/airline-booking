@@ -1,0 +1,169 @@
+{
+  "digest": "6ce06c95313febf0",
+  "domain": "Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat",
+  "entity": "Trip",
+  "personal": {},
+  "records": [
+    {
+      "AircraftId": "0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14",
+      "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+      "DepartureAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+      "Description": "Window seat, vegetarian meal requested",
+      "FlightDate": "2026-11-14T08:35:00",
+      "FlightNumber": "BA117",
+      "Price": 642.5,
+      "SeatNumber": "12A"
+    },
+    {
+      "AircraftId": "f1b36c84-d05a-47e9-a3c8-12e7b9054d6a",
+      "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+      "DepartureAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+      "Description": "Aisle seat, extra legroom if available",
+      "FlightDate": "2026-11-02T10:15:00",
+      "FlightNumber": "LH402",
+      "Price": 578.0,
+      "SeatNumber": "24C"
+    },
+    {
+      "AircraftId": "5d29e7b0-8a46-4c13-b7f1-a4c60d92e358",
+      "ArriveAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+      "DepartureAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+      "Description": "Business class, lie-flat bed, chauffeur transfer",
+      "FlightDate": "2026-12-05T02:45:00",
+      "FlightNumber": "EK0203",
+      "Price": 1385.0,
+      "SeatNumber": "3F"
+    },
+    {
+      "AircraftId": "c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77",
+      "ArriveAirportId": "48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24",
+      "DepartureAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+      "Description": "Carry-on only, no checked bag",
+      "FlightDate": "2026-11-20T13:50:00",
+      "FlightNumber": "IB3166",
+      "Price": 131.4,
+      "SeatNumber": "18D"
+    },
+    {
+      "AircraftId": "83e5a0d7-6c29-4b71-8f04-b5d1c7e29a96",
+      "ArriveAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+      "DepartureAirportId": "e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10",
+      "Description": "Traveling with infant, bassinet requested",
+      "FlightDate": "2026-12-18T23:10:00",
+      "FlightNumber": "SQ0322",
+      "Price": 912.75,
+      "SeatNumber": "41K"
+    },
+    {
+      "AircraftId": "2c70b9f4-e8a3-45d6-9b1e-70a4c3d8f512",
+      "ArriveAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+      "DepartureAirportId": "92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2",
+      "Description": "Basic fare, seat assigned at check-in",
+      "FlightDate": "2026-11-09T06:25:00",
+      "FlightNumber": "KL1002",
+      "Price": 49.0,
+      "SeatNumber": "7B"
+    },
+    {
+      "AircraftId": "c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77",
+      "ArriveAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+      "DepartureAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+      "Description": "Gluten-free meal requested",
+      "FlightDate": "2026-11-27T16:40:00",
+      "FlightNumber": "BA0287",
+      "Price": 187.3,
+      "SeatNumber": "22F"
+    },
+    {
+      "AircraftId": "5d29e7b0-8a46-4c13-b7f1-a4c60d92e358",
+      "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+      "DepartureAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+      "Description": "First-row business seat, priority boarding",
+      "FlightDate": "2027-01-08T09:30:00",
+      "FlightNumber": "EK0201",
+      "Price": 1850.0,
+      "SeatNumber": "1A"
+    },
+    {
+      "AircraftId": "c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77",
+      "ArriveAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+      "DepartureAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+      "Description": "Wheelchair assistance at boarding",
+      "FlightDate": "2026-12-01T07:05:00",
+      "FlightNumber": "LH1130",
+      "Price": 164.9,
+      "SeatNumber": "15C"
+    },
+    {
+      "AircraftId": "0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14",
+      "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+      "DepartureAirportId": "48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24",
+      "Description": "Seated with spouse, adjacent seats booked",
+      "FlightDate": "2026-11-17T11:20:00",
+      "FlightNumber": "AF0017",
+      "Price": 489.0,
+      "SeatNumber": "31G"
+    },
+    {
+      "AircraftId": "5d29e7b0-8a46-4c13-b7f1-a4c60d92e358",
+      "ArriveAirportId": "48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24",
+      "DepartureAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+      "Description": "Child meal requested, traveling with minor",
+      "FlightDate": "2027-02-12T14:55:00",
+      "FlightNumber": "EK0007",
+      "Price": 724.2,
+      "SeatNumber": "9K"
+    },
+    {
+      "AircraftId": "f1b36c84-d05a-47e9-a3c8-12e7b9054d6a",
+      "ArriveAirportId": "b5e01f93-2d68-47ac-8e45-9a7c3d1260fb",
+      "DepartureAirportId": "92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2",
+      "Description": "Kosher meal requested",
+      "FlightDate": "2026-12-22T21:35:00",
+      "FlightNumber": "KL0641",
+      "Price": 436.6,
+      "SeatNumber": "28E"
+    },
+    {
+      "AircraftId": "f1b36c84-d05a-47e9-a3c8-12e7b9054d6a",
+      "ArriveAirportId": "1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713",
+      "DepartureAirportId": "d92a6b07-5e1c-48f3-91ad-73c4082be5a9",
+      "Description": "Window seat, extra baggage prepaid",
+      "FlightDate": "2026-11-30T12:10:00",
+      "FlightNumber": "IB6250",
+      "Price": 533.85,
+      "SeatNumber": "35A"
+    },
+    {
+      "AircraftId": "0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14",
+      "ArriveAirportId": "e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10",
+      "DepartureAirportId": "3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61",
+      "Description": "Business class, airport lounge access",
+      "FlightDate": "2027-01-25T20:00:00",
+      "FlightNumber": "BA0015",
+      "Price": 1625.0,
+      "SeatNumber": "2C"
+    },
+    {
+      "AircraftId": "83e5a0d7-6c29-4b71-8f04-b5d1c7e29a96",
+      "ArriveAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+      "DepartureAirportId": "e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10",
+      "Description": "Diabetic meal requested, aisle seat preferred",
+      "FlightDate": "2026-12-09T00:25:00",
+      "FlightNumber": "SQ0025",
+      "Price": 845.1,
+      "SeatNumber": "17J"
+    },
+    {
+      "AircraftId": "2c70b9f4-e8a3-45d6-9b1e-70a4c3d8f512",
+      "ArriveAirportId": "92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2",
+      "DepartureAirportId": "7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384",
+      "Description": "Business trip, no meal needed",
+      "FlightDate": "2026-11-05T18:45:00",
+      "FlightNumber": "LH7420",
+      "Price": 96.75,
+      "SeatNumber": "11F"
+    }
+  ],
+  "source": "model, from the column names and constraints only"
+}

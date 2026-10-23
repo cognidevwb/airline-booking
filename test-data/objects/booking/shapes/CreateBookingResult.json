@@ -1,0 +1,42 @@
+{
+  "shape": "CreateBookingResult",
+  "role": "response",
+  "source": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:28",
+  "columns": [
+    "Id"
+  ],
+  "records": [
+    {
+      "ref": "booking-1-5",
+      "kind": "record",
+      "data": {
+        "Id": 1000
+      }
+    }
+  ],
+  "cases": [],
+  "rejections": [
+    {
+      "ref": "createbookingresult-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Id": null
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createbookingresult-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Id": "key with no row"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "not a value `ulong` accepts"
+      }
+    }
+  ]
+}

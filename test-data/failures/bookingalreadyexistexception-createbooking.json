@@ -1,0 +1,25 @@
+{
+  "id": "bookingalreadyexistexception-createbooking",
+  "title": "CreateBooking: the record already exists",
+  "kind": "duplicate",
+  "exception": "BookingAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:120",
+  "condition": "if (reservation is not null && !reservation.IsDeleted)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "BookingAlreadyExistException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/booking",
+    "body": {
+      "description": "Window seat, vegetarian meal requested",
+      "flightId": "b72e4d90-1a35-4c68-9e0f-3d5a8c71f246",
+      "passengerId": "3f8a1c52-7d4e-4b9a-a1f3-62c8e5d09b17"
+    },
+    "repeat": 2,
+    "why": "the same body twice; the second is refused"
+  }
+}

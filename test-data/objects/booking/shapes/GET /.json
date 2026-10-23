@@ -1,0 +1,15 @@
+{
+  "shape": "GET /",
+  "role": "shape",
+  "source": "src/Booking/Extensions/Infrastructure/InfrastructureExtensions.cs:83",
+  "columns": [],
+  "records": [
+    {
+      "ref": "booking-1-6",
+      "kind": "record",
+      "data": {}
+    }
+  ],
+  "cases": [],
+  "rejections": []
+}

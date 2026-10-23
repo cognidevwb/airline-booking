@@ -1,0 +1,110 @@
+{
+  "shape": "GrpcOptions",
+  "role": "shape",
+  "source": "src/Booking/Configuration/GrpcOptions.cs:3",
+  "columns": [
+    "FlightAddress",
+    "PassengerAddress"
+  ],
+  "records": [
+    {
+      "ref": "booking-1-7",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "",
+        "PassengerAddress": ""
+      }
+    },
+    {
+      "ref": "booking-2-4",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "",
+        "PassengerAddress": "text"
+      }
+    },
+    {
+      "ref": "booking-3-4",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "",
+        "PassengerAddress": "1 Manchester Street"
+      }
+    },
+    {
+      "ref": "booking-text",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "text",
+        "PassengerAddress": ""
+      }
+    },
+    {
+      "ref": "booking-text-2",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "text",
+        "PassengerAddress": "text"
+      }
+    },
+    {
+      "ref": "booking-text-3",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "text",
+        "PassengerAddress": "1 Manchester Street"
+      }
+    },
+    {
+      "ref": "booking-1-manchester-street",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "1 Manchester Street",
+        "PassengerAddress": ""
+      }
+    },
+    {
+      "ref": "booking-1-manchester-street-2",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "1 Manchester Street",
+        "PassengerAddress": "text"
+      }
+    },
+    {
+      "ref": "booking-1-manchester-street-3",
+      "kind": "record",
+      "data": {
+        "FlightAddress": "1 Manchester Street",
+        "PassengerAddress": "1 Manchester Street"
+      }
+    }
+  ],
+  "cases": [],
+  "rejections": [
+    {
+      "ref": "grpcoptions-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "FlightAddress": null,
+        "PassengerAddress": ""
+      },
+      "violates": {
+        "field": "FlightAddress",
+        "rule": "`FlightAddress` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "grpcoptions-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "FlightAddress": "",
+        "PassengerAddress": null
+      },
+      "violates": {
+        "field": "PassengerAddress",
+        "rule": "`PassengerAddress` is declared NOT NULL"
+      }
+    }
+  ]
+}

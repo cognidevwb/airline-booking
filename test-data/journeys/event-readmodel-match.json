@@ -1,0 +1,51 @@
+{
+  "id": "event-readmodel-match",
+  "title": "Event to read model",
+  "source": "staged scenario",
+  "why": "Verifies that the projection built from a BookingCreatedDomainEvent carries the same Id and Trip into the read model row.",
+  "setup": [
+    {
+      "ref": "trip-5",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a1111111-0000-4000-8000-000000000001",
+        "ArriveAirportId": "b2222222-0000-4000-8000-000000000003",
+        "DepartureAirportId": "b2222222-0000-4000-8000-000000000002",
+        "Description": "Midday flight",
+        "FlightDate": "2026-11-30T11:45:00Z",
+        "FlightNumber": "AB500",
+        "Price": 180.0,
+        "SeatNumber": "8D"
+      }
+    },
+    {
+      "ref": "event-1",
+      "table": "BookingCreatedDomainEvent",
+      "values": {
+        "Id": "c3333333-0000-4000-8000-000000000005",
+        "PassengerInfo": "Mei Tanaka, passport P5551234",
+        "Trip": "trip-5"
+      }
+    },
+    {
+      "ref": "readmodel-5",
+      "table": "BookingReadModel",
+      "values": {
+        "BookId": "c3333333-0000-4000-8000-000000000005",
+        "Id": "c3333333-0000-4000-8000-000000000005",
+        "IsDeleted": false,
+        "PassengerInfo": "Mei Tanaka, passport P5551234",
+        "Trip": "trip-5"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Publish event-1 to the projection handler, then read the booking by Id c3333333-0000-4000-8000-000000000005."
+    }
+  ],
+  "expect": [
+    "One read model row exists whose Id and Trip equal the event's Id and Trip, with IsDeleted false and passenger info unchanged."
+  ]
+}

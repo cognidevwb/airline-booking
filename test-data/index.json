@@ -1,0 +1,41 @@
+{
+  "repository": "airline-booking",
+  "domain": "Airline flight booking and reservations",
+  "report": {
+    "rows": 225,
+    "entities": 11,
+    "coverage": "pairwise"
+  },
+  "reconciled": {
+    "rows": 225,
+    "matches_report": true
+  },
+  "objects": [
+    {
+      "object": "Booking",
+      "table": null,
+      "records": 0,
+      "cases": 0,
+      "rejections": 0,
+      "calls": 1,
+      "events": 1,
+      "shapes": [
+        "Booking",
+        "BookingCreatedDomainEvent",
+        "BookingReadModel",
+        "BookingResponseDto",
+        "CreateBooking",
+        "CreateBookingRequestDto",
+        "CreateBookingResponseDto",
+        "CreateBookingResult",
+        "GET /",
+        "GrpcOptions",
+        "Trip"
+      ]
+    }
+  ],
+  "calls": 1,
+  "journeys": 7,
+  "failures": 10,
+  "personal": "values that cannot belong to a person: example.com, reserved phone ranges, passport and card numbers that cannot be issued"
+}

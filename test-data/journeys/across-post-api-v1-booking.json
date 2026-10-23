@@ -1,0 +1,58 @@
+{
+  "id": "across-post-api-v1-booking",
+  "title": "Booking across services",
+  "source": "project join",
+  "crosses": [
+    "airline-booking",
+    "airline-flight",
+    "airline-passenger"
+  ],
+  "setup": [
+    {
+      "repo": "airline-flight",
+      "ref": "flight-ba117",
+      "what": "BA117"
+    },
+    {
+      "repo": "airline-passenger",
+      "ref": "passenger-maria-gonzalez",
+      "what": "Maria Gonzalez"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "repo": "airline-booking",
+      "call": "POST api/v1/booking",
+      "body": {
+        "description": "Window seat, vegetarian meal requested",
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001024",
+        "passengerId": "b1de2c73-0000-4000-8000-000000001012"
+      }
+    },
+    {
+      "n": 2,
+      "repo": "airline-flight",
+      "call": "gRPC FlightGrpcService/GetById",
+      "by": "airline-booking"
+    },
+    {
+      "n": 3,
+      "repo": "airline-passenger",
+      "call": "gRPC PassengerGrpcService/GetById",
+      "by": "airline-booking"
+    },
+    {
+      "n": 4,
+      "repo": "airline-flight",
+      "call": "gRPC FlightGrpcService/ReserveSeat",
+      "by": "airline-booking"
+    }
+  ],
+  "expect": [
+    "POST api/v1/booking answers 200",
+    "airline-flight receives gRPC FlightGrpcService/GetById",
+    "airline-passenger receives gRPC PassengerGrpcService/GetById",
+    "airline-flight receives gRPC FlightGrpcService/ReserveSeat"
+  ]
+}

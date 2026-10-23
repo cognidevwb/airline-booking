@@ -1,0 +1,17 @@
+FlightNumber,AircraftId,DepartureAirportId,ArriveAirportId,FlightDate,Price,Description,SeatNumber
+BA117,0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14,3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61,1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713,2026-11-14T08:35:00,642.5,"Window seat, vegetarian meal requested",12A
+LH402,f1b36c84-d05a-47e9-a3c8-12e7b9054d6a,7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384,1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713,2026-11-02T10:15:00,578.0,"Aisle seat, extra legroom if available",24C
+EK0203,5d29e7b0-8a46-4c13-b7f1-a4c60d92e358,b5e01f93-2d68-47ac-8e45-9a7c3d1260fb,3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61,2026-12-05T02:45:00,1385.0,"Business class, lie-flat bed, chauffeur transfer",3F
+IB3166,c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77,d92a6b07-5e1c-48f3-91ad-73c4082be5a9,48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24,2026-11-20T13:50:00,131.4,"Carry-on only, no checked bag",18D
+SQ0322,83e5a0d7-6c29-4b71-8f04-b5d1c7e29a96,e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10,3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61,2026-12-18T23:10:00,912.75,"Traveling with infant, bassinet requested",41K
+KL1002,2c70b9f4-e8a3-45d6-9b1e-70a4c3d8f512,92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2,7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384,2026-11-09T06:25:00,49.0,"Basic fare, seat assigned at check-in",7B
+BA0287,c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77,3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61,d92a6b07-5e1c-48f3-91ad-73c4082be5a9,2026-11-27T16:40:00,187.3,Gluten-free meal requested,22F
+EK0201,5d29e7b0-8a46-4c13-b7f1-a4c60d92e358,b5e01f93-2d68-47ac-8e45-9a7c3d1260fb,1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713,2027-01-08T09:30:00,1850.0,"First-row business seat, priority boarding",1A
+LH1130,c4f81a65-37d9-4e0b-95b2-6d0e8a1c3f77,7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384,d92a6b07-5e1c-48f3-91ad-73c4082be5a9,2026-12-01T07:05:00,164.9,Wheelchair assistance at boarding,15C
+AF0017,0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14,48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24,1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713,2026-11-17T11:20:00,489.0,"Seated with spouse, adjacent seats booked",31G
+EK0007,5d29e7b0-8a46-4c13-b7f1-a4c60d92e358,b5e01f93-2d68-47ac-8e45-9a7c3d1260fb,48c3e5f1-a07b-4d96-83e2-c6b19f7d0a24,2027-02-12T14:55:00,724.2,"Child meal requested, traveling with minor",9K
+KL0641,f1b36c84-d05a-47e9-a3c8-12e7b9054d6a,92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2,b5e01f93-2d68-47ac-8e45-9a7c3d1260fb,2026-12-22T21:35:00,436.6,Kosher meal requested,28E
+IB6250,f1b36c84-d05a-47e9-a3c8-12e7b9054d6a,d92a6b07-5e1c-48f3-91ad-73c4082be5a9,1e84d7a6-c3f9-4b20-b6a5-0f92e8d4c713,2026-11-30T12:10:00,533.85,"Window seat, extra baggage prepaid",35A
+BA0015,0a7e3d92-b1c4-4f58-8d26-e9f5a3c07b14,3f2b8c1e-6a4d-4e7b-9c10-1d2e3f405a61,e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10,2027-01-25T20:00:00,1625.0,"Business class, airport lounge access",2C
+SQ0025,83e5a0d7-6c29-4b71-8f04-b5d1c7e29a96,e6f17b38-94a2-4c5d-b0e8-2a5d963c7f10,7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384,2026-12-09T00:25:00,845.1,"Diabetic meal requested, aisle seat preferred",17J
+LH7420,2c70b9f4-e8a3-45d6-9b1e-70a4c3d8f512,7c9d4a52-8b13-4f6e-a2d7-5e61b0c9f384,92b0d4c5-1f7e-4a83-a6c9-8d3e50b7a1f2,2026-11-05T18:45:00,96.75,"Business trip, no meal needed",11F
