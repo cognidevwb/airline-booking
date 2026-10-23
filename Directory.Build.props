@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" Version="5.0.0" />
+    <PackageReference Include="AutoBogus" Version="2.13.1" />
+    <PackageReference Include="EasyCaching.Core" Version="1.9.2" />
+    <PackageReference Include="EasyCaching.InMemory" Version="1.9.2" />
+    <PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="7.4.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.3" />
+    <PackageReference Include="Figgle" Version="0.6.5" />
+    <PackageReference Include="FluentAssertions" Version="8.8.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.76.0" />
+    <PackageReference Include="Figgle.Fonts" Version="0.6.5" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.3.0" />
+    <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="10.3.0" />
+    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="all" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Meziantou.Analyzer" PrivateAssets="all" Version="2.0.299">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Analyzers" PrivateAssets="all" Version="4.15.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.CodeAnalysis.Analyzers" PrivateAssets="all" Version="4.15.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Formatting.Analyzers" PrivateAssets="all" Version="4.15.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" PrivateAssets="all" Version="17.14.15">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="AsyncAwaitBestPractices" PrivateAssets="all" Version="10.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="CSharpGuidelinesAnalyzer" PrivateAssets="all" Version="3.8.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    <AnalysisLevel>latest-Recommended</AnalysisLevel>
+    <AnalysisMode>Recommended</AnalysisMode>
+  </PropertyGroup>
+
+</Project>
