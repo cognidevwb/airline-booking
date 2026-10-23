@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-passenger-id-is-required",
+  "title": "Passenger id is required",
+  "source": "staged scenario",
+  "why": "Confirms an empty PassengerId is rejected",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a7777777-7777-4777-8777-777777777777",
+        "ArriveAirportId": "e7777777-7777-4777-8777-777777777777",
+        "DepartureAirportId": "d7777777-7777-4777-8777-777777777777",
+        "Description": "Valid flight",
+        "FlightDate": "2026-12-05T11:00:00Z",
+        "FlightNumber": "AF22",
+        "Price": 150.0,
+        "SeatNumber": "5A"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with PassengerId 00000000-0000-0000-0000-000000000000 and FlightId of flight-1"
+    }
+  ],
+  "expect": [
+    "Request is rejected with a validation error that PassengerId is required; no booking is created"
+  ]
+}

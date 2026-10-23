@@ -1,0 +1,15 @@
+{
+  "id": "invalidflightdateexception-trip",
+  "title": "Trip that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidFlightDateException",
+  "base": "DomainException",
+  "thrownAt": "src/Booking/Booking/ValueObjects/Trip.cs:54",
+  "condition": "if (flightDate == default)",
+  "field": "Trip",
+  "expect": {
+    "status": 500,
+    "error": "InvalidFlightDateException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "invalidarriveairportidexception-trip",
+  "title": "Trip that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidArriveAirportIdException",
+  "base": "DomainException",
+  "thrownAt": "src/Booking/Booking/ValueObjects/Trip.cs:49",
+  "condition": "if (arriveAirportId == Guid.Empty)",
+  "field": "Trip",
+  "expect": {
+    "status": 500,
+    "error": "InvalidArriveAirportIdException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

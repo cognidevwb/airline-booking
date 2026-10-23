@@ -1,0 +1,1691 @@
+{
+  "operation": "POST api/v1/booking",
+  "kind": "http",
+  "handler": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:40",
+  "request": "CreateBookingRequestDto",
+  "response": "CreateBookingResponseDto",
+  "valid": [
+    {
+      "ref": "createbookingrequestdto-1",
+      "body": {
+        "description": "Window seat",
+        "flightId": "b81e5d07-2c93-4a6f-8d4b-5e1f90c3a7d2",
+        "passengerId": "3f9a1c2e-7b4d-4e8a-9c15-a2d60b7e41f3"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-2",
+      "body": {
+        "description": "Vegetarian meal",
+        "flightId": "0a6f3e9c-d518-47b2-a3e7-8c92b5d14f60",
+        "passengerId": "c47d82b1-95e6-4f30-b7a8-1d3e6f04c952"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-3",
+      "body": {
+        "description": "Extra legroom",
+        "flightId": "7d2c94f8-1a63-4be5-9d07-3f8a6e2b5c14",
+        "passengerId": "e1b05a3d-48c7-4d92-8f6e-b7a31c5d9e08"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-4",
+      "body": {
+        "description": "Aisle seat near the front",
+        "flightId": "92f4b6a1-e07d-4c38-b5a9-d1c8e3704f6b",
+        "passengerId": "5a8e7c10-d3f2-4965-ab4c-69e0d1f37b25"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-5",
+      "body": {
+        "description": "Traveling with infant, bassinet requested",
+        "flightId": "4e7b1d95-6c2a-48f0-8a3d-f59b0c7e2d81",
+        "passengerId": "a09d46e7-3b81-4f2c-96d5-c4e7a1b82f30"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-6",
+      "body": {
+        "description": "Wheelchair assistance at the gate",
+        "flightId": "d3a85e2f-90b7-4146-a8c1-2e6f7b9d0a43",
+        "passengerId": "1c6f93b8-a5e4-4d07-8b2a-7f30e9d4c615"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-7",
+      "body": {
+        "description": "Gluten-free meal",
+        "flightId": "6c19f7a4-b2d8-4e53-9f06-a83d5e1c4b97",
+        "passengerId": "8b2e0d5a-6f19-43c7-b04e-d9a58c1f7e36"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-8",
+      "body": {
+        "description": "Frequent flyer number added",
+        "flightId": "2b84e0c9-7a35-4d1f-b69e-04f1c8a3d572",
+        "passengerId": "f7d31a6c-0e92-4b85-a1f3-5c8b2d70e946"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-9",
+      "body": {
+        "description": "Halal meal",
+        "flightId": "a5f0d73e-c846-4b29-8e1a-7d93b2c60f84",
+        "passengerId": "29c5e8f4-b1a7-4036-9d82-e6f04a3b7c51"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-10",
+      "body": {
+        "description": "Seat near exit, tall passenger",
+        "flightId": "1e93c5b7-4d0a-4f68-a7b2-c6e81d9f3a05",
+        "passengerId": "d6a4170b-83fc-4e59-b2d6-1a9e5f08c372"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-11",
+      "body": {
+        "description": "Birthday celebration, cake welcome",
+        "flightId": "f08a2d64-1b9c-4375-9e5d-3a7c0b6e8d12",
+        "passengerId": "60e9b2d3-f475-4a18-8c3e-b5d1a7f94e20"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-12",
+      "body": {
+        "description": "Kosher meal",
+        "flightId": "85d2c7e1-a3f6-4b09-8d74-e19b5a0c3f26",
+        "passengerId": "b3f71e85-2a60-4c94-a5d8-0e4c9b1d7a63"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-13",
+      "body": {
+        "description": "Priority boarding requested",
+        "flightId": "c9e6b4a0-5d37-4182-b1f9-8a2d7e60c453",
+        "passengerId": "74c0a9d2-e8b1-4f35-96a7-d2f5c3e18b04"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-14",
+      "body": {
+        "description": "Two checked bags prepaid",
+        "flightId": "37a1d8f5-e602-49cb-a4d3-b0c95e7f1a68",
+        "passengerId": "e85b3f10-9c4d-47a6-b2e1-6a0d8f5c7391"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-15",
+      "body": {
+        "description": "Window seat, left side",
+        "flightId": "ae40f6c3-72b9-4d15-9c8e-5f1a3d0b7e94",
+        "passengerId": "1fd69a47-b038-4e2c-8571-c9e3a0d4f625"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-16",
+      "body": {
+        "description": "Lactose-free meal",
+        "flightId": "5b3d9e82-c0a4-4f71-8b26-d7e1f4a95c03",
+        "passengerId": "92a7e4c6-5d13-4b80-a9f2-3e8c1d6b0a57"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-17",
+      "body": {
+        "description": "Traveling with service dog",
+        "flightId": "e2c7a05b-3f98-4d46-b1a0-9c5e8d7f2b61",
+        "passengerId": "c04f8b21-a7e5-4936-8d0c-f1b62e9a3d78"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-18",
+      "body": {
+        "description": "Connecting flight, short layover",
+        "flightId": "09b4f1d6-a85e-4c72-9e3b-6d2a7c0f8e15",
+        "passengerId": "4d95e1a8-0c6b-4f23-b7d9-82a3f5e0c164"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-19",
+      "body": {
+        "description": "Aisle seat",
+        "flightId": "d7e82a3c-4b01-4f95-a6d8-1c3f9b5e0a47",
+        "passengerId": "ab63c0f7-d2e9-4518-9a4b-5e07d1c8f392"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-20",
+      "body": {
+        "description": "Low-sodium meal",
+        "flightId": "6a0c5f93-e1d7-4b28-b4a5-f8e2d3c97106",
+        "passengerId": "38e1d7b4-6f90-4a5c-82e3-b9c4a0f7d516"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-21",
+      "body": {
+        "description": "Late check-in expected",
+        "flightId": "b4d1e7a6-9c30-4582-8f1d-a05c6e2b3d79",
+        "passengerId": "f2a96c05-1b8d-43e7-b0f4-7d5e3a9c8120"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-22",
+      "body": {
+        "description": "Seat together with spouse",
+        "flightId": "13f8c6a2-d5b9-4e07-a2c4-7b0e9d1f5836",
+        "passengerId": "57d0b3e9-c4a2-4816-9e7f-a1c8d5f06b34"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-23",
+      "body": {
+        "description": "Hypoallergenic pillow requested",
+        "flightId": "f1a73d5e-80c2-4b96-9d34-e6b8a2c07f19",
+        "passengerId": "c9b4a2f1-e063-4d58-b8a1-3f7e5c0d9264"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-24",
+      "body": {
+        "description": "Business trip, receipt needed",
+        "flightId": "7c52e9b0-3d8f-4a14-b6e7-d0a1f5c83e92",
+        "passengerId": "0e7f5d38-a1c9-4b62-8d04-b6e3f9a1c750"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-25",
+      "body": {
+        "description": "Diabetic meal",
+        "flightId": "2d96a0f4-b7c1-4e83-8a5d-9f3e1c6b0d27",
+        "passengerId": "86b1c4e7-2f5a-4d93-a0e8-d7c93b5f1a42"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-26",
+      "body": {
+        "description": "Unaccompanied minor service",
+        "flightId": "a8c3f1e5-0d62-4795-b9a4-5e7d2c1f6b08",
+        "passengerId": "d1e83a5f-7c04-4b29-9f6d-0a2b8e4c5973"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-27",
+      "body": {
+        "description": "Window seat, no meal",
+        "flightId": "40e7b2d9-a6f5-4c13-8e0b-c9d1a3f58e76",
+        "passengerId": "2a5c9e06-f3b8-4147-a5d2-e1f7b04c8d93"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-28",
+      "body": {
+        "description": "Extra baggage allowance",
+        "flightId": "e6b9d4a1-2c75-4f08-a1e3-7d0f8c5b3a29",
+        "passengerId": "9f40d7b2-5e1a-4c86-b3f9-6a8c0e2d1745"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-29",
+      "body": {
+        "description": "Pre-ordered vegan meal",
+        "flightId": "8f1a5c37-b4e0-4d92-9c6a-2e7b0d3f4a51",
+        "passengerId": "71c3e8a9-d0f6-4b25-8e47-a3b5d9c1f068"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-30",
+      "body": {
+        "description": "Nervous flyer, seat over the wing",
+        "flightId": "1b7d3e90-f2a4-4c68-b5d1-a09e6c8f2d73",
+        "passengerId": "e4a0b6d1-83c7-4f59-a2e8-c5d19f3b7e02"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-31",
+      "body": {
+        "description": "Honeymoon couple",
+        "flightId": "c3f9a2e6-5b81-4d07-8a4c-d6e0b7f19528",
+        "passengerId": "3b8d2f65-a9e0-4c14-97b3-e0f5a1c6d847"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-32",
+      "body": {
+        "description": "Sports equipment: golf clubs",
+        "flightId": "59d0e4b8-c1a7-4f36-a9e2-3b8f5d7c0a61",
+        "passengerId": "a6e15c90-4d7b-4382-b0f6-8c2a9d3e5f14"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-33",
+      "body": {
+        "description": "Seat upgrade requested at check-in",
+        "flightId": "b0e5c8a7-3f19-4d42-9b6e-a7d1f2c08e35",
+        "passengerId": "5c97f0a3-e2b4-4d61-8a05-f9d3c7b1e286"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-34",
+      "body": {
+        "description": "Lounge access included",
+        "flightId": "f7a2d6c1-9e08-4b53-8c1d-5e3b0a9f4d82",
+        "passengerId": "d80b4e2c-1a5f-4973-b6c8-07e9a3d5f1b4"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-35",
+      "body": {
+        "description": "Pescatarian meal",
+        "flightId": "2c84b1e9-d7a3-4f60-b5a8-e9c0f3d17b45",
+        "passengerId": "1e6a9c75-b3d8-4f02-a4e7-c5f0b8d29a36"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-36",
+      "body": {
+        "description": "Traveling with elderly parent",
+        "flightId": "7e3f0a5d-82c6-4b19-a0d4-1b9e6c8f3a07",
+        "passengerId": "fb29d5a0-6c41-4e87-93b2-a8e7d0c15f69"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-37",
+      "body": {
+        "description": "Name changed after passport renewal",
+        "flightId": "d5b8e2c4-0a97-4f31-9e6b-c3a1f7d08e24",
+        "passengerId": "46d3a8e1-f5b0-4c92-8d7a-3c1e9b6f0a58"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-38",
+      "body": {
+        "description": "Exit row seat, confirmed able to assist",
+        "flightId": "3a9c6e1f-b4d2-4807-8f5a-d0e7b2c91a63",
+        "passengerId": "c2f7b04e-9a38-4d15-b6c1-e5d0a8f3927b"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-39",
+      "body": {
+        "description": "Child meal",
+        "flightId": "e9d4a7b2-1c05-4e38-b2f6-a8c3d0e5f719",
+        "passengerId": "8e0c5d93-a6f2-4b71-9a4e-d1b83f7c2065"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-40",
+      "body": {
+        "description": "Medical oxygen concentrator on board",
+        "flightId": "68b1f3d0-e5a9-4c27-9d8b-4a0c7e2f5b36",
+        "passengerId": "3d71e9b6-0c8a-4f45-a2d3-b9f5e1c07a82"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-41",
+      "body": {
+        "description": "Refundable fare, change expected",
+        "flightId": "a1d7c5e8-6f03-4b94-b7a2-e3f9d0c18b57",
+        "passengerId": "b5a2f08c-d741-4e63-8c9b-1e6d3a7f0c94"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-42",
+      "body": {
+        "description": "Group booking, row 22",
+        "flightId": "0f6e2b9a-c8d1-4a75-8e3f-7b5a1d4c9e60",
+        "passengerId": "69e4c1d7-a0b3-4258-9f16-c8d5e2a3b704"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-43",
+      "body": {
+        "description": "Bassinet seat, first row",
+        "flightId": "b9c3d8f2-4e70-4a51-96b8-d1a5e0c7f342",
+        "passengerId": "f09b7a3e-5d62-4c18-a4e5-2b8c0f1d9a73"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-44",
+      "body": {
+        "description": "Special occasion, anniversary",
+        "flightId": "54e0a7c3-d2b8-4f19-a9d6-8c1f3b5e0a72",
+        "passengerId": "27a8d5c0-e9f1-4b36-b3a7-4d0e6c8f1b95"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-45",
+      "body": {
+        "description": "Carry-on musical instrument, cello",
+        "flightId": "c7a1f5d9-0b36-4e82-b4c0-e2d8a3f69b51",
+        "passengerId": "d4c6e1f8-3a05-4b97-8e2d-a9b0c7f53d18"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-46",
+      "body": {
+        "description": "Asian vegetarian meal",
+        "flightId": "2e5d8b0c-a794-4d63-8f1e-b3c6a9d07e45",
+        "passengerId": "0a93b5e7-c1d4-4f28-a6b0-f7e2d8c34a69"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-47",
+      "body": {
+        "description": "Quiet zone seat, no children nearby",
+        "flightId": "96a3c0e5-f1d8-4b47-a2e9-5d7b1c8f0a34",
+        "passengerId": "7b1f4d8a-e260-4c93-b5a9-d3c0e7f8a126"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-48",
+      "body": {
+        "description": "Forwarded visa documents to airport desk",
+        "flightId": "d2f6b9e1-7c40-4a85-b3d7-0a8e5c1f9b26",
+        "passengerId": "e3c8a0d5-9b72-4f14-8a6e-1f5d7b9c2e80"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-49",
+      "body": {
+        "description": "Boarding pass sent by email",
+        "flightId": "1c0e7a4d-b9f5-4e32-8d6a-f2b3c5a98d07",
+        "passengerId": "a8d5e2b1-4f63-4c09-97e4-b0c1a6d3f758"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-50",
+      "body": {
+        "description": "Seat by the window, right side",
+        "flightId": "a7c2e905-4b18-4d63-8f0a-5e9d3b1c7a24",
+        "passengerId": "3f8a1c52-9d04-4e7b-b6a3-c1d58e02f947"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-51",
+      "body": {
+        "description": "Vegan meal requested",
+        "flightId": "5e19b3d8-07c4-4a52-a9f6-d2c80e7b4135",
+        "passengerId": "c40d7b19-e5a2-4f86-9b31-0a8f6d2c53e7"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-52",
+      "body": {
+        "description": "Needs aisle for knee recovery",
+        "flightId": "d92e6a07-b153-4c81-9a4d-37f0c5e8b162",
+        "passengerId": "81b6f2a4-3c9e-4d05-8e7a-f4d1095b6c38"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-53",
+      "body": {
+        "description": "Prefers bulkhead seat",
+        "flightId": "0b47c8f1-6e2d-4953-b8a0-c5d9e3172a8f",
+        "passengerId": "2a95e0d3-f7b1-4c68-a4e2-9b3c81d07f56"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-54",
+      "body": {
+        "description": "Traveling with two children",
+        "flightId": "6c80a5d2-91e7-4b34-8f1c-a07d3e9b5246",
+        "passengerId": "e7d31b60-a8f4-4259-96c0-4d2e5a8b1f93"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-55",
+      "body": {
+        "description": "Priority baggage tag",
+        "flightId": "b3f5d196-c0a8-4e72-9d41-6820f7a3c5be",
+        "passengerId": "49c0f8e7-2b63-4a1d-b5d9-e8a37c10d462"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-56",
+      "body": {
+        "description": "Hearing impaired, notify crew",
+        "flightId": "17e9c3a5-d4b0-4f68-a2e5-b9f81c6d0734",
+        "passengerId": "d6a24e8b-0f95-4c37-81b2-5c7e9d03a1f8"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-57",
+      "body": {
+        "description": "Allergic to peanuts",
+        "flightId": "f4a08d62-5c97-4b13-8e6a-d1c3b7092e58",
+        "passengerId": "7b1f95c3-e820-4d46-ac07-3a6d2f8e9b15"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-58",
+      "body": {
+        "description": "Vegetarian Indian meal",
+        "flightId": "8d63b1f0-27ae-4c59-9b84-e5a0c7d3162f",
+        "passengerId": "05e8d2b7-c4a1-4f93-b760-9d1f3a5c8e24"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-59",
+      "body": {
+        "description": "Small cat in cabin",
+        "flightId": "3c7e5a98-b1d6-4082-a3f9-0e4d8b2c6715",
+        "passengerId": "b92c6f14-7d03-4a8e-95f2-e1b8c40d7a36"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-60",
+      "body": {
+        "description": "Visiting family, long stay",
+        "flightId": "e1b94f73-8a05-4d2c-b6e7-5f3c0a9d8164",
+        "passengerId": "6e40a9d1-f2c8-4b75-8d3a-c7b05e19f284"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-61",
+      "body": {
+        "description": "Ski equipment checked",
+        "flightId": "29a6d0c4-e3f7-4815-9c2b-b8d1704e5a63",
+        "passengerId": "f3d85b02-1a97-4e64-a0c9-72e6d4b8c15a"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-62",
+      "body": {
+        "description": "Bicycle in box checked",
+        "flightId": "c58f2b17-496a-4e03-8d7c-1a9e3f6b0d42",
+        "passengerId": "1c7a3e69-d0b5-4f28-b941-8a5e2c6f0d73"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-63",
+      "body": {
+        "description": "Late arrival by connecting train",
+        "flightId": "7f02e4c9-a6b3-4d58-b1e0-c93d8a5f7216",
+        "passengerId": "a84f06d5-39e2-4b1c-9d78-f0c3a5e21b69"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-64",
+      "body": {
+        "description": "Seat away from galley",
+        "flightId": "b0d6a381-5f2e-4c97-8a14-e7c9035d2b8f",
+        "passengerId": "5d9b2e7a-c610-4f83-a5d4-0e8f1b3c7926"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-65",
+      "body": {
+        "description": "Companion seat beside wheelchair user",
+        "flightId": "46a9f1e2-d8c3-4075-b2a6-9e1c5d03f7b8",
+        "passengerId": "c2e71a58-4d09-4b36-8f6e-a3d95b0c1e47"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-66",
+      "body": {
+        "description": "Conference attendee, invoice needed",
+        "flightId": "d1c53e87-0a94-4f6b-9732-b8e4a0f6c5d1",
+        "passengerId": "90f4d6b3-a71e-4c25-b8e0-2d5c3f9a1076"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-67",
+      "body": {
+        "description": "Student fare, ID verified",
+        "flightId": "92e8b4a0-6c1f-4d37-a5d9-3f7c0e1b8a64",
+        "passengerId": "38a0c9e5-b2d7-4f14-9a63-e5f1d8b07c42"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-68",
+      "body": {
+        "description": "Blanket and eye mask requested",
+        "flightId": "0a3d7f65-e19b-4c28-b4a0-d6c85e9f1327",
+        "passengerId": "e5b17d40-9c36-4a82-8d0f-61a4c7e3b9f5"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-69",
+      "body": {
+        "description": "Airport transfer arranged",
+        "flightId": "f68c1a35-b072-4e94-8d5b-a3e0c97d2f41",
+        "passengerId": "74d2c8f1-0e65-4b9a-a3c7-1f9b5e0d6a38"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-70",
+      "body": {
+        "description": "Middle seat acceptable",
+        "flightId": "1e5f9c07-a3d8-4b62-b0c4-8d7a2e65f391",
+        "passengerId": "b6a05e93-d7f2-4c41-9e8a-3c1d70b4f825"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-71",
+      "body": {
+        "description": "Seat changed after schedule update",
+        "flightId": "a4d0b7e8-31c5-4f96-8e2a-5b9f6c03d17e",
+        "passengerId": "2f9c83a6-5e10-4d77-b4a9-c8e07d1f3b52"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-72",
+      "body": {
+        "description": "Fear of flying, speak to crew",
+        "flightId": "6b82e3f9-0d47-4a15-9c8e-f1a5d0b7c346",
+        "passengerId": "d03e6b18-a4f9-4c52-8b7d-e9a15c2f0674"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-73",
+      "body": {
+        "description": "Hotel shuttle pickup on arrival",
+        "flightId": "c9f1a540-8e2b-4d73-b6a5-07d3e8c1952f",
+        "passengerId": "8c15f7a2-e639-4d04-a1b8-4f0d9e3c5b67"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-74",
+      "body": {
+        "description": "Hindu non-vegetarian meal",
+        "flightId": "35d7e0b2-f6a9-4c81-8b43-a9c15e0d7f62",
+        "passengerId": "4e7a0d93-b1c6-4f58-9a2e-d85c3b6f1a09"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-75",
+      "body": {
+        "description": "Nut-free meal",
+        "flightId": "8a06c4d1-b9e3-4f27-a5d8-2e7f13c0b954",
+        "passengerId": "f1b94c27-6a85-4e03-b7d1-0c3e8a5d92f6"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-76",
+      "body": {
+        "description": "Boarding with stroller",
+        "flightId": "e7b3f592-14c0-4a68-9d5e-c06a8d2b1f37",
+        "passengerId": "a02d5e86-c3f7-4b19-8e40-7d1b9a6c3f58"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-77",
+      "body": {
+        "description": "Travel insurance purchased",
+        "flightId": "2d94a0c6-e5b8-4713-b1f9-8c3e7a0d5f26",
+        "passengerId": "63c8b1f4-9a0d-4e75-a2b6-e4d70c5f8319"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-78",
+      "body": {
+        "description": "Frequent flyer upgrade used",
+        "flightId": "d0a8c5e3-72f1-4b94-8c36-f9b1e4a07d58",
+        "passengerId": "b5e27a09-d4c1-4863-9f0a-1a6c8e3d7b42"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-79",
+      "body": {
+        "description": "Gate-check large carry-on",
+        "flightId": "7c14e9b5-a0d2-4f86-93a7-d5e8b1c06f39",
+        "passengerId": "1d6f90c8-a357-4e2b-b8d4-5c0e2a7f9163"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-80",
+      "body": {
+        "description": "Wedding party, seats nearby",
+        "flightId": "4f6b2a90-c8d5-4e13-b9a1-3e7d05c8f624",
+        "passengerId": "ec3a85d7-0b92-4f61-a7c5-98d1f4e2b036"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-81",
+      "body": {
+        "description": "Avoid last row seat",
+        "flightId": "b8e5d103-4a7f-4c92-a6b0-1d9c3f7e5a28",
+        "passengerId": "29b0d4f6-e8a3-4c17-9d52-b6a7c1e03f85"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-82",
+      "body": {
+        "description": "Name spelled per new passport",
+        "flightId": "0c93f7a6-d2e1-4b58-9a4d-e6b08c15d372",
+        "passengerId": "97a4e1c3-5f0b-4d28-8b69-d02c7e5a3f14"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-83",
+      "body": {
+        "description": "Crew colleague on standby",
+        "flightId": "e24a8d51-93b6-4f07-8c1e-7a0d5f3b9c68",
+        "passengerId": "d84b6f02-1c9e-4a75-b3d0-a5e83c7f9164"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-84",
+      "body": {
+        "description": "Visa on arrival, documents ready",
+        "flightId": "91d5c3e8-a07b-4264-b8f9-0c6e2a4d7153",
+        "passengerId": "50c7a2e9-f6d3-4b81-a094-3e1b8d5c7f26"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-85",
+      "body": {
+        "description": "Front cabin seat for quick exit",
+        "flightId": "5a0e7b94-c3f8-4d21-a6b5-d9183e4f0c72",
+        "passengerId": "a3f19d85-7b04-4c6e-92a8-e0d5b6c13f47"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-86",
+      "body": {
+        "description": "Sleeping preferred, no meal service",
+        "flightId": "c3b6f8a2-0e95-4d47-b1d3-5a7c9e2018f4",
+        "passengerId": "7e08c5b1-d2a6-4f93-8e17-b4a9f30d6c52"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-87",
+      "body": {
+        "description": "Portable crib on board",
+        "flightId": "68e1d0a7-b4c2-4f95-8a3d-e7f5c29b0136",
+        "passengerId": "f6d2a8e4-3b91-4c05-a7f8-19c0e5b3d764"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-88",
+      "body": {
+        "description": "Corporate rate booking",
+        "flightId": "d7a3f1c5-86e0-4b49-9c2a-0b5e8d4f3a71",
+        "passengerId": "0b94e7c6-a58d-4f32-b1e0-d63a2c8f7195"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-89",
+      "body": {
+        "description": "Seat map reviewed, row 9 chosen",
+        "flightId": "13c8e5b0-f7a4-4d96-a2b1-8e0d3c7f5a69",
+        "passengerId": "c71f3a50-e9b8-4d64-8a25-f2d0b6e4c983"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-90",
+      "body": {
+        "description": "Shellfish allergy noted",
+        "flightId": "a9f2c6d4-1b80-4e53-b7a8-c3d05e9f1472",
+        "passengerId": "46a9d0b2-8c3f-4e17-95a6-1e7c5f2d0b84"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-91",
+      "body": {
+        "description": "Boarding help needed, uses cane",
+        "flightId": "70b4e8a1-d5c3-4f29-8e96-a1f7c0d3b548",
+        "passengerId": "e0c58f13-b6a2-4d79-a9e4-7f3d1b0c8526"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-92",
+      "body": {
+        "description": "Baby food warming requested",
+        "flightId": "ef15a9c3-4d68-4b07-a1e2-5c8b0d7f3a96",
+        "passengerId": "85f3b7d9-02e1-4a6c-b4c8-d9a05e3f1b72"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-93",
+      "body": {
+        "description": "Return leg rebooked",
+        "flightId": "3b9d6e02-a8f1-4c75-b0d4-9e2c5a7f1836",
+        "passengerId": "1a7e4c06-d9f5-4b38-8c12-e5b3a0d97f64"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-94",
+      "body": {
+        "description": "Business lounge voucher issued",
+        "flightId": "c6e0a4f9-27b3-4d81-9a5c-f1d8b3e07a25",
+        "passengerId": "b9d06a37-4e82-4f15-a3c9-0d7f5e1b8c42"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-95",
+      "body": {
+        "description": "Window seat for photography",
+        "flightId": "09f7b2d5-e4a1-4c63-8b8e-a6c30d5f1e97",
+        "passengerId": "6c3e91f8-a05d-4b27-9e64-d2a8c7b0f513"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-96",
+      "body": {
+        "description": "Low-fat meal requested",
+        "flightId": "d5c1a8e6-93f0-4b72-a4e9-7b0d2c5f3816",
+        "passengerId": "f2a85d04-c7b9-4e61-b0d3-3e9f1a6c8725"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-97",
+      "body": {
+        "description": "Jain vegetarian meal",
+        "flightId": "84e3f0b7-a6d9-4c12-b5a0-e1c7d9382f5a",
+        "passengerId": "3d0b7e95-1f6a-4c48-8a2d-c9e5b4f07a13"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-98",
+      "body": {
+        "description": "Reduced-mobility buggy service",
+        "flightId": "2e7a5d19-0c84-4f36-9b1d-d3f6a8c0e547",
+        "passengerId": "9a56c2e1-d8f4-4b03-a7e5-4c1b0d9f3a68"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-99",
+      "body": {
+        "description": "Charity trip, group of six",
+        "flightId": "f9b0c3e4-5a17-4d82-8e6a-1c7d4b5a0e93",
+        "passengerId": "d17f4b83-e2a0-4c95-b6d8-5a3c9e0f1b72"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-100",
+      "body": {
+        "description": "Seat next to travel companion",
+        "flightId": "5d82e0a7-b1c4-4963-8f2e-0a7c9d36b145",
+        "passengerId": "a3f19c52-7d08-4e6b-9a24-c81b5e07d3f9"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-101",
+      "body": {
+        "description": "Early morning flight, taxi booked",
+        "flightId": "1c6f93b8-e045-4a7d-9b12-d58e0a3f7c26",
+        "passengerId": "e7b04d96-12a3-4c58-b6f1-3d9a8c2e0754"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-102",
+      "body": {
+        "description": "Extra pillow requested",
+        "flightId": "b92a7e34-5f10-4d86-8c3b-e1a49d607f58",
+        "passengerId": "4a8d2f61-c9e5-4b03-a7d8-6f1e0b95c372"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-103",
+      "body": {
+        "description": "Window seat over the wing",
+        "flightId": "7e3d0f85-a2b9-4c17-9e64-5b8c1a2d9047",
+        "passengerId": "90c5e1b7-3a68-4f2d-b4a9-d7e2083c5f16"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-104",
+      "body": {
+        "description": "Vegetarian Western meal",
+        "flightId": "28b6c4e9-d7f1-4a50-b3e8-90c2a5f7d134",
+        "passengerId": "d1f78a30-6e4b-4952-8c07-a3b95e2d1c68"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-105",
+      "body": {
+        "description": "Wheelchair provided on arrival",
+        "flightId": "f4a1d703-8c5e-4b29-9d67-2e0b6a8c3d95",
+        "passengerId": "6b2e9d05-f8a3-4c71-a0d6-1e7c4b3958fa"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-106",
+      "body": {
+        "description": "Passport expires in seven months",
+        "flightId": "03e9b5c1-6a7d-4f48-a2b0-d4c8157e9f36",
+        "passengerId": "c58a30f7-14d2-4e96-b7a1-8f0e3d6c2b49"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-107",
+      "body": {
+        "description": "Aisle seat, restless legs",
+        "flightId": "a68d2f94-0b3e-4c71-b5a8-7e1f9c4d0623",
+        "passengerId": "2f7c61e8-d9b0-4a35-8e4c-b05a3d17f926"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-108",
+      "body": {
+        "description": "Seat in quiet cabin section",
+        "flightId": "59c7e0d3-a481-4b26-8d95-f3a02b6c7e18",
+        "passengerId": "8e04b9a2-5c71-4d63-9f18-e2d7a6035b4c"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-109",
+      "body": {
+        "description": "Pre-paid seat selection",
+        "flightId": "d07a4b82-e5c9-4136-a9f0-8b3d2c61e547",
+        "passengerId": "b3d6f158-a207-4e94-86c3-5a9e01d7c8f2"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-110",
+      "body": {
+        "description": "Prefers rear of cabin",
+        "flightId": "6f2c85a1-d3b7-4e09-9c48-a1e7503d6b92",
+        "passengerId": "17a9c4e0-82f5-4b3d-a6e1-c0d93b7f5284"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-111",
+      "body": {
+        "description": "Business meeting on arrival",
+        "flightId": "3b8e1d67-4a02-4f95-b7c3-e9d06a5f2814",
+        "passengerId": "f60b2d83-9e1a-4c57-b8d4-07a5c3e91f6b"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-112",
+      "body": {
+        "description": "Child traveling with grandparent",
+        "flightId": "e1d47c09-b862-4a35-8f1e-5c3a97d0b624",
+        "passengerId": "5c91e7a4-b6d0-4328-8a5f-d2f40e9b3c71"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-113",
+      "body": {
+        "description": "Oversized luggage tagged",
+        "flightId": "84f0a6c2-1e9d-4b73-a5d8-c7b32e910f56",
+        "passengerId": "a02f58d3-7c94-4e61-9b0a-3e8d1c6f47b5"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-114",
+      "body": {
+        "description": "Medication carried in cabin",
+        "flightId": "c2b95e18-70d4-4a63-b9f1-0e6a3d8c5472",
+        "passengerId": "39d4b0e6-f1a7-4c82-a3e9-8b5c07d26f14"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-115",
+      "body": {
+        "description": "Mobile boarding pass saved",
+        "flightId": "1a7d3f06-c5e8-4b92-8d40-9f2b6e1a7c83",
+        "passengerId": "7a63e9c1-0d5b-4f28-b1a4-e6c82f09d357"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-116",
+      "body": {
+        "description": "Seat swap request pending",
+        "flightId": "96e2c0b4-3f7a-4d15-a8c6-b1e5d94073fa",
+        "passengerId": "e48c15f2-a9b6-4d07-8e3a-1d7f50c2b968"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-117",
+      "body": {
+        "description": "Dairy-free meal",
+        "flightId": "b5f08d27-9a1c-4e63-87b4-3c0e6d2a9f15",
+        "passengerId": "0d2b7a95-c3e8-4146-9f5d-a8e1b64c0732"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-118",
+      "body": {
+        "description": "Soft drink only, no alcohol",
+        "flightId": "4d1c9a73-e60b-4825-b9f3-a7d2058e1c64",
+        "passengerId": "c9e5a1d8-47b2-4f60-a3c7-0b6d9e82f154"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-119",
+      "body": {
+        "description": "Allergic to latex",
+        "flightId": "f87b3e50-2d94-4a16-8c0a-6e1d5b9c3074",
+        "passengerId": "63f0d7b2-e9a4-4c15-8b86-d5a3c1f07e29"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-120",
+      "body": {
+        "description": "Priority seat for pregnancy",
+        "flightId": "2e6a0c95-b4d1-4f78-a3e2-9d8c17b5604f",
+        "passengerId": "b17e4c90-5a3d-4f82-96b0-e2c8d7a1f536"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-121",
+      "body": {
+        "description": "Fragile item in overhead bin",
+        "flightId": "a3c8f1d6-87e0-4b24-9a5d-0b2e7c46d915",
+        "passengerId": "2a85d6f3-0c1e-4b97-a4d2-7f9e3b50c681"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-122",
+      "body": {
+        "description": "Relocating abroad, extra bags",
+        "flightId": "70d5b2e9-c3a6-4f81-b04e-8a1f6d9c3257",
+        "passengerId": "d6c0b84e-92f7-4a13-8e5b-a1d3f70c9264"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-123",
+      "body": {
+        "description": "Seat close to lavatory",
+        "flightId": "c5e91a38-0f6d-4b72-8a43-d7b2c0e5f968",
+        "passengerId": "4f93a2c7-e1b8-4d05-b6a9-c08d5e7f3a12"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-124",
+      "body": {
+        "description": "Prefers forward-facing seat",
+        "flightId": "1f4b7d92-a8e3-4c60-b5d1-e9306a2c8f47",
+        "passengerId": "85b1e0d9-3a7c-4e42-9d6f-b2c4a8f10e73"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-125",
+      "body": {
+        "description": "Arrival time shared with hotel",
+        "flightId": "8b0e6c34-d19f-4a57-9c82-f5a3d7e1b620",
+        "passengerId": "f2d7c439-6b0a-4a81-a5e3-91c8e04d7b56"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-126",
+      "body": {
+        "description": "Meal after takeoff only",
+        "flightId": "d9a2f705-5c1b-4e48-a6d3-0e7b84c1f392",
+        "passengerId": "1e68a5b0-d4c9-4f37-8b21-6a0f3e9d7c45"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-127",
+      "body": {
+        "description": "Pet carrier under seat",
+        "flightId": "37c1e8a0-b6f4-4d59-8e07-a2d95c3b6f14",
+        "passengerId": "9b04f7e3-a258-4c1d-b693-e7d1c05a8f26"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-128",
+      "body": {
+        "description": "Fast-track security pass",
+        "flightId": "e6f3b095-12a7-4c8d-b4e0-79c5d2a18f36",
+        "passengerId": "c3a8d21f-7e56-4b94-a0c7-5f9b1e63d808"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-129",
+      "body": {
+        "description": "Visually impaired, guide assistance",
+        "flightId": "4a9d5c18-f3e0-4b67-a2c9-1d8e607b3f54",
+        "passengerId": "70e5b9c6-18d3-4a42-9f7a-d4a2c8061e5b"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-130",
+      "body": {
+        "description": "Exchange student, student visa",
+        "flightId": "92b7e04d-6a1c-4f38-b5d9-c8e3a07f2615",
+        "passengerId": "a8d13f64-c0b9-4e75-86a2-3e5f7d9c1b04"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-131",
+      "body": {
+        "description": "Seat with power outlet",
+        "flightId": "0c58a3e7-d941-4b26-8f0b-e6a1d7c4259f",
+        "passengerId": "3c7f0a85-e2d6-4b19-a4c8-b91e5d60f237"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-132",
+      "body": {
+        "description": "Cabin baggage weighed at desk",
+        "flightId": "b4e1d68a-2c97-4a03-9e5f-70d3c8a1b645",
+        "passengerId": "e5b29d07-4a8c-4f61-b3d0-c7a16e8f5392"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-133",
+      "body": {
+        "description": "Sunrise view, east-side window",
+        "flightId": "6d3a9f12-e8b5-4c70-a1d4-5b0e7c93f268",
+        "passengerId": "56a1c8e4-b7f3-4d20-9e85-0d2b6f7a3c19"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-134",
+      "body": {
+        "description": "Booked with travel voucher",
+        "flightId": "f1c06b83-a5d2-4e49-8b97-3a8e0d5c7f21",
+        "passengerId": "bd90e3a6-5c12-4f78-a8b4-e1f7d0293c65"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-135",
+      "body": {
+        "description": "Delayed connection, rebooked",
+        "flightId": "53e8a7d0-c4b1-4f96-a2e3-d9061b5c8f70",
+        "passengerId": "28f4c7d1-9a0b-4e53-b6d8-a3e5019c7f42"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-136",
+      "body": {
+        "description": "Teen traveling alone with consent",
+        "flightId": "ac27d9f5-18e6-4b03-97c4-e5a0b3d6812f",
+        "passengerId": "d4a6e82b-f053-4c97-8b1a-7c9d0e3f5a68"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-137",
+      "body": {
+        "description": "Meet and assist on arrival",
+        "flightId": "7b0f4e91-d3a8-4c52-b6e7-0a9c5d1f8324",
+        "passengerId": "0b83d5f9-c7a2-4e16-a9d4-f6e1c2087b35"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-138",
+      "body": {
+        "description": "Pilgrimage group member",
+        "flightId": "1d85c3a6-f7e0-4b94-a8d2-6e4b09f3c175",
+        "passengerId": "9e17b4c0-3d85-4a62-8f0e-b5a9d7c26e13"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-139",
+      "body": {
+        "description": "Family reunion, seats in row 31",
+        "flightId": "e9a4f2b7-0c63-4d18-9b5a-c1d7e8036a42",
+        "passengerId": "c71f0e58-a4b9-4d23-b8c6-2d5e9a037f84"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-140",
+      "body": {
+        "description": "Invoice to employer",
+        "flightId": "38d6b1c9-a2f5-4e07-8c14-d0e9a7b53f62",
+        "passengerId": "4d29a7f3-e6c1-4b80-95a2-1f8c3d0e7b56"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-141",
+      "body": {
+        "description": "Sunday flight, no checked bag",
+        "flightId": "c0f7a5e2-9b38-4d61-b4a7-82e1d6c30f95",
+        "passengerId": "f89c3b16-0d72-4a45-a1e8-c4b6d95e2073"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-142",
+      "body": {
+        "description": "Wheelchair own, stowed in hold",
+        "flightId": "5f2b8d04-e1a7-4c93-a6b5-3d9c0e7f1824",
+        "passengerId": "6a05e8d2-b3f9-4c74-8d17-e9c2a1b05f48"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-143",
+      "body": {
+        "description": "Prefers seat away from engines",
+        "flightId": "d3e60a98-7c5b-4f12-8a09-b1f4c2d5e763",
+        "passengerId": "a1c4f97b-58e0-4d36-b2a5-0e7d3c9f6814"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-144",
+      "body": {
+        "description": "Soft-food meal requested",
+        "flightId": "8a1f5c37-b0d9-4e62-a7c4-e2306d9b8f51",
+        "passengerId": "37e2d0a8-c6b1-4f59-9a43-d8f50e1b7c26"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-145",
+      "body": {
+        "description": "Vegetarian meal, no eggs",
+        "flightId": "2c9d7e40-f5a8-4b16-9d3e-6a0b8c1f7e95",
+        "passengerId": "eb58a41c-92d7-4e03-86f5-a7c9b0d3e164"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-146",
+      "body": {
+        "description": "Photo ID verified at check-in",
+        "flightId": "b6a30d58-4e1f-4c97-8a2b-d9c7e5f04b13",
+        "passengerId": "1f60c9b5-d3a4-4872-b0e7-5c8a2d19f3e6"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-147",
+      "body": {
+        "description": "Coach tour transfer after landing",
+        "flightId": "47e1c9b2-a8d6-4f30-b5a9-0c3e7d82f614",
+        "passengerId": "84d7e3a1-0f5c-4b29-a6d8-9e1b4c7203fa"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-148",
+      "body": {
+        "description": "Medical certificate on file",
+        "flightId": "f50a8d63-2b7e-4c19-a4d6-87e9c1b0356a",
+        "passengerId": "d05b6f92-a8e3-4c17-9b40-e3c1a7d5f862"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-149",
+      "body": {
+        "description": "Name on ticket matches visa",
+        "flightId": "9c4e2b75-d0a3-4f68-b1e5-a6f8037d9c24",
+        "passengerId": "5be9a037-c1d4-4f86-8a62-0d7f3e5c9b18"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-150",
+      "body": {
+        "description": "Extra blanket for cold sensitivity",
+        "flightId": "c4e8a216-9b3d-47f5-a0e1-6d82c5b9137f",
+        "passengerId": "a1f3c8d2-5e70-4b19-8c64-2d9e07b3f150"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-151",
+      "body": {
+        "description": "Spanish-speaking crew assistance",
+        "flightId": "d93b5f07-2a6e-4c81-b4d9-1f7e03a85c26",
+        "passengerId": "b27d9e41-c3a8-4f06-9d15-8e60a4f2c731"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-152",
+      "body": {
+        "description": "Flowers gift, kept cool in hold",
+        "flightId": "e05a7c34-8d1f-4b92-83c6-a9d2f46b0e15",
+        "passengerId": "c8350fa9-71e2-4d6b-a948-30b5d1e7f862"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-153",
+      "body": {
+        "description": "No pork in meal",
+        "flightId": "f1b6d803-4c97-4a5e-9e20-b3c8a7154d69",
+        "passengerId": "d6a94b13-0f85-4e27-b1c3-7a2e58d09f46"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-154",
+      "body": {
+        "description": "First-time flyer, window seat preferred",
+        "flightId": "0a8c2e57-d631-4f94-a5b7-e9014c6d3f28",
+        "passengerId": "e4172c85-b9d0-4a36-8f7e-c15a63d28b90"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-155",
+      "body": {
+        "description": "Knee brace, please notify crew",
+        "flightId": "1d7f4a90-e5b2-4c38-8a61-f06c93e2b574",
+        "passengerId": "f58e30d6-a2c4-4b71-9036-d8b1e4a75c23"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-156",
+      "body": {
+        "description": "Prefers evening meal service",
+        "flightId": "2e60b9c1-f847-4d13-96a5-07d3c8e1a4b2",
+        "passengerId": "0396b7e4-d1f8-4a52-b8c0-4e92a5f31d67"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-157",
+      "body": {
+        "description": "Chauffeur pickup at arrivals",
+        "flightId": "3f91c5d8-0a26-4e74-b3d8-52e7a1c906fb",
+        "passengerId": "1a4d8f62-3c95-4e07-a1b9-6f50e2c8d374"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-158",
+      "body": {
+        "description": "Early check-in at counter",
+        "flightId": "40a2d6e9-17b5-4f83-8c04-d9e61b3a7f52",
+        "passengerId": "2b75e1c9-84a0-4d36-9f2e-b3d7062a5e81"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-159",
+      "body": {
+        "description": "Laptop and camera in carry-on",
+        "flightId": "51b3e7fa-28c6-4094-9d15-eaf72c4b8063",
+        "passengerId": "3c86f2da-95b1-4e48-a03f-c4e8173b6f92"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-160",
+      "body": {
+        "description": "Infant formula in cabin bag",
+        "flightId": "62c4f80b-39d7-41a5-ae26-fb083d5c9174",
+        "passengerId": "4d97a3eb-a6c2-4f59-b140-d5f9284c7a03"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-161",
+      "body": {
+        "description": "Prefers seat near the wing",
+        "flightId": "73d5a91c-4ae8-42b6-bf37-0c194e6da285",
+        "passengerId": "5ea8b4fc-b7d3-4a6b-8251-e60a395d8b14"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-162",
+      "body": {
+        "description": "Upgrade waitlist joined",
+        "flightId": "84e6ba2d-5bf9-43c7-80d8-1da25f7eb396",
+        "passengerId": "6fb9c50d-c8e4-4b7c-9362-f71b4a6e9c25"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-163",
+      "body": {
+        "description": "Diplomatic courier documents",
+        "flightId": "95f7cb3e-6c0a-44d8-91e9-2eb36a80c4a7",
+        "passengerId": "70cad61e-d9f5-4c8d-a473-082c5b7fad36"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-164",
+      "body": {
+        "description": "Tour group leader",
+        "flightId": "a608dc4f-7d1b-45e9-a2fa-3fc47b91d5b8",
+        "passengerId": "81dbe72f-ea06-4d9e-b584-193d6c80be47"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-165",
+      "body": {
+        "description": "Vegetarian, no onion or garlic",
+        "flightId": "b719ed50-8e2c-46fa-b30b-40d58ca2e6c9",
+        "passengerId": "92ecf830-fb17-4eaf-8695-2a4e7d91cf58"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-166",
+      "body": {
+        "description": "Seat belt extender requested",
+        "flightId": "c82afe61-9f3d-470b-844c-51e69db3f7da",
+        "passengerId": "a3fd0941-0c28-4fb0-9786-3b5f8ea2d069"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-167",
+      "body": {
+        "description": "Hearing aid, quiet announcements",
+        "flightId": "d93b0f72-a04e-481c-955d-62f7aec408eb",
+        "passengerId": "b40e1a52-1d39-40c1-a897-4c609fb3e17a"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-168",
+      "body": {
+        "description": "Fasting, meal cancelled",
+        "flightId": "ea4c1083-b15f-492d-a66e-7308bfd519fc",
+        "passengerId": "c51f2b63-2e4a-41d2-b9a8-5d710ac4f28b"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-169",
+      "body": {
+        "description": "Guide dog in cabin",
+        "flightId": "fb5d2194-c260-403e-b77f-8419c0e62a0d",
+        "passengerId": "d6203c74-3f5b-42e3-8ab9-6e821bd5039c"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-170",
+      "body": {
+        "description": "Anniversary champagne arranged",
+        "flightId": "0c6e32a5-d371-414f-888a-952ad1f73b1e",
+        "passengerId": "e7314d85-4a6c-43f4-9bca-7f932ce6141d"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-171",
+      "body": {
+        "description": "Local SIM card to collect on arrival",
+        "flightId": "1d7f43b6-e482-4250-999b-a63be2084c2f",
+        "passengerId": "f8425e96-5b7d-4405-acdb-80a43df7252e"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-172",
+      "body": {
+        "description": "Not comfortable in exit row",
+        "flightId": "2e8054c7-f593-4361-8aac-b74cf3195d30",
+        "passengerId": "09536fa7-6c8e-4516-bdec-91b54e08363f"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-173",
+      "body": {
+        "description": "Late-evening arrival, hotel notified",
+        "flightId": "3f9165d8-0604-4472-9bbd-c85d042a6e41",
+        "passengerId": "1a647ab8-7d9f-4627-8efd-a2c65f19474a"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-174",
+      "body": {
+        "description": "Guitar in soft case, carry-on",
+        "flightId": "40a276e9-1715-4583-acce-d96e153b7f52",
+        "passengerId": "2b758bc9-8ea0-4738-9f0e-b3d7602a585b"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-175",
+      "body": {
+        "description": "Vegetarian snack box preferred",
+        "flightId": "51b387fa-2826-4694-bddf-ea7f264c8063",
+        "passengerId": "3c869cda-9fb1-4849-a01f-c4e8713b696c"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-176",
+      "body": {
+        "description": "Medical clearance letter attached",
+        "flightId": "62c4980b-3937-47a5-8ee0-fb80375d9174",
+        "passengerId": "4d97adeb-a0c2-495a-b120-d5f9824c7a7d"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-177",
+      "body": {
+        "description": "Help with heavy lifting at baggage claim",
+        "flightId": "73d5a91c-4a48-48b6-9ff1-0c91486ea285",
+        "passengerId": "5ea8bffc-b1d3-4a6b-8231-e60a935d8b8e"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-178",
+      "body": {
+        "description": "Traveling with grandchildren, adjoining seats",
+        "flightId": "84e6ba2d-5b59-49c7-a002-1da2597fb396",
+        "passengerId": "6fb9c00d-c2e4-4b7c-9342-f71b4a6e9c9f"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-179",
+      "body": {
+        "description": "Seat away from sunlit window",
+        "flightId": "95f7cb3e-6c6a-4ad8-b113-2eb36a80c4a7",
+        "passengerId": "70cad11e-d3f5-4c8d-a453-082c5b7fada0"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-180",
+      "body": {
+        "description": "Duty-free pre-order placed",
+        "flightId": "a608dc4f-7dcb-4be9-8224-3fc47b91d5b8",
+        "passengerId": "81dbe22f-e406-4d9e-b564-193d6c80beb1"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-181",
+      "body": {
+        "description": "Name typo corrected by agent",
+        "flightId": "b719ed50-8e3c-4cfa-9335-40d58ca2e6c9",
+        "passengerId": "92ecf330-f517-4eaf-8675-2a4e7d91cfc2"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-182",
+      "body": {
+        "description": "Overnight stay in transit hotel",
+        "flightId": "c82afe61-9fed-4d0b-a446-51e69db3f7da",
+        "passengerId": "a3fd0441-0628-4fb0-9786-3b5f8ea2d0d3"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-183",
+      "body": {
+        "description": "Courtesy upgrade for loyalty member",
+        "flightId": "d93b0f72-a0ae-4e1c-b557-62f7aec408eb",
+        "passengerId": "b40e1552-1739-40c1-a897-4c609fb3e1e4"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-184",
+      "body": {
+        "description": "Paid by corporate card",
+        "flightId": "ea4c1083-b11f-4f2d-8668-7308bfd519fc",
+        "passengerId": "c51f2663-2e4a-41d2-b9a8-5d710ac4f255"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-185",
+      "body": {
+        "description": "Mandarin-speaking assistance",
+        "flightId": "fb5d2194-c2ca-4a3e-9779-8419c0e62a0d",
+        "passengerId": "d6203774-3f5b-42e3-8ab9-6e821bd503c6"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-186",
+      "body": {
+        "description": "Allergic to fish",
+        "flightId": "0c6e32a5-d3d1-4b4f-a88a-952ad1f73b1e",
+        "passengerId": "e7314885-4a6c-43f4-9bca-7f932ce614a7"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-187",
+      "body": {
+        "description": "Needs extra time at security",
+        "flightId": "1d7f43b6-e4e2-4c50-b99b-a63be2084c2f",
+        "passengerId": "f8425996-5b7d-4405-acdb-80a43df7252f"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-188",
+      "body": {
+        "description": "Lap child under two",
+        "flightId": "2e8054c7-f5fd-4d61-8aac-b74cf3195d30",
+        "passengerId": "095366a7-6c8e-4516-bdec-91b54e0836c0"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-189",
+      "body": {
+        "description": "Fruit plate instead of dessert",
+        "flightId": "3f9165d8-0664-4e72-9bbd-c85d042a6e41",
+        "passengerId": "1a6477b8-7d9f-4627-8efd-a2c65f1947d1"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-190",
+      "body": {
+        "description": "Two-night stopover requested",
+        "flightId": "40a276e9-17ce-4f83-acce-d96e153b7f52",
+        "passengerId": "2b7588c9-8ea0-4738-9f0e-b3d7602a5852"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-191",
+      "body": {
+        "description": "Sleep mask and earplugs requested",
+        "flightId": "51b387fa-2880-4094-bddf-ea7f264c8063",
+        "passengerId": "3c8699da-9fb1-4849-a01f-c4e8713b6963"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-192",
+      "body": {
+        "description": "Prefers center section seat",
+        "flightId": "62c4980b-3991-41a5-8ee0-fb80375d9174",
+        "passengerId": "4d97aaeb-a0c2-495a-b120-d5f9824c7a04"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-193",
+      "body": {
+        "description": "Surfboard bag checked",
+        "flightId": "73d5a91c-4ae2-42b6-9ff1-0c91486ea285",
+        "passengerId": "5ea8bbfc-b1d3-4a6b-8231-e60a935d8b15"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-194",
+      "body": {
+        "description": "Bereavement fare, documents shown",
+        "flightId": "84e6ba2d-5b53-43c7-a002-1da2597fb396",
+        "passengerId": "6fb9ccd0-c2e4-4b7c-9342-f71b4a6e9c26"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-195",
+      "body": {
+        "description": "Press accreditation on file",
+        "flightId": "95f7cb3e-6c64-44d8-b113-2eb36a80c4a7",
+        "passengerId": "70cadd1e-d3f5-4c8d-a453-082c5b7fad37"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-196",
+      "body": {
+        "description": "Medical sharps container carried",
+        "flightId": "a608dc4f-7dc5-45e9-8224-3fc47b91d5b8",
+        "passengerId": "81dbee2f-e406-4d9e-b564-193d6c80be48"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-197",
+      "body": {
+        "description": "Alternate phone number on file",
+        "flightId": "b719ed50-8e37-46fa-9335-40d58ca2e6c9",
+        "passengerId": "92ecff30-f517-4eaf-8675-2a4e7d91cf59"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-198",
+      "body": {
+        "description": "Return date left open",
+        "flightId": "c82afe61-9fe7-470b-a446-51e69db3f7da",
+        "passengerId": "a3fd0a41-0628-4fb0-9786-3b5f8ea2d06a"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-199",
+      "body": {
+        "description": "Seat near the lavatory not wanted",
+        "flightId": "2a9f6d03-b7c1-4e85-8d4a-f30c9e5b1d67",
+        "passengerId": "c7e4a1b9-3d58-4f02-9a6c-e18b5d0f7a34"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-200",
+      "body": {
+        "description": "Checked pram at the gate",
+        "flightId": "e5c08b14-6d9a-4f73-a2b1-7c3e9d0a5f86",
+        "passengerId": "9b3d5f80-e2a6-4c17-b8d9-04a7c1e6f352"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "createbookingrequestdto-rejection-1",
+      "body": {
+        "description": "",
+        "flightId": "00000000-0000-4000-8000-000000000000",
+        "passengerId": null
+      },
+      "violates": {
+        "field": "PassengerId",
+        "rule": "`PassengerId` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on PassengerId"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-rejection-2",
+      "body": {
+        "description": "",
+        "flightId": "00000000-0000-4000-8000-000000000000",
+        "passengerId": "not-a-uuid"
+      },
+      "violates": {
+        "field": "PassengerId",
+        "rule": "violates a declared constraint on `PassengerId`"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on PassengerId"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-rejection-3",
+      "body": {
+        "description": "",
+        "flightId": null,
+        "passengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "`FlightId` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on FlightId"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-rejection-4",
+      "body": {
+        "description": "",
+        "flightId": "not-a-uuid",
+        "passengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "violates a declared constraint on `FlightId`"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on FlightId"
+      }
+    },
+    {
+      "ref": "createbookingrequestdto-rejection-5",
+      "body": {
+        "description": null,
+        "flightId": "00000000-0000-4000-8000-000000000000",
+        "passengerId": "00000000-0000-4000-8000-000000000000"
+      },
+      "violates": {
+        "field": "Description",
+        "rule": "`Description` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "rejected by model binding"
+      }
+    }
+  ]
+}

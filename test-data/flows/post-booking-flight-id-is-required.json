@@ -1,0 +1,16 @@
+{
+  "id": "post-booking-flight-id-is-required",
+  "title": "Flight id is required",
+  "source": "staged scenario",
+  "why": "Confirms an empty FlightId is rejected before any booking is made",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with a valid PassengerId and FlightId 00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "expect": [
+    "Request is rejected with a validation error that FlightId is required; no booking is created"
+  ]
+}

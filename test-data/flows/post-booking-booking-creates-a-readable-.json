@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-booking-creates-a-readable-",
+  "title": "Booking creates a readable record and domain event",
+  "source": "staged scenario",
+  "why": "Verifies the write side feeds the read model and publishes the created event",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a6666666-6666-4666-8666-666666666666",
+        "ArriveAirportId": "e6666666-6666-4666-8666-666666666666",
+        "DepartureAirportId": "d6666666-6666-4666-8666-666666666666",
+        "Description": "Morning flight",
+        "FlightDate": "2026-12-28T06:15:00Z",
+        "FlightNumber": "LH400",
+        "Price": 380.0,
+        "SeatNumber": "15F"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with a valid passenger and flight-1, then read the booking read model and the published events"
+    }
+  ],
+  "expect": [
+    "A BookingReadModel with IsDeleted false carries the passenger info and trip, and a BookingCreatedDomainEvent carries the same passenger info and trip"
+  ]
+}

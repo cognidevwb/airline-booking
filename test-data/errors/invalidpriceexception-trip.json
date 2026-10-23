@@ -1,0 +1,15 @@
+{
+  "id": "invalidpriceexception-trip",
+  "title": "Trip that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidPriceException",
+  "base": "DomainException",
+  "thrownAt": "src/Booking/Booking/ValueObjects/Trip.cs:59",
+  "condition": "if (price < 0)",
+  "field": "Trip",
+  "expect": {
+    "status": 500,
+    "error": "InvalidPriceException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

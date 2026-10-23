@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-flight-date-is-invalid",
+  "title": "Flight date is invalid",
+  "source": "staged scenario",
+  "why": "Shows a default flight date on the flight blocks booking",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "b1000000-0000-4000-8000-000000000003",
+        "ArriveAirportId": "e1000000-0000-4000-8000-000000000003",
+        "DepartureAirportId": "d1000000-0000-4000-8000-000000000003",
+        "Description": "Default date",
+        "FlightDate": "0001-01-01T00:00:00Z",
+        "FlightNumber": "TK3",
+        "Price": 240.0,
+        "SeatNumber": "12D"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for a valid passenger on flight-1"
+    }
+  ],
+  "expect": [
+    "Booking is rejected with an invalid flight date error; no booking is created"
+  ]
+}

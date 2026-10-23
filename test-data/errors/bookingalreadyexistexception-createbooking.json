@@ -1,0 +1,25 @@
+{
+  "id": "bookingalreadyexistexception-createbooking",
+  "title": "CreateBooking: the record already exists",
+  "kind": "duplicate",
+  "exception": "BookingAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:120",
+  "condition": "if (reservation is not null && !reservation.IsDeleted)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "BookingAlreadyExistException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/booking",
+    "body": {
+      "description": "Window seat",
+      "flightId": "b81e5d07-2c93-4a6f-8d4b-5e1f90c3a7d2",
+      "passengerId": "3f9a1c2e-7b4d-4e8a-9c15-a2d60b7e41f3"
+    },
+    "repeat": 2,
+    "why": "the same body twice; the second is refused"
+  }
+}

@@ -1,0 +1,1211 @@
+{
+  "digest": "f4e943d27e0b1e84",
+  "domain": "Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat",
+  "entity": "BookingReadModel",
+  "personal": {
+    "PassengerInfo": "name"
+  },
+  "records": [
+    {
+      "BookId": "3f8a1c52-7d94-4b1e-9a63-0c5e2f7b8d11",
+      "IsDeleted": false,
+      "PassengerInfo": "Maria Gonzalez | BA117 | 2026-12-14 08:35 | Seat 14A | 342.50 | Window seat",
+      "Trip": "a1d4e7b0-52c3-4f98-8e16-93b7c0d2a501"
+    },
+    {
+      "BookId": "b27e90d4-1a68-4c3f-85d2-7e4f1a9c6b02",
+      "IsDeleted": false,
+      "PassengerInfo": "Liam O'Connor | LH402 | 2026-11-03 06:50 | Seat 22F | 189.99 | Vegetarian meal",
+      "Trip": "c93f2a18-6be4-4d07-9a51-f08d3e7b1c62"
+    },
+    {
+      "BookId": "5c1d83fa-9e27-4a60-b4d8-2f6a0e91c373",
+      "IsDeleted": false,
+      "PassengerInfo": "Aisha Rahman | EK203 | 2026-12-02 22:15 | Seat 3C | 1180.00 | Extra legroom",
+      "Trip": "7e05b4c9-31fa-4286-bd90-a4c8162e5f73"
+    },
+    {
+      "BookId": "e84b6a07-c3d1-4f52-a79e-18d05b3c4e84",
+      "IsDeleted": false,
+      "PassengerInfo": "Hiroshi Tanaka | JL044 | 2026-11-19 11:20 | Seat 31K | 765.40 | Aisle seat",
+      "Trip": "29b8d1f6-a074-4c5e-8317-6d9e0fb42a84"
+    },
+    {
+      "BookId": "09a3f5e1-84cb-4d76-91b2-c7e6d02a8f95",
+      "IsDeleted": false,
+      "PassengerInfo": "Sophie Laurent | AF1280 | 2026-11-27 07:05 | Seat 9D | 124.30 | Gluten-free meal",
+      "Trip": "f6a1c350-9d28-47be-a5e4-3b70c81d9e95"
+    },
+    {
+      "BookId": "d6c92b48-5f03-4e1a-8a7d-93b1e4f06a16",
+      "IsDeleted": true,
+      "PassengerInfo": "Carlos Mendoza | IB6251 | 2026-12-09 13:40 | Seat 17B | 98.75 | Window seat",
+      "Trip": "0b7e4d92-c1a5-4938-b6f0-e25a8d73c016"
+    },
+    {
+      "BookId": "72f0e8b3-a165-4c9d-b348-0d5a7c19e227",
+      "IsDeleted": false,
+      "PassengerInfo": "Emily Carter | AA100 | 2026-11-08 17:25 | Seat 12C | 612.00 | Extra legroom",
+      "Trip": "84d3a6f1-e7b2-4059-9c18-5f0b2e6a7d27"
+    },
+    {
+      "BookId": "a41d7c96-2e5b-4f83-9d06-b8c3f1a50e38",
+      "IsDeleted": false,
+      "PassengerInfo": "Mohammed Al-Farsi | QR017 | 2026-12-20 02:10 | Seat 5A | 1450.00 | Halal meal",
+      "Trip": "5c9f0e27-b4d6-4a13-8e75-1a82d6c3b938"
+    },
+    {
+      "BookId": "c8e5a102-7b39-4d64-a1f7-6e92d0b3c449",
+      "IsDeleted": false,
+      "PassengerInfo": "Anna Kowalski | LO282 | 2026-11-12 09:55 | Seat 20E | 156.20 | Middle seat, travelling with child",
+      "Trip": "e2a7b813-0c5f-4d96-b4a8-97d3f1e60c49"
+    },
+    {
+      "BookId": "1b6f93d7-e402-4a8c-b5e9-3d70c4a21f5a",
+      "IsDeleted": false,
+      "PassengerInfo": "Rajesh Iyer | AI101 | 2026-12-05 03:30 | Seat 27H | 428.60 | Vegetarian meal",
+      "Trip": "b0c4e975-3d18-4a2f-96e7-c85a1f0d725a"
+    },
+    {
+      "BookId": "f93a2e65-0d8c-41b7-8c24-a5e1b7d96c6b",
+      "IsDeleted": false,
+      "PassengerInfo": "Grace Nakamura | NH204 | 2026-11-22 10:45 | Seat 8F | 890.00 | Special assistance at gate",
+      "Trip": "3d8e1a40-f6b9-4c72-a053-e49b7c2d816b"
+    },
+    {
+      "BookId": "6e0d4b81-93a7-4f25-b6c8-d12f5a8e377c",
+      "IsDeleted": false,
+      "PassengerInfo": "Lucas Pereira | TP208 | 2026-12-17 15:10 | Seat 15D | 143.90 | Aisle seat",
+      "Trip": "96f2b5c8-a1e3-4d07-8b49-0c7d3e5a917c"
+    },
+    {
+      "BookId": "28c7f1a9-b5e6-4d30-9a82-7f4e0c3d5b8d",
+      "IsDeleted": false,
+      "PassengerInfo": "Fatima Zahra | AT800 | 2026-11-15 12:30 | Seat 11A | 211.45 | Window seat",
+      "Trip": "d41a7e63-8c92-4f50-a7b1-2e6f9d0c348d"
+    },
+    {
+      "BookId": "b05e3d72-c814-4a96-8f1b-e6a9d2c47f9e",
+      "IsDeleted": true,
+      "PassengerInfo": "Oliver Smith | VS3 | 2026-12-11 10:15 | Seat 42A | 534.99 | Extra legroom",
+      "Trip": "1f9c5a38-2d7b-4e84-90c6-b3a8e5d1f79e"
+    },
+    {
+      "BookId": "4d9a8c16-e0b3-4725-a4f8-91c5b7e3d0af",
+      "IsDeleted": false,
+      "PassengerInfo": "Ingrid Larsen | SK905 | 2026-11-05 14:00 | Seat 6B | 178.30 | Vegetarian meal",
+      "Trip": "a8e3d052-7f19-4c6b-b25d-04f9c1a7e6af"
+    },
+    {
+      "BookId": "e7f2b094-5a1d-4c83-9e60-d38a4b7c1fb0",
+      "IsDeleted": false,
+      "PassengerInfo": "David Cohen | LY001 | 2026-12-03 23:20 | Seat 19C | 689.00 | Kosher meal",
+      "Trip": "60b5f1d9-c3a8-4e27-8d94-7a1e2b0f53b0"
+    },
+    {
+      "BookId": "13b8e5d0-6c47-4a92-b1f3-a70d9e2c8ac1",
+      "IsDeleted": false,
+      "PassengerInfo": "Priya Menon | SQ321 | 2026-11-30 01:25 | Seat 24J | 972.80 | Window seat",
+      "Trip": "cf2e7a84-0b51-4d39-a6c8-e95d3b1f40c1"
+    },
+    {
+      "BookId": "9a4c0f27-d3e8-4b15-8760-5b1f2a9e6dd2",
+      "IsDeleted": false,
+      "PassengerInfo": "Thomas Becker | LH716 | 2026-11-10 18:45 | Seat 13F | 132.60 | No special requests",
+      "Trip": "47a0d9c5-e2b6-4f31-9c78-1d8f5e3a62d2"
+    },
+    {
+      "BookId": "d0e61a53-8b92-47c4-a3d5-f2c7e804b1e3",
+      "IsDeleted": false,
+      "PassengerInfo": "Camila Rojas | LA704 | 2026-12-18 21:30 | Seat 30A | 745.25 | Window seat",
+      "Trip": "8b3f6e10-a597-4d82-b0c4-6e1a9d7f25e3"
+    },
+    {
+      "BookId": "58f3b7a2-1c04-4e69-92d1-c0a6e5d83bf4",
+      "IsDeleted": false,
+      "PassengerInfo": "James Whitaker | DL402 | 2026-11-24 08:10 | Seat 2A | 1320.00 | First class meal preference: seafood",
+      "Trip": "e5d1a738-4f60-4b92-8a3e-b7c0f2d19ef4"
+    },
+    {
+      "BookId": "a2d94e08-f7b5-4130-8c6a-3e91d0b5a705",
+      "IsDeleted": false,
+      "PassengerInfo": "Nadia Petrova | SU2578 | 2026-12-07 16:50 | Seat 16E | 267.15 | Aisle seat",
+      "Trip": "3a7c0e91-d6f4-4258-b19d-e8a5c2b0f605"
+    },
+    {
+      "BookId": "7c1f5b3e-2a98-4d06-b4e7-d85a0c9f1316",
+      "IsDeleted": false,
+      "PassengerInfo": "Kwame Mensah | ET500 | 2026-11-17 23:55 | Seat 21D | 498.70 | Extra baggage",
+      "Trip": "d90b4f26-1e7a-4c53-a8d0-5f3c9e2b7116"
+    },
+    {
+      "BookId": "f40a8d69-b3c2-4e17-9a05-6d2e7f1c8b27",
+      "IsDeleted": false,
+      "PassengerInfo": "Isabella Rossi | AZ610 | 2026-12-01 11:05 | Seat 10A | 109.99 | Window seat",
+      "Trip": "2e6d8a17-c405-4f9b-b3e1-a09f7d5c4827"
+    },
+    {
+      "BookId": "3e7b2c95-a0d1-4f48-8b63-e19c5a4d7f38",
+      "IsDeleted": false,
+      "PassengerInfo": "Wei Zhang | CA937 | 2026-11-28 13:15 | Seat 28C | 655.00 | Vegetarian meal",
+      "Trip": "b4c9e052-7a3d-4816-9f2b-d6e8a1c30538"
+    },
+    {
+      "BookId": "c59d1e84-6f27-4b30-a8c9-0b4e3d7a2e49",
+      "IsDeleted": true,
+      "PassengerInfo": "Hannah Fischer | OS124 | 2026-12-12 07:40 | Seat 7F | 147.35 | Aisle seat",
+      "Trip": "71f3a5d8-9b0e-4c24-8e67-c2a4d1f90b49"
+    },
+    {
+      "BookId": "0d8a6f3b-e5c1-4972-b04d-9a7f2e1c5b5a",
+      "IsDeleted": false,
+      "PassengerInfo": "Tariq Hussain | PK786 | 2026-11-14 04:20 | Seat 33B | 389.90 | Halal meal",
+      "Trip": "f8a2c6e4-1d70-4b95-a3f8-5e0b9c7d125a"
+    },
+    {
+      "BookId": "86b4e0c7-9a3d-4f51-8e28-d7c1a5f06b6b",
+      "IsDeleted": false,
+      "PassengerInfo": "Sarah Mitchell | UA901 | 2026-12-15 19:05 | Seat 18A | 701.45 | Window seat",
+      "Trip": "05d7b3a9-e8c4-4126-b9f0-a3e1d6c8456b"
+    },
+    {
+      "BookId": "e1c53a9d-4b78-4d02-a6f5-38e0b7d9c17c",
+      "IsDeleted": false,
+      "PassengerInfo": "Mateo Fernandez | AR1303 | 2026-11-06 20:35 | Seat 25E | 224.80 | Middle seat",
+      "Trip": "9c1e4b70-a2d5-4f83-8607-f5b3a9d0e27c"
+    },
+    {
+      "BookId": "4a9f7d12-c6e0-4b83-9d51-b2a8e3f0d48d",
+      "IsDeleted": false,
+      "PassengerInfo": "Yuki Sato | NH912 | 2026-12-22 09:00 | Seat 4D | 1105.60 | Extra legroom",
+      "Trip": "d3b8a0f5-6c19-4e72-95a4-1e7d2c9b038d"
+    },
+    {
+      "BookId": "bd20c8e6-37a4-4f19-8a7b-e5d1f9c03a9e",
+      "IsDeleted": false,
+      "PassengerInfo": "Elena Popescu | RO391 | 2026-11-09 15:25 | Seat 12B | 94.50 | No special requests",
+      "Trip": "1a5e9c37-d0b8-4264-b7f1-8c3d6a0e529e"
+    },
+    {
+      "BookId": "27e8a4f0-5d93-4c61-b2a8-0f6c3d1e7bad",
+      "IsDeleted": false,
+      "PassengerInfo": "Benjamin Okafor | BA083 | 2026-12-06 21:50 | Seat 35K | 812.30 | Aisle seat",
+      "Trip": "e7c0b2d4-8a51-4f39-9d06-b4a3e1f85cad"
+    },
+    {
+      "BookId": "9f6d1b35-e2a8-4074-a9c3-d50b7e4f1cbe",
+      "IsDeleted": false,
+      "PassengerInfo": "Chloe Dubois | AF008 | 2026-11-21 10:30 | Seat 23A | 478.00 | Window seat",
+      "Trip": "58a4f9e1-3c7d-4b06-82e5-0d1a6c9b73be"
+    },
+    {
+      "BookId": "d38c0a7e-1b46-4e95-bf20-a9e5c3d78fcf",
+      "IsDeleted": false,
+      "PassengerInfo": "Arjun Kapoor | 6E203 | 2026-12-10 05:45 | Seat 14C | 76.99 | Aisle seat",
+      "Trip": "c2f6a1d8-b093-4e47-a15c-7e8d0b3f94cf"
+    },
+    {
+      "BookId": "51e9b4d2-a7f3-4c08-9b16-8d0a2e5c6ed0",
+      "IsDeleted": false,
+      "PassengerInfo": "Zoe Anderson | QF1 | 2026-11-26 23:10 | Seat 40H | 1240.00 | Vegetarian meal",
+      "Trip": "a69d3e05-f1c8-4b72-84a0-c3e7b5d1f2d0"
+    },
+    {
+      "BookId": "ac75f208-6d19-4b3e-81c7-e4a0d9b3f7e1",
+      "IsDeleted": true,
+      "PassengerInfo": "Stefan Novak | OK771 | 2026-12-04 12:20 | Seat 8C | 119.25 | Extra legroom",
+      "Trip": "3b0e8d46-72a9-4c15-b8f3-1d5a9c0e6be1"
+    },
+    {
+      "BookId": "0e3a9c61-f5d8-4720-a4b9-7c1e6f2d8af2",
+      "IsDeleted": false,
+      "PassengerInfo": "Leila Haddad | MS777 | 2026-11-13 14:35 | Seat 29F | 332.40 | Halal meal",
+      "Trip": "f1d5c9a3-0b84-4e67-9a2d-e6c3b7f05df2"
+    },
+    {
+      "BookId": "e6b1d84f-3c05-4a97-b28e-95d0a7c1e3a3",
+      "IsDeleted": false,
+      "PassengerInfo": "Patrick Murphy | EI154 | 2026-12-16 06:15 | Seat 11E | 138.70 | Window seat",
+      "Trip": "7d4a0b92-e6c1-4f38-a5d7-92b8e1f03ca3"
+    },
+    {
+      "BookId": "3c8d5e20-b9a6-4f14-8d73-a1f4c0e92b14",
+      "IsDeleted": false,
+      "PassengerInfo": "Mei Lin Chen | CX251 | 2026-11-29 00:40 | Seat 26A | 927.55 | Aisle seat",
+      "Trip": "b8e2f704-5a1d-4c96-83b0-d7a9c4e61f14"
+    },
+    {
+      "BookId": "c71f0a96-4e2d-4b58-9c03-f8b6d1a5e725",
+      "IsDeleted": false,
+      "PassengerInfo": "Daniel Svensson | SK1467 | 2026-12-13 17:00 | Seat 5F | 164.80 | Vegetarian meal",
+      "Trip": "20c6d9e8-a3f5-4b17-9e84-6a0b1d7c3f25"
+    },
+    {
+      "BookId": "64a2e9b7-d0c3-4815-b6f9-2e7a0c4d1836",
+      "IsDeleted": false,
+      "PassengerInfo": "Amara Okonkwo | KQ100 | 2026-11-18 21:05 | Seat 32D | 574.20 | Extra baggage",
+      "Trip": "e0f3b7a5-9d12-4c68-a4e1-b85c0d2a7936"
+    },
+    {
+      "BookId": "fa05c3d1-8e72-4b69-a1d4-0b9e6f3c2a47",
+      "IsDeleted": false,
+      "PassengerInfo": "Victor Alvarez | AM007 | 2026-12-08 10:55 | Seat 9A | 305.10 | Window seat",
+      "Trip": "4c9a2e61-b7d0-4f83-96e5-a1d8c3f07b47"
+    },
+    {
+      "BookId": "198e7f4a-c2b5-4d03-9e68-b4a1d7c05f58",
+      "IsDeleted": false,
+      "PassengerInfo": "Katarina Horvat | OU612 | 2026-11-11 16:15 | Seat 19B | 87.40 | Middle seat",
+      "Trip": "d5b1f8c2-04e9-4a76-b3d0-9c7e2a6f1d58"
+    },
+    {
+      "BookId": "b3d60c85-7a1e-4f92-8b47-e5c9a0d2f169",
+      "IsDeleted": false,
+      "PassengerInfo": "Noah Williams | AC849 | 2026-12-19 13:05 | Seat 3A | 1015.00 | Extra legroom",
+      "Trip": "89e4c0a7-d3b6-4125-a8f9-60b2d5e7c369"
+    },
+    {
+      "BookId": "7e4f2a1c-95d8-4b30-a6e1-c3b0d8f9527a",
+      "IsDeleted": false,
+      "PassengerInfo": "Sunita Deshmukh | AI131 | 2026-11-25 08:25 | Seat 21C | 356.75 | Vegetarian meal",
+      "Trip": "a3c7e5b1-2f08-4d94-9b6a-e1d0c8f43a7a"
+    },
+    {
+      "BookId": "d29b8e63-0f4a-4c17-b5d2-a8e3c1f7068b",
+      "IsDeleted": true,
+      "PassengerInfo": "Marcus Johnson | AA2278 | 2026-12-21 18:40 | Seat 16A | 248.90 | Window seat",
+      "Trip": "1d8f6a40-c5e2-4b79-8e03-f9a7b2c1d68b"
+    },
+    {
+      "BookId": "05a7c4e9-b1d3-4826-9f50-3e8d2b6a1c9c",
+      "IsDeleted": false,
+      "PassengerInfo": "Olga Ivanova | TK1984 | 2026-11-16 22:00 | Seat 27E | 201.35 | Aisle seat",
+      "Trip": "f7b4d1e6-8a30-4c52-a9e7-4d0c6b3f589c"
+    },
+    {
+      "BookId": "a17c3e52-0b94-4d68-8f21-5c9e7a3d1b40",
+      "IsDeleted": false,
+      "PassengerInfo": "Ahmed Khalil | MS985 | 2026-11-02 09:40 | 12C | 412.50 | Aisle seat",
+      "Trip": "f2d8b601-4a73-4c95-b1e8-90a6c3d57e12"
+    },
+    {
+      "BookId": "b3e92d07-c1a5-4f86-9d34-7e0b8a2c6f51",
+      "IsDeleted": false,
+      "PassengerInfo": "Emma Johansson | SK1553 | 2026-11-04 07:15 | 8A | 189.99 | Window seat",
+      "Trip": "07c4e9a3-d8b2-4651-a73f-2e1d6b90c845"
+    },
+    {
+      "BookId": "c4f05a18-d2b6-4097-ae45-8f1c9b3d7e62",
+      "IsDeleted": false,
+      "PassengerInfo": "Rohan Malhotra | AI302 | 2026-11-06 22:50 | 31F | 524.00 | Vegetarian meal",
+      "Trip": "18d5fa04-e9c3-4762-b8a0-3f2e7c1d9b56"
+    },
+    {
+      "BookId": "d5a16b29-e3c7-41a8-bf56-9a2d0c4e8f73",
+      "IsDeleted": false,
+      "PassengerInfo": "Sofia Almeida | TP1355 | 2026-11-07 13:25 | 19B | 143.20 | Extra legroom",
+      "Trip": "29e6ab15-f0d4-4873-89b1-4a3f8d2e0c67"
+    },
+    {
+      "BookId": "e6b27c3a-f4d8-42b9-80a7-ab3e1d5f9084",
+      "IsDeleted": false,
+      "PassengerInfo": "Jacob Miller | UA838 | 2026-11-09 11:05 | 24D | 689.75 | Window seat",
+      "Trip": "3af7bc26-01e5-4984-9ac2-5b4a9e3f1d78"
+    },
+    {
+      "BookId": "f7c38d4b-05e9-43ca-91b8-bc4f2e6a0195",
+      "IsDeleted": false,
+      "PassengerInfo": "Nguyen Thi Lan | VN301 | 2026-11-10 00:35 | 27K | 376.40 | Special assistance",
+      "Trip": "4b08cd37-12f6-4a95-abd3-6c5bafa4e289"
+    },
+    {
+      "BookId": "08d49e5c-16fa-44db-a2c9-cd503f7b12a6",
+      "IsDeleted": false,
+      "PassengerInfo": "Lars Eriksen | DY1672 | 2026-11-11 16:45 | 5C | 98.50 | No notes",
+      "Trip": "5c19de48-2307-4ba6-bce4-7d6cb0b5f39a"
+    },
+    {
+      "BookId": "19e5af6d-27ab-45ec-b3da-de614a8c23b7",
+      "IsDeleted": false,
+      "PassengerInfo": "Layla Hassan | EY102 | 2026-11-13 02:20 | 3A | 1180.00 | Vegetarian meal",
+      "Trip": "6d2aef59-3418-4cb7-8df5-8e7dc1c6a4ab"
+    },
+    {
+      "BookId": "2af6b07e-38bc-46fd-84eb-ef725b9d34c8",
+      "IsDeleted": true,
+      "PassengerInfo": "Connor Walsh | EI105 | 2026-11-14 10:10 | 16E | 267.30 | Extra legroom",
+      "Trip": "7e3b0f6a-4529-4dc8-9e06-9f8ed2d7b5bc"
+    },
+    {
+      "BookId": "3b07c18f-49cd-47ae-95fc-f0836cae45d9",
+      "IsDeleted": false,
+      "PassengerInfo": "Mariana Costa | LA8084 | 2026-11-15 19:55 | 29A | 455.60 | Window seat",
+      "Trip": "8f4c1a7b-563a-4ed9-a117-a09fe3e8c6cd"
+    },
+    {
+      "BookId": "4c18d290-5ade-48bf-a60d-01947dbf56ea",
+      "IsDeleted": false,
+      "PassengerInfo": "Kenji Yamamoto | JL408 | 2026-11-16 12:30 | 10D | 731.00 | Aisle seat",
+      "Trip": "905d2b8c-674b-4fea-b228-b1a0f4f9d7de"
+    },
+    {
+      "BookId": "5d29e3a1-6bef-49c0-b71e-12a58ec067fb",
+      "IsDeleted": false,
+      "PassengerInfo": "Freya Andersen | SK2593 | 2026-11-18 06:00 | 7F | 134.99 | Window seat",
+      "Trip": "a16e3c9d-785c-40ab-8339-c2b105a0e8ef"
+    },
+    {
+      "BookId": "6e3af4b2-7cf0-4ad1-8c2f-23b69fd178a0",
+      "IsDeleted": false,
+      "PassengerInfo": "Diego Ramirez | AM673 | 2026-11-19 15:40 | 21C | 318.25 | Extra legroom",
+      "Trip": "b27f4dae-896d-41bc-944a-d3c216b1f9f0"
+    },
+    {
+      "BookId": "7f4b05c3-8d01-4be2-9d30-34c7a0e289b1",
+      "IsDeleted": false,
+      "PassengerInfo": "Amelia Brooks | VS11 | 2026-11-21 09:20 | 4A | 1045.00 | Vegetarian meal",
+      "Trip": "c3805ebf-9a7e-42cd-a55b-e4d327c2a001"
+    },
+    {
+      "BookId": "805c16d4-9e12-4cf3-ae41-45d8b1f39ac2",
+      "IsDeleted": false,
+      "PassengerInfo": "Tomasz Wisniewski | LO332 | 2026-11-22 17:15 | 14B | 112.80 | Aisle seat",
+      "Trip": "d4916fc0-ab8f-43de-b66c-f5e438d3b112"
+    },
+    {
+      "BookId": "916d27e5-af23-40d4-bf52-56e9c2a4abd3",
+      "IsDeleted": false,
+      "PassengerInfo": "Zainab Abdullahi | ET702 | 2026-11-24 01:45 | 33H | 598.40 | Special assistance",
+      "Trip": "e5a270d1-bc90-44ef-b77d-0649e5e4c223"
+    },
+    {
+      "BookId": "a27e38f6-b034-41e5-8063-67fad3b5bce4",
+      "IsDeleted": false,
+      "PassengerInfo": "Henrik Nilsson | AY1332 | 2026-11-25 08:50 | 9D | 176.50 | Window seat",
+      "Trip": "f6b381e2-cda1-45f0-a88e-175f06f5d334"
+    },
+    {
+      "BookId": "b38f4907-c145-42f6-9174-780be4c6cdf5",
+      "IsDeleted": false,
+      "PassengerInfo": "Grace Thompson | BA286 | 2026-11-27 20:30 | 18A | 802.15 | Extra legroom",
+      "Trip": "07c492f3-deb2-4601-b99f-286a17a6e445"
+    },
+    {
+      "BookId": "c49a5a18-d256-43a7-8285-891cf5d7de06",
+      "IsDeleted": false,
+      "PassengerInfo": "Pavel Dvorak | OK545 | 2026-11-28 06:25 | 6C | 89.99 | No notes",
+      "Trip": "18d5a304-efc3-4712-80a0-39b928b7f556"
+    },
+    {
+      "BookId": "d55b6b29-e367-44b8-9396-9a2d06e8ef17",
+      "IsDeleted": false,
+      "PassengerInfo": "Aaliyah Patel | EK507 | 2026-11-30 03:10 | 25J | 641.90 | Vegetarian meal",
+      "Trip": "29e6b415-f0d4-4823-91b1-4aca4ac8a667"
+    },
+    {
+      "BookId": "e66c7c3a-f478-45c9-a4a7-ab3e17f9f028",
+      "IsDeleted": false,
+      "PassengerInfo": "Santiago Vargas | AV245 | 2026-12-01 14:05 | 11E | 287.60 | Aisle seat",
+      "Trip": "3af7c526-0105-4934-a2c2-5bdb5bd9a778"
+    },
+    {
+      "BookId": "f77d8d4b-05a9-46da-b5b8-bc4f280a1139",
+      "IsDeleted": false,
+      "PassengerInfo": "Ines Moreau | AF1680 | 2026-12-02 12:40 | 15F | 154.30 | Window seat",
+      "Trip": "4b08d637-1216-4a45-b3d3-6cec6cea8889"
+    },
+    {
+      "BookId": "088e9e5c-16ba-47eb-86c9-cd503f9b224a",
+      "IsDeleted": false,
+      "PassengerInfo": "Joseph Okeke | KQ116 | 2026-12-03 22:20 | 20D | 524.75 | Special assistance",
+      "Trip": "5c19e748-2327-4ab6-84e4-7dfd7dfa99ba"
+    },
+    {
+      "BookId": "199fafad-27cb-48fc-97da-de614aac335b",
+      "IsDeleted": false,
+      "PassengerInfo": "Hye-jin Park | KE905 | 2026-12-04 10:55 | 12A | 695.00 | Window seat",
+      "Trip": "6d2af859-3438-4bc7-95f5-8e0e8e0baacb"
+    },
+    {
+      "BookId": "2aa0b0be-38dc-49a0-a8eb-ef725bbd446c",
+      "IsDeleted": false,
+      "PassengerInfo": "Callum Reid | BA1476 | 2026-12-05 07:30 | 22B | 126.40 | No notes",
+      "Trip": "7e3b096a-4549-4cb8-a606-9f1f9f1cbbdc"
+    },
+    {
+      "BookId": "3bb1c1cf-49ed-4ab1-b9fc-f0836cbe557d",
+      "IsDeleted": false,
+      "PassengerInfo": "Dalia Mansour | MS753 | 2026-12-06 16:10 | 8C | 349.20 | Aisle seat",
+      "Trip": "8f4c1b7b-5659-4de9-b717-a02aa02addec"
+    },
+    {
+      "BookId": "4cc2d2d0-5afe-4bc2-8a0d-01947dcf668e",
+      "IsDeleted": false,
+      "PassengerInfo": "Erik Lindqvist | SK407 | 2026-12-07 05:45 | 17A | 201.99 | Window seat",
+      "Trip": "905d2c8c-676b-4ffa-a828-b1b1b1bbeeee"
+    },
+    {
+      "BookId": "5dd3e3e1-6b0f-4cd3-9b1e-12a58edf779f",
+      "IsDeleted": false,
+      "PassengerInfo": "Natalia Sokolova | SU262 | 2026-12-08 18:00 | 30E | 433.50 | Vegetarian meal",
+      "Trip": "a16e3d9d-787d-40bb-9449-c2c2c2ccffff"
+    },
+    {
+      "BookId": "6ee4f4f2-7c10-4de4-8c2f-23b69ef088a0",
+      "IsDeleted": false,
+      "PassengerInfo": "William Foster | DL58 | 2026-12-09 09:15 | 2C | 1420.00 | Extra legroom",
+      "Trip": "b27f4eae-898e-41cc-a55a-d3d3d3dd0a10"
+    },
+    {
+      "BookId": "7ff50503-8d21-4ef5-9d30-34c7a1f199b1",
+      "IsDeleted": false,
+      "PassengerInfo": "Mina Choi | OZ541 | 2026-12-10 13:50 | 26G | 478.80 | Window seat",
+      "Trip": "c3805fbf-9a9f-42de-a66b-e4e4e4ee1b21"
+    },
+    {
+      "BookId": "80061614-9e32-40a6-ae41-45d8b2a2aac2",
+      "IsDeleted": false,
+      "PassengerInfo": "Luca Bianchi | AZ204 | 2026-12-11 08:20 | 13D | 138.60 | Aisle seat",
+      "Trip": "d4917fd0-aba0-43ef-b77d-f5f5f5ff2c32"
+    },
+    {
+      "BookId": "91172725-af43-41b7-bf52-56e9c3b3bbd3",
+      "IsDeleted": true,
+      "PassengerInfo": "Chidi Eze | ET908 | 2026-12-12 23:35 | 35A | 566.25 | Special assistance",
+      "Trip": "e5a271e1-bcb1-45f0-a88e-060606003d43"
+    },
+    {
+      "BookId": "a2283836-b054-42c8-8063-67fad4c4ccd4",
+      "IsDeleted": false,
+      "PassengerInfo": "Olivia Hartmann | LH1126 | 2026-12-13 06:40 | 7B | 164.90 | Vegetarian meal",
+      "Trip": "f6b382f2-cdc2-4601-b99f-17171711 4e54"
+    },
+    {
+      "BookId": "b3394947-c165-43d9-9174-780be5d5dde5",
+      "IsDeleted": false,
+      "PassengerInfo": "Faisal Qureshi | PK302 | 2026-12-14 02:55 | 28C | 389.00 | Aisle seat",
+      "Trip": "07c493a3-dec3-4712-80a0-282828225f65"
+    },
+    {
+      "BookId": "c44a5a58-d276-44ea-8285-891cf6e6eef6",
+      "IsDeleted": false,
+      "PassengerInfo": "Charlotte Evans | VS355 | 2026-12-15 11:25 | 5A | 920.50 | Window seat",
+      "Trip": "18d5a415-efd4-4823-91b1-39393933 6f76"
+    },
+    {
+      "BookId": "d55b6b69-e387-45fb-9396-9a2d07f7ff07",
+      "IsDeleted": false,
+      "PassengerInfo": "Mateusz Kaminski | LO268 | 2026-12-16 19:10 | 19F | 107.45 | No notes",
+      "Trip": "29e6b526-f0e5-4934-a2c2-4a4a4a447087"
+    },
+    {
+      "BookId": "e66c7c7a-f498-460c-a4a7-ab3e18080118",
+      "IsDeleted": false,
+      "PassengerInfo": "Anjali Reddy | AI2813 | 2026-12-17 04:05 | 23A | 345.80 | Extra legroom",
+      "Trip": "3af7c637-0116-4a45-b3d3-5b5b5b558198"
+    },
+    {
+      "BookId": "f77d8d8b-05b9-471d-b5b8-bc4f29192129",
+      "IsDeleted": false,
+      "PassengerInfo": "Gabriel Martins | TP1011 | 2026-12-18 15:30 | 14E | 232.10 | Window seat",
+      "Trip": "4b08d748-1227-4b56-84e4-6c6c6c6692a9"
+    },
+    {
+      "BookId": "088e9e9c-16cb-48fc-86c9-cd503fa03230",
+      "IsDeleted": false,
+      "PassengerInfo": "Shira Levi | LY315 | 2026-12-19 21:45 | 9A | 617.00 | Vegetarian meal",
+      "Trip": "5c19e859-2338-4bc7-95f5-7d7d7d77a3ba"
+    },
+    {
+      "BookId": "199fafdd-27dc-490d-97da-de614ab1441c",
+      "IsDeleted": false,
+      "PassengerInfo": "Andrew Campbell | AC873 | 2026-12-21 10:05 | 31B | 574.30 | Aisle seat",
+      "Trip": "6d2af96a-3449-4cd8-8df5-8e8e8e88b4cb"
+    },
+    {
+      "BookId": "2aa0b0ee-38ed-41ae-a8eb-ef725bce557d",
+      "IsDeleted": false,
+      "PassengerInfo": "Mei Tanaka | NH6 | 2026-12-22 17:20 | 4K | 1180.00 | Extra legroom",
+      "Trip": "7e3b0a7b-455a-4de9-9e06-9f9f9f99c5dc"
+    },
+    {
+      "BookId": "3bb1c1ff-49fe-42bf-b9fc-f0836cd0668e",
+      "IsDeleted": false,
+      "PassengerInfo": "Rafael Souza | LA8072 | 2026-12-23 08:00 | 18C | 296.75 | Window seat",
+      "Trip": "8f4c1b8c-566b-4efa-a117-a0a0a0a0d6ed"
+    },
+    {
+      "BookId": "4cc2d30f-5aff-43d3-8a0d-01947de1779f",
+      "IsDeleted": false,
+      "PassengerInfo": "Hana Novakova | OK637 | 2026-12-26 12:15 | 6D | 93.20 | No notes",
+      "Trip": "905d2d9d-677c-4fab-b228-b1b1b1b1e7fe"
+    },
+    {
+      "BookId": "5dd3e41f-6b1f-4ce4-9b1e-12a58ef0880f",
+      "IsDeleted": false,
+      "PassengerInfo": "Isaac Goldberg | LY007 | 2026-12-28 23:50 | 12F | 703.60 | Special assistance",
+      "Trip": "a16e3eae-788e-41cc-8339-c2c2c2c2f80f"
+    },
+    {
+      "BookId": "6ee4f503-7c21-4ef5-8c2f-23b69f01991a",
+      "IsDeleted": false,
+      "PassengerInfo": "Beatriz Navarro | IB3166 | 2027-01-04 14:40 | 21A | 258.40 | Window seat",
+      "Trip": "b27f4fbf-899f-42dd-944a-d3d3d3d3091a"
+    },
+    {
+      "BookId": "7ff50514-8d32-4f06-9d30-34c7a1f2aa2b",
+      "IsDeleted": false,
+      "PassengerInfo": "Owen Davies | BA2490 | 2027-01-11 06:35 | 10B | 119.99 | Aisle seat",
+      "Trip": "c38060c0-9aa0-43ef-a55a-e4e4e4e4192b"
+    },
+    {
+      "BookId": "80061625-9e43-41b7-ae41-45d8b2a3bb3c",
+      "IsDeleted": false,
+      "PassengerInfo": "Yasmin Farouk | MS799 | 2027-01-18 20:25 | 16A | 402.00 | Vegetarian meal",
+      "Trip": "d4918101-abb1-44f0-b66c-f5f5f5f5293c"
+    },
+    {
+      "BookId": "a8c3e1f7-2b64-4d09-9e5a-71c0d3b8f246",
+      "IsDeleted": false,
+      "PassengerInfo": "Johanna Visser | KL1007 | 2026-11-02 07:10 | 12C | 214.30 | Aisle seat",
+      "Trip": "1f7a9c30-5e82-4b14-a6d3-c8e02b7f9a51"
+    },
+    {
+      "BookId": "b9d4f208-3c75-4e1a-8f6b-82d1e4c9a357",
+      "IsDeleted": false,
+      "PassengerInfo": "Marco Keller | LX345 | 2026-11-03 13:45 | 8A | 389.00 | Window seat",
+      "Trip": "2e8b0d41-6f93-4c25-b7e4-d9f13c8a0b62"
+    },
+    {
+      "BookId": "c0e5a319-4d86-4f2b-9a7c-93e2f5da0b68",
+      "IsDeleted": false,
+      "PassengerInfo": "Elif Yildiz | TK1921 | 2026-11-04 22:30 | 31F | 127.99 | Vegetarian meal",
+      "Trip": "3f9c1e52-7a04-4d36-8c85-ea024d9b1c73"
+    },
+    {
+      "BookId": "d1f6b42a-5e97-4a3c-b8d1-a4f306eb1c79",
+      "IsDeleted": false,
+      "PassengerInfo": "Khalid Al-Mansoori | QR707 | 2026-11-05 02:15 | 4K | 1180.00 | Extra legroom",
+      "Trip": "40ad2f63-8b15-4e47-9d96-fb135ea02d84"
+    },
+    {
+      "BookId": "e207c53b-6fa8-4b4d-89e2-b5a417fc2d8a",
+      "IsDeleted": false,
+      "PassengerInfo": "Noor Siddiqui | EY071 | 2026-11-06 09:50 | 19D | 456.75 | Halal meal",
+      "Trip": "51be3a74-9c26-4f58-ae07-0c246fb13e95"
+    },
+    {
+      "BookId": "f318d64c-7ab9-4c5e-9af3-c6b528ad3e9b",
+      "IsDeleted": false,
+      "PassengerInfo": "Wei Ling Tan | SQ026 | 2026-11-08 23:05 | 27A | 842.20 | Window seat",
+      "Trip": "62cf4b85-ad37-4a69-bf18-1d357ac24fa6"
+    },
+    {
+      "BookId": "0429e75d-8bca-4d6f-a0b4-d7c639be4fac",
+      "IsDeleted": false,
+      "PassengerInfo": "Joon-ho Kim | CX880 | 2026-11-09 16:20 | 35H | 298.50 | Aisle seat",
+      "Trip": "73d05c96-be48-4b7a-80c9-2e468bd350b7"
+    },
+    {
+      "BookId": "153af86e-9cdb-4e70-b1c5-e8d74acf50bd",
+      "IsDeleted": false,
+      "PassengerInfo": "Aroha Walker | NZ002 | 2026-11-11 21:40 | 14B | 1045.00 | Special occasion",
+      "Trip": "84e16da7-cf59-4c8b-91da-3f579ce461c8"
+    },
+    {
+      "BookId": "264b097f-adec-4f81-82d6-f9e85bd061ce",
+      "IsDeleted": false,
+      "PassengerInfo": "Brandon Hayes | AA1585 | 2026-11-12 06:55 | 22E | 164.40 | No checked baggage",
+      "Trip": "95f27eb8-d06a-4d9c-a2eb-4068adf572d9"
+    },
+    {
+      "BookId": "375c1a80-bfed-4092-93e7-0af96ce172df",
+      "IsDeleted": false,
+      "PassengerInfo": "Teresa Gallagher | DL1840 | 2026-11-13 11:25 | 9C | 233.15 | Gluten-free meal",
+      "Trip": "a6038fc9-e17b-4ead-b3fc-517a0bf683ea"
+    },
+    {
+      "BookId": "486d2b91-c0fe-41a3-a4f8-1ba07df283e0",
+      "IsDeleted": true,
+      "PassengerInfo": "Tyler Brennan | UA1572 | 2026-11-14 18:10 | 30B | 189.99 | Middle seat acceptable",
+      "Trip": "b714a0da-f29c-4fbf-84a0-628b1c079ffb"
+    },
+    {
+      "BookId": "597e3ca2-d10f-42b4-85a9-2cb180e394f1",
+      "IsDeleted": false,
+      "PassengerInfo": "Mathieu Tremblay | AC031 | 2026-11-16 08:35 | 16F | 412.60 | Window seat",
+      "Trip": "c825b1eb-03ad-40a0-95b1-739c2d18a00c"
+    },
+    {
+      "BookId": "6a8f4db3-e210-43c5-96ba-3dc291f405a2",
+      "IsDeleted": false,
+      "PassengerInfo": "Sienna Bouchard | WS614 | 2026-11-17 14:00 | 25A | 276.80 | Traveling with infant",
+      "Trip": "d936c2fc-14be-41b1-a6c2-84ad3e29b11d"
+    },
+    {
+      "BookId": "7b905ec4-f321-44d6-a7cb-4ed3a2a516b3",
+      "IsDeleted": false,
+      "PassengerInfo": "Dieter Hoffmann | LH1170 | 2026-11-18 06:20 | 7D | 98.50 | Aisle seat",
+      "Trip": "ea47d3a0-25cf-42c2-87d3-95be4f3a622e"
+    },
+    {
+      "BookId": "8ca16fd5-0432-45e7-b8dc-5fe4b3b627c4",
+      "IsDeleted": false,
+      "PassengerInfo": "Camille Girard | AF1380 | 2026-11-19 19:15 | 21C | 142.00 | Vegetarian meal",
+      "Trip": "fb58e4b1-36d0-43d3-98e4-a6cf504b733f"
+    },
+    {
+      "BookId": "9db270e6-1543-46f8-89ed-6af5c4c738d5",
+      "IsDeleted": false,
+      "PassengerInfo": "Alejandro Ruiz | IB3744 | 2026-11-20 10:45 | 18A | 119.99 | Window seat",
+      "Trip": "0c69f5c2-47e1-44e4-a9f5-b7d0615c844a"
+    },
+    {
+      "BookId": "aec381f7-2654-4709-9afe-7b06d5d849e6",
+      "IsDeleted": false,
+      "PassengerInfo": "Harriet Palmer | BA432 | 2026-11-22 07:30 | 11E | 156.25 | Wheelchair assistance",
+      "Trip": "1d7a06d3-58f2-45f5-8a06-c8e1726d955b"
+    },
+    {
+      "BookId": "bfd492a8-3765-4810-a80f-8c17e6ea5af7",
+      "IsDeleted": false,
+      "PassengerInfo": "Yusuf Demir | EK073 | 2026-11-23 03:40 | 38K | 623.40 | Extra legroom",
+      "Trip": "2e8b17e4-6903-46a6-9b17-d9f2837ea66c"
+    },
+    {
+      "BookId": "c0e5a3b9-4876-4921-b910-9d28f7fb6b08",
+      "IsDeleted": false,
+      "PassengerInfo": "Georgia Mitchell | QF009 | 2026-11-24 20:55 | 6A | 1320.00 | Special occasion",
+      "Trip": "3f9c28f5-7a14-47b7-a028-eaa3948fb77d"
+    },
+    {
+      "BookId": "d1f6b4ca-5987-4a32-8a21-ae39a80c7c19",
+      "IsDeleted": false,
+      "PassengerInfo": "Somchai Wattana | TG931 | 2026-11-26 12:10 | 33C | 187.30 | Aisle seat",
+      "Trip": "40ad3906-8b25-48c8-b139-fbb4a59c88ee"
+    },
+    {
+      "BookId": "e207c5db-6a98-4b43-9b32-bf4ab91d8d2a",
+      "IsDeleted": false,
+      "PassengerInfo": "Siti Nurhaliza Ahmad | MH192 | 2026-11-27 15:25 | 24F | 203.45 | Halal meal",
+      "Trip": "51be4a17-9c36-49d9-a24a-0cc5ab09a9ff"
+    },
+    {
+      "BookId": "f318d6ec-7ba9-4c54-8c43-c05bca2eae3b",
+      "IsDeleted": false,
+      "PassengerInfo": "Budi Santoso | GA880 | 2026-11-28 05:50 | 29D | 134.70 | Window seat",
+      "Trip": "62cf5b28-ad47-4aea-b35b-1dd6bc1abb10"
+    },
+    {
+      "BookId": "0429e80f-8cba-4d65-9d54-d16ccd3fbf4c",
+      "IsDeleted": false,
+      "PassengerInfo": "Maricel Santos | PR104 | 2026-11-30 17:35 | 15B | 168.00 | Extra baggage",
+      "Trip": "73d06c39-be57-4bfb-84c6-2ee7cd2cc021"
+    },
+    {
+      "BookId": "153af91a-9dcb-4e76-ae65-e27dde40d05d",
+      "IsDeleted": false,
+      "PassengerInfo": "Vikram Choudhury | AI161 | 2026-12-01 01:15 | 40A | 352.90 | Vegetarian meal",
+      "Trip": "84e17d4a-cf68-4c0c-95d7-3ff8de3dd132"
+    },
+    {
+      "BookId": "264b0a2b-aedc-4f87-bf76-f38eef51e26e",
+      "IsDeleted": false,
+      "PassengerInfo": "Deepika Nair | 6E2054 | 2026-12-02 09:05 | 13C | 74.99 | Aisle seat",
+      "Trip": "95f28e5b-d077-4d1d-a6e8-4009ef4ee243"
+    },
+    {
+      "BookId": "375c1b3c-bfed-4098-80b7-049ffa62f37f",
+      "IsDeleted": false,
+      "PassengerInfo": "Abdulrahman Al-Otaibi | SV315 | 2026-12-03 23:45 | 5J | 1095.50 | Extra legroom",
+      "Trip": "a6039f6c-e186-4e2e-b7f9-511af05ff354"
+    },
+    {
+      "BookId": "486d2c4d-c0fe-4109-91c8-15a0b173048a",
+      "IsDeleted": false,
+      "PassengerInfo": "Rania Khoury | WY143 | 2026-12-04 04:30 | 20E | 318.25 | Window seat",
+      "Trip": "b714b07d-f29c-4f3f-88aa-6220fa6a0465"
+    },
+    {
+      "BookId": "597e3d5e-d10f-421a-a2d9-26b1c284159b",
+      "IsDeleted": false,
+      "PassengerInfo": "Omar Haddadin | RJ261 | 2026-12-05 14:20 | 17D | 241.80 | Halal meal",
+      "Trip": "c825c18e-03ad-4a50-99bb-7331a1815576"
+    },
+    {
+      "BookId": "6a8f4e6f-e221-432b-b3ea-37c2d395266c",
+      "IsDeleted": false,
+      "PassengerInfo": "Thandiwe Dlamini | SA204 | 2026-12-06 08:40 | 26A | 276.00 | Window seat",
+      "Trip": "d936d29f-14be-4b61-8ccc-8442b2926687"
+    },
+    {
+      "BookId": "7b905f70-f332-4c3c-84fb-48d3e4a6377d",
+      "IsDeleted": false,
+      "PassengerInfo": "Kofi Boateng | KQ410 | 2026-12-07 21:55 | 32G | 395.60 | Aisle seat",
+      "Trip": "ea47e3b0-25cf-4c72-9dd1-9553c3a37798"
+    },
+    {
+      "BookId": "8ca17081-0443-4d4d-95a2-59e4f5b4488e",
+      "IsDeleted": false,
+      "PassengerInfo": "Selam Tesfaye | ET300 | 2026-12-08 11:00 | 23C | 312.40 | Vegetarian meal",
+      "Trip": "fb58f4c1-36d0-4d83-aee2-a664d4b488a9"
+    },
+    {
+      "BookId": "9db27192-1554-4e5e-86b3-6af305c5599f",
+      "IsDeleted": false,
+      "PassengerInfo": "Nour El-Sayed | MS804 | 2026-12-09 16:15 | 10F | 228.75 | Window seat",
+      "Trip": "0c690502-47e1-4e94-bff3-b775e5c599ba"
+    },
+    {
+      "BookId": "aec382a3-2665-4f6f-a7c4-7b86f6d66aab",
+      "IsDeleted": true,
+      "PassengerInfo": "Giovanni Esposito | AT201 | 2026-12-10 06:45 | 7B | 176.20 | Aisle seat",
+      "Trip": "1d7a1613-58f2-4fa5-80a4-c8d6f6d6aacb"
+    },
+    {
+      "BookId": "bfd493b4-3776-4a70-b8d5-8c97a7e7bbdc",
+      "IsDeleted": false,
+      "PassengerInfo": "Inês Carvalho | TP1337 | 2026-12-11 12:30 | 19A | 109.99 | Window seat",
+      "Trip": "2e8b2724-6903-4fb6-91b5-d9e707e7bbee"
+    },
+    {
+      "BookId": "c0e5a4c5-4887-4b81-99e6-9da8b8f8ccfd",
+      "IsDeleted": false,
+      "PassengerInfo": "Pieter De Smet | SN3715 | 2026-12-12 09:20 | 14D | 132.50 | Vegetarian meal",
+      "Trip": "3f9c3835-7a14-4ac7-a2c6-eaf8f8f8ccff"
+    },
+    {
+      "BookId": "d1f6b5d6-5998-4c92-8af7-ae09c9a9ddae",
+      "IsDeleted": false,
+      "PassengerInfo": "Aino Virtanen | AY954 | 2026-12-13 07:50 | 12A | 187.00 | Window seat",
+      "Trip": "40ad4946-8b25-4bd8-b3d7-fbc9a9a9dda1"
+    },
+    {
+      "BookId": "e207c6e7-6aa9-4da3-9b08-bf1ada0aeebf",
+      "IsDeleted": false,
+      "PassengerInfo": "Jakub Sikora | LO283 | 2026-12-14 15:05 | 21B | 94.60 | Extra baggage",
+      "Trip": "51be5a57-9c36-4ae9-a4e8-0ce0eaeaeeb2"
+    },
+    {
+      "BookId": "f318d7f8-7bba-4eb4-8c19-c02bebfbffc0",
+      "IsDeleted": false,
+      "PassengerInfo": "Sabine Gruber | OS871 | 2026-12-16 10:35 | 8C | 148.30 | Aisle seat",
+      "Trip": "62cf6b68-ad47-4bfa-b5f9-1df1fbfbffc3"
+    },
+    {
+      "BookId": "04290909-8cbb-4fc5-9d2a-d12cfc0c00d1",
+      "IsDeleted": false,
+      "PassengerInfo": "Reto Baumann | LX1608 | 2026-12-17 18:25 | 16E | 203.90 | Window seat",
+      "Trip": "73d07c79-be57-4c0b-86aa-2ee20c0c00d4"
+    },
+    {
+      "BookId": "153afa1a-9dcc-40d6-ae3b-e23d0d1d11e2",
+      "IsDeleted": false,
+      "PassengerInfo": "Femke Jansen | KL642 | 2026-12-19 05:40 | 27F | 276.45 | Vegetarian meal",
+      "Trip": "84e18d8a-cf68-4d1c-97bb-3ff31d1d11e5"
+    },
+    {
+      "BookId": "264b0b2b-aedd-41e7-bf4c-f34e1e2e22f3",
+      "IsDeleted": false,
+      "PassengerInfo": "Lucía Herrera | VY1002 | 2026-12-21 13:55 | 18C | 59.99 | No checked baggage",
+      "Trip": "95f29e9b-d078-4e2d-a8cc-4001e2e222f6"
+    },
+    {
+      "BookId": "375c1c3c-bfee-4208-81d5-04af2f3f33a4",
+      "IsDeleted": false,
+      "PassengerInfo": "Siobhan Gallagher | EI638 | 2027-01-06 08:10 | 9A | 118.75 | Window seat",
+      "Trip": "a603afac-e187-4f3e-b9dd-512af3f333a7"
+    },
+    {
+      "BookId": "486d2d4d-c0ff-4319-92e6-15b1a4a444b5",
+      "IsDeleted": false,
+      "PassengerInfo": "Zachary Nguyen | AS314 | 2027-01-14 19:30 | 33D | 245.00 | Aisle seat",
+      "Trip": "b714c0bd-f29d-4a4f-89ee-6221a4a444b8"
+    },
+    {
+      "BookId": "597e3e5e-d110-432a-a3f7-26c2b5b555c6",
+      "IsDeleted": true,
+      "PassengerInfo": "Madison Reyes | B6916 | 2027-01-22 06:05 | 24B | 87.40 | Middle seat acceptable",
+      "Trip": "c825d1cf-03ae-4b6f-9aff-7332b5b555c9"
+    },
+    {
+      "BookId": "6a8f4f6f-e222-443b-b408-37d3c6c666d7",
+      "IsDeleted": false,
+      "PassengerInfo": "Haruto Kobayashi | NH106 | 2027-02-03 11:50 | 3C | 1260.00 | Extra legroom",
+      "Trip": "d936e2e0-14bf-4c7b-9d00-8443c6c666da"
+    },
+    {
+      "BookId": "7b906080-f333-4d4c-95c9-48e4d7d777e8",
+      "IsDeleted": false,
+      "PassengerInfo": "Mio Hashimoto | JL743 | 2027-02-11 16:40 | 15A | 187.65 | Window seat",
+      "Trip": "ea47f4f1-25d0-4d8c-8ee1-9554d7d777eb"
+    },
+    {
+      "BookId": "8ca17191-0444-4e5d-a6da-59f5e8e888f9",
+      "IsDeleted": false,
+      "PassengerInfo": "Seo-yeon Jung | KE017 | 2027-02-18 22:15 | 41H | 698.30 | Vegetarian meal",
+      "Trip": "fb590502-36d1-4e9d-9ff2-a665e8e888fc"
+    },
+    {
+      "BookId": "9db272a2-1555-4f6e-b7eb-6a06f9f999aa",
+      "IsDeleted": false,
+      "PassengerInfo": "Mei-Hua Lin | CI100 | 2027-02-25 07:25 | 20K | 523.80 | Aisle seat",
+      "Trip": "0c6a1613-47e2-4fae-a003-b776f9f999ad"
+    },
+    {
+      "BookId": "c7a41e9b-2d58-4f03-a6b1-93e0d5c8174a",
+      "IsDeleted": false,
+      "PassengerInfo": "Rosalind Achebe | BA553 | 2026-11-02 09:10 | 12C | 214.00 | Aisle seat",
+      "Trip": "41d8f2a6-9b03-4c7e-85a1-e2f06b3d9c15"
+    },
+    {
+      "BookId": "e90b3d17-6a4c-4852-b7f9-0c1d82a5e639",
+      "IsDeleted": false,
+      "PassengerInfo": "Tobias Lindgren | SK1431 | 2026-11-03 06:25 | 8A | 98.99 | Window seat",
+      "Trip": "7a3c5e81-d204-4b96-9f18-a6d0c4e2b753"
+    },
+    {
+      "BookId": "28f6a0c4-b93e-4d71-8e25-5a7c1f94d086",
+      "IsDeleted": false,
+      "PassengerInfo": "Priyanka Joshi | AI187 | 2026-11-03 23:40 | 31E | 412.50 | Vegetarian meal",
+      "Trip": "b5e92d40-37a1-4c68-a0f3-1d8e7b6c2a94"
+    },
+    {
+      "BookId": "94d1e7a8-0c35-4b62-93fa-e8b4026d7c51",
+      "IsDeleted": false,
+      "PassengerInfo": "Mateus Oliveira | LA8100 | 2026-11-04 14:15 | 22F | 689.00 | Extra legroom",
+      "Trip": "0f6a8c23-e5d9-47b1-b384-9c2a1e7f5d60"
+    },
+    {
+      "BookId": "5b08c3f2-d6e1-4a97-a4c8-7129f0e3b5da",
+      "IsDeleted": false,
+      "PassengerInfo": "Fiona MacLeod | EI532 | 2026-11-05 07:50 | 5D | 89.99 | Checked bag added",
+      "Trip": "d3a7140e-8c92-4f5b-96e0-b27c5a1d8e43"
+    },
+    {
+      "BookId": "a3e75d09-1f84-4c2b-b6d3-40c9e8a17f25",
+      "IsDeleted": false,
+      "PassengerInfo": "Takumi Ishikawa | JL005 | 2026-11-06 11:30 | 3C | 1180.00 | Business lounge access",
+      "Trip": "62c9b5f8-a03e-4d17-8b4a-f1e7d0928c36"
+    },
+    {
+      "BookId": "07c9f1b6-8e2a-43d5-9a70-d5b3c64e8f12",
+      "IsDeleted": false,
+      "PassengerInfo": "Amira Benali | AH1006 | 2026-11-07 16:05 | 17B | 176.40 | Halal meal",
+      "Trip": "e18f4a7c-5b26-4093-a7d5-3c0e9b1f6a82"
+    },
+    {
+      "BookId": "f2d84a3e-60b7-4915-8c1e-a97d3e05b4c8",
+      "IsDeleted": false,
+      "PassengerInfo": "Gustav Eklund | AY1342 | 2026-11-08 08:45 | 14A | 132.00 | Window seat",
+      "Trip": "39b0d6e5-c1f4-4a82-9e07-5d2a8c7b1f64"
+    },
+    {
+      "BookId": "6e1a9c75-b3d0-4e48-a2f6-8c40d17e9b33",
+      "IsDeleted": true,
+      "PassengerInfo": "Nia Thompson | DL172 | 2026-11-09 19:20 | 27D | 355.75 | Wheelchair assistance",
+      "Trip": "a84e2c91-7f5d-4b30-b6c2-0e9a3d5f1788"
+    },
+    {
+      "BookId": "b8f3027d-4a96-4c1e-95b8-e61d7a0c3f49",
+      "IsDeleted": false,
+      "PassengerInfo": "Lorenzo Greco | AZ1176 | 2026-11-10 12:10 | 9F | 119.99 | Gluten-free meal",
+      "Trip": "15d7a3f0-e8b2-4c64-8091-b4c6e9a2d7f3"
+    },
+    {
+      "BookId": "1d4e6b82-f9a3-4057-8e1c-2b5a0d9c7e64",
+      "IsDeleted": false,
+      "PassengerInfo": "Beatrice Lemaire | AF1432 | 2026-11-12 06:55 | 19C | 164.20 | Aisle seat",
+      "Trip": "c60f9e37-2a41-4d85-b13c-87e5d0a4f926"
+    },
+    {
+      "BookId": "d46a1f90-3e7b-48c2-a059-c7e2b8d41a67",
+      "IsDeleted": false,
+      "PassengerInfo": "Jamal Rivers | AA2202 | 2026-11-13 15:35 | 33A | 278.00 | Window seat",
+      "Trip": "8e2b5d14-96c0-4f7a-a3d8-1f4c7e0b6952"
+    },
+    {
+      "BookId": "83c7e5a1-0d29-4f6b-b4e8-96a1c3f07d52",
+      "IsDeleted": false,
+      "PassengerInfo": "Ayesha Karim | PK758 | 2026-11-14 21:00 | 24E | 448.90 | Infant on lap",
+      "Trip": "f7a1c849-d035-4e92-8b6f-2a9e5c3d0147"
+    },
+    {
+      "BookId": "4f92b0d6-c8a1-4375-9e03-1d6f7a2b8c90",
+      "IsDeleted": false,
+      "PassengerInfo": "Johan Berg | DY1330 | 2026-11-16 10:40 | 6B | 79.99 | Quiet seat",
+      "Trip": "20e6b8d3-4f7a-4195-a5c1-d9830e7b2f46"
+    },
+    {
+      "BookId": "e5b08a37-7c14-4d9e-86f2-a30c5e9d1b78",
+      "IsDeleted": false,
+      "PassengerInfo": "Paloma Castillo | IB6253 | 2026-11-17 13:25 | 15F | 187.30 | Vegetarian meal",
+      "Trip": "9c3d7f52-b1e8-4a06-90d4-6e2a8f1c5b37"
+    },
+    {
+      "BookId": "3a7d1c48-9e65-4b02-a8f7-5c0e2d96b413",
+      "IsDeleted": false,
+      "PassengerInfo": "Sven Karlsson | SK821 | 2026-11-19 17:55 | 11D | 143.60 | Extra legroom",
+      "Trip": "56b2e0a9-8d3c-4f71-b7a5-0c4e9d1f3a82"
+    },
+    {
+      "BookId": "c19e6f53-2b80-4a7d-9c34-e8a5d0b17f26",
+      "IsDeleted": false,
+      "PassengerInfo": "Delphine Roux | AF1780 | 2026-11-20 08:15 | 4A | 1020.00 | Priority boarding",
+      "Trip": "b1f84c06-5e92-4d37-8a0b-7d3c6e2a9f51"
+    },
+    {
+      "BookId": "7b30d4e9-a5f2-4816-b19c-0e7a3c85d2f4",
+      "IsDeleted": false,
+      "PassengerInfo": "Kavita Rao | UK835 | 2026-11-21 05:50 | 21C | 108.25 | Window seat",
+      "Trip": "4a9e2c75-f01b-4d68-93e7-b5d8a0c6e134"
+    },
+    {
+      "BookId": "f08c2a65-1d97-4e3b-a7b4-9d5e6c0f1a83",
+      "IsDeleted": false,
+      "PassengerInfo": "Everett Collins | UA2217 | 2026-11-23 18:30 | 29B | 312.00 | Kosher meal",
+      "Trip": "d52a7e18-3c64-4b9f-8e01-a9f4c7d0b265"
+    },
+    {
+      "BookId": "25e9b7d1-6c03-4f48-8a2d-b4f1e7a09c36",
+      "IsDeleted": false,
+      "PassengerInfo": "Marta Szymanska | LO384 | 2026-11-24 09:35 | 13A | 158.00 | Window seat",
+      "Trip": "83f0c5a2-e7d9-4146-b82e-4c1a6d9b0f75"
+    },
+    {
+      "BookId": "9d6a3f08-e4b1-4c72-95d0-27c8a1e5b963",
+      "IsDeleted": true,
+      "PassengerInfo": "Yosef Ben-David | LY381 | 2026-11-25 22:50 | 20D | 523.40 | Kosher meal",
+      "Trip": "1c8b4e60-a2f7-4d39-a5b8-e0d3f9726a41"
+    },
+    {
+      "BookId": "b4107e2c-8f95-4a63-b0e8-d3a6c9f51e07",
+      "IsDeleted": false,
+      "PassengerInfo": "Cheng Wei Liu | CA781 | 2026-11-27 00:15 | 35C | 640.00 | Aisle seat",
+      "Trip": "7e5d9a31-0c84-4b2f-9a63-f8b1c0e4d527"
+    },
+    {
+      "BookId": "61f8d5a3-c7e0-4b94-a136-5e9b2d0c7f48",
+      "IsDeleted": false,
+      "PassengerInfo": "Isla Henderson | VS401 | 2026-11-28 11:05 | 16A | 398.99 | Extra legroom",
+      "Trip": "ea04c7b9-5d12-4f86-8c3a-93e6b1a0d758"
+    },
+    {
+      "BookId": "d8a2c61e-39f4-4075-8b1d-e0c7f5a3924b",
+      "IsDeleted": false,
+      "PassengerInfo": "Rafik Boudiaf | TU712 | 2026-11-29 14:20 | 25F | 129.50 | Halal meal",
+      "Trip": "2f6c9e04-b7a5-4d13-96e8-1a4d0c8b5e37"
+    },
+    {
+      "BookId": "0c53e9b7-a1d6-4e28-9f4a-73b8d0c5e216",
+      "IsDeleted": false,
+      "PassengerInfo": "Anneliese Vogel | LH1018 | 2026-12-01 06:30 | 10C | 171.80 | Window seat",
+      "Trip": "a97b1d52-6e03-4c84-b0f9-5c2e8a3d7164"
+    },
+    {
+      "BookId": "e37b84d0-5c92-4a1f-a6e3-18d9f0b2c745",
+      "IsDeleted": false,
+      "PassengerInfo": "Bruno Carvalho | TP1347 | 2026-12-02 20:45 | 18E | 96.00 | Checked bag added",
+      "Trip": "5d08f3a6-c1e7-4b29-8a54-e7b9d2c0613f"
+    },
+    {
+      "BookId": "4a9c1f67-d083-4e5b-b2a9-6f0e8c3d5a17",
+      "IsDeleted": false,
+      "PassengerInfo": "Zara Malik | EK412 | 2026-12-03 02:35 | 37A | 735.00 | Window seat",
+      "Trip": "c3e69a10-84d5-4f72-a1b6-0d7f5e9c2b84"
+    },
+    {
+      "BookId": "f6d02b85-e7a1-4c39-8d64-b5a9c1e0f372",
+      "IsDeleted": false,
+      "PassengerInfo": "Henry Blackwood | BA1388 | 2026-12-05 12:25 | 7D | 245.50 | Aisle seat",
+      "Trip": "98a1d4e7-2b60-4c5f-b3d9-6e0c8a7f1d25"
+    },
+    {
+      "BookId": "1e8f5a3d-0b46-4d97-a251-c9e7b2d08f6a",
+      "IsDeleted": false,
+      "PassengerInfo": "Sana Ahmadi | TK1873 | 2026-12-06 04:10 | 26B | 205.70 | Vegetarian meal",
+      "Trip": "3b7e0c92-f5a8-4d41-9c06-a1d8e4b5f730"
+    },
+    {
+      "BookId": "a05d7c19-b2e8-4f36-9a07-d1f4e8c63b52",
+      "IsDeleted": false,
+      "PassengerInfo": "Dmitri Orlov | AY1008 | 2026-12-08 15:40 | 12F | 188.00 | Window seat",
+      "Trip": "f40d2a8b-7e91-4c63-85b7-c9a0e3d6125e"
+    },
+    {
+      "BookId": "78b1e4f2-9d05-4a8c-b3e6-0a2c7f9d5e41",
+      "IsDeleted": false,
+      "PassengerInfo": "Clara Eriksson | SK1427 | 2026-12-09 08:05 | 2A | 940.00 | Priority boarding",
+      "Trip": "6a15c9e3-d0b8-4f27-a94c-2e7f1b8d0a69"
+    },
+    {
+      "BookId": "c2f96a0b-4e73-4d15-8b82-f7a1d5c09e36",
+      "IsDeleted": false,
+      "PassengerInfo": "Tomás Aguilar | AM005 | 2026-12-10 17:15 | 23C | 482.30 | Extra legroom",
+      "Trip": "b08e3d71-a4c5-4926-9f1a-5d6c2e8b7f03"
+    },
+    {
+      "BookId": "5e07d3a8-f1b9-4c62-a4d0-92e6b8c1f735",
+      "IsDeleted": true,
+      "PassengerInfo": "Hemi Parata | NZ108 | 2026-12-12 09:50 | 32D | 1015.00 | Aisle seat",
+      "Trip": "17f4a6c2-8e09-4d5b-b2a7-d3c0e9f58a16"
+    },
+    {
+      "BookId": "b9c4f81e-2a60-4e07-95d3-c8a7e1b04f29",
+      "IsDeleted": false,
+      "PassengerInfo": "Ruth Abebe | ET704 | 2026-12-13 23:10 | 19A | 560.00 | Window seat",
+      "Trip": "d9a0e5b4-13c7-4f82-8e6a-7b2d4c1f9035"
+    },
+    {
+      "BookId": "36a8d2c5-e90f-4b71-a68d-04f3b7e5c1a9",
+      "IsDeleted": false,
+      "PassengerInfo": "Callan Fraser | QF025 | 2026-12-15 19:00 | 34A | 1264.50 | Window seat",
+      "Trip": "4e2c7a09-b6d1-4a38-9f50-c8e3a1d7b264"
+    },
+    {
+      "BookId": "ef1b5a70-83c6-4d92-b0e4-a7d9c3f68125",
+      "IsDeleted": false,
+      "PassengerInfo": "Lucie Novotna | OK641 | 2026-12-16 07:20 | 8C | 112.40 | Aisle seat",
+      "Trip": "0a83d6f1-c5e2-4b97-a64d-9f1e7b0c3a58"
+    },
+    {
+      "BookId": "82d0c9e4-5a17-4f3b-8c69-1b3e7a0d5f82",
+      "IsDeleted": false,
+      "PassengerInfo": "Ibrahim Yusuf | MS735 | 2026-12-18 13:45 | 28E | 267.00 | Halal meal",
+      "Trip": "75c1e8a3-04b9-4d26-b8f7-e2a5d09c4b61"
+    },
+    {
+      "BookId": "1b73f6a9-d4c8-4e50-9a12-e6c0b8d37f54",
+      "IsDeleted": false,
+      "PassengerInfo": "Greta Hoffmann | OS863 | 2026-12-19 10:25 | 5A | 149.99 | Window seat",
+      "Trip": "c8b5f20d-9a73-4e14-85c6-0d1a7e3f9b42"
+    },
+    {
+      "BookId": "d70e2b48-1c95-4a63-b7f0-39a8d5e1c604",
+      "IsDeleted": false,
+      "PassengerInfo": "Pablo Quintero | AV247 | 2026-12-20 16:50 | 21F | 334.80 | Vegetarian meal",
+      "Trip": "29d7e4a1-f6b0-4c58-a3e9-8c5b0d2a7f16"
+    },
+    {
+      "BookId": "4c85a1d3-7e29-4b06-8f4a-b0d6e9c2175a",
+      "IsDeleted": false,
+      "PassengerInfo": "Mirela Dumitru | RO393 | 2026-12-22 06:00 | 14C | 134.25 | Aisle seat",
+      "Trip": "e4a09c67-2d83-4f1b-9b5e-a7c1d8f03b29"
+    },
+    {
+      "BookId": "a9f3e6c0-b852-4d17-a4c9-5e1d0b7a3862",
+      "IsDeleted": false,
+      "PassengerInfo": "Aiden Murray | EI104 | 2026-12-23 21:35 | 30B | 302.00 | Extra legroom",
+      "Trip": "61b8d3f5-a0e7-4c92-86d1-4f9a2c7e0b53"
+    },
+    {
+      "BookId": "0e6b92d5-c3a7-4f81-9d58-72a4f0e1b9c3",
+      "IsDeleted": false,
+      "PassengerInfo": "Ritu Banerjee | AI143 | 2026-12-27 01:45 | 15A | 590.60 | Window seat",
+      "Trip": "b3f17a8e-5c04-4d69-a2b8-e6d9c0537a14"
+    },
+    {
+      "BookId": "f4a7c038-6d1e-4952-8b3f-a2e8d5c9071b",
+      "IsDeleted": false,
+      "PassengerInfo": "Hyun-woo Baek | KE907 | 2027-01-05 11:15 | 41C | 872.00 | Aisle seat",
+      "Trip": "08e5c2b7-d94a-4f13-b6a0-3c7f1e9d8a52"
+    },
+    {
+      "BookId": "5d29e8b1-a4f0-4c73-b816-c0e7a3d95f24",
+      "IsDeleted": true,
+      "PassengerInfo": "Camila Duarte | LA8074 | 2027-01-08 22:30 | 17D | 421.75 | Vegetarian meal",
+      "Trip": "9f4b6d20-81c3-4e75-a9d2-b0e5a7c3f168"
+    },
+    {
+      "BookId": "c61d04f7-39b8-4a2e-95c1-e8f3a7b0d246",
+      "IsDeleted": false,
+      "PassengerInfo": "Stellan Moberg | AY1354 | 2027-01-12 07:40 | 9A | 104.50 | Window seat",
+      "Trip": "3d0a8e95-c7f2-4b61-8a49-f5b1d6e2c073"
+    },
+    {
+      "BookId": "29e5b3a0-f7c4-4d68-a1d9-6b0c8e4f7a13",
+      "IsDeleted": false,
+      "PassengerInfo": "Leona Bakker | KL1017 | 2027-01-20 12:55 | 24C | 188.70 | Extra legroom",
+      "Trip": "a2c9f7d4-0e68-4b35-97a1-d4b8e0c5f936"
+    },
+    {
+      "BookId": "b0a8d7e2-4c19-4f56-8e3b-d9f1a5c60738",
+      "IsDeleted": false,
+      "PassengerInfo": "Obinna Nwosu | KQ118 | 2027-01-27 20:10 | 36F | 615.00 | Window seat",
+      "Trip": "5c71e3b8-a9d4-4f20-b0e6-8a2f7c1d9e45"
+    },
+    {
+      "BookId": "73f1c0a9-e5d2-4b84-9a67-0c8b3e5d1f20",
+      "IsDeleted": false,
+      "PassengerInfo": "Josephine Tran | VN305 | 2027-02-08 02:20 | 22A | 498.40 | Vegetarian meal",
+      "Trip": "e6d4a02f-71b3-4c98-8f5a-c3e9b0d7a164"
+    },
+    {
+      "BookId": "e8c6a4d1-0b73-4f95-b2a8-47d0e1f9c365",
+      "IsDeleted": false,
+      "PassengerInfo": "Felix Brandt | LH1186 | 2027-02-15 14:05 | 11C | 162.99 | Aisle seat",
+      "Trip": "14f8b7c3-d6a0-4e52-a9c1-0b5e3d8f7a26"
+    },
+    {
+      "BookId": "16d9f2b7-c8a5-4e03-9f4d-a1b6e0c78d59",
+      "IsDeleted": false,
+      "PassengerInfo": "Noelle Archer | AC855 | 2027-03-04 09:30 | 6F | 727.25 | Priority boarding",
+      "Trip": "d0b3a6e9-52c7-4f18-8d4b-e1a9f7c0365a"
+    },
+    {
+      "BookId": "a7d3c215-8e40-4b69-9f1a-2c5e0b8d6f01",
+      "IsDeleted": false,
+      "PassengerInfo": "Valentina Moretti | AZ1594 | 2027-03-09 07:40 | 12A | 142.30 | Window seat",
+      "Trip": "3d81f6a2-5b07-4c94-a2e8-90c1d7b4e513"
+    },
+    {
+      "BookId": "b8e4d326-9f51-4c7a-8a2b-3d6f1c9e7a12",
+      "IsDeleted": false,
+      "PassengerInfo": "Ethan Brooks | DL2184 | 2027-03-12 15:20 | 27C | 289.99 | Vegetarian meal",
+      "Trip": "4e92a7b3-6c18-4d05-b3f9-a1d2e8c5f624"
+    },
+    {
+      "BookId": "c9f5e437-a062-4d8b-9b3c-4e7a2d0f8b23",
+      "IsDeleted": false,
+      "PassengerInfo": "Mei Ling Wong | SQ308 | 2027-03-15 23:55 | 41K | 1180.00 | Extra legroom",
+      "Trip": "5fa3b8c4-7d29-4e16-84a0-b2e3f9d6a735"
+    },
+    {
+      "BookId": "dafa6548-b173-4e9c-8c4d-5f8b3e1a9c34",
+      "IsDeleted": true,
+      "PassengerInfo": "Joao Ferreira | TP1359 | 2027-03-18 06:15 | 8D | 96.50 | Aisle seat",
+      "Trip": "60b4c9d5-8e3a-4f27-95b1-c3f4a0e7b846"
+    },
+    {
+      "BookId": "eb0b7659-c284-4fad-9d5e-609c4f2b0d45",
+      "IsDeleted": false,
+      "PassengerInfo": "Fatuma Hassan | KQ412 | 2027-03-21 20:10 | 19F | 342.50 | Halal meal",
+      "Trip": "71c5dae6-9f4b-4038-a6c2-d4a5b1f8c957"
+    },
+    {
+      "BookId": "fc1c876a-d395-40be-8e6f-71ad5a3c1e56",
+      "IsDeleted": false,
+      "PassengerInfo": "Gregory Palmer | UA1177 | 2027-03-24 11:45 | 3C | 612.40 | Priority boarding",
+      "Trip": "82d6ebf7-a05c-4149-b7d3-e5b6c2a9da68"
+    },
+    {
+      "BookId": "0d2d987b-e4a6-41cf-9f70-82be6b4d2f67",
+      "IsDeleted": false,
+      "PassengerInfo": "Ayumi Fujita | NH210 | 2027-03-27 09:05 | 22E | 428.75 | Gluten-free meal",
+      "Trip": "93e7fc08-b16d-425a-88e4-f6c7d3bae079"
+    },
+    {
+      "BookId": "1e3ea98c-f5b7-42d0-a081-93cf7c5e3a78",
+      "IsDeleted": false,
+      "PassengerInfo": "Sebastian Weber | LH2208 | 2027-03-30 17:30 | 15B | 89.99 | Traveling with infant",
+      "Trip": "a4f80d19-c27e-436b-99f5-07d8e4cbf18a"
+    },
+    {
+      "BookId": "2f4fba9d-06c8-43e1-b192-a4d08d6f4b89",
+      "IsDeleted": false,
+      "PassengerInfo": "Noemi Silva | LA8066 | 2027-04-02 22:25 | 30A | 235.00 | Wheelchair assistance",
+      "Trip": "b5091e2a-d38f-447c-aa06-18e9f5dc029b"
+    }
+  ],
+  "source": "model, from the column names and constraints only"
+}

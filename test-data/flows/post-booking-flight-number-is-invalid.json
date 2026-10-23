@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-flight-number-is-invalid",
+  "title": "Flight number is invalid",
+  "source": "staged scenario",
+  "why": "Shows a blank flight number on the flight blocks booking",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "b2000000-0000-4000-8000-000000000004",
+        "ArriveAirportId": "e2000000-0000-4000-8000-000000000004",
+        "DepartureAirportId": "d2000000-0000-4000-8000-000000000004",
+        "Description": "Blank flight number",
+        "FlightDate": "2027-01-25T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 250.0,
+        "SeatNumber": "12E"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for a valid passenger on flight-1"
+    }
+  ],
+  "expect": [
+    "Booking is rejected with an invalid flight number error; no booking is created"
+  ]
+}

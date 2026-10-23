@@ -1,0 +1,15 @@
+{
+  "id": "invalidpassengernameexception-passengerinfo",
+  "title": "PassengerInfo that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidPassengerNameException",
+  "base": "DomainException",
+  "thrownAt": "src/Booking/Booking/ValueObjects/PassengerInfo.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(name))",
+  "field": "PassengerInfo",
+  "expect": {
+    "status": 500,
+    "error": "InvalidPassengerNameException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "procedures": [],
+  "note": "No stored procedures in this repository: its data access is through EF Core and Mongo, listed under data-access/."
+}

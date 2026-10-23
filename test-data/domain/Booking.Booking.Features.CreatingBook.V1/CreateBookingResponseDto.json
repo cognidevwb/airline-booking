@@ -1,0 +1,43 @@
+{
+  "name": "CreateBookingResponseDto",
+  "kind": "response",
+  "layer": "domain",
+  "source": "src/Booking/Booking/Features/CreatingBook/V1/CreateBooking.cs:34",
+  "columns": [
+    "Id"
+  ],
+  "valid": [
+    {
+      "ref": "booking-1-6",
+      "kind": "record",
+      "data": {
+        "Id": 1000
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "createbookingresponsedto-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Id": null
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createbookingresponsedto-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Id": "key with no row"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "not a value `ulong` accepts"
+      }
+    }
+  ],
+  "coverage": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-very-long-description",
+  "title": "Very long description",
+  "source": "staged scenario",
+  "why": "Probes description length limits",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "ab000000-0000-4000-8000-000000000001",
+        "ArriveAirportId": "eb000000-0000-4000-8000-000000000001",
+        "DepartureAirportId": "db000000-0000-4000-8000-000000000001",
+        "Description": "Standard flight",
+        "FlightDate": "2026-12-30T08:00:00Z",
+        "FlightNumber": "SQ321",
+        "Price": 410.0,
+        "SeatNumber": "18E"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with a valid passenger, flight-1 and a Description of 2000 characters"
+    }
+  ],
+  "expect": [
+    "Either the booking is accepted and the full text stored, or a clear length validation error is returned; no truncation or server error"
+  ]
+}

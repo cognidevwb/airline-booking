@@ -1,0 +1,42 @@
+{
+  "id": "post-booking-two-different-passengers-bo",
+  "title": "Two different passengers book different seats on one flight",
+  "source": "staged scenario",
+  "why": "Shows two passengers can share a flight when their seats differ",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a4444444-4444-4444-8444-444444444444",
+        "ArriveAirportId": "e4444444-4444-4444-8444-444444444444",
+        "DepartureAirportId": "d4444444-4444-4444-8444-444444444444",
+        "Description": "Evening long haul",
+        "FlightDate": "2026-12-10T18:20:00Z",
+        "FlightNumber": "BA117",
+        "Price": 450.0,
+        "SeatNumber": "14A"
+      }
+    },
+    {
+      "ref": "booking-p1",
+      "table": "BookingReadModel",
+      "values": {
+        "BookId": "b1000000-0000-4000-8000-0000000000a1",
+        "Id": "b1000000-0000-4000-8000-000000000001",
+        "IsDeleted": false,
+        "PassengerInfo": "P1 Alice Moore",
+        "Trip": "flight-1"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "After P1 holds seat 14A, POST …/booking for passenger P2 on the same FlightId requesting seat 14B"
+    }
+  ],
+  "expect": [
+    "Second booking succeeds; both passengers hold the flight with seats 14A and 14B"
+  ]
+}

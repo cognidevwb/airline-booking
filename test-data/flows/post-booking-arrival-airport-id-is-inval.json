@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-arrival-airport-id-is-inval",
+  "title": "Arrival airport id is invalid",
+  "source": "staged scenario",
+  "why": "Shows an empty arrival airport on the flight blocks booking",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "af000000-0000-4000-8000-000000000001",
+        "ArriveAirportId": "00000000-0000-0000-0000-000000000000",
+        "DepartureAirportId": "df000000-0000-4000-8000-000000000001",
+        "Description": "Bad arrival airport",
+        "FlightDate": "2027-01-18T09:00:00Z",
+        "FlightNumber": "TK1",
+        "Price": 220.0,
+        "SeatNumber": "12B"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for a valid passenger on flight-1"
+    }
+  ],
+  "expect": [
+    "Booking is rejected with an invalid arrival airport id error; no booking is created"
+  ]
+}

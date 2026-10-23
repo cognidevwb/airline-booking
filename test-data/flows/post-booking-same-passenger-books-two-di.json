@@ -1,0 +1,45 @@
+{
+  "id": "post-booking-same-passenger-books-two-di",
+  "title": "Same passenger books two different flights",
+  "source": "staged scenario",
+  "why": "Checks that the duplicate rule applies per flight, not per passenger",
+  "setup": [
+    {
+      "ref": "flight-lhr-jfk",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a5555555-5555-4555-8555-555555555555",
+        "ArriveAirportId": "e5555555-5555-4555-8555-555555555552",
+        "DepartureAirportId": "d5555555-5555-4555-8555-555555555551",
+        "Description": "LHR to JFK",
+        "FlightDate": "2026-12-15T10:00:00Z",
+        "FlightNumber": "BA175",
+        "Price": 520.0,
+        "SeatNumber": "21B"
+      }
+    },
+    {
+      "ref": "flight-jfk-lax",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a5555555-5555-4555-8555-555555555556",
+        "ArriveAirportId": "e5555555-5555-4555-8555-555555555553",
+        "DepartureAirportId": "e5555555-5555-4555-8555-555555555552",
+        "Description": "JFK to LAX",
+        "FlightDate": "2026-12-20T12:30:00Z",
+        "FlightNumber": "AA32",
+        "Price": 310.0,
+        "SeatNumber": "9D"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for one PassengerId on flight-lhr-jfk, then POST again with the same PassengerId on flight-jfk-lax"
+    }
+  ],
+  "expect": [
+    "Both bookings succeed and are distinct"
+  ]
+}

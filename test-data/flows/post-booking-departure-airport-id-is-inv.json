@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-departure-airport-id-is-inv",
+  "title": "Departure airport id is invalid",
+  "source": "staged scenario",
+  "why": "Shows an empty departure airport on the flight blocks booking",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "b0000000-0000-4000-8000-000000000001",
+        "ArriveAirportId": "e0000000-0000-4000-8000-000000000002",
+        "DepartureAirportId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Bad departure airport",
+        "FlightDate": "2027-01-19T09:00:00Z",
+        "FlightNumber": "TK2",
+        "Price": 230.0,
+        "SeatNumber": "12C"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for a valid passenger on flight-1"
+    }
+  ],
+  "expect": [
+    "Booking is rejected with an invalid departure airport id error; no booking is created"
+  ]
+}

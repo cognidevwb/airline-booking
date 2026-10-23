@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-book-without-a-description",
+  "title": "Book without a description",
+  "source": "staged scenario",
+  "why": "Checks that the description is optional",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a3333333-3333-4333-8333-333333333333",
+        "ArriveAirportId": "e3333333-3333-4333-8333-333333333333",
+        "DepartureAirportId": "d3333333-3333-4333-8333-333333333333",
+        "Description": "",
+        "FlightDate": "2026-12-02T07:45:00Z",
+        "FlightNumber": "DL330",
+        "Price": 99.5,
+        "SeatNumber": "3C"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with a valid PassengerId, FlightId of flight-1 and an empty Description"
+    }
+  ],
+  "expect": [
+    "Booking succeeds with an empty description; no validation error"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-zero-price-promotional-fare",
+  "title": "Zero-price promotional fare",
+  "source": "staged scenario",
+  "why": "Shows how a 0.00 price is treated by the price rule",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "ac000000-0000-4000-8000-000000000001",
+        "ArriveAirportId": "ec000000-0000-4000-8000-000000000001",
+        "DepartureAirportId": "dc000000-0000-4000-8000-000000000001",
+        "Description": "Promotional fare",
+        "FlightDate": "2027-01-10T06:00:00Z",
+        "FlightNumber": "FR8801",
+        "Price": 0.0,
+        "SeatNumber": "25B"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for a valid passenger on flight-1 with price 0.00"
+    }
+  ],
+  "expect": [
+    "Outcome follows the price rule: rejected if price must be positive, otherwise accepted with price 0.00"
+  ]
+}

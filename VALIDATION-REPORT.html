@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generate test data — run sign-off</title>
+<style>
+:root { --ink:#1b1b1b; --muted:#5b5b5b; --rule:#dcdcdc; --accent:#1a5fb4;
+        --pass:#1a7f37; --fail:#b3261e; --unver:#8a5300; --wash:#f6f8fb; }
+* { box-sizing:border-box; }
+body { margin:0; background:#ffffff; color:var(--ink);
+       font-family:"Charter","Bitstream Charter","Iowan Old Style",Georgia,serif;
+       font-size:16px; line-height:1.55; }
+main { max-width:60rem; margin:0 auto; padding:3rem 1.5rem 5rem; }
+h1 { font-size:1.85rem; line-height:1.25; margin:0 0 .35rem; font-weight:600; }
+h2 { font-size:1.2rem; margin:2.75rem 0 .75rem; font-weight:600;
+     padding-bottom:.35rem; border-bottom:2px solid var(--accent); }
+h3 { font-size:1rem; margin:1.75rem 0 .5rem; font-weight:600; color:var(--accent); }
+p { margin:.6rem 0; }
+.sub { color:var(--muted); margin:0 0 1.75rem; }
+.banner { border:1px solid var(--rule); border-left:6px solid var(--accent);
+          background:var(--wash); padding:1rem 1.25rem; margin:1.5rem 0 1rem; }
+.banner.pass { border-left-color:var(--pass); }
+.banner.fail { border-left-color:var(--fail); }
+.banner.unverified { border-left-color:var(--unver); }
+.verdict { font-size:1.35rem; font-weight:700; letter-spacing:.02em; margin:0 0 .35rem; }
+.banner.pass .verdict { color:var(--pass); }
+.banner.fail .verdict { color:var(--fail); }
+.banner.unverified .verdict { color:var(--unver); }
+a { color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+.docbar { margin:.15rem 0 1rem; font-size:.9rem; }
+.docbar a, .docbar b { margin-right:1rem; }
+.docbar b { font-weight:600; }
+a:hover { border-bottom-color:var(--accent); }
+tr:target { background:color-mix(in srgb, var(--accent) 10%, transparent); }
+tr:target td:first-child { box-shadow:inset 3px 0 0 var(--accent); }
+.tally { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+         font-size:.9rem; color:var(--muted); margin:.5rem 0 0; }
+dl.facts { display:grid; grid-template-columns:11rem 1fr; gap:.3rem 1rem; margin:1rem 0 0;
+           font-size:.92rem; }
+dl.facts dt { color:var(--muted); }
+dl.facts dd { margin:0; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+              word-break:break-all; }
+.scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { border-collapse:collapse; width:100%; font-size:.92rem; margin:.5rem 0 1.5rem; }
+th, td { text-align:left; vertical-align:top; padding:.55rem .7rem;
+         border-bottom:1px solid var(--rule); }
+th { font-weight:600; color:var(--muted); font-size:.82rem; text-transform:uppercase;
+     letter-spacing:.04em; border-bottom:1px solid var(--ink); white-space:nowrap; }
+td.evidence { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+              font-size:.82rem; color:var(--muted); word-break:break-word; }
+td.verdict-cell { white-space:nowrap; font-weight:600; font-size:.82rem; letter-spacing:.03em; }
+td.verdict-cell.pass { color:var(--pass); }
+td.verdict-cell.fail { color:var(--fail); }
+td.verdict-cell.unverified { color:var(--unver); }
+.detail { display:block; color:var(--muted); font-size:.85rem; margin-top:.2rem; }
+.reason { display:block; color:var(--fail); font-size:.85rem; margin-top:.2rem; }
+td.verdict-cell.unverified + td .reason { color:var(--unver); }
+ul.plain { margin:.5rem 0 1rem; padding-left:1.2rem; }
+ul.plain li { margin:.3rem 0; }
+table.map { border-collapse:collapse; width:100%; margin:.6rem 0 1.2rem; font-size:.86rem; }
+table.map th { text-align:left; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); border-bottom:1px solid var(--ink); padding:.4rem .6rem; white-space:nowrap; }
+table.map td { border-bottom:1px solid var(--rule); padding:.35rem .6rem; vertical-align:top; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.82rem; }
+table.map td:last-child { text-align:right; font-variant-numeric:tabular-nums; }
+p.unavailable { font-size:.83rem; color:var(--muted); }
+table.findings { border-collapse:collapse; margin:.5rem 0 .3rem; width:100%; }
+table.findings td { border-bottom:1px solid var(--rule); padding:.35rem .5rem; vertical-align:top; font-size:.88rem; }
+table.findings td.f-label { white-space:nowrap; width:1%; padding-right:1rem; }
+p.f-more { font-size:.82rem; color:var(--muted); margin:.1rem 0 .6rem; }
+ul.plain code { font-size:.85rem; }
+pre { background:var(--wash); border:1px solid var(--rule); padding:.9rem 1rem;
+      overflow-x:auto; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      font-size:.82rem; line-height:1.5; margin:.5rem 0 1rem; }
+footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Generate test data — run sign-off</h1>
+<div class="docbar"><a href="index.html">← the documentation</a></div><p class="sub">Verification record. Each item states the condition examined, the record consulted, and the result.</p>
+<div class="banner pass">
+<p class="verdict">SIGNED OFF</p>
+<p>All conditions in the schedule below were examined and satisfied.</p>
+<p class="tally">54 MET &middot; 0 NOT MET &middot; 0 NOT VERIFIED &middot; 54 conditions examined</p>
+<dl class="facts">
+<dt>Playbook</dt><dd>generate-test-data</dd>
+<dt>Repository</dt><dd>airline-booking</dd>
+<dt>Project path</dt><dd>/private/tmp/claude-501/-Users-rajasekharkarawalla-dev-2026-cognidev--cw-worktrees-tdgen/d3561b48-b610-42bc-a8a9-703603de7c01/scratchpad/demo/runs/airline-booking</dd>
+<dt>Commit</dt><dd>0971698c3d8cf71cedf9634e319a33da11c35058</dd>
+<dt>Generated (UTC)</dt><dd>2026-10-23T11:39:56Z</dd>
+</dl>
+</div>
+<h2>Scope</h2>
+<p>The structural model was read, a covering array was built for the coverage guarantee that was asked for and checked exhaustively for every combination it requires, the references were satisfied in dependency order, the row target was met without truncating the covering set, every value was re-read against the type AND the declared value set of the column it went into, the routines&#39; OUTPUT parameters were carried through as declared expectations, the rows were scanned for content no reader could use, every entity was placed in exactly one of the four layers on recorded evidence and written under it, every recorded cache method got its lookups present, absent and expired, every HTTP route the model carries got a dataset, and the same input produced the same bytes twice.</p>
+<h3>Phases executed</h3>
+<p>The ledger records 6 phase(s) reaching terminal state Ok. A phase absent from this list either did not run or did not finish Ok.</p>
+<div class="scroll">
+<table>
+<thead><tr><th>Phase</th><th>Terminal state</th></tr></thead>
+<tbody>
+<tr><td><code>capture</code></td><td>Ok</td></tr>
+<tr><td><code>check-si</code></td><td>Ok</td></tr>
+<tr><td><code>generate</code></td><td>Ok</td></tr>
+<tr><td><code>review</code></td><td>Ok</td></tr>
+<tr><td><code>understand</code></td><td>Ok</td></tr>
+<tr><td><code>validate-requirement</code></td><td>Ok</td></tr>
+</tbody>
+</table>
+</div>
+<h2>Schedule of conditions</h2>
+<h3>The model this run read</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-si-present">
+<td>The structural pass read this repository.</td>
+<td class="evidence">.cognidev/understand/index.json · 13074 bytes</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-value-classes-present">
+<td>Per-column value classes were available to combine.<span class="detail">42 entities carry value classes</span></td>
+<td class="evidence">.cognidev/understand/permutations.json · /entities → 42</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-constraints-present">
+<td>The declared constraints were available, which is what identifies a primary key.</td>
+<td class="evidence">.cognidev/understand/datamodel.json parses as JSON</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-model-phase-ok">
+<td>The structural phase reached a terminal Ok state.</td>
+<td class="evidence">.cognidev/run/phases.json · phase `understand` → Ok</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>What was generated</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-generation-recorded">
+<td>The run recorded what it generated, in machine-readable form.</td>
+<td class="evidence">.cognidev/run/generation.json parses as JSON</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-entities-generated">
+<td>At least one entity produced a dataset.<span class="detail">15 entities</span></td>
+<td class="evidence">.cognidev/run/generation.json · /totals/entities → 15</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-rows-generated">
+<td>Rows were written.<span class="detail">2320 rows</span></td>
+<td class="evidence">.cognidev/run/generation.json · /totals/rows → 2320</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-files-written">
+<td>Dataset files reached disk. `/totals/files` is the number of files this run wrote and then found on disk — every selected format, plus the SQL reset script. It is deliberately not the per-entity sum, which is one short because the reset script belongs to no single entity.<span class="detail">41 dataset files on disk</span></td>
+<td class="evidence">.cognidev/run/generation.json · /totals/files → 41</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-files-reconcile">
+<td>Every file the run rendered was found on disk afterwards, so the file count in the report is a walk of what was written rather than a restatement of what was intended.</td>
+<td class="evidence">.cognidev/run/generation.json · /totals/files → 41  vs  .cognidev/run/generation.json · /totals/files_rendered → 41</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-no-missing-files">
+<td>No rendered file is missing from disk. Counted at `/totals/files_missing`; the condition reads the finding, which names the files.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/files_missing → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-output-dir-walked">
+<td>The output directory was walked and its file count recorded, so the report states what is on disk and not only what this run put there.<span class="detail">68 files in the output directory</span></td>
+<td class="evidence">.cognidev/run/generation.json · /totals/files_in_output_dir → 68</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-generate-phase-ok">
+<td>The generate phase reached a terminal Ok state.</td>
+<td class="evidence">.cognidev/run/phases.json · phase `generate` → Ok</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>The coverage guarantee</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-covering-set-built">
+<td>A covering set was built, not just a pile of rows.<span class="detail">63 covering rows</span></td>
+<td class="evidence">.cognidev/run/generation.json · /coverage/covering_rows → 63</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-coverage-verified">
+<td>The guarantee was re-checked exhaustively: for every combination it requires, the covering array was searched and a row containing that combination was found. The search runs over the array of value-class indices, which is materialised one row for one row into the covering rows — it does not re-read the emitted cells. The property holds; this sentence says which artifact was read to establish it.</td>
+<td class="evidence">.cognidev/run/generation.json · /coverage/verified_all → yes</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-no-unverified-entity">
+<td>No entity fell short of the guarantee. Counted at `/coverage/unverified_entities`; the condition reads the finding, which names the entity and what it was short of.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/unverified_entities → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-reduction-is-real">
+<td>The covering set is no larger than the cross-product it stands in for, so the reduction is a measured fact rather than a claim in prose.</td>
+<td class="evidence">.cognidev/run/generation.json · /coverage/cross_product → 474  vs  .cognidev/run/generation.json · /coverage/covering_rows → 63</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>The row target</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-target-met">
+<td>The dataset reached the row target that was asked for. A run that could not is reported with the shortfall rather than by truncating the covering set.<span class="detail">0 rows short of the requested target</span></td>
+<td class="evidence">.cognidev/run/generation.json · /target/shortfall → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-nothing-truncated">
+<td>The rows emitted are at least the number the target asked for.</td>
+<td class="evidence">.cognidev/run/generation.json · /target/emitted → 2320  vs  .cognidev/run/generation.json · /target/requested → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Referential integrity</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-references-satisfied">
+<td>Every reference edge the run found — declared or derived — was satisfied by generating the parent first.</td>
+<td class="evidence">.cognidev/run/generation.json · /totals/fk_edges_satisfied → 0  vs  .cognidev/run/generation.json · /totals/fk_edges_expected → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-negatives-tagged">
+<td>Every negative record names the column and the rule it breaks. Counted at `/totals/negative_rows_untagged`; the condition reads the finding, which names the entity and the row.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/negative_rows_untagged → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Type conformance</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-valid-rows-are-loadable">
+<td>Every value in the loadable set fits the declared type of the column it was written into. A row in a file whose header states it satisfies every declared constraint has to be able to load; a placeholder string in an INT column is not a valid row however it is labelled. Counted at `/totals/type_violations_in_valid_rows`, and the full list is at `/type_violations`; the condition reads the finding, which names the column, the value, the declared type and the row.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/type_violations_in_valid_rows → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-negatives-break-one-rule">
+<td>A negative record breaks exactly the column it is tagged against and no other, so a test asserting on the reason gets the failure it expects. Counted at `/totals/type_violations_in_negative_rows`; the condition reads the finding, which names the untagged column that also broke.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/type_violations_in_negative_rows → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-placeholders-resolved">
+<td>Every identifier placeholder the structural pass emitted was resolved — to a real parent key where a parent exists, and otherwise to a type-correct generated value that the report labels as generated.<span class="detail">2 placeholders with no parent, replaced by a generated value</span></td>
+<td class="evidence">.cognidev/run/generation.json · /placeholder_substitutions → 2</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-values-are-in-their-declared-vocabulary">
+<td>Every value in the loadable set is a member of the closed set its column declares. Where a column carries `CHECK … IN (…)`, the schema is stating the complete list of values it accepts, and a value outside it is exactly as unloadable as one the type cannot hold — the INSERT is rejected either way. The type check above cannot see this: the base type of an enumerated column accepts every string, so `USD` written into `currency_name VARCHAR(16) CHECK IN (&#39;Pound Sterling&#39;, …)` passed every line on this page. The corruption that produced it was caught only where it also hit an `INT`. Counted over the emitted cells at `/totals/off_vocabulary_values_in_valid_rows`, full list at `/off_vocabulary_values`; a trap class probing the vocabulary — `gbp` against `GBP` — is exempt, because carrying the wrong case is what it is for, and so is the one column a negative record is tagged against. The vocabulary enforced is the one the structural shard carries, which may be a truncated prefix of the DDL&#39;s.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/off_vocabulary_values_in_valid_rows → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Fit to read</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-values-are-legible">
+<td>No text value in the loadable set is a run of one repeated character. Type conformance above proves a value can be loaded; it cannot see that a 160-character column holding one letter repeated 160 times is not data anyone can use. A maximum-width string is perfectly type-conformant, so a dataset made of them passes every other check on this page — which is exactly how a full sign-off shipped output the reader rejected on sight. Counted over the emitted rows: a run longer than eight characters in a text column is reported with the column, the character and its length. Counted at `/totals/illegible_values_in_valid_rows`.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/illegible_values_in_valid_rows → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-dates-are-dates">
+<td>No value in a `DATE` column carries a time component. `DATE` has no time in T-SQL, and the type check above cannot see this: its predicate is deliberately loose about timestamps, because the dialects differ on separators and offsets and it must not reject a legal one. So `2026-01-15T09:30:00Z` passed it in all 82 rows of a `DATE NOT NULL` column while every check on this page was green. This one is counted against the declared type NAME, over the emitted cells, and a trap class probing exactly that hazard is exempt because carrying the time is what it is for. Counted at `/totals/date_columns_carrying_a_time_in_valid_rows`.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/date_columns_carrying_a_time_in_valid_rows → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-declared-pairs-are-ordered">
+<td>No covering row holds two datetime columns the schema declares as a pair the wrong way round — an arrival before its departure. A covering row&#39;s cells ARE the covering array&#39;s cells and nothing is allowed to overwrite one, so this cannot be repaired after the fact: it is zero only when the two columns&#39; value classes were built in order to begin with. Counted over the emitted rows, so it goes red the moment that stops being true. A pair is two datetime columns of one entity whose names differ in exactly one word, taken in the order the schema declares them; columns two or more words apart are not paired and are not judged. Counted at `/totals/covering_rows_with_an_unordered_datetime_pair`.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/covering_rows_with_an_unordered_datetime_pair → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-columns-are-not-constant">
+<td>No column holds the same value in every loadable row while the run had more than one value available to put there. A column pinned to a single value by the model is reported beside this one and is not counted against it — the defect is a generator with a choice that did not use it, not a schema with only one answer. Counted at `/totals/constant_columns_with_alternatives`.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/constant_columns_with_alternatives → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>The routines&#39; OUTPUT parameters</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-output-parameters-carried">
+<td>Every OUTPUT parameter the model declares reached the emitted artifacts. An OUTPUT parameter is not an input a caller chooses — the caller binds a buffer and reads back what the routine wrote — so it is emitted as a declared expectation beside the records, never combined into a column, and it takes no part in the coverage guarantee. `permutations.json` carried 27 of them across 18 stored procedures while the generator read only `fields`, so a procedure with one input and three OUTPUT parameters shipped a one-column dataset and the whole capability was invisible. The left-hand number is read back out of the JSON dataset bodies this run RENDERED, not restated from the model, so an emitter that stops writing them turns this red. The right-hand number is what the selected formats can carry: JSON is the only one with a place for a fact that is not a row, and a run that selects neither is expected to carry none rather than failing for an answer it was given.</td>
+<td class="evidence">.cognidev/run/generation.json · /totals/output_parameters_in_artifacts → 0  vs  .cognidev/run/generation.json · /totals/output_parameters_expected_in_artifacts → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-routine-datasets-state-their-shape">
+<td>Every routine that got a dataset states its own shape — what it varies, and what it declares that it does not vary — so a one-column file is a fact a reader can check rather than a mystery they have to open the tool to explain. Counted as the routines carrying a non-empty `shape` against the routines this run generated for; a routine that stopped explaining itself turns this red.</td>
+<td class="evidence">.cognidev/run/generation.json · /totals/routine_datasets_stating_their_shape → 4  vs  .cognidev/run/generation.json · /totals/routines_generated → 4</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Reproducibility</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-bytes-stable">
+<td>Rendering the whole output a second time from the same model and answers produced identical bytes.</td>
+<td class="evidence">.cognidev/run/generation.json · /determinism/stable → yes</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Layer by layer</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-every-entity-has-a-layer">
+<td>Every entity this run generated was assigned to exactly one of the four layers — UI &amp; API surface, domain objects, cache, database. The assignment is a partition: the four per-layer counts are summed and compared against the entities generated, so an entity that fell to no layer, or to two, turns this red.</td>
+<td class="evidence">.cognidev/run/generation.json · /layers/entities_assigned → 15  vs  .cognidev/run/generation.json · /layers/entities_generated → 15</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-every-layer-states-itself">
+<td>All four layer directories carry a README — full, empty or unselected — stating what the layer holds, or what it would have held and what was looked for. An absent directory reads as &quot;nothing here&quot;; a README that says &quot;externals.json recorded 0 cache accesses&quot; is a finding. Counted off the rendered files against the four layers.</td>
+<td class="evidence">.cognidev/run/generation.json · /layers/readmes → 4  vs  .cognidev/run/generation.json · /layers/readmes_expected → 4</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-files-sit-in-their-layer">
+<td>Every file attributed to an entity sits under that entity&#39;s own layer directory. Attribution is by file stem under the output root, not under the layer directory, so a file that landed in the wrong layer is still found and then caught here rather than hidden by the match. Counted at `/layers/files_outside_layer`; the condition reads the finding, which names the entity and the path.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/files_outside_their_layer → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-no-two-entities-share-a-file">
+<td>No two entities rendered to the same path. Two classes named `InputModel` in two files used to write `InputModel.json` twice, and the second silently replaced the first with every check green — the reconciliation saw one path on disk and one path rendered. File stems are now made unique per entity, and this counts the rendered paths against the distinct ones so the overwrite can never return quietly.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/files_sharing_a_path → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-test-code-is-not-a-layer">
+<td>Entities declared in files roles.json marks `test` were left out of every layer and listed, not generated into one. Test code is not a layer of the application; a parameter list on a test method is not an input anyone sends. The count is stated so the omission is visible.<span class="detail">1 entities in test files left out of the layers</span></td>
+<td class="evidence">.cognidev/run/generation.json · /layers/test_code_skipped_entities → 1</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>What the tests already say</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-every-test-path-became-a-scenario">
+<td>Every state path the repository&#39;s own tests walk (`tests.json`, docs/111) was written under `scenarios/` as records in sequence, one per step with the status field set to the state the step reaches. Written is compared against found in the shard, so a path that fell through turns this red. Reads 0 against 0 on a repository with no tests, which is the honest reading and not a pass.</td>
+<td class="evidence">.cognidev/run/generation.json · /tests/paths_written → 0  vs  .cognidev/run/generation.json · /tests/paths_in_shard → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-every-declared-transition-is-tested-or-named">
+<td>Every transition `lifecycle.json` declares is either walked by a test path or listed by name in `untested-transitions.json`. Tested plus untested is compared against declared, so a transition that was neither generated from a test nor named as untested turns this red.</td>
+<td class="evidence">.cognidev/run/generation.json · /tests/transitions_accounted → 0  vs  .cognidev/run/generation.json · /tests/transitions_in_lifecycle → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-test-values-come-first">
+<td>Generated string columns whose name matches a value the tests pass take that value before any invented one. The count of bound columns is stated so a reader sees how much of the dataset the team&#39;s own values reached.<span class="detail">0 generated columns carry values the repository&#39;s tests pass</span></td>
+<td class="evidence">.cognidev/run/generation.json · /tests/columns_bound → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-every-invariant-relation-holds-on-every-row">
+<td>Every relation between columns the repository&#39;s tests state as arithmetic (`AvailableQuantity = Quantity − ReservedQuantity`, read from the numbers a test asserts after a call) holds on every loadable row of that entity. Rows holding is compared against rows checked, so a row the guard refused to compute turns this red. Reads 0 against 0 when no test states such a rule, which is the honest reading and not a pass.</td>
+<td class="evidence">.cognidev/run/generation.json · /tests/invariant_rows_holding → 0  vs  .cognidev/run/generation.json · /tests/invariant_rows_checked → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>The cache layer</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-every-cache-access-is-accounted-for">
+<td>Every cache access externals.json recorded is either bound to a method this run generated or counted as unbound, with the reason class stated in the cache README. The two counts are summed against the recorded total, so an access that silently fell through turns this red. Reads 0 against 0 on a repository with no recorded cache, which is the honest reading and not a pass earned by doing the work.</td>
+<td class="evidence">.cognidev/run/generation.json · /cache/accesses_accounted → 0  vs  .cognidev/run/generation.json · /cache/accesses_recorded → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-every-cache-lookup-has-three-states">
+<td>Every lookup written for a cache method appears in all three states a cache can answer with — present, absent, expired. The entry count is compared against lookups × 3, so a state that stopped being written turns this red rather than shipping a cache fixture that only tests the hit.</td>
+<td class="evidence">.cognidev/run/generation.json · /cache/entries → 0  vs  .cognidev/run/generation.json · /cache/entries_expected → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-cache-entries-join-real-rows">
+<td>Every cache entry&#39;s lookup is a row of the method&#39;s own generated dataset, so an entry cannot disagree with the data it claims to arrange. Counted off the entries against the dataset rows.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/cache_entries_without_lookup_row → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>HTTP routes</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-every-route-gets-a-dataset">
+<td>Every HTTP route the model carries got a dataset when routes were asked for. The route kind went unread by this tool for a month after the structural pass started emitting it, and 1,037 routes on one estate produced &quot;the model carries no API request bodies&quot;. Counted as routes in the model against routes generated, when the `apis` target and the UI layer were selected; the condition reads the finding.</td>
+<td class="evidence">.cognidev/run/generation.json · /findings/routes_dropped → none</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>The dataset split by boundary</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-every-counted-layer-has-a-file">
+<td>Every operation boundary the run counted also produced a file. Counted as the incoming, internal and outgoing boundaries that had something in them, against the files actually rendered — so a boundary that was tallied and then never written turns this red rather than inflating a total nobody reconciles. A boundary is not a layer: a layer is where an entity&#39;s dataset lives, a boundary is where an operation&#39;s data crosses.</td>
+<td class="evidence">.cognidev/run/generation.json · /segregation/files_expected → 2  vs  .cognidev/run/generation.json · /segregation/files → 2</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-every-entity-accounted-for">
+<td>Every entity this run generated is either referenced by a by-boundary view or is explicitly recorded as referenced by none. The two counts are compared against the entities generated, so an entity that silently stopped being either turns this red — the views never quietly shrink the model they claim to describe.</td>
+<td class="evidence">.cognidev/run/generation.json · /segregation/entities_accounted → 15  vs  .cognidev/run/generation.json · /segregation/entities_generated → 15</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>What a reader gets</h3>
+<div class="scroll">
+<table>
+<thead><tr><th>Condition</th><th>Record consulted</th><th>Result</th></tr></thead>
+<tbody>
+<tr id="c-report-html">
+<td>A generation report was written: what was produced, and what it stands in for.</td>
+<td class="evidence">TEST-DATA-REPORT.html · 39680 bytes</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-report-md">
+<td>A committable summary sits next to the data.</td>
+<td class="evidence">TEST-DATA.md · 16850 bytes</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-summary-card">
+<td>The run summary the workbench shows was written.</td>
+<td class="evidence">.cognidev/run/summary.json parses as JSON</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-browser-written">
+<td>The data browser was written beside the datasets, carrying rows rather than an empty shell. `TEST-DATA-REPORT.html` is a report ABOUT the generation; this is the page for looking at the data — rows per entity, tagged covering / negative / filler, with the declared constraints of every column and, on a negative record, the rule it breaks. The byte count is measured off the page that was rendered, so a browser that stopped embedding rows fails here instead of shipping as a shell nobody opened: rows embedded are counted against the entities on the page. (This was a 20,000-byte floor, which failed a cache-only service&#39;s honest 4 rows across 1 entity.) Its presence on disk is covered by `no-missing-files`, which reconciles every rendered file.</td>
+<td class="evidence">.cognidev/run/generation.json · /browser/rows_embedded → 681  vs  .cognidev/run/generation.json · /browser/entities → 15</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-by-endpoint-page-written">
+<td>The by-endpoint page was written beside the datasets, carrying operations rather than an empty shell. The browser lists entities alphabetically, which is a database view of a service; this is the same rows organised the way a REST API is reasoned about — one operation at a time, in three layers: the incoming payload, the internal structure it touches, and the outgoing payload. Every entity the page embeds must carry at least one row, counted off the payload that was rendered, so a page that stopped embedding rows fails here instead of shipping as a shell nobody opened. A surface whose operations reach no entity reads 0 against 0, and its operations are still held to `by-endpoint-covers-every-operation` below. (This was a 20,000-byte floor, which failed a one-route repository for being small and passed a five-route one by 163 bytes.) Its presence on disk is covered by `no-missing-files`, which reconciles every rendered file.</td>
+<td class="evidence">.cognidev/run/generation.json · /endpoints/rows_embedded → 0  vs  .cognidev/run/generation.json · /endpoints/entities_embedded → 0</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-by-endpoint-covers-every-operation">
+<td>Every operation the analysis found is reachable on the by-endpoint page. An artifact nothing asserts is one that can silently stop being produced, and a viewer that drops an endpoint is the same defect class as a check that silently passes. The two pointers are the count the page RENDERS and the count the surface FOUND, so they are equal in a healthy run and diverge the moment an endpoint stops being covered. The rows within an entity ARE capped, and every cap is stated on the entity it applies to and recorded under `/endpoints/`.</td>
+<td class="evidence">.cognidev/run/generation.json · /endpoints/operations → 1  vs  .cognidev/run/generation.json · /endpoints/operations_found → 1</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-by-endpoint-accounts-for-every-internal-layer">
+<td>Every operation&#39;s internal layer is accounted for: it either names an internal entity the analysis states it reaches, or it carries a written statement of what could not be resolved and why. Silence is the failure mode this check exists to catch — an endpoint that shows nothing under &quot;internal&quot; and says nothing about it reads as an endpoint that touches nothing. `internal_resolved` and `internal_stated_gap` are not exclusive: a route resolved one hop into a repository method AND missing its stored procedure is counted in both, because that is the true answer.</td>
+<td class="evidence">.cognidev/run/generation.json · /endpoints/internal_accounted → 1  vs  .cognidev/run/generation.json · /endpoints/operations_found → 1</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+<tr id="c-browser-covers-every-entity">
+<td>Every entity that got a dataset is reachable in the browser. A page that silently drops entities is the same defect class as a check that silently passes; the rows within an entity ARE capped, and every cap is stated on the entity it applies to and recorded in `/browser/rows_capped`.</td>
+<td class="evidence">.cognidev/run/generation.json · /browser/entities → 15  vs  .cognidev/run/generation.json · /totals/entities → 15</td>
+<td class="verdict-cell pass">MET</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>Basis and limitations</h2>
+<p><strong>Basis.</strong> Each condition is evaluated by reading a record produced by this run — a file, a count, an exit status — and comparing it with the condition as stated. No result is entered by hand, and no condition passes because it was not examined: where the record is missing, the result is recorded as not verified.</p>
+<p><strong>Confidence.</strong> A satisfied condition establishes that the stated property held for this run, on this input, at the time the record was written. It is evidence about what was examined and nothing more. It does not establish that the schedule is complete, that the output is fit for a particular purpose, or that properties nobody listed are sound.</p>
+<p><strong>Limitations.</strong> The schedule is written by the playbook author and is not exhaustive. Figures derived from a language model vary between runs on identical input and are stated as findings of this run, not as properties of the system. Reading the output remains necessary; this record is not a substitute for it.</p>
+<h2>Reproduction</h2>
+<p>The invocation was not recorded. The following is the equivalent command for the playbook and project this record was written against:</p>
+<pre>playbook_test \
+  --playbook /Users/rajasekharkarawalla/dev/2026/cognidev/.cw-worktrees/tdgen-pb/playbooks-v2/generate-test-data \
+  --project  /private/tmp/claude-501/-Users-rajasekharkarawalla-dev-2026-cognidev--cw-worktrees-tdgen/d3561b48-b610-42bc-a8a9-703603de7c01/scratchpad/demo/runs/airline-booking</pre>
+<footer>signoff-report 0.1.0, 2026-10-23T11:39:56Z (UTC).</footer>
+</main>
+</body>
+</html>

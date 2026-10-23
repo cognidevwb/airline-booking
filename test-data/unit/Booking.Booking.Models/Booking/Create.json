@@ -1,0 +1,4179 @@
+{
+  "name": "Booking.Create",
+  "kind": "method",
+  "layer": "unit",
+  "source": "src/Booking/Booking/Models/Booking.cs:13",
+  "columns": [
+    "id",
+    "passengerInfo",
+    "trip",
+    "isDeleted",
+    "userId"
+  ],
+  "valid": [
+    {
+      "ref": "booking-1-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001003",
+        "IsDeleted": false,
+        "PassengerInfo": "Maria Gonzalez | BA117 | 2026-12-14 08:35 | Seat 14A | 342.50 | Window seat",
+        "Trip": {
+          "AircraftId": "0c4e7a19-3b52-4d86-a1f0-8e2c5d9b7a11",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-14T08:35:00Z",
+          "FlightNumber": "BA117",
+          "Price": 612.4,
+          "SeatNumber": "14A"
+        },
+        "UserId": 1000
+      }
+    },
+    {
+      "ref": "booking-2-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001004",
+        "IsDeleted": false,
+        "PassengerInfo": "Liam O'Connor | LH402 | 2026-11-03 06:50 | Seat 22F | 189.99 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "e2a85c14-7f09-4b3d-9c61-4a0d8f5e3c13",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-03T10:15:00Z",
+          "FlightNumber": "LH402",
+          "Price": 548.9,
+          "SeatNumber": "22F"
+        },
+        "UserId": 1001
+      }
+    },
+    {
+      "ref": "booking-3-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001005",
+        "IsDeleted": false,
+        "PassengerInfo": "Aisha Rahman | EK203 | 2026-12-02 22:15 | Seat 3C | 1180.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "31d7f4a9-c8e2-4056-8b1d-9a5e7c3f0b15",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-18T08:30:00Z",
+          "FlightNumber": "EK203",
+          "Price": 1180.0,
+          "SeatNumber": "3C"
+        },
+        "UserId": 1002
+      }
+    },
+    {
+      "ref": "booking-4-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001006",
+        "IsDeleted": false,
+        "PassengerInfo": "Hiroshi Tanaka | JL044 | 2026-11-19 11:20 | Seat 31K | 765.40 | Aisle seat",
+        "Trip": {
+          "AircraftId": "74a1c8e6-5d3b-4f92-a0c7-6b9e2d8f1a17",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "Description": "Aisle seat requested",
+          "FlightDate": "2026-11-09T07:20:00Z",
+          "FlightNumber": "AF1680",
+          "Price": 129.99,
+          "SeatNumber": "18C"
+        },
+        "UserId": 1003
+      }
+    },
+    {
+      "ref": "booking-5-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001007",
+        "IsDeleted": false,
+        "PassengerInfo": "Sophie Laurent | AF1280 | 2026-11-27 07:05 | Seat 9D | 124.30 | Gluten-free meal",
+        "Trip": {
+          "AircraftId": "2e8b5a71-f6c0-4793-8d2a-b1e4c9f07d19",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "Description": "Hand luggage only",
+          "FlightDate": "2026-10-28T06:45:00Z",
+          "FlightNumber": "KL1002",
+          "Price": 89.99,
+          "SeatNumber": "9D"
+        },
+        "UserId": 1004
+      }
+    },
+    {
+      "ref": "booking-6-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001008",
+        "IsDeleted": true,
+        "PassengerInfo": "Carlos Mendoza | IB6251 | 2026-12-09 13:40 | Seat 17B | 98.75 | Window seat",
+        "Trip": {
+          "AircraftId": "69c4e1b8-0d73-4a5e-b8f1-3e9a6c2d5f21",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "Description": "Gluten-free meal",
+          "FlightDate": "2026-12-02T23:20:00Z",
+          "FlightNumber": "SQ321",
+          "Price": 1342.0,
+          "SeatNumber": "41H"
+        },
+        "UserId": 1005
+      }
+    },
+    {
+      "ref": "booking-7-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001009",
+        "IsDeleted": false,
+        "PassengerInfo": "Emily Carter | AA100 | 2026-11-08 17:25 | Seat 12C | 612.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "4b0e93d7-6a2c-4e81-9b5f-e8d1a3c70f23",
+          "ArriveAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "DepartureAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "Description": "Traveling with infant",
+          "FlightDate": "2026-11-21T13:05:00Z",
+          "FlightNumber": "IB3170",
+          "Price": 112.5,
+          "SeatNumber": "27B"
+        },
+        "UserId": 1006
+      }
+    },
+    {
+      "ref": "booking-8-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "PassengerInfo": "Mohammed Al-Farsi | QR017 | 2026-12-20 02:10 | Seat 5A | 1450.00 | Halal meal",
+        "Trip": {
+          "AircraftId": "1a6d9f43-e7b8-4c25-b09e-2d5a8c7f3e25",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2026-11-12T19:00:00Z",
+          "FlightNumber": "AA100",
+          "Price": 689.0,
+          "SeatNumber": "11E"
+        },
+        "UserId": 1007
+      }
+    },
+    {
+      "ref": "booking-9-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "PassengerInfo": "Anna Kowalski | LO282 | 2026-11-12 09:55 | Seat 20E | 156.20 | Middle seat, travelling with child",
+        "Trip": {
+          "AircraftId": "5d9b1e72-a4c3-4f08-b6d5-1c7a3e9f2b12",
+          "ArriveAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Early boarding",
+          "FlightDate": "2026-10-30T09:50:00Z",
+          "FlightNumber": "BA304",
+          "Price": 97.4,
+          "SeatNumber": "6F"
+        },
+        "UserId": 1008
+      }
+    },
+    {
+      "ref": "booking-10-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "PassengerInfo": "Rajesh Iyer | AI101 | 2026-12-05 03:30 | Seat 27H | 428.60 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "8f3c6b27-d150-4e9a-a7b4-2e6c0f1d9a14",
+          "ArriveAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-05T12:25:00Z",
+          "FlightNumber": "LH1112",
+          "Price": 104.2,
+          "SeatNumber": "15F"
+        },
+        "UserId": 1009
+      }
+    },
+    {
+      "ref": "booking-11-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "PassengerInfo": "Grace Nakamura | NH204 | 2026-11-22 10:45 | Seat 8F | 890.00 | Special assistance at gate",
+        "Trip": {
+          "AircraftId": "b6e09d53-2a71-4c8f-95e3-d7f1a4c20b16",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Halal meal",
+          "FlightDate": "2026-12-20T02:40:00Z",
+          "FlightNumber": "EK007",
+          "Price": 865.3,
+          "SeatNumber": "24A"
+        },
+        "UserId": 1010
+      }
+    },
+    {
+      "ref": "booking-12-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001014",
+        "IsDeleted": false,
+        "PassengerInfo": "Lucas Pereira | TP208 | 2026-12-17 15:10 | Seat 15D | 143.90 | Aisle seat",
+        "Trip": {
+          "AircraftId": "c9f2e035-8b64-4d1a-b3e8-0a7d5c6f4e18",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-27T10:30:00Z",
+          "FlightNumber": "AF007",
+          "Price": 724.6,
+          "SeatNumber": "20D"
+        },
+        "UserId": 1011
+      }
+    },
+    {
+      "ref": "booking-13-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001015",
+        "IsDeleted": false,
+        "PassengerInfo": "Fatima Zahra | AT800 | 2026-11-15 12:30 | Seat 11A | 211.45 | Window seat",
+        "Trip": {
+          "AircraftId": "a3d70c96-1e5f-4b28-9f4c-7c2a8e0b6d20",
+          "ArriveAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "DepartureAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-09T21:55:00Z",
+          "FlightNumber": "KL641",
+          "Price": 998.75,
+          "SeatNumber": "33A"
+        },
+        "UserId": 1012
+      }
+    },
+    {
+      "ref": "booking-14-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001016",
+        "IsDeleted": true,
+        "PassengerInfo": "Oliver Smith | VS3 | 2026-12-11 10:15 | Seat 42A | 534.99 | Extra legroom",
+        "Trip": {
+          "AircraftId": "f87c2a64-3d95-4b1e-8a03-c6e9f5b2d124",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2027-01-08T11:40:00Z",
+          "FlightNumber": "IB6251",
+          "Price": 576.2,
+          "SeatNumber": "30F"
+        },
+        "UserId": 1013
+      }
+    },
+    {
+      "ref": "booking-15-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "PassengerInfo": "Ingrid Larsen | SK905 | 2026-11-05 14:00 | Seat 6B | 178.30 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "0c4e7a19-3b52-4d86-a1f0-8e2c5d9b7a11",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Aisle seat requested",
+          "FlightDate": "2026-11-14T15:10:00Z",
+          "FlightNumber": "BA2490",
+          "Price": 143.8,
+          "SeatNumber": "19C"
+        },
+        "UserId": 1014
+      }
+    },
+    {
+      "ref": "booking-16-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "PassengerInfo": "David Cohen | LY001 | 2026-12-03 23:20 | Seat 19C | 689.00 | Kosher meal",
+        "Trip": {
+          "AircraftId": "e2a85c14-7f09-4b3d-9c61-4a0d8f5e3c13",
+          "ArriveAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Lactose-free meal",
+          "FlightDate": "2027-01-15T22:10:00Z",
+          "FlightNumber": "LH717",
+          "Price": 1105.5,
+          "SeatNumber": "38E"
+        },
+        "UserId": 1015
+      }
+    },
+    {
+      "ref": "booking-17-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "PassengerInfo": "Priya Menon | SQ321 | 2026-11-30 01:25 | Seat 24J | 972.80 | Window seat",
+        "Trip": {
+          "AircraftId": "d15f8a32-b9e4-4c07-a62d-5f0c7b1e8a22",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "Description": "Bassinet seat",
+          "FlightDate": "2027-02-04T23:45:00Z",
+          "FlightNumber": "SQ325",
+          "Price": 1210.4,
+          "SeatNumber": "12D"
+        },
+        "UserId": 1016
+      }
+    },
+    {
+      "ref": "booking-18-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "PassengerInfo": "Thomas Becker | LH716 | 2026-11-10 18:45 | Seat 13F | 132.60 | No special requests",
+        "Trip": {
+          "AircraftId": "93e5b0c8-4f1a-4d67-a8c2-7b3e1d9f6a26",
+          "ArriveAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "DepartureAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-05T21:15:00Z",
+          "FlightNumber": "AA106",
+          "Price": 634.9,
+          "SeatNumber": "25A"
+        },
+        "UserId": 1017
+      }
+    },
+    {
+      "ref": "booking-19-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001021",
+        "IsDeleted": false,
+        "PassengerInfo": "Camila Rojas | LA704 | 2026-12-18 21:30 | Seat 30A | 745.25 | Window seat",
+        "Trip": {
+          "AircraftId": "31d7f4a9-c8e2-4056-8b1d-9a5e7c3f0b15",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2026-11-24T09:05:00Z",
+          "FlightNumber": "EK047",
+          "Price": 457.25,
+          "SeatNumber": "16B"
+        },
+        "UserId": 1018
+      }
+    },
+    {
+      "ref": "booking-20-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "PassengerInfo": "James Whitaker | DL402 | 2026-11-24 08:10 | Seat 2A | 1320.00 | First class meal preference: seafood",
+        "Trip": {
+          "AircraftId": "5d9b1e72-a4c3-4f08-b6d5-1c7a3e9f2b12",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Hand luggage only",
+          "FlightDate": "2026-12-11T14:30:00Z",
+          "FlightNumber": "BA560",
+          "Price": 118.6,
+          "SeatNumber": "8A"
+        },
+        "UserId": 1019
+      }
+    },
+    {
+      "ref": "booking-21-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "PassengerInfo": "Nadia Petrova | SU2578 | 2026-12-07 16:50 | Seat 16E | 267.15 | Aisle seat",
+        "Trip": {
+          "AircraftId": "74a1c8e6-5d3b-4f92-a0c7-6b9e2d8f1a17",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "Description": "Early boarding",
+          "FlightDate": "2026-10-31T16:20:00Z",
+          "FlightNumber": "AF1033",
+          "Price": 94.3,
+          "SeatNumber": "23C"
+        },
+        "UserId": 1020
+      }
+    },
+    {
+      "ref": "booking-22-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "PassengerInfo": "Kwame Mensah | ET500 | 2026-11-17 23:55 | Seat 21D | 498.70 | Extra baggage",
+        "Trip": {
+          "AircraftId": "2e8b5a71-f6c0-4793-8d2a-b1e4c9f07d19",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "Description": "Aisle seat requested",
+          "FlightDate": "2026-11-16T08:00:00Z",
+          "FlightNumber": "KL1243",
+          "Price": 136.15,
+          "SeatNumber": "17D"
+        },
+        "UserId": 1021
+      }
+    },
+    {
+      "ref": "booking-23-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "PassengerInfo": "Isabella Rossi | AZ610 | 2026-12-01 11:05 | Seat 10A | 109.99 | Window seat",
+        "Trip": {
+          "AircraftId": "8f3c6b27-d150-4e9a-a7b4-2e6c0f1d9a14",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-18T13:40:00Z",
+          "FlightNumber": "LH400",
+          "Price": 702.8,
+          "SeatNumber": "10F"
+        },
+        "UserId": 1022
+      }
+    },
+    {
+      "ref": "booking-24-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "PassengerInfo": "Wei Zhang | CA937 | 2026-11-28 13:15 | Seat 28C | 655.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "4b0e93d7-6a2c-4e81-9b5f-e8d1a3c70f23",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-30T17:35:00Z",
+          "FlightNumber": "IB3166",
+          "Price": 108.95,
+          "SeatNumber": "21F"
+        },
+        "UserId": 1023
+      }
+    },
+    {
+      "ref": "booking-25-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001027",
+        "IsDeleted": true,
+        "PassengerInfo": "Hannah Fischer | OS124 | 2026-12-12 07:40 | Seat 7F | 147.35 | Aisle seat",
+        "Trip": {
+          "AircraftId": "b6e09d53-2a71-4c8f-95e3-d7f1a4c20b16",
+          "ArriveAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2027-01-22T14:25:00Z",
+          "FlightNumber": "EK147",
+          "Price": 512.0,
+          "SeatNumber": "28C"
+        },
+        "UserId": 1024
+      }
+    },
+    {
+      "ref": "booking-26-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001028",
+        "IsDeleted": false,
+        "PassengerInfo": "Tariq Hussain | PK786 | 2026-11-14 04:20 | Seat 33B | 389.90 | Halal meal",
+        "Trip": {
+          "AircraftId": "69c4e1b8-0d73-4a5e-b8f1-3e9a6c2d5f21",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "Description": "Extra legroom",
+          "FlightDate": "2027-02-18T08:50:00Z",
+          "FlightNumber": "SQ317",
+          "Price": 1287.65,
+          "SeatNumber": "5A"
+        },
+        "UserId": 1025
+      }
+    },
+    {
+      "ref": "booking-27-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001029",
+        "IsDeleted": false,
+        "PassengerInfo": "Sarah Mitchell | UA901 | 2026-12-15 19:05 | Seat 18A | 701.45 | Window seat",
+        "Trip": {
+          "AircraftId": "1a6d9f43-e7b8-4c25-b09e-2d5a8c7f3e25",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "Description": "Traveling with infant",
+          "FlightDate": "2026-12-27T18:20:00Z",
+          "FlightNumber": "AA6252",
+          "Price": 559.4,
+          "SeatNumber": "31C"
+        },
+        "UserId": 1026
+      }
+    },
+    {
+      "ref": "booking-28-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001030",
+        "IsDeleted": false,
+        "PassengerInfo": "Mateo Fernandez | AR1303 | 2026-11-06 20:35 | Seat 25E | 224.80 | Middle seat",
+        "Trip": {
+          "AircraftId": "0c4e7a19-3b52-4d86-a1f0-8e2c5d9b7a11",
+          "ArriveAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Gluten-free meal",
+          "FlightDate": "2027-01-29T20:45:00Z",
+          "FlightNumber": "BA015",
+          "Price": 1049.99,
+          "SeatNumber": "37D"
+        },
+        "UserId": 1027
+      }
+    },
+    {
+      "ref": "booking-29-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001031",
+        "IsDeleted": false,
+        "PassengerInfo": "Yuki Sato | NH912 | 2026-12-22 09:00 | Seat 4D | 1105.60 | Extra legroom",
+        "Trip": {
+          "AircraftId": "a3d70c96-1e5f-4b28-9f4c-7c2a8e0b6d20",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "Description": "Hand luggage only",
+          "FlightDate": "2026-11-11T11:55:00Z",
+          "FlightNumber": "KL1015",
+          "Price": 101.45,
+          "SeatNumber": "7B"
+        },
+        "UserId": 1028
+      }
+    },
+    {
+      "ref": "booking-30-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001032",
+        "IsDeleted": false,
+        "PassengerInfo": "Elena Popescu | RO391 | 2026-11-09 15:25 | Seat 12B | 94.50 | No special requests",
+        "Trip": {
+          "AircraftId": "c9f2e035-8b64-4d1a-b3e8-0a7d5c6f4e18",
+          "ArriveAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "DepartureAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-03T07:45:00Z",
+          "FlightNumber": "AF1380",
+          "Price": 87.9,
+          "SeatNumber": "12A"
+        },
+        "UserId": 1029
+      }
+    },
+    {
+      "ref": "booking-31-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001033",
+        "IsDeleted": false,
+        "PassengerInfo": "Benjamin Okafor | BA083 | 2026-12-06 21:50 | Seat 35K | 812.30 | Aisle seat",
+        "Trip": {
+          "AircraftId": "e2a85c14-7f09-4b3d-9c61-4a0d8f5e3c13",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Aisle seat requested",
+          "FlightDate": "2026-12-08T09:20:00Z",
+          "FlightNumber": "LH1034",
+          "Price": 156.7,
+          "SeatNumber": "26C"
+        },
+        "UserId": 1030
+      }
+    },
+    {
+      "ref": "booking-32-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001034",
+        "IsDeleted": false,
+        "PassengerInfo": "Chloe Dubois | AF008 | 2026-11-21 10:30 | Seat 23A | 478.00 | Window seat",
+        "Trip": {
+          "AircraftId": "5d9b1e72-a4c3-4f08-b6d5-1c7a3e9f2b12",
+          "ArriveAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Early boarding",
+          "FlightDate": "2026-11-06T18:05:00Z",
+          "FlightNumber": "BA2704",
+          "Price": 119.35,
+          "SeatNumber": "4F"
+        },
+        "UserId": 1031
+      }
+    },
+    {
+      "ref": "booking-33-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001035",
+        "IsDeleted": false,
+        "PassengerInfo": "Arjun Kapoor | 6E203 | 2026-12-10 05:45 | Seat 14C | 76.99 | Aisle seat",
+        "Trip": {
+          "AircraftId": "31d7f4a9-c8e2-4056-8b1d-9a5e7c3f0b15",
+          "ArriveAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Halal meal",
+          "FlightDate": "2026-12-15T07:15:00Z",
+          "FlightNumber": "EK202",
+          "Price": 471.8,
+          "SeatNumber": "35E"
+        },
+        "UserId": 1032
+      }
+    },
+    {
+      "ref": "booking-34-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001036",
+        "IsDeleted": false,
+        "PassengerInfo": "Zoe Anderson | QF1 | 2026-11-26 23:10 | Seat 40H | 1240.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "f87c2a64-3d95-4b1e-8a03-c6e9f5b2d124",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "Description": "Window seat",
+          "FlightDate": "2027-01-12T19:30:00Z",
+          "FlightNumber": "IB6275",
+          "Price": 168.2,
+          "SeatNumber": "13A"
+        },
+        "UserId": 1033
+      }
+    },
+    {
+      "ref": "booking-35-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001037",
+        "IsDeleted": true,
+        "PassengerInfo": "Stefan Novak | OK771 | 2026-12-04 12:20 | Seat 8C | 119.25 | Extra legroom",
+        "Trip": {
+          "AircraftId": "93e5b0c8-4f1a-4d67-a8c2-7b3e1d9f6a26",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2027-01-04T22:30:00Z",
+          "FlightNumber": "AA101",
+          "Price": 718.55,
+          "SeatNumber": "2B"
+        },
+        "UserId": 1034
+      }
+    },
+    {
+      "ref": "booking-36-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001038",
+        "IsDeleted": false,
+        "PassengerInfo": "Leila Haddad | MS777 | 2026-11-13 14:35 | Seat 29F | 332.40 | Halal meal",
+        "Trip": {
+          "AircraftId": "d15f8a32-b9e4-4c07-a62d-5f0c7b1e8a22",
+          "ArriveAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "DepartureAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2027-01-19T09:15:00Z",
+          "FlightNumber": "SQ494",
+          "Price": 703.1,
+          "SeatNumber": "29F"
+        },
+        "UserId": 1035
+      }
+    },
+    {
+      "ref": "booking-37-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "PassengerInfo": "Patrick Murphy | EI154 | 2026-12-16 06:15 | Seat 11E | 138.70 | Window seat",
+        "Trip": {
+          "AircraftId": "2e8b5a71-f6c0-4793-8d2a-b1e4c9f07d19",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-19T20:10:00Z",
+          "FlightNumber": "KL1070",
+          "Price": 92.75,
+          "SeatNumber": "19A"
+        },
+        "UserId": 1036
+      }
+    },
+    {
+      "ref": "booking-38-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001040",
+        "IsDeleted": false,
+        "PassengerInfo": "Mei Lin Chen | CX251 | 2026-11-29 00:40 | Seat 26A | 927.55 | Aisle seat",
+        "Trip": {
+          "AircraftId": "74a1c8e6-5d3b-4f92-a0c7-6b9e2d8f1a17",
+          "ArriveAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "DepartureAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-12T22:50:00Z",
+          "FlightNumber": "AF656",
+          "Price": 689.35,
+          "SeatNumber": "32D"
+        },
+        "UserId": 1037
+      }
+    },
+    {
+      "ref": "booking-39-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001041",
+        "IsDeleted": false,
+        "PassengerInfo": "Daniel Svensson | SK1467 | 2026-12-13 17:00 | Seat 5F | 164.80 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "5d9b1e72-a4c3-4f08-b6d5-1c7a3e9f2b12",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Lactose-free meal",
+          "FlightDate": "2026-11-25T12:15:00Z",
+          "FlightNumber": "BA106",
+          "Price": 598.0,
+          "SeatNumber": "17F"
+        },
+        "UserId": 1038
+      }
+    },
+    {
+      "ref": "booking-40-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001042",
+        "IsDeleted": false,
+        "PassengerInfo": "Amara Okonkwo | KQ100 | 2026-11-18 21:05 | Seat 32D | 574.20 | Extra baggage",
+        "Trip": {
+          "AircraftId": "8f3c6b27-d150-4e9a-a7b4-2e6c0f1d9a14",
+          "ArriveAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Hand luggage only",
+          "FlightDate": "2026-10-29T07:10:00Z",
+          "FlightNumber": "LH1004",
+          "Price": 109.8,
+          "SeatNumber": "5C"
+        },
+        "UserId": 1039
+      }
+    },
+    {
+      "ref": "booking-41-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001043",
+        "IsDeleted": false,
+        "PassengerInfo": "Victor Alvarez | AM007 | 2026-12-08 10:55 | Seat 9A | 305.10 | Window seat",
+        "Trip": {
+          "AircraftId": "b6e09d53-2a71-4c8f-95e3-d7f1a4c20b16",
+          "ArriveAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Aisle seat requested",
+          "FlightDate": "2027-02-10T03:20:00Z",
+          "FlightNumber": "EK354",
+          "Price": 624.9,
+          "SeatNumber": "40C"
+        },
+        "UserId": 1040
+      }
+    },
+    {
+      "ref": "booking-42-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001044",
+        "IsDeleted": false,
+        "PassengerInfo": "Katarina Horvat | OU612 | 2026-11-11 16:15 | Seat 19B | 87.40 | Middle seat",
+        "Trip": {
+          "AircraftId": "4b0e93d7-6a2c-4e81-9b5f-e8d1a3c70f23",
+          "ArriveAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "DepartureAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "Description": "Traveling with infant",
+          "FlightDate": "2027-02-23T12:50:00Z",
+          "FlightNumber": "IB6253",
+          "Price": 603.45,
+          "SeatNumber": "33D"
+        },
+        "UserId": 1041
+      }
+    },
+    {
+      "ref": "booking-43-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001045",
+        "IsDeleted": false,
+        "PassengerInfo": "Noah Williams | AC849 | 2026-12-19 13:05 | Seat 3A | 1015.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "c9f2e035-8b64-4d1a-b3e8-0a7d5c6f4e18",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "58e0a3c7-f1d2-4b69-8c35-2a7e9b4d6f05",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-12-22T11:10:00Z",
+          "FlightNumber": "AF1300",
+          "Price": 131.25,
+          "SeatNumber": "14C"
+        },
+        "UserId": 1042
+      }
+    },
+    {
+      "ref": "booking-44-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001046",
+        "IsDeleted": false,
+        "PassengerInfo": "Sunita Deshmukh | AI131 | 2026-11-25 08:25 | Seat 21C | 356.75 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "69c4e1b8-0d73-4a5e-b8f1-3e9a6c2d5f21",
+          "ArriveAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "DepartureAirportId": "e6c30a95-7d14-4f8b-b2a6-0d9e5c1f7a07",
+          "Description": "Window seat",
+          "FlightDate": "2027-03-03T00:15:00Z",
+          "FlightNumber": "SQ322",
+          "Price": 1156.2,
+          "SeatNumber": "36A"
+        },
+        "UserId": 1043
+      }
+    },
+    {
+      "ref": "booking-45-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001047",
+        "IsDeleted": true,
+        "PassengerInfo": "Marcus Johnson | AA2278 | 2026-12-21 18:40 | Seat 16A | 248.90 | Window seat",
+        "Trip": {
+          "AircraftId": "0c4e7a19-3b52-4d86-a1f0-8e2c5d9b7a11",
+          "ArriveAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Early boarding",
+          "FlightDate": "2026-12-29T07:30:00Z",
+          "FlightNumber": "BA428",
+          "Price": 102.6,
+          "SeatNumber": "10C"
+        },
+        "UserId": 1044
+      }
+    },
+    {
+      "ref": "booking-46-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001048",
+        "IsDeleted": false,
+        "PassengerInfo": "Olga Ivanova | TK1984 | 2026-11-16 22:00 | Seat 27E | 201.35 | Aisle seat",
+        "Trip": {
+          "AircraftId": "1a6d9f43-e7b8-4c25-b09e-2d5a8c7f3e25",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "d4b86f20-91a5-4c3e-a7f2-6b8e0d1c5a04",
+          "Description": "Hand luggage only",
+          "FlightDate": "2027-02-26T16:40:00Z",
+          "FlightNumber": "AA2910",
+          "Price": 521.75,
+          "SeatNumber": "24D"
+        },
+        "UserId": 1045
+      }
+    },
+    {
+      "ref": "booking-47-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001049",
+        "IsDeleted": false,
+        "PassengerInfo": "Ahmed Khalil | MS985 | 2026-11-02 09:40 | 12C | 412.50 | Aisle seat",
+        "Trip": {
+          "AircraftId": "a3d70c96-1e5f-4b28-9f4c-7c2a8e0b6d20",
+          "ArriveAirportId": "92d5f1e8-3a6c-4b07-8e49-7f1b0a6d2c08",
+          "DepartureAirportId": "1b7f92d4-5e83-4a0c-9d61-c3f8a2e7b506",
+          "Description": "Aisle seat requested",
+          "FlightDate": "2027-03-12T13:25:00Z",
+          "FlightNumber": "KL1233",
+          "Price": 144.0,
+          "SeatNumber": "18E"
+        },
+        "UserId": 1046
+      }
+    },
+    {
+      "ref": "booking-48-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001050",
+        "IsDeleted": false,
+        "PassengerInfo": "Emma Johansson | SK1553 | 2026-11-04 07:15 | 8A | 189.99 | Window seat",
+        "Trip": {
+          "AircraftId": "e2a85c14-7f09-4b3d-9c61-4a0d8f5e3c13",
+          "ArriveAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "DepartureAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "Description": "Halal meal",
+          "FlightDate": "2027-02-01T21:35:00Z",
+          "FlightNumber": "LH630",
+          "Price": 667.4,
+          "SeatNumber": "27E"
+        },
+        "UserId": 1047
+      }
+    },
+    {
+      "ref": "booking-49-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001051",
+        "IsDeleted": false,
+        "PassengerInfo": "Rohan Malhotra | AI302 | 2026-11-06 22:50 | 31F | 524.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "31d7f4a9-c8e2-4056-8b1d-9a5e7c3f0b15",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "a91e5b37-2c48-4f60-b7d9-5e0c1a8f3d03",
+          "Description": "Extra legroom",
+          "FlightDate": "2027-03-16T08:25:00Z",
+          "FlightNumber": "EK046",
+          "Price": 481.3,
+          "SeatNumber": "11A"
+        },
+        "UserId": 1048
+      }
+    },
+    {
+      "ref": "booking-50-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001052",
+        "IsDeleted": false,
+        "PassengerInfo": "Sofia Almeida | TP1355 | 2026-11-07 13:25 | 19B | 143.20 | Extra legroom",
+        "Trip": {
+          "AircraftId": "5d9b1e72-a4c3-4f08-b6d5-1c7a3e9f2b12",
+          "ArriveAirportId": "7c2d4e81-0a93-4b5f-8e16-9d3a6f2b4c02",
+          "DepartureAirportId": "3f1a9c52-6b7e-4d21-9a0c-1e5b8d7c2a01",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2027-03-20T10:45:00Z",
+          "FlightNumber": "BA906",
+          "Price": 124.15,
+          "SeatNumber": "20B"
+        },
+        "UserId": 1049
+      }
+    },
+    {
+      "ref": "booking-51-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001053",
+        "IsDeleted": false,
+        "PassengerInfo": "Jacob Miller | UA838 | 2026-11-09 11:05 | 24D | 689.75 | Window seat",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e01",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-02T08:35:00Z",
+          "FlightNumber": "BA117",
+          "Price": 642.5,
+          "SeatNumber": "14A"
+        },
+        "UserId": 1050
+      }
+    },
+    {
+      "ref": "booking-52-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001054",
+        "IsDeleted": false,
+        "PassengerInfo": "Nguyen Thi Lan | VN301 | 2026-11-10 00:35 | 27K | 376.40 | Special assistance",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e02",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-05T11:20:00Z",
+          "FlightNumber": "BA283",
+          "Price": 912.0,
+          "SeatNumber": "22F"
+        },
+        "UserId": 1051
+      }
+    },
+    {
+      "ref": "booking-53-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001055",
+        "IsDeleted": false,
+        "PassengerInfo": "Lars Eriksen | DY1672 | 2026-11-11 16:45 | 5C | 98.50 | No notes",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e03",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-08T21:15:00Z",
+          "FlightNumber": "BA106",
+          "Price": 588.99,
+          "SeatNumber": "3C"
+        },
+        "UserId": 1052
+      }
+    },
+    {
+      "ref": "booking-54-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001056",
+        "IsDeleted": false,
+        "PassengerInfo": "Layla Hassan | EY102 | 2026-11-13 02:20 | 3A | 1180.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e04",
+          "ArriveAirportId": "29ebadcf-8dab-42ee-c697-bd3f5b7c9e09",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Carry-on only",
+          "FlightDate": "2026-11-11T07:10:00Z",
+          "FlightNumber": "BA2490",
+          "Price": 129.99,
+          "SeatNumber": "31B"
+        },
+        "UserId": 1053
+      }
+    },
+    {
+      "ref": "booking-55-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001057",
+        "IsDeleted": true,
+        "PassengerInfo": "Connor Walsh | EI105 | 2026-11-14 10:10 | 16E | 267.30 | Extra legroom",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e05",
+          "ArriveAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-14T13:45:00Z",
+          "FlightNumber": "BA304",
+          "Price": 98.5,
+          "SeatNumber": "17D"
+        },
+        "UserId": 1054
+      }
+    },
+    {
+      "ref": "booking-56-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001058",
+        "IsDeleted": false,
+        "PassengerInfo": "Mariana Costa | LA8084 | 2026-11-15 19:55 | 29A | 455.60 | Window seat",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e06",
+          "ArriveAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Halal meal",
+          "FlightDate": "2026-11-17T21:50:00Z",
+          "FlightNumber": "BA562",
+          "Price": 745.0,
+          "SeatNumber": "9A"
+        },
+        "UserId": 1055
+      }
+    },
+    {
+      "ref": "booking-57-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001059",
+        "IsDeleted": false,
+        "PassengerInfo": "Kenji Yamamoto | JL408 | 2026-11-16 12:30 | 10D | 731.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e07",
+          "ArriveAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Lie-flat bed",
+          "FlightDate": "2026-11-20T11:05:00Z",
+          "FlightNumber": "BA15",
+          "Price": 1180.0,
+          "SeatNumber": "2A"
+        },
+        "UserId": 1056
+      }
+    },
+    {
+      "ref": "booking-58-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001060",
+        "IsDeleted": false,
+        "PassengerInfo": "Freya Andersen | SK2593 | 2026-11-18 06:00 | 7F | 134.99 | Window seat",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e08",
+          "ArriveAirportId": "18dafcbe-7c9e-41dd-b586-ac2e4a6b8d08",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Travelling with infant",
+          "FlightDate": "2026-11-23T09:30:00Z",
+          "FlightNumber": "BA872",
+          "Price": 89.99,
+          "SeatNumber": "25E"
+        },
+        "UserId": 1057
+      }
+    },
+    {
+      "ref": "booking-59-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001061",
+        "IsDeleted": false,
+        "PassengerInfo": "Diego Ramirez | AM673 | 2026-11-19 15:40 | 21C | 318.25 | Extra legroom",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e09",
+          "ArriveAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Gluten-free meal",
+          "FlightDate": "2026-11-26T16:25:00Z",
+          "FlightNumber": "BA308",
+          "Price": 112.4,
+          "SeatNumber": "12C"
+        },
+        "UserId": 1058
+      }
+    },
+    {
+      "ref": "booking-60-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001062",
+        "IsDeleted": false,
+        "PassengerInfo": "Amelia Brooks | VS11 | 2026-11-21 09:20 | 4A | 1045.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "5c1a7e30-4b92-4d1f-8a6e-0f3b9d2c7e0a",
+          "ArriveAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "DepartureAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-29T13:00:00Z",
+          "FlightNumber": "BA7",
+          "Price": 1045.0,
+          "SeatNumber": "6F"
+        },
+        "UserId": 1059
+      }
+    },
+    {
+      "ref": "booking-61-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001063",
+        "IsDeleted": false,
+        "PassengerInfo": "Tomasz Wisniewski | LO332 | 2026-11-22 17:15 | 14B | 112.80 | Aisle seat",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e0b",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-03T10:15:00Z",
+          "FlightNumber": "LH402",
+          "Price": 598.0,
+          "SeatNumber": "18A"
+        },
+        "UserId": 1060
+      }
+    },
+    {
+      "ref": "booking-62-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001064",
+        "IsDeleted": false,
+        "PassengerInfo": "Zainab Abdullahi | ET702 | 2026-11-24 01:45 | 33H | 598.40 | Special assistance",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e0c",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Vegan meal",
+          "FlightDate": "2026-11-06T13:30:00Z",
+          "FlightNumber": "LH456",
+          "Price": 876.5,
+          "SeatNumber": "27C"
+        },
+        "UserId": 1061
+      }
+    },
+    {
+      "ref": "booking-63-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001065",
+        "IsDeleted": false,
+        "PassengerInfo": "Henrik Nilsson | AY1332 | 2026-11-25 08:50 | 9D | 176.50 | Window seat",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e0d",
+          "ArriveAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "DepartureAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-09T18:40:00Z",
+          "FlightNumber": "LH400",
+          "Price": 541.0,
+          "SeatNumber": "33F"
+        },
+        "UserId": 1062
+      }
+    },
+    {
+      "ref": "booking-64-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001066",
+        "IsDeleted": false,
+        "PassengerInfo": "Grace Thompson | BA286 | 2026-11-27 20:30 | 18A | 802.15 | Extra legroom",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e0e",
+          "ArriveAirportId": "29ebadcf-8dab-42ee-c697-bd3f5b7c9e09",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Early boarding",
+          "FlightDate": "2026-11-12T06:55:00Z",
+          "FlightNumber": "LH1114",
+          "Price": 134.2,
+          "SeatNumber": "15B"
+        },
+        "UserId": 1063
+      }
+    },
+    {
+      "ref": "booking-65-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001067",
+        "IsDeleted": false,
+        "PassengerInfo": "Pavel Dvorak | OK545 | 2026-11-28 06:25 | 6C | 89.99 | No notes",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e0f",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-15T14:10:00Z",
+          "FlightNumber": "LH900",
+          "Price": 118.75,
+          "SeatNumber": "8D"
+        },
+        "UserId": 1064
+      }
+    },
+    {
+      "ref": "booking-66-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001068",
+        "IsDeleted": false,
+        "PassengerInfo": "Aaliyah Patel | EK507 | 2026-11-30 03:10 | 25J | 641.90 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e10",
+          "ArriveAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Kosher meal",
+          "FlightDate": "2026-11-18T22:05:00Z",
+          "FlightNumber": "LH630",
+          "Price": 702.3,
+          "SeatNumber": "21A"
+        },
+        "UserId": 1065
+      }
+    },
+    {
+      "ref": "booking-67-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001069",
+        "IsDeleted": false,
+        "PassengerInfo": "Santiago Vargas | AV245 | 2026-12-01 14:05 | 11E | 287.60 | Aisle seat",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e11",
+          "ArriveAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2026-11-21T21:45:00Z",
+          "FlightNumber": "LH778",
+          "Price": 1024.0,
+          "SeatNumber": "41E"
+        },
+        "UserId": 1066
+      }
+    },
+    {
+      "ref": "booking-68-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001070",
+        "IsDeleted": false,
+        "PassengerInfo": "Ines Moreau | AF1680 | 2026-12-02 12:40 | 15F | 154.30 | Window seat",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e12",
+          "ArriveAirportId": "18dafcbe-7c9e-41dd-b586-ac2e4a6b8d08",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Priority baggage",
+          "FlightDate": "2026-11-24T17:20:00Z",
+          "FlightNumber": "LH2306",
+          "Price": 96.0,
+          "SeatNumber": "11C"
+        },
+        "UserId": 1067
+      }
+    },
+    {
+      "ref": "booking-69-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001071",
+        "IsDeleted": false,
+        "PassengerInfo": "Joseph Okeke | KQ116 | 2026-12-03 22:20 | 20D | 524.75 | Special assistance",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e13",
+          "ArriveAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-27T08:05:00Z",
+          "FlightNumber": "LH1030",
+          "Price": 104.99,
+          "SeatNumber": "5F"
+        },
+        "UserId": 1068
+      }
+    },
+    {
+      "ref": "booking-70-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001072",
+        "IsDeleted": false,
+        "PassengerInfo": "Hye-jin Park | KE905 | 2026-12-04 10:55 | 12A | 695.00 | Window seat",
+        "Trip": {
+          "AircraftId": "6d2b8f40-4b92-4d1f-8a6e-0f3b9d2c7e14",
+          "ArriveAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "DepartureAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "Description": "Diabetic meal",
+          "FlightDate": "2026-11-30T13:25:00Z",
+          "FlightNumber": "LH716",
+          "Price": 1112.5,
+          "SeatNumber": "29A"
+        },
+        "UserId": 1069
+      }
+    },
+    {
+      "ref": "booking-71-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001073",
+        "IsDeleted": false,
+        "PassengerInfo": "Callum Reid | BA1476 | 2026-12-05 07:30 | 22B | 126.40 | No notes",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e15",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-01T08:30:00Z",
+          "FlightNumber": "EK203",
+          "Price": 1289.0,
+          "SeatNumber": "4A"
+        },
+        "UserId": 1070
+      }
+    },
+    {
+      "ref": "booking-72-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001074",
+        "IsDeleted": false,
+        "PassengerInfo": "Dalia Mansour | MS753 | 2026-12-06 16:10 | 8C | 349.20 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e16",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Halal meal",
+          "FlightDate": "2026-12-04T07:45:00Z",
+          "FlightNumber": "EK1",
+          "Price": 764.0,
+          "SeatNumber": "36C"
+        },
+        "UserId": 1071
+      }
+    },
+    {
+      "ref": "booking-73-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001075",
+        "IsDeleted": false,
+        "PassengerInfo": "Erik Lindqvist | SK407 | 2026-12-07 05:45 | 17A | 201.99 | Window seat",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e17",
+          "ArriveAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-07T09:10:00Z",
+          "FlightNumber": "EK354",
+          "Price": 612.4,
+          "SeatNumber": "24D"
+        },
+        "UserId": 1072
+      }
+    },
+    {
+      "ref": "booking-74-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001076",
+        "IsDeleted": false,
+        "PassengerInfo": "Natalia Sokolova | SU262 | 2026-12-08 18:00 | 30E | 433.50 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e18",
+          "ArriveAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-12-10T08:55:00Z",
+          "FlightNumber": "EK73",
+          "Price": 689.99,
+          "SeatNumber": "19F"
+        },
+        "UserId": 1073
+      }
+    },
+    {
+      "ref": "booking-75-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001077",
+        "IsDeleted": false,
+        "PassengerInfo": "William Foster | DL58 | 2026-12-09 09:15 | 2C | 1420.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e19",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Anniversary celebration",
+          "FlightDate": "2026-12-13T10:20:00Z",
+          "FlightNumber": "EK7",
+          "Price": 1335.0,
+          "SeatNumber": "12A"
+        },
+        "UserId": 1074
+      }
+    },
+    {
+      "ref": "booking-76-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001078",
+        "IsDeleted": false,
+        "PassengerInfo": "Mina Choi | OZ541 | 2026-12-10 13:50 | 26G | 478.80 | Window seat",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e1a",
+          "ArriveAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-12-16T08:00:00Z",
+          "FlightNumber": "EK31",
+          "Price": 648.75,
+          "SeatNumber": "28B"
+        },
+        "UserId": 1075
+      }
+    },
+    {
+      "ref": "booking-77-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001079",
+        "IsDeleted": false,
+        "PassengerInfo": "Luca Bianchi | AZ204 | 2026-12-11 08:20 | 13D | 138.60 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7e3c9a50-4b92-4d1f-8a6e-0f3b9d2c7e1b",
+          "ArriveAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "DepartureAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "Description": "Child meal",
+          "FlightDate": "2026-12-19T02:35:00Z",
+          "FlightNumber": "EK318",
+          "Price": 905.0,
+          "SeatNumber": "40E"
+        },
+        "UserId": 1076
+      }
+    },
+    {
+      "ref": "booking-78-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001080",
+        "IsDeleted": true,
+        "PassengerInfo": "Chidi Eze | ET908 | 2026-12-12 23:35 | 35A | 566.25 | Special assistance",
+        "Trip": {
+          "AircraftId": "8f4dab60-4b92-4d1f-8a6e-0f3b9d2c7e1c",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-04T10:50:00Z",
+          "FlightNumber": "AF11",
+          "Price": 574.2,
+          "SeatNumber": "16A"
+        },
+        "UserId": 1077
+      }
+    },
+    {
+      "ref": "booking-79-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001081",
+        "IsDeleted": false,
+        "PassengerInfo": "Olivia Hartmann | LH1126 | 2026-12-13 06:40 | 7B | 164.90 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "8f4dab60-4b92-4d1f-8a6e-0f3b9d2c7e1d",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-07T11:35:00Z",
+          "FlightNumber": "AF83",
+          "Price": 824.0,
+          "SeatNumber": "23C"
+        },
+        "UserId": 1078
+      }
+    },
+    {
+      "ref": "booking-80-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001082",
+        "IsDeleted": false,
+        "PassengerInfo": "Faisal Qureshi | PK302 | 2026-12-14 02:55 | 28C | 389.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "8f4dab60-4b92-4d1f-8a6e-0f3b9d2c7e1e",
+          "ArriveAirportId": "29ebadcf-8dab-42ee-c697-bd3f5b7c9e09",
+          "DepartureAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "Description": "Carry-on only",
+          "FlightDate": "2026-11-10T07:35:00Z",
+          "FlightNumber": "AF1280",
+          "Price": 118.99,
+          "SeatNumber": "10F"
+        },
+        "UserId": 1079
+      }
+    },
+    {
+      "ref": "booking-81-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001083",
+        "IsDeleted": false,
+        "PassengerInfo": "Charlotte Evans | VS355 | 2026-12-15 11:25 | 5A | 920.50 | Window seat",
+        "Trip": {
+          "AircraftId": "8f4dab60-4b92-4d1f-8a6e-0f3b9d2c7e1f",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-13T19:15:00Z",
+          "FlightNumber": "AF1080",
+          "Price": 143.6,
+          "SeatNumber": "7B"
+        },
+        "UserId": 1080
+      }
+    },
+    {
+      "ref": "booking-82-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001084",
+        "IsDeleted": false,
+        "PassengerInfo": "Mateusz Kaminski | LO268 | 2026-12-16 19:10 | 19F | 107.45 | No notes",
+        "Trip": {
+          "AircraftId": "8f4dab60-4b92-4d1f-8a6e-0f3b9d2c7e20",
+          "ArriveAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "DepartureAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "Description": "Halal meal",
+          "FlightDate": "2026-11-16T22:20:00Z",
+          "FlightNumber": "AF256",
+          "Price": 671.0,
+          "SeatNumber": "31D"
+        },
+        "UserId": 1081
+      }
+    },
+    {
+      "ref": "booking-83-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001085",
+        "IsDeleted": false,
+        "PassengerInfo": "Anjali Reddy | AI2813 | 2026-12-17 04:05 | 23A | 345.80 | Extra legroom",
+        "Trip": {
+          "AircraftId": "8f4dab60-4b92-4d1f-8a6e-0f3b9d2c7e21",
+          "ArriveAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "DepartureAirportId": "e5a7c9db-4f6b-4eaa-8253-7f9b1d3e5a05",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-19T13:15:00Z",
+          "FlightNumber": "AF291",
+          "Price": 1058.0,
+          "SeatNumber": "34A"
+        },
+        "UserId": 1082
+      }
+    },
+    {
+      "ref": "booking-84-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001086",
+        "IsDeleted": false,
+        "PassengerInfo": "Gabriel Martins | TP1011 | 2026-12-18 15:30 | 14E | 232.10 | Window seat",
+        "Trip": {
+          "AircraftId": "905ebc70-4b92-4d1f-8a6e-0f3b9d2c7e22",
+          "ArriveAirportId": "c3e5a7b9-2d4f-4c8e-a031-5d7f9b1c3e03",
+          "DepartureAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-02T23:35:00Z",
+          "FlightNumber": "SQ25",
+          "Price": 986.0,
+          "SeatNumber": "20A"
+        },
+        "UserId": 1083
+      }
+    },
+    {
+      "ref": "booking-85-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001087",
+        "IsDeleted": false,
+        "PassengerInfo": "Shira Levi | LY315 | 2026-12-19 21:45 | 9A | 617.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "905ebc70-4b92-4d1f-8a6e-0f3b9d2c7e23",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-12-05T01:25:00Z",
+          "FlightNumber": "SQ322",
+          "Price": 1076.5,
+          "SeatNumber": "43C"
+        },
+        "UserId": 1084
+      }
+    },
+    {
+      "ref": "booking-86-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001088",
+        "IsDeleted": false,
+        "PassengerInfo": "Andrew Campbell | AC873 | 2026-12-21 10:05 | 31B | 574.30 | Aisle seat",
+        "Trip": {
+          "AircraftId": "905ebc70-4b92-4d1f-8a6e-0f3b9d2c7e24",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-08T09:40:00Z",
+          "FlightNumber": "SQ24",
+          "Price": 1480.0,
+          "SeatNumber": "26F"
+        },
+        "UserId": 1085
+      }
+    },
+    {
+      "ref": "booking-87-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001089",
+        "IsDeleted": false,
+        "PassengerInfo": "Mei Tanaka | NH6 | 2026-12-22 17:20 | 4K | 1180.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "905ebc70-4b92-4d1f-8a6e-0f3b9d2c7e25",
+          "ArriveAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "DepartureAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-12-11T00:10:00Z",
+          "FlightNumber": "SQ638",
+          "Price": 502.3,
+          "SeatNumber": "14C"
+        },
+        "UserId": 1086
+      }
+    },
+    {
+      "ref": "booking-88-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001090",
+        "IsDeleted": false,
+        "PassengerInfo": "Rafael Souza | LA8072 | 2026-12-23 08:00 | 18C | 296.75 | Window seat",
+        "Trip": {
+          "AircraftId": "905ebc70-4b92-4d1f-8a6e-0f3b9d2c7e26",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "Description": "Hindu vegetarian meal",
+          "FlightDate": "2026-12-14T08:35:00Z",
+          "FlightNumber": "SQ231",
+          "Price": 1215.0,
+          "SeatNumber": "38A"
+        },
+        "UserId": 1087
+      }
+    },
+    {
+      "ref": "booking-89-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001091",
+        "IsDeleted": false,
+        "PassengerInfo": "Hana Novakova | OK637 | 2026-12-26 12:15 | 6D | 93.20 | No notes",
+        "Trip": {
+          "AircraftId": "905ebc70-4b92-4d1f-8a6e-0f3b9d2c7e27",
+          "ArriveAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "DepartureAirportId": "f6b8dafc-5a7c-4fbb-9364-8a0c2e4f6b06",
+          "Description": "Extra baggage",
+          "FlightDate": "2026-12-17T01:50:00Z",
+          "FlightNumber": "SQ336",
+          "Price": 547.6,
+          "SeatNumber": "22B"
+        },
+        "UserId": 1088
+      }
+    },
+    {
+      "ref": "booking-90-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001092",
+        "IsDeleted": false,
+        "PassengerInfo": "Isaac Goldberg | LY007 | 2026-12-28 23:50 | 12F | 703.60 | Special assistance",
+        "Trip": {
+          "AircraftId": "a16fcd80-4b92-4d1f-8a6e-0f3b9d2c7e28",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-10T19:00:00Z",
+          "FlightNumber": "AA100",
+          "Price": 623.0,
+          "SeatNumber": "12A"
+        },
+        "UserId": 1089
+      }
+    },
+    {
+      "ref": "booking-91-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001093",
+        "IsDeleted": false,
+        "PassengerInfo": "Beatriz Navarro | IB3166 | 2027-01-04 14:40 | 21A | 258.40 | Window seat",
+        "Trip": {
+          "AircraftId": "a16fcd80-4b92-4d1f-8a6e-0f3b9d2c7e29",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-12T08:00:00Z",
+          "FlightNumber": "AA1",
+          "Price": 342.5,
+          "SeatNumber": "18C"
+        },
+        "UserId": 1090
+      }
+    },
+    {
+      "ref": "booking-92-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001094",
+        "IsDeleted": false,
+        "PassengerInfo": "Owen Davies | BA2490 | 2027-01-11 06:35 | 10B | 119.99 | Aisle seat",
+        "Trip": {
+          "AircraftId": "a16fcd80-4b92-4d1f-8a6e-0f3b9d2c7e2a",
+          "ArriveAirportId": "29ebadcf-8dab-42ee-c697-bd3f5b7c9e09",
+          "DepartureAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-15T18:30:00Z",
+          "FlightNumber": "AA66",
+          "Price": 479.0,
+          "SeatNumber": "30E"
+        },
+        "UserId": 1091
+      }
+    },
+    {
+      "ref": "booking-93-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001095",
+        "IsDeleted": false,
+        "PassengerInfo": "Yasmin Farouk | MS799 | 2027-01-18 20:25 | 16A | 402.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "a16fcd80-4b92-4d1f-8a6e-0f3b9d2c7e2b",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "Description": "Early boarding",
+          "FlightDate": "2026-11-18T07:30:00Z",
+          "FlightNumber": "AA118",
+          "Price": 318.99,
+          "SeatNumber": "25D"
+        },
+        "UserId": 1092
+      }
+    },
+    {
+      "ref": "booking-94-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001096",
+        "IsDeleted": false,
+        "PassengerInfo": "Johanna Visser | KL1007 | 2026-11-02 07:10 | 12C | 214.30 | Aisle seat",
+        "Trip": {
+          "AircraftId": "a16fcd80-4b92-4d1f-8a6e-0f3b9d2c7e2c",
+          "ArriveAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "DepartureAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-22T11:50:00Z",
+          "FlightNumber": "AA169",
+          "Price": 968.0,
+          "SeatNumber": "33A"
+        },
+        "UserId": 1093
+      }
+    },
+    {
+      "ref": "booking-95-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001097",
+        "IsDeleted": false,
+        "PassengerInfo": "Marco Keller | LX345 | 2026-11-03 13:45 | 8A | 389.00 | Window seat",
+        "Trip": {
+          "AircraftId": "b270de90-4b92-4d1f-8a6e-0f3b9d2c7e2d",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "18dafcbe-7c9e-41dd-b586-ac2e4a6b8d08",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-25T11:15:00Z",
+          "FlightNumber": "KL642",
+          "Price": 559.0,
+          "SeatNumber": "15A"
+        },
+        "UserId": 1094
+      }
+    },
+    {
+      "ref": "booking-96-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001098",
+        "IsDeleted": false,
+        "PassengerInfo": "Elif Yildiz | TK1921 | 2026-11-04 22:30 | 31F | 127.99 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "b270de90-4b92-4d1f-8a6e-0f3b9d2c7e2e",
+          "ArriveAirportId": "07c9ebad-6b8d-40cc-a475-9b1d3f5a7c07",
+          "DepartureAirportId": "18dafcbe-7c9e-41dd-b586-ac2e4a6b8d08",
+          "Description": "Gluten-free meal",
+          "FlightDate": "2026-11-28T10:35:00Z",
+          "FlightNumber": "KL601",
+          "Price": 801.4,
+          "SeatNumber": "27D"
+        },
+        "UserId": 1095
+      }
+    },
+    {
+      "ref": "booking-97-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001099",
+        "IsDeleted": false,
+        "PassengerInfo": "Khalid Al-Mansoori | QR707 | 2026-11-05 02:15 | 4K | 1180.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "b270de90-4b92-4d1f-8a6e-0f3b9d2c7e2f",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "18dafcbe-7c9e-41dd-b586-ac2e4a6b8d08",
+          "Description": "Priority boarding",
+          "FlightDate": "2026-12-02T07:20:00Z",
+          "FlightNumber": "KL1001",
+          "Price": 121.75,
+          "SeatNumber": "9C"
+        },
+        "UserId": 1096
+      }
+    },
+    {
+      "ref": "booking-98-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001100",
+        "IsDeleted": false,
+        "PassengerInfo": "Noor Siddiqui | EY071 | 2026-11-06 09:50 | 19D | 456.75 | Halal meal",
+        "Trip": {
+          "AircraftId": "b270de90-4b92-4d1f-8a6e-0f3b9d2c7e30",
+          "ArriveAirportId": "d4f6b8ca-3e5a-4d9f-b142-6e8a0c2d4f04",
+          "DepartureAirportId": "18dafcbe-7c9e-41dd-b586-ac2e4a6b8d08",
+          "Description": "Halal meal",
+          "FlightDate": "2026-12-06T21:40:00Z",
+          "FlightNumber": "KL835",
+          "Price": 689.2,
+          "SeatNumber": "20F"
+        },
+        "UserId": 1097
+      }
+    },
+    {
+      "ref": "booking-99-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001101",
+        "IsDeleted": false,
+        "PassengerInfo": "Wei Ling Tan | SQ026 | 2026-11-08 23:05 | 27A | 842.20 | Window seat",
+        "Trip": {
+          "AircraftId": "c381efa0-4b92-4d1f-8a6e-0f3b9d2c7e31",
+          "ArriveAirportId": "b2d4f6a8-1c3e-4b7d-9f20-4c6e8a0b2d02",
+          "DepartureAirportId": "29ebadcf-8dab-42ee-c697-bd3f5b7c9e09",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-09T11:55:00Z",
+          "FlightNumber": "IB3166",
+          "Price": 612.0,
+          "SeatNumber": "17A"
+        },
+        "UserId": 1098
+      }
+    },
+    {
+      "ref": "booking-100-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001102",
+        "IsDeleted": false,
+        "PassengerInfo": "Joon-ho Kim | CX880 | 2026-11-09 16:20 | 35H | 298.50 | Aisle seat",
+        "Trip": {
+          "AircraftId": "d492f0b0-4b92-4d1f-8a6e-0f3b9d2c7e32",
+          "ArriveAirportId": "a1c3e5f7-0b2d-4a6c-8e1f-3b5d7f9a1c01",
+          "DepartureAirportId": "3afcbed0-9ebc-43ff-d7a8-ce4a6c8dab0a",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-12T11:00:00Z",
+          "FlightNumber": "JL44",
+          "Price": 1096.0,
+          "SeatNumber": "8C"
+        },
+        "UserId": 1099
+      }
+    },
+    {
+      "ref": "booking-101-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001103",
+        "IsDeleted": false,
+        "PassengerInfo": "Aroha Walker | NZ002 | 2026-11-11 21:40 | 14B | 1045.00 | Special occasion",
+        "Trip": {
+          "AircraftId": "8c6f4c50-b2d3-4e4f-9a21-b2c3d4e5f601",
+          "ArriveAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "DepartureAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-03T08:35:00Z",
+          "FlightNumber": "BA117",
+          "Price": 642.5,
+          "SeatNumber": "14A"
+        },
+        "UserId": 1100
+      }
+    },
+    {
+      "ref": "booking-102-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001104",
+        "IsDeleted": false,
+        "PassengerInfo": "Brandon Hayes | AA1585 | 2026-11-12 06:55 | 22E | 164.40 | No checked baggage",
+        "Trip": {
+          "AircraftId": "ae816e72-d4f5-4061-9c43-d4e5f6a7b803",
+          "ArriveAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "DepartureAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-05T10:15:00Z",
+          "FlightNumber": "LH402",
+          "Price": 589.99,
+          "SeatNumber": "22F"
+        },
+        "UserId": 1101
+      }
+    },
+    {
+      "ref": "booking-103-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001105",
+        "IsDeleted": false,
+        "PassengerInfo": "Teresa Gallagher | DL1840 | 2026-11-13 11:25 | 9C | 233.15 | Gluten-free meal",
+        "Trip": {
+          "AircraftId": "c0a38094-f617-4283-9e65-f6a7b8c9da05",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-07T02:50:00Z",
+          "FlightNumber": "EK203",
+          "Price": 478.0,
+          "SeatNumber": "3C"
+        },
+        "UserId": 1102
+      }
+    },
+    {
+      "ref": "booking-104-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001106",
+        "IsDeleted": true,
+        "PassengerInfo": "Tyler Brennan | UA1572 | 2026-11-14 18:10 | 30B | 189.99 | Middle seat acceptable",
+        "Trip": {
+          "AircraftId": "e2c5a2b6-1839-44a5-90e7-18c9daebfc07",
+          "ArriveAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "DepartureAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-09T06:20:00Z",
+          "FlightNumber": "AF1481",
+          "Price": 119.99,
+          "SeatNumber": "9D"
+        },
+        "UserId": 1103
+      }
+    },
+    {
+      "ref": "booking-105-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001107",
+        "IsDeleted": false,
+        "PassengerInfo": "Mathieu Tremblay | AC031 | 2026-11-16 08:35 | 16F | 412.60 | Window seat",
+        "Trip": {
+          "AircraftId": "f3d6b3c7-294a-45b6-81f8-29daebfc0d08",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "f3d6b9c7-a0c8-4e5e-9b7b-c6e5f4d8ac56",
+          "Description": "Gluten-free meal",
+          "FlightDate": "2026-11-11T23:55:00Z",
+          "FlightNumber": "SQ321",
+          "Price": 1180.0,
+          "SeatNumber": "41K"
+        },
+        "UserId": 1104
+      }
+    },
+    {
+      "ref": "booking-106-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001108",
+        "IsDeleted": false,
+        "PassengerInfo": "Sienna Bouchard | WS614 | 2026-11-17 14:00 | 25A | 276.80 | Traveling with infant",
+        "Trip": {
+          "AircraftId": "04e7c4d8-3a5b-46c7-9209-3aebfc0d1e09",
+          "ArriveAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "DepartureAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "Description": "Traveling with infant",
+          "FlightDate": "2026-11-12T13:40:00Z",
+          "FlightNumber": "KL641",
+          "Price": 96.5,
+          "SeatNumber": "7A"
+        },
+        "UserId": 1105
+      }
+    },
+    {
+      "ref": "booking-107-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001109",
+        "IsDeleted": false,
+        "PassengerInfo": "Dieter Hoffmann | LH1170 | 2026-11-18 06:20 | 7D | 98.50 | Aisle seat",
+        "Trip": {
+          "AircraftId": "15f8d5e9-4b6c-47d8-831a-4bfc0d1e2f0a",
+          "ArriveAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "DepartureAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2026-11-14T16:05:00Z",
+          "FlightNumber": "IB6251",
+          "Price": 134.25,
+          "SeatNumber": "5B"
+        },
+        "UserId": 1106
+      }
+    },
+    {
+      "ref": "booking-108-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001110",
+        "IsDeleted": false,
+        "PassengerInfo": "Camille Girard | AF1380 | 2026-11-19 19:15 | 21C | 142.00 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "2609e6fa-5c7d-48e9-942b-5c0d1e2f300b",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "Description": "Halal meal",
+          "FlightDate": "2026-11-16T22:10:00Z",
+          "FlightNumber": "AA100",
+          "Price": 812.75,
+          "SeatNumber": "28C"
+        },
+        "UserId": 1107
+      }
+    },
+    {
+      "ref": "booking-109-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001111",
+        "IsDeleted": false,
+        "PassengerInfo": "Alejandro Ruiz | IB3744 | 2026-11-20 10:45 | 18A | 119.99 | Window seat",
+        "Trip": {
+          "AircraftId": "371af70b-6d8e-49fa-853c-6d1e2f30410c",
+          "ArriveAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "DepartureAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "Description": "Early boarding",
+          "FlightDate": "2026-11-18T11:25:00Z",
+          "FlightNumber": "UA837",
+          "Price": 925.4,
+          "SeatNumber": "19H"
+        },
+        "UserId": 1108
+      }
+    },
+    {
+      "ref": "booking-110-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001112",
+        "IsDeleted": false,
+        "PassengerInfo": "Harriet Palmer | BA432 | 2026-11-22 07:30 | 11E | 156.25 | Wheelchair assistance",
+        "Trip": {
+          "AircraftId": "482b081c-7e9f-4a0b-964d-7e2f3041520d",
+          "ArriveAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "DepartureAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "Description": "Kosher meal",
+          "FlightDate": "2026-11-19T20:45:00Z",
+          "FlightNumber": "JL42",
+          "Price": 704.0,
+          "SeatNumber": "33E"
+        },
+        "UserId": 1109
+      }
+    },
+    {
+      "ref": "booking-111-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001113",
+        "IsDeleted": false,
+        "PassengerInfo": "Yusuf Demir | EK073 | 2026-11-23 03:40 | 38K | 623.40 | Extra legroom",
+        "Trip": {
+          "AircraftId": "593c192d-8fa0-4b1c-875e-8f304152630e",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "Description": "Bulkhead seat",
+          "FlightDate": "2026-11-21T07:30:00Z",
+          "FlightNumber": "QF1",
+          "Price": 1095.0,
+          "SeatNumber": "11J"
+        },
+        "UserId": 1110
+      }
+    },
+    {
+      "ref": "booking-112-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001114",
+        "IsDeleted": false,
+        "PassengerInfo": "Georgia Mitchell | QF009 | 2026-11-24 20:55 | 6A | 1320.00 | Special occasion",
+        "Trip": {
+          "AircraftId": "6a4d2a3e-90b1-4c2d-986f-90415263741f",
+          "ArriveAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "DepartureAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "Description": "Quiet zone",
+          "FlightDate": "2026-11-23T14:15:00Z",
+          "FlightNumber": "DL404",
+          "Price": 218.9,
+          "SeatNumber": "16B"
+        },
+        "UserId": 1111
+      }
+    },
+    {
+      "ref": "booking-113-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001115",
+        "IsDeleted": false,
+        "PassengerInfo": "Somchai Wattana | TG931 | 2026-11-26 12:10 | 33C | 187.30 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7b5e3b4f-a1c2-4d3e-8970-a15263748520",
+          "ArriveAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "DepartureAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "Description": "Pet in cabin",
+          "FlightDate": "2026-11-25T09:05:00Z",
+          "FlightNumber": "TK1971",
+          "Price": 356.3,
+          "SeatNumber": "24A"
+        },
+        "UserId": 1112
+      }
+    },
+    {
+      "ref": "booking-114-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001116",
+        "IsDeleted": false,
+        "PassengerInfo": "Siti Nurhaliza Ahmad | MH192 | 2026-11-27 15:25 | 24F | 203.45 | Halal meal",
+        "Trip": {
+          "AircraftId": "9d705d61-c3e4-4f50-8b32-c3d4e5f6a702",
+          "ArriveAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "DepartureAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "Description": "Lap child",
+          "FlightDate": "2026-11-27T12:50:00Z",
+          "FlightNumber": "BA2490",
+          "Price": 142.0,
+          "SeatNumber": "8F"
+        },
+        "UserId": 1113
+      }
+    },
+    {
+      "ref": "booking-115-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001117",
+        "IsDeleted": false,
+        "PassengerInfo": "Budi Santoso | GA880 | 2026-11-28 05:50 | 29D | 134.70 | Window seat",
+        "Trip": {
+          "AircraftId": "bf927f83-e506-4172-8d54-e5f6a7b8c904",
+          "ArriveAirportId": "f3d6b9c7-a0c8-4e5e-9b7b-c6e5f4d8ac56",
+          "DepartureAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "Description": "Extra baggage 23kg",
+          "FlightDate": "2026-11-29T21:35:00Z",
+          "FlightNumber": "LH760",
+          "Price": 978.6,
+          "SeatNumber": "36A"
+        },
+        "UserId": 1114
+      }
+    },
+    {
+      "ref": "booking-116-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001118",
+        "IsDeleted": false,
+        "PassengerInfo": "Maricel Santos | PR104 | 2026-11-30 17:35 | 15B | 168.00 | Extra baggage",
+        "Trip": {
+          "AircraftId": "d1b491a5-0728-4394-8f76-07b8c9daeb06",
+          "ArriveAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "DepartureAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "Description": "Birthday celebration",
+          "FlightDate": "2026-12-01T03:20:00Z",
+          "FlightNumber": "EK413",
+          "Price": 865.45,
+          "SeatNumber": "45G"
+        },
+        "UserId": 1115
+      }
+    },
+    {
+      "ref": "booking-117-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001119",
+        "IsDeleted": false,
+        "PassengerInfo": "Vikram Choudhury | AI161 | 2026-12-01 01:15 | 40A | 352.90 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "e2c5a2b6-1839-44a5-90e7-18c9daebfc07",
+          "ArriveAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "DepartureAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "Description": "Honeymoon trip",
+          "FlightDate": "2026-12-02T15:00:00Z",
+          "FlightNumber": "AF22",
+          "Price": 704.99,
+          "SeatNumber": "2K"
+        },
+        "UserId": 1116
+      }
+    },
+    {
+      "ref": "booking-118-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001120",
+        "IsDeleted": false,
+        "PassengerInfo": "Deepika Nair | 6E2054 | 2026-12-02 09:05 | 13C | 74.99 | Aisle seat",
+        "Trip": {
+          "AircraftId": "f3d6b3c7-294a-45b6-81f8-29daebfc0d08",
+          "ArriveAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "DepartureAirportId": "f3d6b9c7-a0c8-4e5e-9b7b-c6e5f4d8ac56",
+          "Description": "Business trip",
+          "FlightDate": "2026-12-04T17:30:00Z",
+          "FlightNumber": "SQ25",
+          "Price": 1042.2,
+          "SeatNumber": "12D"
+        },
+        "UserId": 1117
+      }
+    },
+    {
+      "ref": "booking-119-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001121",
+        "IsDeleted": false,
+        "PassengerInfo": "Abdulrahman Al-Otaibi | SV315 | 2026-12-03 23:45 | 5J | 1095.50 | Extra legroom",
+        "Trip": {
+          "AircraftId": "04e7c4d8-3a5b-46c7-9209-3aebfc0d1e09",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "Description": "Vegan meal",
+          "FlightDate": "2026-12-05T07:45:00Z",
+          "FlightNumber": "KL1007",
+          "Price": 89.99,
+          "SeatNumber": "15C"
+        },
+        "UserId": 1118
+      }
+    },
+    {
+      "ref": "booking-120-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001122",
+        "IsDeleted": false,
+        "PassengerInfo": "Rania Khoury | WY143 | 2026-12-04 04:30 | 20E | 318.25 | Window seat",
+        "Trip": {
+          "AircraftId": "15f8d5e9-4b6c-47d8-831a-4bfc0d1e2f0a",
+          "ArriveAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "DepartureAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "Description": "Diabetic meal",
+          "FlightDate": "2026-12-07T10:55:00Z",
+          "FlightNumber": "IB3166",
+          "Price": 523.15,
+          "SeatNumber": "21E"
+        },
+        "UserId": 1119
+      }
+    },
+    {
+      "ref": "booking-121-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001123",
+        "IsDeleted": false,
+        "PassengerInfo": "Omar Haddadin | RJ261 | 2026-12-05 14:20 | 17D | 241.80 | Halal meal",
+        "Trip": {
+          "AircraftId": "2609e6fa-5c7d-48e9-942b-5c0d1e2f300b",
+          "ArriveAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "DepartureAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "Description": "Exit row seat",
+          "FlightDate": "2026-12-08T18:20:00Z",
+          "FlightNumber": "AA2183",
+          "Price": 187.5,
+          "SeatNumber": "17A"
+        },
+        "UserId": 1120
+      }
+    },
+    {
+      "ref": "booking-122-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001124",
+        "IsDeleted": false,
+        "PassengerInfo": "Thandiwe Dlamini | SA204 | 2026-12-06 08:40 | 26A | 276.00 | Window seat",
+        "Trip": {
+          "AircraftId": "371af70b-6d8e-49fa-853c-6d1e2f30410c",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "Description": "Connecting flight",
+          "FlightDate": "2026-12-10T21:10:00Z",
+          "FlightNumber": "UA901",
+          "Price": 748.8,
+          "SeatNumber": "31B"
+        },
+        "UserId": 1121
+      }
+    },
+    {
+      "ref": "booking-123-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001125",
+        "IsDeleted": false,
+        "PassengerInfo": "Kofi Boateng | KQ410 | 2026-12-07 21:55 | 32G | 395.60 | Aisle seat",
+        "Trip": {
+          "AircraftId": "482b081c-7e9f-4a0b-964d-7e2f3041520d",
+          "ArriveAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "DepartureAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "Description": "Priority baggage",
+          "FlightDate": "2026-12-11T17:40:00Z",
+          "FlightNumber": "JL7",
+          "Price": 893.0,
+          "SeatNumber": "26H"
+        },
+        "UserId": 1122
+      }
+    },
+    {
+      "ref": "booking-124-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001126",
+        "IsDeleted": false,
+        "PassengerInfo": "Selam Tesfaye | ET300 | 2026-12-08 11:00 | 23C | 312.40 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "593c192d-8fa0-4b1c-875e-8f304152630e",
+          "ArriveAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "DepartureAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "Description": "Child meal",
+          "FlightDate": "2026-12-12T09:25:00Z",
+          "FlightNumber": "QF12",
+          "Price": 967.35,
+          "SeatNumber": "39D"
+        },
+        "UserId": 1123
+      }
+    },
+    {
+      "ref": "booking-125-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001127",
+        "IsDeleted": false,
+        "PassengerInfo": "Nour El-Sayed | MS804 | 2026-12-09 16:15 | 10F | 228.75 | Window seat",
+        "Trip": {
+          "AircraftId": "6a4d2a3e-90b1-4c2d-986f-90415263741f",
+          "ArriveAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "DepartureAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "Description": "Seat next to companion",
+          "FlightDate": "2026-12-14T08:35:00Z",
+          "FlightNumber": "DL15",
+          "Price": 612.45,
+          "SeatNumber": "20C"
+        },
+        "UserId": 1124
+      }
+    },
+    {
+      "ref": "booking-126-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001128",
+        "IsDeleted": true,
+        "PassengerInfo": "Giovanni Esposito | AT201 | 2026-12-10 06:45 | 7B | 176.20 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7b5e3b4f-a1c2-4d3e-8970-a15263748520",
+          "ArriveAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "DepartureAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "Description": "Late check-in",
+          "FlightDate": "2026-12-15T05:15:00Z",
+          "FlightNumber": "TK83",
+          "Price": 299.0,
+          "SeatNumber": "13F"
+        },
+        "UserId": 1125
+      }
+    },
+    {
+      "ref": "booking-127-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001129",
+        "IsDeleted": false,
+        "PassengerInfo": "Inês Carvalho | TP1337 | 2026-12-11 12:30 | 19A | 109.99 | Window seat",
+        "Trip": {
+          "AircraftId": "8c6f4c50-b2d3-4e4f-9a21-b2c3d4e5f601",
+          "ArriveAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "DepartureAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "Description": "Hypoallergenic meal",
+          "FlightDate": "2026-12-17T11:00:00Z",
+          "FlightNumber": "BA283",
+          "Price": 834.6,
+          "SeatNumber": "4A"
+        },
+        "UserId": 1126
+      }
+    },
+    {
+      "ref": "booking-128-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001130",
+        "IsDeleted": false,
+        "PassengerInfo": "Pieter De Smet | SN3715 | 2026-12-12 09:20 | 14D | 132.50 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "ae816e72-d4f5-4061-9c43-d4e5f6a7b803",
+          "ArriveAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "DepartureAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "Description": "Sports equipment",
+          "FlightDate": "2026-12-18T14:50:00Z",
+          "FlightNumber": "LH1114",
+          "Price": 157.8,
+          "SeatNumber": "10E"
+        },
+        "UserId": 1127
+      }
+    },
+    {
+      "ref": "booking-129-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001131",
+        "IsDeleted": false,
+        "PassengerInfo": "Aino Virtanen | AY954 | 2026-12-13 07:50 | 12A | 187.00 | Window seat",
+        "Trip": {
+          "AircraftId": "c0a38094-f617-4283-9e65-f6a7b8c9da05",
+          "ArriveAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "DepartureAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "Description": "Oversize carry-on",
+          "FlightDate": "2026-12-20T04:30:00Z",
+          "FlightNumber": "EK215",
+          "Price": 759.9,
+          "SeatNumber": "52B"
+        },
+        "UserId": 1128
+      }
+    },
+    {
+      "ref": "booking-130-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001132",
+        "IsDeleted": false,
+        "PassengerInfo": "Jakub Sikora | LO283 | 2026-12-14 15:05 | 21B | 94.60 | Extra baggage",
+        "Trip": {
+          "AircraftId": "e2c5a2b6-1839-44a5-90e7-18c9daebfc07",
+          "ArriveAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "DepartureAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "Description": "Window seat away from wing",
+          "FlightDate": "2026-12-21T19:05:00Z",
+          "FlightNumber": "AF1680",
+          "Price": 108.4,
+          "SeatNumber": "6K"
+        },
+        "UserId": 1129
+      }
+    },
+    {
+      "ref": "booking-131-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001133",
+        "IsDeleted": false,
+        "PassengerInfo": "Sabine Gruber | OS871 | 2026-12-16 10:35 | 8C | 148.30 | Aisle seat",
+        "Trip": {
+          "AircraftId": "f3d6b3c7-294a-45b6-81f8-29daebfc0d08",
+          "ArriveAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "DepartureAirportId": "f3d6b9c7-a0c8-4e5e-9b7b-c6e5f4d8ac56",
+          "Description": "Low-sodium meal",
+          "FlightDate": "2026-12-23T01:45:00Z",
+          "FlightNumber": "SQ231",
+          "Price": 512.7,
+          "SeatNumber": "43A"
+        },
+        "UserId": 1130
+      }
+    },
+    {
+      "ref": "booking-132-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001134",
+        "IsDeleted": false,
+        "PassengerInfo": "Reto Baumann | LX1608 | 2026-12-17 18:25 | 16E | 203.90 | Window seat",
+        "Trip": {
+          "AircraftId": "04e7c4d8-3a5b-46c7-9209-3aebfc0d1e09",
+          "ArriveAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "DepartureAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "Description": "Visiting family",
+          "FlightDate": "2026-12-26T12:20:00Z",
+          "FlightNumber": "KL862",
+          "Price": 688.25,
+          "SeatNumber": "29G"
+        },
+        "UserId": 1131
+      }
+    },
+    {
+      "ref": "booking-133-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001135",
+        "IsDeleted": false,
+        "PassengerInfo": "Femke Jansen | KL642 | 2026-12-19 05:40 | 27F | 276.45 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "15f8d5e9-4b6c-47d8-831a-4bfc0d1e2f0a",
+          "ArriveAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "DepartureAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "Description": "Student fare",
+          "FlightDate": "2026-12-28T16:40:00Z",
+          "FlightNumber": "IB6844",
+          "Price": 174.6,
+          "SeatNumber": "18D"
+        },
+        "UserId": 1132
+      }
+    },
+    {
+      "ref": "booking-134-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001136",
+        "IsDeleted": false,
+        "PassengerInfo": "Lucía Herrera | VY1002 | 2026-12-21 13:55 | 18C | 59.99 | No checked baggage",
+        "Trip": {
+          "AircraftId": "2609e6fa-5c7d-48e9-942b-5c0d1e2f300b",
+          "ArriveAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "DepartureAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "Description": "Group booking",
+          "FlightDate": "2026-12-30T06:55:00Z",
+          "FlightNumber": "AA716",
+          "Price": 245.0,
+          "SeatNumber": "23B"
+        },
+        "UserId": 1133
+      }
+    },
+    {
+      "ref": "booking-135-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001137",
+        "IsDeleted": false,
+        "PassengerInfo": "Siobhan Gallagher | EI638 | 2027-01-06 08:10 | 9A | 118.75 | Window seat",
+        "Trip": {
+          "AircraftId": "371af70b-6d8e-49fa-853c-6d1e2f30410c",
+          "ArriveAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "DepartureAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "Description": "Medical oxygen",
+          "FlightDate": "2027-01-03T20:15:00Z",
+          "FlightNumber": "UA58",
+          "Price": 702.1,
+          "SeatNumber": "1A"
+        },
+        "UserId": 1134
+      }
+    },
+    {
+      "ref": "booking-136-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001138",
+        "IsDeleted": false,
+        "PassengerInfo": "Zachary Nguyen | AS314 | 2027-01-14 19:30 | 33D | 245.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "482b081c-7e9f-4a0b-964d-7e2f3041520d",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "Description": "Sleeper seat",
+          "FlightDate": "2027-01-05T01:30:00Z",
+          "FlightNumber": "JL44",
+          "Price": 1135.5,
+          "SeatNumber": "8K"
+        },
+        "UserId": 1135
+      }
+    },
+    {
+      "ref": "booking-137-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001139",
+        "IsDeleted": true,
+        "PassengerInfo": "Madison Reyes | B6916 | 2027-01-22 06:05 | 24B | 87.40 | Middle seat acceptable",
+        "Trip": {
+          "AircraftId": "593c192d-8fa0-4b1c-875e-8f304152630e",
+          "ArriveAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "DepartureAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "Description": "Lounge access",
+          "FlightDate": "2027-01-07T22:05:00Z",
+          "FlightNumber": "QF9",
+          "Price": 942.8,
+          "SeatNumber": "35C"
+        },
+        "UserId": 1136
+      }
+    },
+    {
+      "ref": "booking-138-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001140",
+        "IsDeleted": false,
+        "PassengerInfo": "Haruto Kobayashi | NH106 | 2027-02-03 11:50 | 3C | 1260.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "6a4d2a3e-90b1-4c2d-986f-90415263741f",
+          "ArriveAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "DepartureAirportId": "a8e1c4d2-5b73-4f09-8c26-d1f0a9e3b701",
+          "Description": "Nut allergy noted",
+          "FlightDate": "2027-01-09T13:10:00Z",
+          "FlightNumber": "DL1227",
+          "Price": 129.99,
+          "SeatNumber": "25F"
+        },
+        "UserId": 1137
+      }
+    },
+    {
+      "ref": "booking-139-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001141",
+        "IsDeleted": false,
+        "PassengerInfo": "Mio Hashimoto | JL743 | 2027-02-11 16:40 | 15A | 187.65 | Window seat",
+        "Trip": {
+          "AircraftId": "7b5e3b4f-a1c2-4d3e-8970-a15263748520",
+          "ArriveAirportId": "f3d6b9c7-a0c8-4e5e-9b7b-c6e5f4d8ac56",
+          "DepartureAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "Description": "Rebooked from earlier flight",
+          "FlightDate": "2027-01-11T23:25:00Z",
+          "FlightNumber": "TK1",
+          "Price": 845.0,
+          "SeatNumber": "47E"
+        },
+        "UserId": 1138
+      }
+    },
+    {
+      "ref": "booking-140-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001142",
+        "IsDeleted": false,
+        "PassengerInfo": "Seo-yeon Jung | KE017 | 2027-02-18 22:15 | 41H | 698.30 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "9d705d61-c3e4-4f50-8b32-c3d4e5f6a702",
+          "ArriveAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "DepartureAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "Description": "Companion seat",
+          "FlightDate": "2027-01-13T07:00:00Z",
+          "FlightNumber": "BA1326",
+          "Price": 98.75,
+          "SeatNumber": "12B"
+        },
+        "UserId": 1139
+      }
+    },
+    {
+      "ref": "booking-141-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001143",
+        "IsDeleted": false,
+        "PassengerInfo": "Mei-Hua Lin | CI100 | 2027-02-25 07:25 | 20K | 523.80 | Aisle seat",
+        "Trip": {
+          "AircraftId": "bf927f83-e506-4172-8d54-e5f6a7b8c904",
+          "ArriveAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "DepartureAirportId": "c0a3e6f4-7d95-4b2b-8e48-f3b2c1a5d923",
+          "Description": "Complimentary upgrade",
+          "FlightDate": "2027-01-15T12:35:00Z",
+          "FlightNumber": "LH588",
+          "Price": 1018.3,
+          "SeatNumber": "6D"
+        },
+        "UserId": 1140
+      }
+    },
+    {
+      "ref": "booking-142-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001144",
+        "IsDeleted": false,
+        "PassengerInfo": "Rosalind Achebe | BA553 | 2026-11-02 09:10 | 12C | 214.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "d1b491a5-0728-4394-8f76-07b8c9daeb06",
+          "ArriveAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "DepartureAirportId": "d1b4f7a5-8ea6-4c3c-9f59-a4c3d2b6ea34",
+          "Description": "Pre-ordered duty-free",
+          "FlightDate": "2027-01-17T09:50:00Z",
+          "FlightNumber": "EK73",
+          "Price": 1160.0,
+          "SeatNumber": "38J"
+        },
+        "UserId": 1141
+      }
+    },
+    {
+      "ref": "booking-143-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001145",
+        "IsDeleted": false,
+        "PassengerInfo": "Tobias Lindgren | SK1431 | 2026-11-03 06:25 | 8A | 98.99 | Window seat",
+        "Trip": {
+          "AircraftId": "e2c5a2b6-1839-44a5-90e7-18c9daebfc07",
+          "ArriveAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "DepartureAirportId": "e2c5a8b6-9fb7-4d4d-8a6a-b5d4e3c7fb45",
+          "Description": "Hearing assistance",
+          "FlightDate": "2027-01-19T15:45:00Z",
+          "FlightNumber": "AF6",
+          "Price": 573.4,
+          "SeatNumber": "27A"
+        },
+        "UserId": 1142
+      }
+    },
+    {
+      "ref": "booking-144-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001146",
+        "IsDeleted": false,
+        "PassengerInfo": "Priyanka Joshi | AI187 | 2026-11-03 23:40 | 31E | 412.50 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "f3d6b3c7-294a-45b6-81f8-29daebfc0d08",
+          "ArriveAirportId": "482b0e1c-f51d-4da3-80c0-1bdae9c2f1ab",
+          "DepartureAirportId": "f3d6b9c7-a0c8-4e5e-9b7b-c6e5f4d8ac56",
+          "Description": "Seat together with family",
+          "FlightDate": "2027-01-21T00:40:00Z",
+          "FlightNumber": "SQ878",
+          "Price": 402.65,
+          "SeatNumber": "30H"
+        },
+        "UserId": 1143
+      }
+    },
+    {
+      "ref": "booking-145-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001147",
+        "IsDeleted": false,
+        "PassengerInfo": "Mateus Oliveira | LA8100 | 2026-11-04 14:15 | 22F | 689.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "04e7c4d8-3a5b-46c7-9209-3aebfc0d1e09",
+          "ArriveAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "DepartureAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "Description": "Last-minute booking",
+          "FlightDate": "2027-01-23T17:15:00Z",
+          "FlightNumber": "KL1235",
+          "Price": 113.2,
+          "SeatNumber": "14C"
+        },
+        "UserId": 1144
+      }
+    },
+    {
+      "ref": "booking-146-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001148",
+        "IsDeleted": false,
+        "PassengerInfo": "Fiona MacLeod | EI532 | 2026-11-05 07:50 | 5D | 89.99 | Checked bag added",
+        "Trip": {
+          "AircraftId": "15f8d5e9-4b6c-47d8-831a-4bfc0d1e2f0a",
+          "ArriveAirportId": "b9f2d5e3-6c84-4a1a-9d37-e2a1b0f4c812",
+          "DepartureAirportId": "2609ecfa-d3fb-4b81-8eae-f9b8c7a0df89",
+          "Description": "Seafood allergy",
+          "FlightDate": "2027-01-25T10:30:00Z",
+          "FlightNumber": "IB6275",
+          "Price": 151.35,
+          "SeatNumber": "19F"
+        },
+        "UserId": 1145
+      }
+    },
+    {
+      "ref": "booking-147-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001149",
+        "IsDeleted": false,
+        "PassengerInfo": "Takumi Ishikawa | JL005 | 2026-11-06 11:30 | 3C | 1180.00 | Business lounge access",
+        "Trip": {
+          "AircraftId": "2609e6fa-5c7d-48e9-942b-5c0d1e2f300b",
+          "ArriveAirportId": "593c1f2d-062e-4eb4-91d1-2cebfad3a2bc",
+          "DepartureAirportId": "04e7cad8-b1d9-4f6f-8c8c-d7f6a5e9bd67",
+          "Description": "Hearing-friendly cabin crew briefing",
+          "FlightDate": "2027-01-27T22:55:00Z",
+          "FlightNumber": "AA38",
+          "Price": 1089.9,
+          "SeatNumber": "3A"
+        },
+        "UserId": 1146
+      }
+    },
+    {
+      "ref": "booking-148-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001150",
+        "IsDeleted": false,
+        "PassengerInfo": "Amira Benali | AH1006 | 2026-11-07 16:05 | 17B | 176.40 | Halal meal",
+        "Trip": {
+          "AircraftId": "371af70b-6d8e-49fa-853c-6d1e2f30410c",
+          "ArriveAirportId": "15f8dbe9-c2ea-4a70-9d9d-e8a7b6face78",
+          "DepartureAirportId": "371afd0b-e40c-4c92-9fbf-0ac9d8b1e09a",
+          "Description": "Frequent flyer upgrade",
+          "FlightDate": "2027-01-29T19:20:00Z",
+          "FlightNumber": "UA2240",
+          "Price": 661.15,
+          "SeatNumber": "2F"
+        },
+        "UserId": 1147
+      }
+    },
+    {
+      "ref": "booking-149-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001151",
+        "IsDeleted": false,
+        "PassengerInfo": "Gustav Eklund | AY1342 | 2026-11-08 08:45 | 14A | 132.00 | Window seat",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-03T10:45:00Z",
+          "FlightNumber": "BA117",
+          "Price": 612.4,
+          "SeatNumber": "34A"
+        },
+        "UserId": 1148
+      }
+    },
+    {
+      "ref": "booking-150-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001152",
+        "IsDeleted": true,
+        "PassengerInfo": "Nia Thompson | DL172 | 2026-11-09 19:20 | 27D | 355.75 | Wheelchair assistance",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-05T08:20:00Z",
+          "FlightNumber": "LH402",
+          "Price": 548.9,
+          "SeatNumber": "27C"
+        },
+        "UserId": 1149
+      }
+    },
+    {
+      "ref": "booking-151-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001153",
+        "IsDeleted": false,
+        "PassengerInfo": "Lorenzo Greco | AZ1176 | 2026-11-10 12:10 | 9F | 119.99 | Gluten-free meal",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-07T02:15:00Z",
+          "FlightNumber": "EK203",
+          "Price": 721.0,
+          "SeatNumber": "31D"
+        },
+        "UserId": 1150
+      }
+    },
+    {
+      "ref": "booking-152-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001154",
+        "IsDeleted": false,
+        "PassengerInfo": "Beatrice Lemaire | AF1432 | 2026-11-12 06:55 | 19C | 164.20 | Aisle seat",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-09T11:05:00Z",
+          "FlightNumber": "AF007",
+          "Price": 589.99,
+          "SeatNumber": "38A"
+        },
+        "UserId": 1151
+      }
+    },
+    {
+      "ref": "booking-153-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001155",
+        "IsDeleted": false,
+        "PassengerInfo": "Jamal Rivers | AA2202 | 2026-11-13 15:35 | 33A | 278.00 | Window seat",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "Description": "Lie-flat bed requested",
+          "FlightDate": "2026-11-11T23:50:00Z",
+          "FlightNumber": "SQ321",
+          "Price": 1180.0,
+          "SeatNumber": "4D"
+        },
+        "UserId": 1152
+      }
+    },
+    {
+      "ref": "booking-154-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001156",
+        "IsDeleted": false,
+        "PassengerInfo": "Ayesha Karim | PK758 | 2026-11-14 21:00 | 24E | 448.90 | Infant on lap",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-14T09:30:00Z",
+          "FlightNumber": "KL642",
+          "Price": 504.25,
+          "SeatNumber": "29D"
+        },
+        "UserId": 1153
+      }
+    },
+    {
+      "ref": "booking-155-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001157",
+        "IsDeleted": false,
+        "PassengerInfo": "Johan Berg | DY1330 | 2026-11-16 10:40 | 6B | 79.99 | Quiet seat",
+        "Trip": {
+          "AircraftId": "82d5b7c1-f4a9-4e60-8b12-c9e3a0d5f755",
+          "ArriveAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-16T07:10:00Z",
+          "FlightNumber": "BA304",
+          "Price": 112.5,
+          "SeatNumber": "12A"
+        },
+        "UserId": 1154
+      }
+    },
+    {
+      "ref": "booking-156-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001158",
+        "IsDeleted": false,
+        "PassengerInfo": "Paloma Castillo | IB6253 | 2026-11-17 13:25 | 15F | 187.30 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "0a6e3f9d-7b82-4c14-95a7-e5d1c8b2a456",
+          "ArriveAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Carry-on only",
+          "FlightDate": "2026-11-17T13:25:00Z",
+          "FlightNumber": "BA432",
+          "Price": 98.99,
+          "SeatNumber": "9F"
+        },
+        "UserId": 1155
+      }
+    },
+    {
+      "ref": "booking-157-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001159",
+        "IsDeleted": false,
+        "PassengerInfo": "Sven Karlsson | SK821 | 2026-11-19 17:55 | 11D | 143.60 | Extra legroom",
+        "Trip": {
+          "AircraftId": "b3c9d1e6-2a47-4f58-a0e9-6d4b7f1c8257",
+          "ArriveAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-11-18T15:40:00Z",
+          "FlightNumber": "LH901",
+          "Price": 134.0,
+          "SeatNumber": "18C"
+        },
+        "UserId": 1156
+      }
+    },
+    {
+      "ref": "booking-158-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001160",
+        "IsDeleted": false,
+        "PassengerInfo": "Delphine Roux | AF1780 | 2026-11-20 08:15 | 4A | 1020.00 | Priority boarding",
+        "Trip": {
+          "AircraftId": "7f1a5c8b-9e30-4d62-b3c4-a8f2d0e6b958",
+          "ArriveAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "DepartureAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-19T06:55:00Z",
+          "FlightNumber": "AF1180",
+          "Price": 89.99,
+          "SeatNumber": "21B"
+        },
+        "UserId": 1157
+      }
+    },
+    {
+      "ref": "booking-159-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001161",
+        "IsDeleted": false,
+        "PassengerInfo": "Kavita Rao | UK835 | 2026-11-21 05:50 | 21C | 108.25 | Window seat",
+        "Trip": {
+          "AircraftId": "82d5b7c1-f4a9-4e60-8b12-c9e3a0d5f755",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-11-20T18:15:00Z",
+          "FlightNumber": "KL1000",
+          "Price": 143.75,
+          "SeatNumber": "15D"
+        },
+        "UserId": 1158
+      }
+    },
+    {
+      "ref": "booking-160-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001162",
+        "IsDeleted": false,
+        "PassengerInfo": "Everett Collins | UA2217 | 2026-11-23 18:30 | 29B | 312.00 | Kosher meal",
+        "Trip": {
+          "AircraftId": "0a6e3f9d-7b82-4c14-95a7-e5d1c8b2a456",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-22T12:05:00Z",
+          "FlightNumber": "LH2470",
+          "Price": 167.3,
+          "SeatNumber": "7A"
+        },
+        "UserId": 1159
+      }
+    },
+    {
+      "ref": "booking-161-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001163",
+        "IsDeleted": false,
+        "PassengerInfo": "Marta Szymanska | LO384 | 2026-11-24 09:35 | 13A | 158.00 | Window seat",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2026-11-24T22:30:00Z",
+          "FlightNumber": "AA100",
+          "Price": 689.0,
+          "SeatNumber": "28C"
+        },
+        "UserId": 1160
+      }
+    },
+    {
+      "ref": "booking-162-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001164",
+        "IsDeleted": true,
+        "PassengerInfo": "Yosef Ben-David | LY381 | 2026-11-25 22:50 | 20D | 523.40 | Kosher meal",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-11-26T21:45:00Z",
+          "FlightNumber": "DL404",
+          "Price": 634.2,
+          "SeatNumber": "33E"
+        },
+        "UserId": 1161
+      }
+    },
+    {
+      "ref": "booking-163-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001165",
+        "IsDeleted": false,
+        "PassengerInfo": "Cheng Wei Liu | CA781 | 2026-11-27 00:15 | 35C | 640.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "Description": "Window seat",
+          "FlightDate": "2026-11-28T19:10:00Z",
+          "FlightNumber": "UA901",
+          "Price": 812.6,
+          "SeatNumber": "36K"
+        },
+        "UserId": 1162
+      }
+    },
+    {
+      "ref": "booking-164-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001166",
+        "IsDeleted": false,
+        "PassengerInfo": "Isla Henderson | VS401 | 2026-11-28 11:05 | 16A | 398.99 | Extra legroom",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "DepartureAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "Description": "Halal meal",
+          "FlightDate": "2026-11-30T00:40:00Z",
+          "FlightNumber": "SQ038",
+          "Price": 905.0,
+          "SeatNumber": "45C"
+        },
+        "UserId": 1163
+      }
+    },
+    {
+      "ref": "booking-165-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001167",
+        "IsDeleted": false,
+        "PassengerInfo": "Rafik Boudiaf | TU712 | 2026-11-29 14:20 | 25F | 129.50 | Halal meal",
+        "Trip": {
+          "AircraftId": "b3c9d1e6-2a47-4f58-a0e9-6d4b7f1c8257",
+          "ArriveAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-02T14:20:00Z",
+          "FlightNumber": "DL1412",
+          "Price": 249.99,
+          "SeatNumber": "19F"
+        },
+        "UserId": 1164
+      }
+    },
+    {
+      "ref": "booking-166-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001168",
+        "IsDeleted": false,
+        "PassengerInfo": "Anneliese Vogel | LH1018 | 2026-12-01 06:30 | 10C | 171.80 | Window seat",
+        "Trip": {
+          "AircraftId": "7f1a5c8b-9e30-4d62-b3c4-a8f2d0e6b958",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-12-03T06:05:00Z",
+          "FlightNumber": "AA2290",
+          "Price": 318.5,
+          "SeatNumber": "23C"
+        },
+        "UserId": 1165
+      }
+    },
+    {
+      "ref": "booking-167-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001169",
+        "IsDeleted": false,
+        "PassengerInfo": "Bruno Carvalho | TP1347 | 2026-12-02 20:45 | 18E | 96.00 | Checked bag added",
+        "Trip": {
+          "AircraftId": "82d5b7c1-f4a9-4e60-8b12-c9e3a0d5f755",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-05T16:35:00Z",
+          "FlightNumber": "UA1573",
+          "Price": 276.0,
+          "SeatNumber": "11D"
+        },
+        "UserId": 1166
+      }
+    },
+    {
+      "ref": "booking-168-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001170",
+        "IsDeleted": false,
+        "PassengerInfo": "Zara Malik | EK412 | 2026-12-03 02:35 | 37A | 735.00 | Window seat",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-06T03:25:00Z",
+          "FlightNumber": "EK201",
+          "Price": 1245.0,
+          "SeatNumber": "6A"
+        },
+        "UserId": 1167
+      }
+    },
+    {
+      "ref": "booking-169-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001171",
+        "IsDeleted": false,
+        "PassengerInfo": "Henry Blackwood | BA1388 | 2026-12-05 12:25 | 7D | 245.50 | Aisle seat",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "DepartureAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "Description": "Gluten-free meal",
+          "FlightDate": "2026-12-08T09:50:00Z",
+          "FlightNumber": "EK205",
+          "Price": 462.8,
+          "SeatNumber": "40D"
+        },
+        "UserId": 1168
+      }
+    },
+    {
+      "ref": "booking-170-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001172",
+        "IsDeleted": false,
+        "PassengerInfo": "Sana Ahmadi | TK1873 | 2026-12-06 04:10 | 26B | 205.70 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-12-10T21:15:00Z",
+          "FlightNumber": "LH456",
+          "Price": 842.35,
+          "SeatNumber": "38H"
+        },
+        "UserId": 1169
+      }
+    },
+    {
+      "ref": "booking-171-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001173",
+        "IsDeleted": false,
+        "PassengerInfo": "Dmitri Orlov | AY1008 | 2026-12-08 15:40 | 12F | 188.00 | Window seat",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-12T14:00:00Z",
+          "FlightNumber": "BA015",
+          "Price": 587.0,
+          "SeatNumber": "30A"
+        },
+        "UserId": 1170
+      }
+    },
+    {
+      "ref": "booking-172-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001174",
+        "IsDeleted": false,
+        "PassengerInfo": "Clara Eriksson | SK1427 | 2026-12-09 08:05 | 2A | 940.00 | Priority boarding",
+        "Trip": {
+          "AircraftId": "0a6e3f9d-7b82-4c14-95a7-e5d1c8b2a456",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-12-14T08:35:00Z",
+          "FlightNumber": "AF1081",
+          "Price": 128.9,
+          "SeatNumber": "16C"
+        },
+        "UserId": 1171
+      }
+    },
+    {
+      "ref": "booking-173-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001175",
+        "IsDeleted": false,
+        "PassengerInfo": "Tomás Aguilar | AM005 | 2026-12-10 17:15 | 23C | 482.30 | Extra legroom",
+        "Trip": {
+          "AircraftId": "b3c9d1e6-2a47-4f58-a0e9-6d4b7f1c8257",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-15T10:20:00Z",
+          "FlightNumber": "KL1244",
+          "Price": 119.4,
+          "SeatNumber": "5F"
+        },
+        "UserId": 1172
+      }
+    },
+    {
+      "ref": "booking-174-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001176",
+        "IsDeleted": true,
+        "PassengerInfo": "Hemi Parata | NZ108 | 2026-12-12 09:50 | 32D | 1015.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7f1a5c8b-9e30-4d62-b3c4-a8f2d0e6b958",
+          "ArriveAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Quiet zone requested",
+          "FlightDate": "2026-12-16T17:50:00Z",
+          "FlightNumber": "LH1006",
+          "Price": 105.0,
+          "SeatNumber": "22E"
+        },
+        "UserId": 1173
+      }
+    },
+    {
+      "ref": "booking-175-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001177",
+        "IsDeleted": false,
+        "PassengerInfo": "Ruth Abebe | ET704 | 2026-12-13 23:10 | 19A | 560.00 | Window seat",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Anniversary trip",
+          "FlightDate": "2026-12-18T09:15:00Z",
+          "FlightNumber": "BA178",
+          "Price": 1980.0,
+          "SeatNumber": "2K"
+        },
+        "UserId": 1174
+      }
+    },
+    {
+      "ref": "booking-176-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001178",
+        "IsDeleted": false,
+        "PassengerInfo": "Callan Fraser | QF025 | 2026-12-15 19:00 | 34A | 1264.50 | Window seat",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Infant on lap",
+          "FlightDate": "2026-12-19T23:00:00Z",
+          "FlightNumber": "AA101",
+          "Price": 745.5,
+          "SeatNumber": "37D"
+        },
+        "UserId": 1175
+      }
+    },
+    {
+      "ref": "booking-177-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001179",
+        "IsDeleted": false,
+        "PassengerInfo": "Lucie Novotna | OK641 | 2026-12-16 07:20 | 8C | 112.40 | Aisle seat",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-20T20:30:00Z",
+          "FlightNumber": "LH401",
+          "Price": 598.75,
+          "SeatNumber": "29A"
+        },
+        "UserId": 1176
+      }
+    },
+    {
+      "ref": "booking-178-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001180",
+        "IsDeleted": false,
+        "PassengerInfo": "Ibrahim Yusuf | MS735 | 2026-12-18 13:45 | 28E | 267.00 | Halal meal",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Extra legroom",
+          "FlightDate": "2026-12-22T21:55:00Z",
+          "FlightNumber": "SQ322",
+          "Price": 1020.0,
+          "SeatNumber": "33J"
+        },
+        "UserId": 1177
+      }
+    },
+    {
+      "ref": "booking-179-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001181",
+        "IsDeleted": false,
+        "PassengerInfo": "Greta Hoffmann | OS863 | 2026-12-19 10:25 | 5A | 149.99 | Window seat",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-12-24T01:10:00Z",
+          "FlightNumber": "SQ231",
+          "Price": 934.6,
+          "SeatNumber": "39A"
+        },
+        "UserId": 1178
+      }
+    },
+    {
+      "ref": "booking-180-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001182",
+        "IsDeleted": false,
+        "PassengerInfo": "Pablo Quintero | AV247 | 2026-12-20 16:50 | 21F | 334.80 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "DepartureAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "Description": "Window seat",
+          "FlightDate": "2026-12-27T08:00:00Z",
+          "FlightNumber": "EK029",
+          "Price": 498.0,
+          "SeatNumber": "25K"
+        },
+        "UserId": 1179
+      }
+    },
+    {
+      "ref": "booking-181-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001183",
+        "IsDeleted": false,
+        "PassengerInfo": "Mirela Dumitru | RO393 | 2026-12-22 06:00 | 14C | 134.25 | Aisle seat",
+        "Trip": {
+          "AircraftId": "82d5b7c1-f4a9-4e60-8b12-c9e3a0d5f755",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Early boarding",
+          "FlightDate": "2026-12-28T06:45:00Z",
+          "FlightNumber": "BA2704",
+          "Price": 156.2,
+          "SeatNumber": "4C"
+        },
+        "UserId": 1180
+      }
+    },
+    {
+      "ref": "booking-182-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001184",
+        "IsDeleted": false,
+        "PassengerInfo": "Aiden Murray | EI104 | 2026-12-23 21:35 | 30B | 302.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "0a6e3f9d-7b82-4c14-95a7-e5d1c8b2a456",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "Description": "Aisle seat",
+          "FlightDate": "2026-12-29T11:30:00Z",
+          "FlightNumber": "AF1380",
+          "Price": 99.99,
+          "SeatNumber": "20D"
+        },
+        "UserId": 1181
+      }
+    },
+    {
+      "ref": "booking-183-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001185",
+        "IsDeleted": false,
+        "PassengerInfo": "Ritu Banerjee | AI143 | 2026-12-27 01:45 | 15A | 590.60 | Window seat",
+        "Trip": {
+          "AircraftId": "b3c9d1e6-2a47-4f58-a0e9-6d4b7f1c8257",
+          "ArriveAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "DepartureAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2027-01-04T14:05:00Z",
+          "FlightNumber": "KL1086",
+          "Price": 118.6,
+          "SeatNumber": "17A"
+        },
+        "UserId": 1182
+      }
+    },
+    {
+      "ref": "booking-184-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001186",
+        "IsDeleted": false,
+        "PassengerInfo": "Hyun-woo Baek | KE907 | 2027-01-05 11:15 | 41C | 872.00 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7f1a5c8b-9e30-4d62-b3c4-a8f2d0e6b958",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Window seat",
+          "FlightDate": "2027-01-06T19:25:00Z",
+          "FlightNumber": "LH900",
+          "Price": 189.0,
+          "SeatNumber": "10F"
+        },
+        "UserId": 1183
+      }
+    },
+    {
+      "ref": "booking-185-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001187",
+        "IsDeleted": true,
+        "PassengerInfo": "Camila Duarte | LA8074 | 2027-01-08 22:30 | 17D | 421.75 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Lactose-free meal",
+          "FlightDate": "2027-01-08T18:40:00Z",
+          "FlightNumber": "DL067",
+          "Price": 566.4,
+          "SeatNumber": "32C"
+        },
+        "UserId": 1184
+      }
+    },
+    {
+      "ref": "booking-186-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001188",
+        "IsDeleted": false,
+        "PassengerInfo": "Stellan Moberg | AY1354 | 2027-01-12 07:40 | 9A | 104.50 | Window seat",
+        "Trip": {
+          "AircraftId": "82d5b7c1-f4a9-4e60-8b12-c9e3a0d5f755",
+          "ArriveAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Window seat",
+          "FlightDate": "2027-01-10T11:10:00Z",
+          "FlightNumber": "AA250",
+          "Price": 302.0,
+          "SeatNumber": "24A"
+        },
+        "UserId": 1185
+      }
+    },
+    {
+      "ref": "booking-187-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001189",
+        "IsDeleted": false,
+        "PassengerInfo": "Leona Bakker | KL1017 | 2027-01-20 12:55 | 24C | 188.70 | Extra legroom",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "Description": "Aisle seat",
+          "FlightDate": "2027-01-12T20:20:00Z",
+          "FlightNumber": "UA037",
+          "Price": 770.9,
+          "SeatNumber": "35D"
+        },
+        "UserId": 1186
+      }
+    },
+    {
+      "ref": "booking-188-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001190",
+        "IsDeleted": false,
+        "PassengerInfo": "Obinna Nwosu | KQ118 | 2027-01-27 20:10 | 36F | 615.00 | Window seat",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "DepartureAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "Description": "Birthday trip",
+          "FlightDate": "2027-01-14T07:50:00Z",
+          "FlightNumber": "EK001",
+          "Price": 2890.0,
+          "SeatNumber": "1A"
+        },
+        "UserId": 1187
+      }
+    },
+    {
+      "ref": "booking-189-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001191",
+        "IsDeleted": false,
+        "PassengerInfo": "Josephine Tran | VN305 | 2027-02-08 02:20 | 22A | 498.40 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Window seat",
+          "FlightDate": "2027-01-17T15:25:00Z",
+          "FlightNumber": "BA283",
+          "Price": 664.0,
+          "SeatNumber": "41A"
+        },
+        "UserId": 1188
+      }
+    },
+    {
+      "ref": "booking-190-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001192",
+        "IsDeleted": false,
+        "PassengerInfo": "Felix Brandt | LH1186 | 2027-02-15 14:05 | 11C | 162.99 | Aisle seat",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "Description": "Quiet seat requested",
+          "FlightDate": "2027-01-19T05:35:00Z",
+          "FlightNumber": "SQ012",
+          "Price": 1395.5,
+          "SeatNumber": "9D"
+        },
+        "UserId": 1189
+      }
+    },
+    {
+      "ref": "booking-191-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001193",
+        "IsDeleted": false,
+        "PassengerInfo": "Noelle Archer | AC855 | 2027-03-04 09:30 | 6F | 727.25 | Priority boarding",
+        "Trip": {
+          "AircraftId": "0a6e3f9d-7b82-4c14-95a7-e5d1c8b2a456",
+          "ArriveAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "DepartureAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "Description": "Extra legroom",
+          "FlightDate": "2027-01-21T09:00:00Z",
+          "FlightNumber": "LH2036",
+          "Price": 142.35,
+          "SeatNumber": "12C"
+        },
+        "UserId": 1190
+      }
+    },
+    {
+      "ref": "booking-192-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001194",
+        "IsDeleted": false,
+        "PassengerInfo": "Valentina Moretti | AZ1594 | 2027-03-09 07:40 | 12A | 142.30 | Window seat",
+        "Trip": {
+          "AircraftId": "59b4c0f2-e8a7-4d36-91fe-7b2d5a8c3e53",
+          "ArriveAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "DepartureAirportId": "2b9d6a48-e7f3-4c10-93b5-6a1e8d4f0c45",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2027-01-23T13:15:00Z",
+          "FlightNumber": "AF083",
+          "Price": 878.2,
+          "SeatNumber": "36J"
+        },
+        "UserId": 1191
+      }
+    },
+    {
+      "ref": "booking-193-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001195",
+        "IsDeleted": false,
+        "PassengerInfo": "Ethan Brooks | DL2184 | 2027-03-12 15:20 | 27C | 289.99 | Vegetarian meal",
+        "Trip": {
+          "AircraftId": "3c8f1b76-d2e4-4a09-b5c3-9e7a0d6f2b51",
+          "ArriveAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "DepartureAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "Description": "Window seat",
+          "FlightDate": "2027-01-26T10:05:00Z",
+          "FlightNumber": "KL601",
+          "Price": 703.15,
+          "SeatNumber": "34K"
+        },
+        "UserId": 1192
+      }
+    },
+    {
+      "ref": "booking-194-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001196",
+        "IsDeleted": false,
+        "PassengerInfo": "Mei Ling Wong | SQ308 | 2027-03-15 23:55 | 41K | 1180.00 | Extra legroom",
+        "Trip": {
+          "AircraftId": "b3c9d1e6-2a47-4f58-a0e9-6d4b7f1c8257",
+          "ArriveAirportId": "a0f6c3e5-5d18-4b79-9c42-81b7e4d0f648",
+          "DepartureAirportId": "6f2a9d14-8c37-4e05-b1a9-3d7c5e0f8a41",
+          "Description": "Aisle seat",
+          "FlightDate": "2027-01-29T17:35:00Z",
+          "FlightNumber": "BA1306",
+          "Price": 132.8,
+          "SeatNumber": "8C"
+        },
+        "UserId": 1193
+      }
+    },
+    {
+      "ref": "booking-195-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001197",
+        "IsDeleted": true,
+        "PassengerInfo": "Joao Ferreira | TP1359 | 2027-03-18 06:15 | 8D | 96.50 | Aisle seat",
+        "Trip": {
+          "AircraftId": "7f1a5c8b-9e30-4d62-b3c4-a8f2d0e6b958",
+          "ArriveAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "DepartureAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "Description": "Extra legroom",
+          "FlightDate": "2027-02-02T07:30:00Z",
+          "FlightNumber": "DL1550",
+          "Price": 342.5,
+          "SeatNumber": "13D"
+        },
+        "UserId": 1194
+      }
+    },
+    {
+      "ref": "booking-196-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001198",
+        "IsDeleted": false,
+        "PassengerInfo": "Fatuma Hassan | KQ412 | 2027-03-21 20:10 | 19F | 342.50 | Halal meal",
+        "Trip": {
+          "AircraftId": "d7a2e904-6b1c-4f85-8a3d-4c0f9e7b1a52",
+          "ArriveAirportId": "f5c1a8e7-3b04-4d92-8e6f-0c7a2b9d1e46",
+          "DepartureAirportId": "8e3b0f65-1c92-4d7a-a548-f9d2c6e1b044",
+          "Description": "Halal meal",
+          "FlightDate": "2027-02-05T02:40:00Z",
+          "FlightNumber": "EK071",
+          "Price": 541.3,
+          "SeatNumber": "28E"
+        },
+        "UserId": 1195
+      }
+    },
+    {
+      "ref": "booking-197-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001199",
+        "IsDeleted": false,
+        "PassengerInfo": "Gregory Palmer | UA1177 | 2027-03-24 11:45 | 3C | 612.40 | Priority boarding",
+        "Trip": {
+          "AircraftId": "e1f9a3d8-0c65-4b27-a4d8-2f6e1b9c7054",
+          "ArriveAirportId": "c4a7e3d1-9f58-4b26-8d10-2e6b9a5c7f43",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Window seat",
+          "FlightDate": "2027-02-09T19:55:00Z",
+          "FlightNumber": "AA716",
+          "Price": 611.8,
+          "SeatNumber": "40A"
+        },
+        "UserId": 1196
+      }
+    },
+    {
+      "ref": "booking-198-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001200",
+        "IsDeleted": false,
+        "PassengerInfo": "Ayumi Fujita | NH210 | 2027-03-27 09:05 | 22E | 428.75 | Gluten-free meal",
+        "Trip": {
+          "AircraftId": "0a6e3f9d-7b82-4c14-95a7-e5d1c8b2a456",
+          "ArriveAirportId": "47e0d2b9-a6c5-4f13-b87a-d3e9f1c5a047",
+          "DepartureAirportId": "1d8e5b92-4a60-4c7f-9e23-b5f0a7c3d842",
+          "Description": "Wheelchair assistance",
+          "FlightDate": "2027-02-12T08:45:00Z",
+          "FlightNumber": "UA1888",
+          "Price": 289.3,
+          "SeatNumber": "5C"
+        },
+        "UserId": 1197
+      }
+    },
+    {
+      "ref": "booking-199-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001201",
+        "IsDeleted": false,
+        "PassengerInfo": "Sebastian Weber | LH2208 | 2027-03-30 17:30 | 15B | 89.99 | Traveling with infant",
+        "Trip": {
+          "AircraftId": "6e1b3d58-2f94-4a7c-b0e3-9c5d7a1f4b60",
+          "ArriveAirportId": "18f4b6d0-5c92-4e3a-8b7d-a2e9c0f3d582",
+          "DepartureAirportId": "c7a2f9e4-8d16-4b35-a9c0-3e5b1d7f2a71",
+          "Description": "Vegetarian meal",
+          "FlightDate": "2026-12-03T06:50:00Z",
+          "FlightNumber": "QR704",
+          "Price": 612.4,
+          "SeatNumber": "18F"
+        },
+        "UserId": 1198
+      }
+    },
+    {
+      "ref": "booking-200-2",
+      "kind": "record",
+      "data": {
+        "Id": "3171bff1-0000-4000-8000-000000001202",
+        "IsDeleted": false,
+        "PassengerInfo": "Noemi Silva | LA8066 | 2027-04-02 22:25 | 30A | 235.00 | Wheelchair assistance",
+        "Trip": {
+          "AircraftId": "9a3e7c15-b4d8-4f62-a1e0-7d2c5b9f8a93",
+          "ArriveAirportId": "e0b5d9a2-7f31-4c68-b4a5-1c8e3f6d9b05",
+          "DepartureAirportId": "4d8a0e63-c1f7-4b95-9e24-f6b3a8d1c0a4",
+          "Description": "Window seat",
+          "FlightDate": "2027-01-19T14:25:00Z",
+          "FlightNumber": "DL1893",
+          "Price": 148.99,
+          "SeatNumber": "5D"
+        },
+        "UserId": 1199
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "booking-create-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "id": null,
+        "isDeleted": false,
+        "passengerInfo": "",
+        "trip": "{…}",
+        "userId": 1
+      },
+      "violates": {
+        "field": "id",
+        "rule": "`id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "booking-create-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "id": "not-a-uuid",
+        "isDeleted": false,
+        "passengerInfo": "",
+        "trip": "{…}",
+        "userId": 1
+      },
+      "violates": {
+        "field": "id",
+        "rule": "violates a declared constraint on `id`"
+      }
+    },
+    {
+      "ref": "booking-create-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "id": "00000000-0000-4000-8000-000000000000",
+        "isDeleted": false,
+        "passengerInfo": null,
+        "trip": "{…}",
+        "userId": 1
+      },
+      "violates": {
+        "field": "passengerInfo",
+        "rule": "`passengerInfo` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "booking-create-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "id": "00000000-0000-4000-8000-000000000000",
+        "isDeleted": false,
+        "passengerInfo": "",
+        "trip": null,
+        "userId": 1
+      },
+      "violates": {
+        "field": "trip",
+        "rule": "`trip` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "booking-create-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "id": "00000000-0000-4000-8000-000000000000",
+        "isDeleted": null,
+        "passengerInfo": "",
+        "trip": "{…}",
+        "userId": 1
+      },
+      "violates": {
+        "field": "isDeleted",
+        "rule": "`isDeleted` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "booking-create-case-1",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": false,
+        "PassengerInfo": "",
+        "Trip": "{…}",
+        "UserId": 1
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "booking-create-case-2",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "PassengerInfo": "text",
+        "Trip": "{…}",
+        "UserId": 1000
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "booking-create-case-3",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": false,
+        "PassengerInfo": "STR_0001",
+        "Trip": "{…}",
+        "UserId": 1000
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "booking-create-case-4",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "PassengerInfo": "",
+        "Trip": "{…}",
+        "UserId": 1
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "booking-create-case-5",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": false,
+        "PassengerInfo": "text",
+        "Trip": "{…}",
+        "UserId": 1
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "booking-create-case-6",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "PassengerInfo": "STR_0001",
+        "Trip": "{…}",
+        "UserId": 1
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "booking-create-case-7",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": false,
+        "PassengerInfo": "",
+        "Trip": "{…}",
+        "UserId": 1000
+      },
+      "case": "covering-0007"
+    }
+  ],
+  "use": "argument sets for a unit test of this method; nested objects are whole records"
+}

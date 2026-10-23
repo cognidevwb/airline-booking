@@ -1,0 +1,16 @@
+{
+  "id": "post-booking-flight-does-not-exist",
+  "title": "Flight does not exist",
+  "source": "staged scenario",
+  "why": "Confirms an unknown flight gives a not-found style error, not a crash",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with a valid PassengerId and FlightId f0000000-0000-4000-8000-00000000dead, which matches no flight"
+    }
+  ],
+  "expect": [
+    "Request fails with a flight-not-found error; no booking is created"
+  ]
+}

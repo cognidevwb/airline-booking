@@ -1,0 +1,42 @@
+{
+  "id": "post-booking-deleted-booking-does-not-bl",
+  "title": "Deleted booking does not block rebooking",
+  "source": "staged scenario",
+  "why": "Shows cancelled bookings are ignored by the duplicate check",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a9999999-9999-4999-8999-999999999999",
+        "ArriveAirportId": "e9999999-9999-4999-8999-999999999999",
+        "DepartureAirportId": "d9999999-9999-4999-8999-999999999999",
+        "Description": "Rebooking flight",
+        "FlightDate": "2026-12-18T20:00:00Z",
+        "FlightNumber": "EK202",
+        "Price": 600.0,
+        "SeatNumber": "22C"
+      }
+    },
+    {
+      "ref": "booking-old",
+      "table": "BookingReadModel",
+      "values": {
+        "BookId": "b3000000-0000-4000-8000-0000000000a1",
+        "Id": "b3000000-0000-4000-8000-000000000001",
+        "IsDeleted": true,
+        "PassengerInfo": "P1 Alice Moore",
+        "Trip": "flight-1"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking with the same PassengerId and FlightId of flight-1"
+    }
+  ],
+  "expect": [
+    "Booking succeeds as a new active booking despite the earlier deleted one"
+  ]
+}

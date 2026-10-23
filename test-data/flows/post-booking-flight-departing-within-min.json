@@ -1,0 +1,31 @@
+{
+  "id": "post-booking-flight-departing-within-min",
+  "title": "Flight departing within minutes",
+  "source": "staged scenario",
+  "why": "Tests behavior near the departure cutoff",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "ad000000-0000-4000-8000-000000000001",
+        "ArriveAirportId": "ed000000-0000-4000-8000-000000000001",
+        "DepartureAirportId": "dd000000-0000-4000-8000-000000000001",
+        "Description": "Departs in minutes",
+        "FlightDate": "2026-10-23T23:55:00Z",
+        "FlightNumber": "WN1999",
+        "Price": 89.0,
+        "SeatNumber": "2A"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking for a valid passenger on flight-1 whose FlightDate is today, a few minutes from now"
+    }
+  ],
+  "expect": [
+    "Booking is accepted or refused according to the departure cutoff rule, with a clear result either way"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "post-booking-same-passenger-cannot-book-",
+  "title": "Same passenger cannot book the same flight twice",
+  "source": "staged scenario",
+  "why": "Checks duplicate booking protection",
+  "setup": [
+    {
+      "ref": "flight-1",
+      "table": "Trip",
+      "values": {
+        "AircraftId": "a8888888-8888-4888-8888-888888888888",
+        "ArriveAirportId": "e8888888-8888-4888-8888-888888888888",
+        "DepartureAirportId": "d8888888-8888-4888-8888-888888888888",
+        "Description": "Existing booking flight",
+        "FlightDate": "2026-12-12T13:00:00Z",
+        "FlightNumber": "KL605",
+        "Price": 275.0,
+        "SeatNumber": "10A"
+      }
+    },
+    {
+      "ref": "booking-1",
+      "table": "BookingReadModel",
+      "values": {
+        "BookId": "b2000000-0000-4000-8000-0000000000a1",
+        "Id": "b2000000-0000-4000-8000-000000000001",
+        "IsDeleted": false,
+        "PassengerInfo": "P1 Alice Moore",
+        "Trip": "flight-1"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/booking again with the same PassengerId and FlightId of flight-1"
+    }
+  ],
+  "expect": [
+    "Second request is rejected as a duplicate booking; only one active booking remains"
+  ]
+}

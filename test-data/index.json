@@ -1,0 +1,334 @@
+{
+  "repository": "airline-booking",
+  "domain": "Airline flight booking and reservations",
+  "rows": 2320,
+  "rows_in_report": 2320,
+  "matches_report": true,
+  "coverage": "pairwise",
+  "personal": "values that cannot belong to a person: example.com, reserved phone ranges, passport and card numbers that cannot be issued",
+  "model": [
+    {
+      "layer": "HTTP · endpoints",
+      "item": "POST api/v1/booking",
+      "file": "http/post-api-v1-booking.json",
+      "valid": 200,
+      "invalid": 5
+    },
+    {
+      "layer": "Domain · aggregates",
+      "item": "Booking",
+      "file": "domain/Booking.Booking.Models/Booking.json",
+      "valid": 200,
+      "invalid": 2,
+      "coverage": 3
+    },
+    {
+      "layer": "Domain · classes",
+      "item": "GrpcOptions",
+      "file": "domain/Booking.Configuration/GrpcOptions.json",
+      "valid": 9,
+      "invalid": 2,
+      "coverage": 0
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateBooking",
+      "file": "domain/Booking.Booking.Features.CreatingBook.V1/CreateBooking.json",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 3
+    },
+    {
+      "layer": "Domain · events",
+      "item": "BookingCreatedDomainEvent",
+      "file": "domain/Booking.Booking.Features.CreatingBook.V1/BookingCreatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 4,
+      "coverage": 3
+    },
+    {
+      "layer": "Domain · read models",
+      "item": "BookingReadModel",
+      "file": "domain/Booking.Booking.Models/BookingReadModel.json",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 3
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "CreateBookingRequestDto",
+      "file": "domain/Booking.Booking.Features.CreatingBook.V1/CreateBookingRequestDto.json",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 3
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "BookingResponseDto",
+      "file": "domain/Booking.Booking.Dtos/BookingResponseDto.json",
+      "valid": 189,
+      "invalid": 16,
+      "coverage": 14
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "CreateBookingResponseDto",
+      "file": "domain/Booking.Booking.Features.CreatingBook.V1/CreateBookingResponseDto.json",
+      "valid": 1,
+      "invalid": 2,
+      "coverage": 0
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "CreateBookingResult",
+      "file": "domain/Booking.Booking.Features.CreatingBook.V1/CreateBookingResult.json",
+      "valid": 1,
+      "invalid": 2,
+      "coverage": 0
+    },
+    {
+      "layer": "Domain · value objects",
+      "item": "Trip",
+      "file": "domain/Booking.Booking.ValueObjects/Trip.json",
+      "valid": 200,
+      "invalid": 13,
+      "coverage": 12
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Booking.Apply",
+      "file": "unit/Booking.Booking.Models/Booking/Apply.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Booking.Create",
+      "file": "unit/Booking.Booking.Models/Booking/Create.json",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 7
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "BookingProjection.Apply",
+      "file": "unit/Booking/BookingProjection/Apply.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateBookingCommandHandler.Handle",
+      "file": "unit/Booking.Booking.Features.CreatingBook.V1/CreateBookingCommandHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Database · stored procedures",
+      "item": "procedures",
+      "file": "database/procedures/README.json",
+      "note": "none in this repository"
+    },
+    {
+      "layer": "UI · forms",
+      "item": "forms",
+      "file": "ui/README.json",
+      "note": "none in this repository"
+    },
+    {
+      "layer": "Flows · across services",
+      "item": "Booking across services",
+      "file": "flows/across-post-api-v1-booking.json",
+      "steps": 4
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should create booking to event store currectly",
+      "file": "flows/createbookingtests-should-create-booking.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Aircraft id on the flight is invalid",
+      "file": "flows/post-booking-aircraft-id-on-the-flight-i.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Arrival airport id is invalid",
+      "file": "flows/post-booking-arrival-airport-id-is-inval.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Book an economy seat on a one-way domestic flight",
+      "file": "flows/post-booking-book-an-economy-seat-on-a-o.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Book with a description note",
+      "file": "flows/post-booking-book-with-a-description-not.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Book without a description",
+      "file": "flows/post-booking-book-without-a-description.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Booking creates a readable record and domain event",
+      "file": "flows/post-booking-booking-creates-a-readable-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted booking does not block rebooking",
+      "file": "flows/post-booking-deleted-booking-does-not-bl.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Departure airport id is invalid",
+      "file": "flows/post-booking-departure-airport-id-is-inv.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight date is invalid",
+      "file": "flows/post-booking-flight-date-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight departing within minutes",
+      "file": "flows/post-booking-flight-departing-within-min.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight does not exist",
+      "file": "flows/post-booking-flight-does-not-exist.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight id is required",
+      "file": "flows/post-booking-flight-id-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight number is invalid",
+      "file": "flows/post-booking-flight-number-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Last free seat on the flight",
+      "file": "flows/post-booking-last-free-seat-on-the-fligh.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passenger id is required",
+      "file": "flows/post-booking-passenger-id-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Same passenger books two different flights",
+      "file": "flows/post-booking-same-passenger-books-two-di.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Same passenger cannot book the same flight twice",
+      "file": "flows/post-booking-same-passenger-cannot-book-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Two different passengers book different seats on one flight",
+      "file": "flows/post-booking-two-different-passengers-bo.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Very long description",
+      "file": "flows/post-booking-very-long-description.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Zero-price promotional fare",
+      "file": "flows/post-booking-zero-price-promotional-fare.json",
+      "steps": 1
+    },
+    {
+      "layer": "Errors",
+      "item": "BookingAlreadyExistException",
+      "file": "errors/bookingalreadyexistexception-createbooking.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFoundException",
+      "file": "errors/flightnotfoundexception-createbooking.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidAircraftIdException",
+      "file": "errors/invalidaircraftidexception-trip.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidArriveAirportIdException",
+      "file": "errors/invalidarriveairportidexception-trip.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidDepartureAirportIdException",
+      "file": "errors/invaliddepartureairportidexception-trip.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidFlightDateException",
+      "file": "errors/invalidflightdateexception-trip.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidFlightNumberException",
+      "file": "errors/invalidflightnumberexception-trip.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidPassengerNameException",
+      "file": "errors/invalidpassengernameexception-passengerinfo.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidPriceException",
+      "file": "errors/invalidpriceexception-trip.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "SeatNumberException",
+      "file": "errors/seatnumberexception-trip.json",
+      "status": 500
+    }
+  ]
+}
