@@ -1,0 +1,139 @@
+{
+  "folder": "flows/",
+  "what": "Test flows: from the repository's tests, staged scenarios, and across services.",
+  "folders": [],
+  "files": [
+    {
+      "file": "across-post-api-v1-booking.json",
+      "item": "Booking across services",
+      "layer": "Flows · across services",
+      "steps": 4
+    },
+    {
+      "file": "createbookingtests-should-create-booking.json",
+      "item": "should create booking to event store currectly",
+      "layer": "Flows · from the tests",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-aircraft-id-on-the-flight-i.json",
+      "item": "Aircraft id on the flight is invalid",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-arrival-airport-id-is-inval.json",
+      "item": "Arrival airport id is invalid",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-book-an-economy-seat-on-a-o.json",
+      "item": "Book an economy seat on a one-way domestic flight",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-book-with-a-description-not.json",
+      "item": "Book with a description note",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-book-without-a-description.json",
+      "item": "Book without a description",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-booking-creates-a-readable-.json",
+      "item": "Booking creates a readable record and domain event",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-deleted-booking-does-not-bl.json",
+      "item": "Deleted booking does not block rebooking",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-departure-airport-id-is-inv.json",
+      "item": "Departure airport id is invalid",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-flight-date-is-invalid.json",
+      "item": "Flight date is invalid",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-flight-departing-within-min.json",
+      "item": "Flight departing within minutes",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-flight-does-not-exist.json",
+      "item": "Flight does not exist",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-flight-id-is-required.json",
+      "item": "Flight id is required",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-flight-number-is-invalid.json",
+      "item": "Flight number is invalid",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-last-free-seat-on-the-fligh.json",
+      "item": "Last free seat on the flight",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-passenger-id-is-required.json",
+      "item": "Passenger id is required",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-same-passenger-books-two-di.json",
+      "item": "Same passenger books two different flights",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-same-passenger-cannot-book-.json",
+      "item": "Same passenger cannot book the same flight twice",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-two-different-passengers-bo.json",
+      "item": "Two different passengers book different seats on one flight",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-very-long-description.json",
+      "item": "Very long description",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    },
+    {
+      "file": "post-booking-zero-price-promotional-fare.json",
+      "item": "Zero-price promotional fare",
+      "layer": "Flows · scenarios",
+      "steps": 1
+    }
+  ]
+}

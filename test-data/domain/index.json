@@ -1,0 +1,27 @@
+{
+  "folder": "domain/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [
+    {
+      "folder": "Booking.Booking.Dtos/",
+      "files": 1
+    },
+    {
+      "folder": "Booking.Booking.Features.CreatingBook.V1/",
+      "files": 5
+    },
+    {
+      "folder": "Booking.Booking.Models/",
+      "files": 2
+    },
+    {
+      "folder": "Booking.Booking.ValueObjects/",
+      "files": 1
+    },
+    {
+      "folder": "Booking.Configuration/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

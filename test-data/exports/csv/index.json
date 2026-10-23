@@ -1,0 +1,67 @@
+{
+  "folder": "exports/csv/",
+  "what": "The same rows as SQL and CSV.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Booking-Apply.csv",
+      "item": "Booking-Apply"
+    },
+    {
+      "file": "Booking-Create.csv",
+      "item": "Booking-Create"
+    },
+    {
+      "file": "Booking.csv",
+      "item": "Booking"
+    },
+    {
+      "file": "BookingCreatedDomainEvent.csv",
+      "item": "BookingCreatedDomainEvent"
+    },
+    {
+      "file": "BookingProjection-Apply.csv",
+      "item": "BookingProjection-Apply"
+    },
+    {
+      "file": "BookingReadModel.csv",
+      "item": "BookingReadModel"
+    },
+    {
+      "file": "BookingResponseDto.csv",
+      "item": "BookingResponseDto"
+    },
+    {
+      "file": "CreateBooking.csv",
+      "item": "CreateBooking"
+    },
+    {
+      "file": "CreateBookingCommandHandler-Handle.csv",
+      "item": "CreateBookingCommandHandler-Handle"
+    },
+    {
+      "file": "CreateBookingRequestDto.csv",
+      "item": "CreateBookingRequestDto"
+    },
+    {
+      "file": "CreateBookingResponseDto.csv",
+      "item": "CreateBookingResponseDto"
+    },
+    {
+      "file": "CreateBookingResult.csv",
+      "item": "CreateBookingResult"
+    },
+    {
+      "file": "GET--.csv",
+      "item": "GET--"
+    },
+    {
+      "file": "GrpcOptions.csv",
+      "item": "GrpcOptions"
+    },
+    {
+      "file": "Trip.csv",
+      "item": "Trip"
+    }
+  ]
+}

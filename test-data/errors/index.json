@@ -1,0 +1,67 @@
+{
+  "folder": "errors/",
+  "what": "Every exception the code throws: where, the call that triggers it, the status the API answers.",
+  "folders": [],
+  "files": [
+    {
+      "file": "bookingalreadyexistexception-createbooking.json",
+      "item": "BookingAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfoundexception-createbooking.json",
+      "item": "FlightNotFoundException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "invalidaircraftidexception-trip.json",
+      "item": "InvalidAircraftIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidarriveairportidexception-trip.json",
+      "item": "InvalidArriveAirportIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invaliddepartureairportidexception-trip.json",
+      "item": "InvalidDepartureAirportIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidflightdateexception-trip.json",
+      "item": "InvalidFlightDateException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidflightnumberexception-trip.json",
+      "item": "InvalidFlightNumberException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidpassengernameexception-passengerinfo.json",
+      "item": "InvalidPassengerNameException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidpriceexception-trip.json",
+      "item": "InvalidPriceException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "seatnumberexception-trip.json",
+      "item": "SeatNumberException",
+      "layer": "Errors",
+      "status": 500
+    }
+  ]
+}

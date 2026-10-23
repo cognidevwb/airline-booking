@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Booking.Configuration/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "GrpcOptions.json",
+      "item": "GrpcOptions",
+      "layer": "Domain · classes",
+      "valid": 9,
+      "invalid": 2,
+      "coverage": 0
+    }
+  ]
+}

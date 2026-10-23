@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Booking.Booking.Dtos/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "BookingResponseDto.json",
+      "item": "BookingResponseDto",
+      "layer": "Domain · responses",
+      "valid": 189,
+      "invalid": 16,
+      "coverage": 14
+    }
+  ]
+}

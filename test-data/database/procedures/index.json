@@ -1,0 +1,13 @@
+{
+  "folder": "database/procedures/",
+  "what": "Stored procedures and their inputs.",
+  "folders": [],
+  "files": [
+    {
+      "file": "README.json",
+      "item": "procedures",
+      "layer": "Database · stored procedures",
+      "note": "none in this repository"
+    }
+  ]
+}

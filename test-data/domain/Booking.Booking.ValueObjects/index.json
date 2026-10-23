@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Booking.Booking.ValueObjects/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Trip.json",
+      "item": "Trip",
+      "layer": "Domain · value objects",
+      "valid": 200,
+      "invalid": 13,
+      "coverage": 12
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Booking/BookingProjection/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Apply.json",
+      "item": "BookingProjection.Apply",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    }
+  ]
+}

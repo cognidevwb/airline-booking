@@ -1,0 +1,35 @@
+{
+  "folder": "vocabulary/",
+  "what": "The domain values the records were written from.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Booking.json",
+      "item": "Booking"
+    },
+    {
+      "file": "BookingCreatedDomainEvent.json",
+      "item": "BookingCreatedDomainEvent"
+    },
+    {
+      "file": "BookingReadModel.json",
+      "item": "BookingReadModel"
+    },
+    {
+      "file": "BookingResponseDto.json",
+      "item": "BookingResponseDto"
+    },
+    {
+      "file": "CreateBooking.json",
+      "item": "CreateBooking"
+    },
+    {
+      "file": "CreateBookingRequestDto.json",
+      "item": "CreateBookingRequestDto"
+    },
+    {
+      "file": "Trip.json",
+      "item": "Trip"
+    }
+  ]
+}

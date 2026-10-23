@@ -1,0 +1,11 @@
+{
+  "folder": "exports/",
+  "what": "The same rows as SQL and CSV.",
+  "folders": [
+    {
+      "folder": "csv/",
+      "files": 15
+    }
+  ],
+  "files": []
+}

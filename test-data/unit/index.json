@@ -1,0 +1,19 @@
+{
+  "folder": "unit/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [
+    {
+      "folder": "Booking/",
+      "files": 1
+    },
+    {
+      "folder": "Booking.Booking.Features.CreatingBook.V1/",
+      "files": 1
+    },
+    {
+      "folder": "Booking.Booking.Models/",
+      "files": 2
+    }
+  ],
+  "files": []
+}

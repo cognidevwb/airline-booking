@@ -1,0 +1,23 @@
+{
+  "folder": "domain/Booking.Booking.Models/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Booking.json",
+      "item": "Booking",
+      "layer": "Domain · aggregates",
+      "valid": 200,
+      "invalid": 2,
+      "coverage": 3
+    },
+    {
+      "file": "BookingReadModel.json",
+      "item": "BookingReadModel",
+      "layer": "Domain · read models",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 3
+    }
+  ]
+}

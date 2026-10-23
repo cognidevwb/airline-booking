@@ -1,0 +1,47 @@
+{
+  "folder": "domain/Booking.Booking.Features.CreatingBook.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "BookingCreatedDomainEvent.json",
+      "item": "BookingCreatedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 4,
+      "coverage": 3
+    },
+    {
+      "file": "CreateBooking.json",
+      "item": "CreateBooking",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 3
+    },
+    {
+      "file": "CreateBookingRequestDto.json",
+      "item": "CreateBookingRequestDto",
+      "layer": "Domain · requests",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 3
+    },
+    {
+      "file": "CreateBookingResponseDto.json",
+      "item": "CreateBookingResponseDto",
+      "layer": "Domain · responses",
+      "valid": 1,
+      "invalid": 2,
+      "coverage": 0
+    },
+    {
+      "file": "CreateBookingResult.json",
+      "item": "CreateBookingResult",
+      "layer": "Domain · responses",
+      "valid": 1,
+      "invalid": 2,
+      "coverage": 0
+    }
+  ]
+}

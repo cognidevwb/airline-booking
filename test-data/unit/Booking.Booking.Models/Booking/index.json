@@ -1,0 +1,23 @@
+{
+  "folder": "unit/Booking.Booking.Models/Booking/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Apply.json",
+      "item": "Booking.Apply",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "file": "Create.json",
+      "item": "Booking.Create",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 7
+    }
+  ]
+}

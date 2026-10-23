@@ -1,0 +1,14 @@
+{
+  "folder": "http/",
+  "what": "Every HTTP endpoint and gRPC call: requests that succeed, requests that must be rejected and the status each gets.",
+  "folders": [],
+  "files": [
+    {
+      "file": "post-api-v1-booking.json",
+      "item": "POST api/v1/booking",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 5
+    }
+  ]
+}
